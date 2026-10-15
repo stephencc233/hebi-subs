@@ -251,7 +251,7 @@ flowchart LR
 | `online_subtitles/providers/subhd.py:144-148, 210` | 搜索/详情页的解析正则；S2 要看页面上的下载数是否被解析、在哪里丢掉 |
 | `online_subtitles/service.py:154-163` | 后端排序键：源优先级 → 身份匹配 → 语言 → score → 标题，无下载量 |
 | `online_subtitles/matcher.py:40, 56, 249` | score 与源优先级的计算 |
-| `src/composables/useOnlineSubtitles.js:336-343` | 前端合并后再按 score 二次排序 |
+| `src/composables/useOnlineSubtitles.js:336-343` | 前端合并后再排一次（S2 更正：键为 源优先级 → 语言 → 身份 → score → 源名，见 02 §2） |
 
 ### ② 不显示制作组
 
@@ -309,8 +309,8 @@ flowchart LR
 
 | # | 问题 | 交给 |
 |---|---|---|
-| 1 | SubHD 页面本身是否提供下载量、制作组；海拉鲁的正则是否抓到了又丢掉 | S2（页面实测留 P2）|
-| 2 | `score` 的具体计算与源优先级权重 | S2 |
+| 1 | SubHD 页面本身是否提供下载量、制作组；海拉鲁的正则是否抓到了又丢掉 | S2 已答：没抓（从未进入数据流），见 02 §5；页面实测留 P2 |
+| 2 | `score` 的具体计算与源优先级权重 | S2 已答，见 02 §2 |
 | 3 | 「整包」的症状（需用户补充）；Windows 下 rar/7z 工具缺失是否就是原因 | S3 |
 | 4 | rarfile 是否依赖外部 unrar | S3 |
 | 5 | 完整链路：`handle_transfer_complete` → 队列 → worker → `process_entry` → `search_write_subtitle` → 挑选 → 写入 | S4 |
