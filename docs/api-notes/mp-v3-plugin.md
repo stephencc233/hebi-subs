@@ -105,7 +105,7 @@
 
 - 模块导入期、类定义期不得启动任务、访问网络、连数据库；资源在 `init_plugin()` 中按配置建立（[PD §5.2][PD-52]）。
 - **运行数据不能写回插件源码目录**：插件更新/本地同步时源码目录会被整体替换（[PD §7.2][PD-72]；源码 `sync_local` 先删后拷，见 §5.3）。
-- “立即运行一次”、事件后延迟执行等一次性任务用 `app.sdk.scheduler.add_plugin_once_job()`，不要自建 `BackgroundScheduler`；停用时用 `remove_plugin_once_job()` 取消（[PD §9.3][PD-93]）。
+- “立即运行一次”、事件后延迟执行等一次性任务用 `app.sdk.scheduler.add_plugin_once_job()`，不要自建 `BackgroundScheduler`；停用时用 `remove_plugin_once_job()` 取消（[PD §9.3][PD-93]）。⚠ **本机 v3.0.7 没有这个接口**（[mp-local-env.md §2](mp-local-env.md)），需要时先用 `getattr` 判断。
 - 插件 ID 用 `self.__class__.__name__` 取得，不硬编码（虚拟分身会改类名）（[PD §7.1][PD-71]）。
 - 宿主接口优先从 `app.sdk.*` 导入（`config`/`events`/`logging`/`network`/`services`…）；新插件**禁止**用 `app.core.*`、`app.helper.*`、`app.utils.*`、`app.sdk._legacy`（[PD §6][PD-6]）。
 - HTTP：`app.sdk.network.AsyncRequestUtils` 基于 HTTPX2，网络错误默认返回 `None`，需要区分失败时传 `raise_exception=True`；4xx/5xx 不自动抛（[PD §7.6][PD-76]）。
@@ -285,9 +285,9 @@ Vue 模式额外约束（[PD §8.3][PD-83]、[FED][FED]）：不得打包 Vuetif
 |---|---|---|---|
 | 1 | `TransferComplete` 的 `event_data` 及 `transferinfo` 是对象还是已序列化的 dict | 源码发送 dict+对象；海拉鲁两种都兼容，**不确定** | 冒烟后加日志打印类型 |
 | 2 | 剧集整理是否每集发一次 `TransferComplete` | 推测每个主媒体文件一次 | 实机整理一部剧看日志 |
-| 3 | Windows 原生版 `PLUGIN_LOCAL_REPO_PATHS` 等配置写在哪里、改后是否需重启 | 未核实 | 任务 B（mp-local-env.md） |
-| 4 | 本机 MP 版本是否 ≥ 本笔记所读源码（v3 @ `63c8c0d`） | 未核实；若较旧，部分 SDK（如 `add_plugin_once_job`）可能不存在 | 任务 B 查版本；必要时上调 `system_version` |
-| 5 | 本机 Python 版本（指南示例 `>=3.14`） | 推测 3.14 | 任务 B |
+| 3 | Windows 原生版 `PLUGIN_LOCAL_REPO_PATHS` 等配置写在哪里、改后是否需重启 | **已核实位置**：`D:\MoviePilot\server\MoviePilot-V3\config\app.env`，目前未设置；是否需要重启待任务 C 验证 | [mp-local-env.md §4](mp-local-env.md) |
+| 4 | 本机 MP 版本是否 ≥ 本笔记所读源码（v3 @ `63c8c0d`） | **已核实**：本机 v3.0.7（`e2e6ff0`，2026-09-21），更旧；本笔记用到的能力中只缺 `add_plugin_once_job` | [mp-local-env.md §2](mp-local-env.md) |
+| 5 | 本机 Python 版本（指南示例 `>=3.14`） | **已核实**：3.14.7 | [mp-local-env.md §3](mp-local-env.md) |
 | 6 | `watchfiles` 递归监听整个仓库，含 `_reference/`（大量文件）是否影响 MP 性能 | **不确定** | 冒烟时观察 CPU/日志；如有影响再评估把参考仓移出或 MP 侧过滤 |
 | 7 | 只改 `package.v3.json`（如版本号）是否触发同步 | 源码只对 `.py`、联邦产物、依赖清单处理，推测**不触发**，需在界面手动更新/重装 | 实机 |
 | 8 | `icon` 只写文件名时，第三方本地插件从哪里取图 | **不确定**（官方插件图标在官方仓 `icons/`） | 冒烟先用完整 URL 或官方已有图标名 |
