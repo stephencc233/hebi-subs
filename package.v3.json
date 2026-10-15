@@ -1,0 +1,16 @@
+{
+  "HebiSubs": {
+    "name": "合璧字幕",
+    "description": "从 SubHD 与 ASSRT 获取字幕，在影片同目录落盘「简中+外语」双语字幕，无双语时自动合成。",
+    "labels": "字幕,双语",
+    "version": "0.0.1",
+    "icon": "https://raw.githubusercontent.com/jxxghp/MoviePilot-Plugins/main/icons/chinesesubfinder.png",
+    "author": "stephencc233",
+    "author_url": "https://github.com/stephencc233",
+    "level": 1,
+    "system_version": ">=3.0.0",
+    "history": {
+      "v0.0.1": "最小空插件，用于 P0 冒烟测试：验证本地插件源识别、安装与启用。"
+    }
+  }
+}
