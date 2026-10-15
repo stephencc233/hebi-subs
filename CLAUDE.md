@@ -16,11 +16,19 @@ MoviePilot **V3** 第三方插件：从 SubHD + ASSRT 获取字幕，在影片�
 
 | 路径 | 内容 |
 |---|---|
+| `package.v3.json` | V3 插件市场索引（仓库根目录；键名 = 插件类名，version 与 plugin_version 一致） |
 | `plugins.v3/hebisubs/` | 插件本体（目录规则以 MP 官方 V3 开发指南为准，P0 核实） |
 | `scripts/` | 探索与实测脚本（可独立运行） |
 | `tests/`、`tests/fixtures/` | 测试与样本（字幕、NFO、压缩包） |
 | `docs/` | 文档主本 |
 | `_reference/hailulu/` | 海拉鲁参考仓库（独立 git 仓库，已 gitignore）；`.claude/settings.local.json` 禁止编辑；**只读，不要复制大段代码** |
+
+## 运行环境
+
+- 系统：Windows 10；Shell：PowerShell 7；Git 在 `D:\git`
+- MoviePilot **V3，Windows 原生运行**（非 Docker）。安装目录、Python 版本、日志位置见 `docs/api-notes/mp-local-env.md`
+- 本地开发方式（待 P0 核实）：MP 设置 `PLUGIN_LOCAL_REPO_PATHS` 指向本仓库，由 MP 从本地源安装/重载插件；**不要直接往 MP 的 `app/plugins/` 写文件**
+- MP 安装目录在项目外：只在用户同意后**只读**查看（如日志、配置），不修改；未经用户确认，不改 MP 配置、不重启 MP、不安装插件
 
 ## 硬性约束
 
