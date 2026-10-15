@@ -22,7 +22,7 @@
 - [x] 海拉鲁移入项目内 `_reference\hailulu`（D012）
 - [x] 配置 `.claude/settings.local.json`：禁止编辑 `_reference`（D012）
 - [x] 回答开放问题 1：MP V3 部署方式 → Windows 原生（D013）
-- [ ] 确认 MP V3 本地插件开发/加载方式（官方 V3 开发指南）→ 产出 `docs/api-notes/mp-v3-plugin.md`
+- [x] 确认 MP V3 本地插件开发/加载方式（官方 V3 开发指南）→ 产出 `docs/api-notes/mp-v3-plugin.md`（文档 + 源码核实，待实机冒烟）
 - [ ] 摸清本机 MP 环境：安装目录、Python 版本、配置文件位置、日志位置、插件安装目录 → 产出 `docs/api-notes/mp-local-env.md`
 - [ ] 冒烟测试：最小空插件 `hebisubs` 被本机 MP V3 识别并加载（P0 验收）
 
