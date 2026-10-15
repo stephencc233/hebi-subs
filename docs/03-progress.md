@@ -5,7 +5,7 @@
 | 阶段 | 状态 | 开始 | 完成 | 产出 |
 |---|---|---|---|---|
 | P0 准备 | ✅ 完成 | 2026-10-15 | 2026-10-15 | 仓库、CLAUDE.md、文档 v0.1、api-notes（MP V3 开发要点 / 本机环境）、最小空插件 v0.0.1（实机冒烟通过） |
-| P1 研读海拉鲁 | 🟡 进行中 | 2026-10-15 | | study-hailulu/README 研读规则、01-module-map、02-search-pain12 |
+| P1 研读海拉鲁 | 🟡 进行中 | 2026-10-15 | | study-hailulu/README 研读规则、01-module-map、02-search-pain12、03-archive-pain3 |
 | P2 接口实测 | ⬜ 未开始 | | | |
 | P3 需求定稿 + 架构 | ⬜ 未开始 | | | |
 | P4 MVP | ⬜ 未开始 | | | |
@@ -32,7 +32,7 @@
 
 - [x] S1 P1-1-module-map：模块地图 + 研读规则 → `study-hailulu/01-module-map.md`
 - [x] S2 P1-2-search-pain12：痛点①SubHD 不按下载量排序、②不显示制作组 → `study-hailulu/02-search-pain12.md`
-- [ ] S3 P1-3-archive-pain3：痛点③整包（压缩包）无法处理 → `03-*.md`
+- [x] S3 P1-3-archive-pain3：痛点③整包（压缩包）无法处理 → `study-hailulu/03-archive-pain3.md`
 - [ ] S4 P1-4-auto-chain：整理完成 → 识别 → 搜索 → 下载 → 解包 → 落盘的完整链路 → `04-*.md`
 - [ ] C11 复盘：claude.ai 阶段对话评审 P1 笔记，提炼借鉴/避免清单
 
@@ -52,6 +52,16 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-15 · P1-3-archive-pain3
+- 阶段：P1（S3 完成）
+- 完成：`study-hailulu/03-archive-pain3.md`：下载→解包→预览→写入时序图（标每步 bytes / 临时文件 / 路径）、A 压缩格式 / B 包内多文件 / C 剧集三张证据链表、手动上传 vs 在线下载对比、写入命名·覆盖·编码·繁转简位置表、根因、对合璧字幕解包模块与 Windows 依赖选型的启示、P2 验证清单 10 条；`01-module-map.md` §7 #3 #4 标为已答 / 部分回答。读 20 个文件（超出规则约 15 个，超出部分各只读 15–90 行），`_reference` 无改动；可选的 rarfile 文档查询与 `tar --version` 未做（未获同意）
+- 决定：无新增（§8 是建议，留 P3 定稿）
+- 主要发现：①根因是**平台假设**：rar/7z 都只认文件名恰为 `unar` 的外部程序（`upload_session.py:136-189`），默认路径 `/usr/bin/unar`，自动安装靠 `sh`+`apt-get`，Windows 原生装了 `unar.exe` 也认不出；7z 无 py7zr / 7z.exe 替代；rar 的 rarfile 兜底仍需外部工具（不确定）。②手动上传与在线下载共用同一解包入口，无本质差异。③多文件包：目录拍平、内层压缩包静默跳过、zip GBK 文件名不做 cp437 回转、纯中文 ASS 可能被判成中英双语、Big5 解码分支走不到、写入不转 UTF-8。④命名 `视频名.语言后缀.ext`，同语言同格式只能一份，与 F6.1「2 份双语」冲突；会覆盖（一次性备份 `.mp-timeline-bk`）；原包写入后随会话删除，不保留
+- 未完成 / 下一步：S4 P1-4-auto-chain（`auto_transfer.py:302 handle_transfer_complete` → 队列 → `auto_transfer_processor.py:51/282` → `auto_transfer_write.py:114`；同时答 01 §7 #5–#7）
+- 卡点与风险：rarfile 行为、Windows `tar.exe`（libarchive）对 RAR5/7z 的支持、py7zr 在 Python 3.14 + Windows 的 wheel 均未验证，影响 P3 依赖选型；7-Zip 默认不加 PATH，探测需查固定安装路径
+- 需要更新的文档：无（本次已更新 03 笔记、01、本文件）；P3 定解包模块与 F6.6/F6.7 时参考 03 §8、§9
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P1，读 03-progress 最新交接卡后开始：S4 P1-4-auto-chain，按 study-hailulu/README 研读规则整理整理完成→识别→搜索→下载→解包→落盘的完整自动链路
 
 ### 交接 2026-10-15 · P1-2-search-pain12
 - 阶段：P1（S2 完成）
