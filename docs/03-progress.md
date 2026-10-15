@@ -4,7 +4,7 @@
 
 | 阶段 | 状态 | 开始 | 完成 | 产出 |
 |---|---|---|---|---|
-| P0 准备 | ⏳ 进行中 | 2026-10-15 | | 仓库、CLAUDE.md、文档 v0.1 |
+| P0 准备 | ✅ 完成 | 2026-10-15 | 2026-10-15 | 仓库、CLAUDE.md、文档 v0.1、api-notes（MP V3 开发要点 / 本机环境）、最小空插件 v0.0.1（实机冒烟通过） |
 | P1 研读海拉鲁 | ⬜ 未开始 | | | |
 | P2 接口实测 | ⬜ 未开始 | | | |
 | P3 需求定稿 + 架构 | ⬜ 未开始 | | | |
@@ -18,13 +18,13 @@
 - [x] 立项：方案、命名、文档体系（C00）
 - [x] 建本地文件夹 `D:\code\hebi-subs`，放入初始骨架
 - [x] `git init` + 首次提交；建 GitHub 私有仓库并推送
-- [ ] VS Code 安装 Claude Code 扩展并登录；确认读到 CLAUDE.md
+- [x] VS Code 安装 Claude Code 扩展并登录；确认读到 CLAUDE.md（任务 B/C 会话即在 VS Code 扩展中运行，CLAUDE.md 已自动加载）
 - [x] 海拉鲁移入项目内 `_reference\hailulu`（D012）
 - [x] 配置 `.claude/settings.local.json`：禁止编辑 `_reference`（D012）
 - [x] 回答开放问题 1：MP V3 部署方式 → Windows 原生（D013）
 - [x] 确认 MP V3 本地插件开发/加载方式（官方 V3 开发指南）→ 产出 `docs/api-notes/mp-v3-plugin.md`（文档 + 源码核实，待实机冒烟）
 - [x] 摸清本机 MP 环境：安装目录、Python 版本、配置文件位置、日志位置、插件安装目录 → 产出 `docs/api-notes/mp-local-env.md`（MP v3.0.7 / Python 3.14.7）
-- [ ] 冒烟测试：最小空插件 `hebisubs` 被本机 MP V3 识别并加载（P0 验收）→ 代码已就绪（`package.v3.json` + `plugins.v3/hebisubs/__init__.py`，v0.0.1），**待用户在 MP 侧配置并实机验证**
+- [x] 冒烟测试：最小空插件 `hebisubs` 被本机 MP V3 识别并加载（P0 验收）→ 2026-10-15 实机通过：市场发现、安装、启用、热重载均正常
 
 ## 交接卡模板
 
@@ -42,6 +42,15 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-15 · P0 冒烟实机验证与收尾
+- 阶段：P0 → 完成
+- 完成：用户按 `app.env` 写入 `PLUGIN_LOCAL_REPO_PATHS=D:\code\hebi-subs`、`PLUGIN_AUTO_RELOAD=true`、`DEBUG=true` 并重启 MP；插件市场发现「合璧字幕」，安装后日志「加载成功，启用状态=False」，启用后「启用状态=True」；改 `.py` 后约 1 秒内自动热重载生效（测试文字已撤回，未提交）。数据目录核实为 `<SRV>\config\plugins\HebiSubs`。结论已回填 mp-v3-plugin.md §7/§8、mp-local-env.md §9、D013 状态、CLAUDE.md
+- 决定：无新增（D013 状态更新为实机通过）
+- 未完成 / 下一步：开 C11「P1 研读海拉鲁」；P0 遗留小项（不阻塞）：图标换自有（mp-v3-plugin §8 #8）、DEBUG 下有无旧导入警告（#9）、监听 `_reference/` 的性能影响（#6）、热重载两轮的原因（#11）、插件日志文件名（mp-local-env §9 #4）
+- 卡点与风险：热重载一次改动触发两轮 stop/init，后续加事件订阅、定时服务时必须幂等，避免重复注册；MP 侧当前开着 `DEBUG=true`，日志会更多，P1 期间可按需关掉
+- 需要更新的文档：无（本次已更新）
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P1，读 03-progress 最新交接卡后开始：研读海拉鲁字幕插件（subtitlemanualupload）的整体结构与字幕源实现
 
 ### 交接 2026-10-15 · P0 任务 C 最小空插件
 - 阶段：P0
