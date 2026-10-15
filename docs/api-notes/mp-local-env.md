@@ -138,7 +138,7 @@
 | # | 问题 | 验证方式 |
 |---|---|---|
 | 1 | 启动器 `debug_log=True` 和 MP 的 `DEBUG` 是什么关系 | 任务 C 中观察日志级别，或查启动器说明 |
-| 2 | `PLUGIN_LOCAL_REPO_PATHS` 等能否在 Web 设置页修改、修改后是否需要重启 | 任务 C |
-| 3 | 插件数据目录是否就是 `<SRV>\config\plugins\<PluginID>\` | 冒烟插件中打印 `get_data_path()` |
-| 4 | 本项目插件日志文件名是否为 `hebisubs.log` | 冒烟时查看 `config\logs\plugins\` |
+| 2 | `PLUGIN_LOCAL_REPO_PATHS` 等能否在 Web 设置页修改、修改后是否需要重启 | 任务 C：改 `app.env` + 重启的方式**已验证可用**；Web 设置页与免重启未测 |
+| 3 | ~~插件数据目录是否就是 `<SRV>\config\plugins\<PluginID>\`~~ | **已核实**（任务 C）：`get_data_path()` = `D:\MoviePilot\server\MoviePilot-V3\config\plugins\HebiSubs`，保留类名大小写，首次调用时宿主自动创建 |
+| 4 | 本项目插件日志文件名是否为 `hebisubs.log` | 任务 C：日志记录器名为 `hebisubs`（日志行前缀 `hebisubs - `），文件名推测为 `hebisubs.log`，未直接查看 |
 | 5 | 后端两种 python 进程的父子关系 | 不影响开发，暂不深究 |

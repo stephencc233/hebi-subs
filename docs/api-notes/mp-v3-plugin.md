@@ -268,7 +268,7 @@ Vue 模式额外约束（[PD §8.3][PD-83]、[FED][FED]）：不得打包 Vuetif
 
 ## 7. 对本项目的结论
 
-1. **D013 成立**（文档 + 源码核实，待实机）：仓库根 `D:\code\hebi-subs` 放 `package.v3.json`，插件放 `plugins.v3/hebisubs/`，MP 设 `PLUGIN_LOCAL_REPO_PATHS` 指向仓库根 + `PLUGIN_AUTO_RELOAD=true`；MP 从插件市场看到并安装，之后改 `.py` 自动同步重载。
+1. **D013 成立**（文档 + 源码核实；**2026-10-15 本机 v3.0.7 实机冒烟通过**：市场发现、安装、启用、热重载均正常）：仓库根 `D:\code\hebi-subs` 放 `package.v3.json`，插件放 `plugins.v3/hebisubs/`，MP 设 `PLUGIN_LOCAL_REPO_PATHS` 指向仓库根 + `PLUGIN_AUTO_RELOAD=true`；MP 从插件市场看到并安装，之后改 `.py` 自动同步重载。
 2. 命名定死：主类 `HebiSubs` → 插件 ID `HebiSubs` → 目录 `hebisubs` → 索引键 `HebiSubs` → 配置前缀建议 `hebisubs_`。
 3. 自动触发入口：订阅 `EventType.TransferComplete`，用 `transferinfo.target_item.path`（或 `file_list_new`）定位影片落盘路径；`mediainfo`/`meta` 提供搜字幕所需的标题、年份、季集。另可关注 `SubtitleTransferComplete`（种子自带字幕被整理时触发），P3 再决定是否使用。
 4. 运行数据（字幕原包存档、缓存、状态）只能放 `get_data_path()` / `save_data()`，不能放插件目录（会被同步覆盖）。
@@ -285,7 +285,7 @@ Vue 模式额外约束（[PD §8.3][PD-83]、[FED][FED]）：不得打包 Vuetif
 |---|---|---|---|
 | 1 | `TransferComplete` 的 `event_data` 及 `transferinfo` 是对象还是已序列化的 dict | 源码发送 dict+对象；海拉鲁两种都兼容，**不确定** | 冒烟后加日志打印类型 |
 | 2 | 剧集整理是否每集发一次 `TransferComplete` | 推测每个主媒体文件一次 | 实机整理一部剧看日志 |
-| 3 | Windows 原生版 `PLUGIN_LOCAL_REPO_PATHS` 等配置写在哪里、改后是否需重启 | **已核实位置**：`D:\MoviePilot\server\MoviePilot-V3\config\app.env`，目前未设置；是否需要重启待任务 C 验证 | [mp-local-env.md §4](mp-local-env.md) |
+| 3 | Windows 原生版 `PLUGIN_LOCAL_REPO_PATHS` 等配置写在哪里、改后是否需重启 | **已核实位置**：`D:\MoviePilot\server\MoviePilot-V3\config\app.env`，目前未设置；是否需要重启待任务 C 验证。**任务 C 实机**：写入 `app.env`（`D:\code\hebi-subs` 反斜杠写法、不加引号）+ 重启后生效；不重启能否生效未测 | [mp-local-env.md §4](mp-local-env.md) |
 | 4 | 本机 MP 版本是否 ≥ 本笔记所读源码（v3 @ `63c8c0d`） | **已核实**：本机 v3.0.7（`e2e6ff0`，2026-09-21），更旧；本笔记用到的能力中只缺 `add_plugin_once_job` | [mp-local-env.md §2](mp-local-env.md) |
 | 5 | 本机 Python 版本（指南示例 `>=3.14`） | **已核实**：3.14.7 | [mp-local-env.md §3](mp-local-env.md) |
 | 6 | `watchfiles` 递归监听整个仓库，含 `_reference/`（大量文件）是否影响 MP 性能 | **不确定** | 冒烟时观察 CPU/日志；如有影响再评估把参考仓移出或 MP 侧过滤 |
@@ -293,6 +293,7 @@ Vue 模式额外约束（[PD §8.3][PD-83]、[FED][FED]）：不得打包 Vuetif
 | 8 | `icon` 只写文件名时，第三方本地插件从哪里取图 | **不确定**（官方插件图标在官方仓 `icons/`） | 冒烟先用完整 URL 或官方已有图标名 |
 | 9 | 主指南写 `from app.sdk.plugin import _PluginBase`，海拉鲁用 `from app.plugins import _PluginBase` | 两者都能用（后者走兼容层），按主指南 | 冒烟开 `DEBUG=true` 看是否有兼容警告 |
 | 10 | 声明式建表 `get_database_models()` 与主指南 `ensure_table()` 哪个是推荐做法 | 源码两者并存，**不确定** | 需要自有表时（P4+）再查 |
+| 11 | 热重载为何一次改动触发两轮「stop_service → init_plugin」 | **任务 C 实机观察**：改一行 `.py` 后约 1 秒内连续两轮，间隔约 60ms。推测是仓库与运行目录各触发一次、防抖未覆盖，**不确定**。影响：`init_plugin`/`stop_service` 必须幂等，后台任务不能重复注册 | 需要时看 MP 主日志里的同步提示行 |
 
 <!-- 链接定义 -->
 [PD]: https://github.com/jxxghp/MoviePilot-Plugins/blob/59c77e86dc4fe486a751ffb14829ddb70e2f2fca/docs/Plugin_Development.md

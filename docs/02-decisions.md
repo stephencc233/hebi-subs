@@ -16,4 +16,4 @@
 | D010 | 2026-10-15 | 命名：合璧字幕 HebiSubs，仓库 `hebi-subs`，路径 `D:\code\hebi-subs` | 寓意中西合璧；英文名简短不与官方插件冲突 | 生效 |
 | D011 | 2026-10-15 | 项目实际路径为 `D:\code\hebi-subs`，参考仓库 `D:\code\_reference\hailulu`；用 `.claude/settings.local.json` 的 additionalDirectories + Edit deny 规则实现只读访问 | CLAUDE.md 只是指引，权限规则才由 Claude Code 强制执行；本机配置不提交 | 被 D012 取代（参考仓库位置） |
 | D012 | 2026-10-15 | 参考仓库移入项目内 `D:\code\hebi-subs\_reference\hailulu`，加入 .gitignore；只读改用 `Edit(/_reference/**)` deny 规则；项目只在 `D:\code\hebi-subs` 内活动 | `D:\code` 下其他文件夹不能动；项目内目录默认可读，无需附加目录 | 生效（取代 D011 的位置部分） |
-| D013 | 2026-10-15 | MP V3 为 Windows 原生运行；本地开发拟用 MP 的 `PLUGIN_LOCAL_REPO_PATHS` 把本仓库设为本地插件源（仓库根放 `package.v3.json`，插件在 `plugins.v3/hebisubs/`），由 MP 安装/重载 | 不用手动拷文件进 `app/plugins/`；无 Docker 路径映射问题 | 生效（V3 开发指南 + 源码已核实，见 api-notes/mp-v3-plugin.md；待实机冒烟） |
+| D013 | 2026-10-15 | MP V3 为 Windows 原生运行；本地开发拟用 MP 的 `PLUGIN_LOCAL_REPO_PATHS` 把本仓库设为本地插件源（仓库根放 `package.v3.json`，插件在 `plugins.v3/hebisubs/`），由 MP 安装/重载 | 不用手动拷文件进 `app/plugins/`；无 Docker 路径映射问题 | 生效（V3 开发指南 + 源码已核实，见 api-notes/mp-v3-plugin.md；2026-10-15 实机冒烟通过） |
