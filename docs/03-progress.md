@@ -5,7 +5,7 @@
 | 阶段 | 状态 | 开始 | 完成 | 产出 |
 |---|---|---|---|---|
 | P0 准备 | ✅ 完成 | 2026-10-15 | 2026-10-15 | 仓库、CLAUDE.md、文档 v0.1、api-notes（MP V3 开发要点 / 本机环境）、最小空插件 v0.0.1（实机冒烟通过） |
-| P1 研读海拉鲁 | ⬜ 未开始 | | | |
+| P1 研读海拉鲁 | 🟡 进行中 | 2026-10-15 | | study-hailulu/README 研读规则、01-module-map |
 | P2 接口实测 | ⬜ 未开始 | | | |
 | P3 需求定稿 + 架构 | ⬜ 未开始 | | | |
 | P4 MVP | ⬜ 未开始 | | | |
@@ -26,6 +26,16 @@
 - [x] 摸清本机 MP 环境：安装目录、Python 版本、配置文件位置、日志位置、插件安装目录 → 产出 `docs/api-notes/mp-local-env.md`（MP v3.0.7 / Python 3.14.7）
 - [x] 冒烟测试：最小空插件 `hebisubs` 被本机 MP V3 识别并加载（P0 验收）→ 2026-10-15 实机通过：市场发现、安装、启用、热重载均正常
 
+## P1 任务清单
+
+> 研读规则见 `docs/study-hailulu/README.md`；笔记编号与任务对应（01=S1 … 04=S4）。
+
+- [x] S1 P1-1-module-map：模块地图 + 研读规则 → `study-hailulu/01-module-map.md`
+- [ ] S2 P1-2-search-pain12：痛点①SubHD 不按下载量排序、②不显示制作组 → `02-*.md`
+- [ ] S3 P1-3-archive-pain3：痛点③整包（压缩包）无法处理 → `03-*.md`
+- [ ] S4 P1-4-auto-chain：整理完成 → 识别 → 搜索 → 下载 → 解包 → 落盘的完整链路 → `04-*.md`
+- [ ] C11 复盘：claude.ai 阶段对话评审 P1 笔记，提炼借鉴/避免清单
+
 ## 交接卡模板
 
 > 关闭对话或 Claude Code 会话前填写，追加到下方「交接记录」最上面。
@@ -42,6 +52,16 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-15 · P1-1-module-map
+- 阶段：P1（S1 完成）
+- 完成：README 新增「研读规则」6 条；`01-module-map.md`：参考仓 `8146218`、插件 v1.2.7；14 个子包 / 63 个实质模块的地图（职责、关键类/函数、调用方）；前端组件职责；Mermaid 子包调用图（A 在线 / B 上传 / C 自动三条主线）；三痛点嫌疑文件；依赖说明。只分段读了约 6 个文件，`_reference` 无改动
+- 决定：无新增
+- 主要发现：①② 结果模型 `OnlineSubtitleResult` 根本没有下载量、制作组字段，排序键也不含下载量；③ 三条主线共用 `upload_session.extract_subtitle_files`，rar/7z 依赖外部程序（默认 `/usr/bin/unar`、RAR 依赖模式默认 none），Windows 原生下大概率缺工具（推测）；海拉鲁带 SubHD 验证码自动识别，与 D004 相反，不借鉴
+- 未完成 / 下一步：S2 P1-2-search-pain12（从 `providers/subhd.py`、`models.py`、`service.py:154`、`matcher.py` 入手）
+- 卡点与风险：S3 需要用户补充「整包无法处理」的具体症状；架构靠 `owner.services` + 委托方法注入，只看 import 会漏调用关系，S4 需读 `runtime/service_factories.py` 与 `shell_helpers.py`
+- 需要更新的文档：无（本次已更新 README、01-module-map、本文件）
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P1，读 03-progress 最新交接卡后开始：S2 P1-2-search-pain12，按 study-hailulu/README 研读规则定位 SubHD 不按下载量排序、不显示制作组的原因
 
 ### 交接 2026-10-15 · P0 冒烟实机验证与收尾
 - 阶段：P0 → 完成
