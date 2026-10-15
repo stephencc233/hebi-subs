@@ -31,3 +31,9 @@ output/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Claude Code 本机配置（附加目录、个人权限），不提交
+.claude/settings.local.json
+
+# 参考仓库（独立 git 仓库，只读，不进本仓库）
+_reference/

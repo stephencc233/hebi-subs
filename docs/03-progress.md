@@ -16,10 +16,11 @@
 ## P0 任务清单
 
 - [x] 立项：方案、命名、文档体系（C00）
-- [ ] 建本地文件夹 `D:\Projects\hebi-subs`，放入初始骨架
-- [ ] `git init` + 首次提交；建 GitHub 私有仓库并推送
+- [x] 建本地文件夹 `D:\code\hebi-subs`，放入初始骨架
+- [x] `git init` + 首次提交；建 GitHub 私有仓库并推送
 - [ ] VS Code 安装 Claude Code 扩展并登录；确认读到 CLAUDE.md
-- [ ] 克隆海拉鲁到 `D:\Projects\_reference\`
+- [ ] 海拉鲁移入项目内 `_reference\hailulu`（D012）
+- [ ] 配置 `.claude/settings.local.json`：禁止编辑 `_reference`（D012）
 - [ ] 回答开放问题 1：MP V3 部署方式
 - [ ] 确认 MP V3 本地插件开发/加载方式（官方 V3 开发指南）
 

@@ -9,8 +9,8 @@
 
 - 中文名：**合璧字幕**（取“中西合璧”，中文与外文字幕合成一体）
 - 英文名 / 插件类名：**HebiSubs** ／ 插件目录 `hebisubs`（V3 目录规则以官方 V3 开发指南为准）
-- 仓库：`hebi-subs`（GitHub 私有仓库）｜本地路径：`D:\Projects\hebi-subs`
-- 参考项目：海拉鲁字幕大师（ifsherlock/MoviePilot-Plugins），只读克隆在 `D:\Projects\_reference\`
+- 仓库：`hebi-subs`（GitHub 私有仓库）｜本地路径：`D:\code\hebi-subs`
+- 参考项目：海拉鲁字幕大师（ifsherlock/MoviePilot-Plugins），只读克隆在项目内 `_reference\hailulu\`（已 gitignore）
 
 ## 2. 范围
 

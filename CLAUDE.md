@@ -20,10 +20,11 @@ MoviePilot **V3** 第三方插件：从 SubHD + ASSRT 获取字幕，在影片�
 | `scripts/` | 探索与实测脚本（可独立运行） |
 | `tests/`、`tests/fixtures/` | 测试与样本（字幕、NFO、压缩包） |
 | `docs/` | 文档主本 |
-| `D:\Projects\_reference\` | 参考仓库（海拉鲁等），**只读，不要修改，不要复制大段代码** |
+| `_reference/hailulu/` | 海拉鲁参考仓库（独立 git 仓库，已 gitignore）；`.claude/settings.local.json` 禁止编辑；**只读，不要复制大段代码** |
 
 ## 硬性约束
 
+0. **工作范围**：只在 `D:\code\hebi-subs` 内读写；`D:\code` 下其他文件夹一律不读不动。
 1. **数据安全**：开发与测试只写 `tests/` 或用户指定的测试目录；绝不写真实媒体库、下载目录；绝不修改或删除视频文件。
 2. **合规**：不破解、不绕过验证码；遵守限速（ASSRT 20 次/分钟，按 token 与 IP 共享）；SubHD 低频访问。
 3. **凭据**：ASSRT Token 等放环境变量或本地配置（已 gitignore），不写进代码、不提交。

@@ -13,4 +13,6 @@
 | D007 | 2026-10-15 | 先研读海拉鲁，再从头自写 | 学习现成实现的结构与坑，同时保持自己的架构和扩展空间 | 生效 |
 | D008 | 2026-10-15 | 工具分工：claude.ai 项目对话 = 架构/导师；VS Code Claude Code = 编码 | 两者各有所长；用文档与 CLAUDE.md 衔接 | 生效 |
 | D009 | 2026-10-15 | 文档主本在仓库 `docs/`，项目知识库为镜像 | 文档随代码版本化；镜像保证新对话可读 | 生效 |
-| D010 | 2026-10-15 | 命名：合璧字幕 HebiSubs，仓库 `hebi-subs`，路径 `D:\Projects\hebi-subs` | 寓意中西合璧；英文名简短不与官方插件冲突 | 生效 |
+| D010 | 2026-10-15 | 命名：合璧字幕 HebiSubs，仓库 `hebi-subs`，路径 `D:\code\hebi-subs` | 寓意中西合璧；英文名简短不与官方插件冲突 | 生效 |
+| D011 | 2026-10-15 | 项目实际路径为 `D:\code\hebi-subs`，参考仓库 `D:\code\_reference\hailulu`；用 `.claude/settings.local.json` 的 additionalDirectories + Edit deny 规则实现只读访问 | CLAUDE.md 只是指引，权限规则才由 Claude Code 强制执行；本机配置不提交 | 被 D012 取代（参考仓库位置） |
+| D012 | 2026-10-15 | 参考仓库移入项目内 `D:\code\hebi-subs\_reference\hailulu`，加入 .gitignore；只读改用 `Edit(/_reference/**)` deny 规则；项目只在 `D:\code\hebi-subs` 内活动 | `D:\code` 下其他文件夹不能动；项目内目录默认可读，无需附加目录 | 生效（取代 D011 的位置部分） |
