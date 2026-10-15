@@ -24,7 +24,7 @@
 - [x] 回答开放问题 1：MP V3 部署方式 → Windows 原生（D013）
 - [x] 确认 MP V3 本地插件开发/加载方式（官方 V3 开发指南）→ 产出 `docs/api-notes/mp-v3-plugin.md`（文档 + 源码核实，待实机冒烟）
 - [x] 摸清本机 MP 环境：安装目录、Python 版本、配置文件位置、日志位置、插件安装目录 → 产出 `docs/api-notes/mp-local-env.md`（MP v3.0.7 / Python 3.14.7）
-- [ ] 冒烟测试：最小空插件 `hebisubs` 被本机 MP V3 识别并加载（P0 验收）
+- [ ] 冒烟测试：最小空插件 `hebisubs` 被本机 MP V3 识别并加载（P0 验收）→ 代码已就绪（`package.v3.json` + `plugins.v3/hebisubs/__init__.py`，v0.0.1），**待用户在 MP 侧配置并实机验证**
 
 ## 交接卡模板
 
@@ -42,6 +42,15 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-15 · P0 任务 C 最小空插件
+- 阶段：P0
+- 完成：新建根目录 `package.v3.json`（键 `HebiSubs`，v0.0.1，`system_version >=3.0.0`）与 `plugins.v3/hebisubs/__init__.py`（6 个必需方法空实现 + 启用开关；`init_plugin` 打印「【合璧字幕】HebiSubs v0.0.1 加载成功，启用状态=…，数据目录=…」）；只读核对本机 v3.0.7 的 `app.sdk.plugin._PluginBase`、`app.sdk.logging.logger` 存在；用 MP 自带 Python 3.14.7 做语法解析通过
+- 决定：无新增
+- 未完成 / 下一步：用户在 MP 侧操作——备份并修改 `app.env`（`PLUGIN_LOCAL_REPO_PATHS=D:\code\hebi-subs`、`PLUGIN_AUTO_RELOAD=true`、`DEBUG=true`）→ 重启 → 插件市场安装「合璧字幕」→ 启用 → 查日志；可选热重载验证。通过后勾选 P0 冒烟项，并把结论回填 mp-v3-plugin.md §8（#3 配置是否需重启、#6 监听 `_reference` 的影响、#8 图标、#9 导入警告）与 mp-local-env.md §9（#1、#3 数据目录、#4 插件日志文件名）
+- 卡点与风险：图标暂借官方仓 `chinesesubfinder.png` 的 URL（占位）；`app.env` 中 Windows 反斜杠路径能否被正确解析未实测；MP 会递归监听整个仓库（含 `_reference/`）
+- 需要更新的文档：实机验证后更新上述两份 api-notes、本文件看板（P0 → 完成）、CLAUDE.md 目录表「P0 核实」字样
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P0，读 03-progress 最新交接卡后开始：根据我的实机冒烟结果回填文档并收尾 P0
 
 ### 交接 2026-10-15 · C00 立项
 - 阶段：P0
