@@ -5,8 +5,8 @@
 | 阶段 | 状态 | 开始 | 完成 | 产出 |
 |---|---|---|---|---|
 | P0 准备 | ✅ 完成 | 2026-10-15 | 2026-10-15 | 仓库、CLAUDE.md、文档 v0.1、api-notes（MP V3 开发要点 / 本机环境）、最小空插件 v0.0.1（实机冒烟通过） |
-| P1 研读海拉鲁 | 🟡 进行中 | 2026-10-15 | | study-hailulu/README 研读规则 + 笔记目录、01-module-map、02-search-pain12、03-archive-pain3、04-auto-chain |
-| P2 接口实测 | ⬜ 未开始 | | | |
+| P1 研读海拉鲁 | ✅ 完成 | 2026-10-15 | 2026-10-16 | study-hailulu 01–05（模块地图、痛点①②、痛点③、自动链路、复盘）；01-requirements v0.2；D014–D017 |
+| P2 接口实测 | 🟡 进行中 | 2026-10-16 | | |
 | P3 需求定稿 + 架构 | ⬜ 未开始 | | | |
 | P4 MVP | ⬜ 未开始 | | | |
 | P5 自动化 | ⬜ 未开始 | | | |
@@ -34,7 +34,17 @@
 - [x] S2 P1-2-search-pain12：痛点①SubHD 不按下载量排序、②不显示制作组 → `study-hailulu/02-search-pain12.md`
 - [x] S3 P1-3-archive-pain3：痛点③整包（压缩包）无法处理 → `study-hailulu/03-archive-pain3.md`
 - [x] S4 P1-4-auto-chain：整理完成 → 识别 → 搜索 → 下载 → 解包 → 落盘的完整链路 → `study-hailulu/04-auto-chain.md`
-- [ ] C11 复盘：claude.ai 阶段对话评审 P1 笔记，提炼借鉴/避免清单
+- [x] C11 复盘：claude.ai 阶段对话评审 P1 笔记，提炼借鉴/避免清单 → `study-hailulu/05-p1-review.md`
+
+## P2 任务清单
+
+> 顺序：P2-A → P2-B → P2-C → P2-D → C12 复盘。P2-E（MP 事件实测）推迟到 P5。输入见 `study-hailulu/05-p1-review.md` §6。
+
+- [ ] P2-A P2-subhd-probe：SubHD 页面结构（离线解析手动保存的 HTML）→ `api-notes/subhd.md`
+- [ ] P2-B P2-assrt-probe：ASSRT API 字段、分页、限额 → `api-notes/assrt.md` + `scripts/assrt_probe.py`
+- [ ] P2-C P2-archive-tools：Windows 解包工具链 + 字幕包样本统计与真值标注 → `api-notes/archive-tools.md`
+- [ ] P2-D P2-jellyfin-naming：Jellyfin 外挂字幕命名与子目录识别 → `api-notes/jellyfin-subtitle-naming.md`
+- [ ] C12 复盘：claude.ai 阶段对话定 F6.6 / F6.7、D015 定稿，确认进入 P3
 
 ## 交接卡模板
 
@@ -52,6 +62,15 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-16 · C11 P1 复盘
+- 阶段：P1 → 完成
+- 完成：评审 study-hailulu 01–04，三个痛点根因成立；修正 3 处（自动触发身份以事件 mediainfo 为主、历史扫描才读 NFO；语言判定未验证前不据此跳过；SubHD 详情页请求预算）；借鉴 9 条 / 避免 10 条 → `study-hailulu/05-p1-review.md`；01-requirements 升 v0.2；CLAUDE.md 第 4 条改为 GPL-3.0（D016）
+- 决定：D014（候选模型与排序层级）、D015（解包方向，拟定）、D016（GPL 只学思路）、D017（华语片也处理，只需简中）
+- 未完成 / 下一步：Claude Code 提交本次文档改动；按 P2 任务清单顺序执行 P2-A → P2-D
+- 卡点与风险：SubHD 列表页若没有下载量 / 制作组，F4.1/F4.2 需要详情页请求，与低频约束冲突；P2-E 推迟到 P5，事件形态与热重载两轮仍未实测
+- 需要更新的文档：无（本次已更新 01、02、03、CLAUDE.md、study-hailulu/README、05、api-notes/README；知识库镜像已同步 01–03）
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P2，读 03-progress 最新交接卡后开始：P2-A SubHD 页面结构探测
 
 ### 交接 2026-10-15 · P1-4-auto-chain
 - 阶段：P1（S4 完成，S1–S4 全部完成）

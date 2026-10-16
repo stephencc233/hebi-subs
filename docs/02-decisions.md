@@ -17,3 +17,7 @@
 | D011 | 2026-10-15 | 项目实际路径为 `D:\code\hebi-subs`，参考仓库 `D:\code\_reference\hailulu`；用 `.claude/settings.local.json` 的 additionalDirectories + Edit deny 规则实现只读访问 | CLAUDE.md 只是指引，权限规则才由 Claude Code 强制执行；本机配置不提交 | 被 D012 取代（参考仓库位置） |
 | D012 | 2026-10-15 | 参考仓库移入项目内 `D:\code\hebi-subs\_reference\hailulu`，加入 .gitignore；只读改用 `Edit(/_reference/**)` deny 规则；项目只在 `D:\code\hebi-subs` 内活动 | `D:\code` 下其他文件夹不能动；项目内目录默认可读，无需附加目录 | 生效（取代 D011 的位置部分） |
 | D013 | 2026-10-15 | MP V3 为 Windows 原生运行；本地开发拟用 MP 的 `PLUGIN_LOCAL_REPO_PATHS` 把本仓库设为本地插件源（仓库根放 `package.v3.json`，插件在 `plugins.v3/hebisubs/`），由 MP 安装/重载 | 不用手动拷文件进 `app/plugins/`；无 Docker 路径映射问题 | 生效（V3 开发指南 + 源码已核实，见 api-notes/mp-v3-plugin.md；2026-10-15 实机冒烟通过） |
+| D014 | 2026-10-16 | 候选数据模型必须带质量字段（下载量 / 评分 / 上传时间，拿不到记为「无」）、来源字段（制作组、上传人、来源类型）和源站原始位置；排序只在核心层统一做一次，界面只做显示排序，字幕源优先级最多是弱权重，不按标题打平 | P1 研读：海拉鲁痛点①②的根因是这些字段从源站解析起就没进入数据流，加上前后端两套排序、标题倒序打平（study-hailulu/02、05） | 生效（字段细节 P3 定） |
+| D015 | 2026-10-16 | 解包方向：zip 用标准库；rar / 7z 用外部 7-Zip；工具按候选清单探测（配置路径 → PATH → 常见安装位置）并实际运行一次确认可用；不用 unar / rarfile | 海拉鲁痛点③根因是只认名为 `unar` 的程序、按 Linux/Docker 设计；rarfile 读取压缩成员仍需外部工具（study-hailulu/03） | 拟定（P2 验证 7-Zip、tar.exe、py7zr 后改为生效） |
+| D016 | 2026-10-16 | 海拉鲁已确认 GPL-3.0：长期只学思路、不复制代码 | 复制代码会使本项目受 GPL 约束；取代 CLAUDE.md 第 4 条「许可证未确认前」的临时表述 | 生效 |
+| D017 | 2026-10-16 | 华语片也处理，只需简中字幕，不要求双语 | 用户决定（P1 复盘开放问题 6）；海拉鲁默认跳过华语片 | 生效（判定依据与份数 P3 定） |
