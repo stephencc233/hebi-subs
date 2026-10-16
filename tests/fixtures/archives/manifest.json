@@ -1,0 +1,594 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-16 02:33:10 AM",
+  "description": "P2-C 字幕包样本正确答案：每个包里每个字幕文件一条。语言按对话正文判断（不看 ASS 文件头和文件名），由 scripts/archive_probe.py 草稿 + 人工逐条核对得出。字段说明见 docs/api-notes/archive-tools.md §5。",
+  "archives": [
+    {
+      "archive": "assrt/[秋刀鱼之味].An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.zip",
+      "sha256": "c9efd097e38a98972ee3d80cada86e10f69eafd59eeffb10e32d6da5800268b5",
+      "true_format": "zip",
+      "extension_matches": true,
+      "duplicate_of": null,
+      "non_subtitle_members": [],
+      "bilingual_form": "none",
+      "subtitles": [
+        {
+          "member_path": "[秋刀鱼之味].An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.srt",
+          "name_encoding": "gb18030",
+          "encoding": "utf-16-le-bom",
+          "format": "srt",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "UTF-16 LE 带 BOM；包内名 GBK、无 UTF-8 标志"
+        }
+      ]
+    },
+    {
+      "archive": "assrt/[秋刀鱼之味][CC标准收藏版 DIY花絮预告简繁中字]An Autumn Afternoon 1962 CC Blu-Ray 1080P AVC LPCM 1.0-DIY-Anitafayer.zip",
+      "sha256": "411086fc0bb7e41eb672c79144c62b4f996aed70711aa9587e89601d8acb05a1",
+      "true_format": "zip",
+      "extension_matches": true,
+      "duplicate_of": null,
+      "non_subtitle_members": [
+        "字幕说明.txt"
+      ],
+      "bilingual_form": "none",
+      "subtitles": [
+        {
+          "member_path": "01修订正片 chs.ass",
+          "name_encoding": "gb18030",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "正片；包内名 GBK"
+        },
+        {
+          "member_path": "01修订正片 cht.ass",
+          "name_encoding": "gb18030",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "cht",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "正片繁体，对话与 chs 版逐句对应"
+        },
+        {
+          "member_path": "02访谈_chs.ass",
+          "name_encoding": "gb18030",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "extra",
+          "part": null,
+          "confidence": "high",
+          "note": "花絮：访谈（字幕说明.txt：根据 DVD OCR 并重译）"
+        },
+        {
+          "member_path": "02访谈_cht.ass",
+          "name_encoding": "gb18030",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "extra",
+          "part": null,
+          "confidence": "high",
+          "note": "文件名标 cht，但对话正文与 02访谈_chs.ass 逐字相同（简体），两者只差 Style 字体 FZHei-B01S→B01T；文件名语言不可信的实例"
+        },
+        {
+          "member_path": "03预告chs.ass",
+          "name_encoding": "gb18030",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "extra",
+          "part": null,
+          "confidence": "high",
+          "note": "花絮：预告 1"
+        },
+        {
+          "member_path": "03预告cht.ass",
+          "name_encoding": "gb18030",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "cht",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "extra",
+          "part": null,
+          "confidence": "high",
+          "note": "花絮：预告 1，繁体"
+        },
+        {
+          "member_path": "04预告2 chs.ass",
+          "name_encoding": "gb18030",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "extra",
+          "part": null,
+          "confidence": "high",
+          "note": "花絮：预告 2"
+        },
+        {
+          "member_path": "04预告2 cht.ass",
+          "name_encoding": "gb18030",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "cht",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "extra",
+          "part": null,
+          "confidence": "high",
+          "note": "花絮：预告 2，繁体"
+        }
+      ]
+    },
+    {
+      "archive": "assrt/[阳光灿烂的日子]日二修改.rar",
+      "sha256": "60eedec564a7792a74757ee9ba225cf4a96eb86ed30fa73745b7217fb0a432f9",
+      "true_format": "rar4",
+      "extension_matches": true,
+      "duplicate_of": null,
+      "non_subtitle_members": [],
+      "bilingual_form": "none",
+      "subtitles": [
+        {
+          "member_path": "[阳光灿烂的日子]日二修改.srt",
+          "name_encoding": "rar-unicode",
+          "encoding": "gb18030",
+          "format": "srt",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "华语片（D017 只需简中）；GBK 无 BOM；RAR4 文件名带 Unicode 标志"
+        }
+      ]
+    },
+    {
+      "archive": "assrt/In.the.heat.of.the.sun.dvdrip.divx-imbt.CnEn.subs.zip",
+      "sha256": "caf84476568f3834ef94c801be764653b6ab4b1fb7986e738f4bc2021cc9ad2b",
+      "true_format": "zip",
+      "extension_matches": true,
+      "duplicate_of": null,
+      "non_subtitle_members": [],
+      "bilingual_form": "separate-files",
+      "subtitles": [
+        {
+          "member_path": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd1.dvdrip.divx-imbt.chs.srt",
+          "name_encoding": "gb18030",
+          "encoding": "gb18030",
+          "format": "srt",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "part",
+          "part": "cd1",
+          "confidence": "high",
+          "note": "分段字幕 CD1；GBK 无 BOM"
+        },
+        {
+          "member_path": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd1.dvdrip.divx-imbt.eng.srt",
+          "name_encoding": "gb18030",
+          "encoding": "gb18030",
+          "format": "srt",
+          "language": "eng",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "part",
+          "part": "cd1",
+          "confidence": "high",
+          "note": "英文单语；第 412 条附近混入一行 GBK 中文「来啊现在就来吧」，所以编码记 gb18030 而非 ASCII"
+        },
+        {
+          "member_path": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd2.dvdrip.divx-imbt.chs.srt",
+          "name_encoding": "gb18030",
+          "encoding": "gb18030",
+          "format": "srt",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "part",
+          "part": "cd2",
+          "confidence": "high",
+          "note": "分段字幕 CD2；GBK 无 BOM"
+        },
+        {
+          "member_path": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd2.dvdrip.divx-imbt.eng.srt",
+          "name_encoding": "gb18030",
+          "encoding": "ascii",
+          "format": "srt",
+          "language": "eng",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "part",
+          "part": "cd2",
+          "confidence": "high",
+          "note": "英文单语，纯 ASCII（探针记 utf-8，二者等价）"
+        }
+      ]
+    },
+    {
+      "archive": "assrt/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.zip",
+      "sha256": "54e3f390f09503e951080498710372d1e9187371ddb9253a736cd32f5b33c3b6",
+      "true_format": "zip",
+      "extension_matches": true,
+      "duplicate_of": null,
+      "non_subtitle_members": [],
+      "bilingual_form": "single-file+separate-files",
+      "subtitles": [
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.导评字幕.srt",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "commentary",
+          "part": null,
+          "confidence": "high",
+          "note": "导演评论音轨（德拉邦特讲评）的简体字幕，不是正片对白；挑选时必须排除"
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.ass",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs+eng",
+          "bilingual": true,
+          "bilingual_layout": "separate-events",
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "Style chs / eng 分开的两组事件；样式字号 eng 19、chs 17"
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.srt",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "language": "chs+eng",
+          "bilingual": true,
+          "bilingual_layout": "separate-events",
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "同一时间轴拆成两个 SRT 条目（先英后中），不是一个条目上下两行"
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体.ass",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "正片简体单语"
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文&简体.ass",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs+eng",
+          "bilingual": true,
+          "bilingual_layout": "separate-events",
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "对白与「简体&英文.ass」相同，只是样式字号（chs 20、eng 17）与事件顺序（先英后中）不同"
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文.ass",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "eng",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "正片英文单语"
+        }
+      ]
+    },
+    {
+      "archive": "assrt/肖申克的救赎.The.Shawshank.Redemption.1994.2160p.UHD.BluRay.4K适配HDR.zip",
+      "sha256": "583f3edf6a16618140e126e430d3d4dea9beb626c350e9d34d620992702b6c5e",
+      "true_format": "rar4",
+      "extension_matches": false,
+      "duplicate_of": null,
+      "non_subtitle_members": [],
+      "bilingual_form": "single-file",
+      "subtitles": [
+        {
+          "member_path": "肖申克的救赎.The.Shawshank.Redemption.1994.2160p.UHD.BluRay.x265-REDANDY.ass",
+          "name_encoding": "rar-unicode",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs+eng",
+          "bilingual": true,
+          "bilingual_layout": "same-event",
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "扩展名 .zip 实为 RAR4；同一事件内 中文\\N英文；文件名没有语言标记"
+        }
+      ]
+    },
+    {
+      "archive": "subhd/An.Autumn.Afternoon.1962.1080p.Bluray.x264-usury.zip",
+      "sha256": "312183b82bfece0e695d3e6667cdab3fd8efedef032b89ebc1ee04161f186048",
+      "true_format": "zip",
+      "extension_matches": true,
+      "duplicate_of": null,
+      "non_subtitle_members": [],
+      "bilingual_form": "none",
+      "subtitles": [
+        {
+          "member_path": "An.Autumn.Afternoon.1962.1080p.Bluray.x264-usury.srt",
+          "name_encoding": "ascii",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "日语片的简中字幕，文件名没有语言标记"
+        }
+      ]
+    },
+    {
+      "archive": "subhd/An.Autumn.Afternoon.1962.720p.BluRay.x264-WiKi.rar",
+      "sha256": "b60c72b3f53dd7b6745404ba4f462974064a8ca2215257c64d4031de2f793a47",
+      "true_format": "rar4",
+      "extension_matches": true,
+      "duplicate_of": null,
+      "non_subtitle_members": [],
+      "bilingual_form": "none",
+      "subtitles": [
+        {
+          "member_path": "秋刀鱼之味 肥内提供中字 简体化.srt",
+          "name_encoding": "rar-unicode",
+          "encoding": "gb18030",
+          "format": "srt",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "由同包繁体版「肥内提供中字」转简体得到；GBK 无 BOM"
+        },
+        {
+          "member_path": "秋刀鱼之味 肥内提供中字.srt",
+          "name_encoding": "rar-unicode",
+          "encoding": "utf-16-le-bom",
+          "format": "srt",
+          "language": "cht",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "UTF-16 LE 带 BOM；繁体；文件名没有语言标记"
+        }
+      ]
+    },
+    {
+      "archive": "subhd/In.the.Heat.of.the.Sun.1994.CHINESE.1080p.BluRay.x264.DTS-NOGRP 官方简体字幕.zip",
+      "sha256": "045d63d62cbfba41abfe95a90636b753352ba9f357092b713b298ce97973a1c1",
+      "true_format": "zip",
+      "extension_matches": true,
+      "duplicate_of": null,
+      "non_subtitle_members": [],
+      "bilingual_form": "none",
+      "subtitles": [
+        {
+          "member_path": "In.the.Heat.of.the.Sun.1994.CHINESE.1080p.BluRay.x264.DTS-NOGRP.chs.srt",
+          "name_encoding": "ascii",
+          "encoding": "utf-8",
+          "format": "srt",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "华语片官方简体；UTF-8 无 BOM；zip 用了数据描述符（flag 0x0008）"
+        }
+      ]
+    },
+    {
+      "archive": "subhd/The.Shawshank.Redemption.1994.2160p.BluRay.x265.10bit.SDR.DTS-HD.MA.5.1-SWTYBLZ.zip",
+      "sha256": "8fa1c39fead379b94f1d8eeb05838186ae35390c7bc5b8e43d8225f9e4960239",
+      "true_format": "zip",
+      "extension_matches": true,
+      "duplicate_of": null,
+      "non_subtitle_members": [],
+      "bilingual_form": "single-file",
+      "subtitles": [
+        {
+          "member_path": "The.Shawshank.Redemption.1994.2160p.BluRay.x265.10bit.SDR.DTS-HD.MA.5.1-SWTYBLZ.zh.ass",
+          "name_encoding": "ascii",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs+eng",
+          "bilingual": true,
+          "bilingual_layout": "same-event",
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "文件名只标 zh，实为中英双语（同一事件内 中文\\N英文）"
+        }
+      ]
+    },
+    {
+      "archive": "subhd/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.zip",
+      "sha256": "54e3f390f09503e951080498710372d1e9187371ddb9253a736cd32f5b33c3b6",
+      "true_format": "zip",
+      "extension_matches": true,
+      "duplicate_of": "assrt/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.zip",
+      "non_subtitle_members": [],
+      "bilingual_form": "single-file+separate-files",
+      "subtitles": [
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.导评字幕.srt",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "commentary",
+          "part": null,
+          "confidence": "high",
+          "note": "导演评论音轨（德拉邦特讲评）的简体字幕，不是正片对白；挑选时必须排除；与 duplicate_of 包字节相同"
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.ass",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs+eng",
+          "bilingual": true,
+          "bilingual_layout": "separate-events",
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "Style chs / eng 分开的两组事件；样式字号 eng 19、chs 17；与 duplicate_of 包字节相同"
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.srt",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "language": "chs+eng",
+          "bilingual": true,
+          "bilingual_layout": "separate-events",
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "同一时间轴拆成两个 SRT 条目（先英后中），不是一个条目上下两行；与 duplicate_of 包字节相同"
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体.ass",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "正片简体单语；与 duplicate_of 包字节相同"
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文&简体.ass",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "chs+eng",
+          "bilingual": true,
+          "bilingual_layout": "separate-events",
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "对白与「简体&英文.ass」相同，只是样式字号（chs 20、eng 17）与事件顺序（先英后中）不同；与 duplicate_of 包字节相同"
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文.ass",
+          "name_encoding": "utf8-flag",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "language": "eng",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "正片英文单语；与 duplicate_of 包字节相同"
+        }
+      ]
+    },
+    {
+      "archive": "subhd/阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.1080p.WEB-DL.H264.AAC-TJUPT.zip",
+      "sha256": "f6954d21e26d46de46faa057f8aedc84abf39df04ff819334a4339ef9adf460b",
+      "true_format": "zip",
+      "extension_matches": true,
+      "duplicate_of": null,
+      "non_subtitle_members": [],
+      "bilingual_form": "none",
+      "subtitles": [
+        {
+          "member_path": "阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.1080p.WEB-DL.H264.AAC-TJUPT.srt",
+          "name_encoding": "unicode-path-extra",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "华语片简中；包内名 GBK 无 UTF-8 标志，但带 0x7075 Unicode 路径字段"
+        }
+      ]
+    },
+    {
+      "archive": "subhd/阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.CHINESE.1080p.BluRay.x265-VXT.简中.ass",
+      "sha256": "2b4fb1212372a2f38e8e79d82068adb1ade597d4c16ed5612b9217654b089d03",
+      "true_format": "loose",
+      "extension_matches": null,
+      "duplicate_of": null,
+      "non_subtitle_members": [],
+      "bilingual_form": "none",
+      "subtitles": [
+        {
+          "member_path": null,
+          "name_encoding": null,
+          "encoding": "utf-8-sig",
+          "format": "ssa",
+          "language": "chs",
+          "bilingual": false,
+          "bilingual_layout": null,
+          "content_scope": "feature",
+          "part": null,
+          "confidence": "high",
+          "note": "散装文件；扩展名 .ass，内容是 SSA v4（[V4 Styles]、Format 含 Marked）"
+        }
+      ]
+    }
+  ]
+}

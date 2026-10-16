@@ -1,0 +1,4234 @@
+{
+  "generated": "2026-10-16 02:33:18 AM",
+  "environment": {
+    "python": "3.14.7",
+    "code_pages": {
+      "ansi": 936,
+      "oem": 936
+    }
+  },
+  "tool_discovery": {
+    "tools": {
+      "7z": {
+        "path": "D:\\Scoop\\shims\\7z.EXE",
+        "version": "7-Zip 26.03 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03",
+        "source": "PATH:7z"
+      },
+      "tar": {
+        "path": "C:\\WINDOWS\\system32\\tar.EXE",
+        "version": "bsdtar 3.8.4 - libarchive 3.8.4 zlib/1.2.5.f-ipp cng/2.0 libb2/bundled",
+        "source": "PATH:tar"
+      },
+      "py7zr": {
+        "path": null,
+        "version": "1.1.4",
+        "source": "import"
+      },
+      "zipfile": {
+        "path": null,
+        "version": "Python 3.14.7 标准库",
+        "source": "stdlib"
+      }
+    },
+    "candidates": [
+      {
+        "tool": "7z",
+        "source": "PATH:7z",
+        "path": "D:\\Scoop\\shims\\7z.EXE",
+        "exists": true,
+        "returncode": 0,
+        "version": "7-Zip 26.03 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03",
+        "usable": true
+      },
+      {
+        "tool": "7z",
+        "source": "Program Files",
+        "path": "C:\\Program Files\\7-Zip\\7z.exe",
+        "exists": false
+      },
+      {
+        "tool": "7z",
+        "source": "Program Files",
+        "path": "C:\\Program Files (x86)\\7-Zip\\7z.exe",
+        "exists": false
+      },
+      {
+        "tool": "7z",
+        "source": "Scoop",
+        "path": "C:\\Users\\mango\\scoop\\apps\\7zip\\current\\7z.exe",
+        "exists": false
+      },
+      {
+        "tool": "7z",
+        "source": "Scoop",
+        "path": "D:\\Scoop\\apps\\7zip\\current\\7z.exe",
+        "exists": true,
+        "returncode": 0,
+        "version": "7-Zip 26.03 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03",
+        "usable": true
+      },
+      {
+        "tool": "7z",
+        "source": "Scoop",
+        "path": "C:\\Scoop\\apps\\7zip\\current\\7z.exe",
+        "exists": false
+      },
+      {
+        "tool": "7z",
+        "source": "Chocolatey",
+        "path": "C:\\ProgramData\\chocolatey\\bin\\7z.exe",
+        "exists": false
+      },
+      {
+        "tool": "tar",
+        "source": "PATH:tar",
+        "path": "C:\\WINDOWS\\system32\\tar.EXE",
+        "exists": true,
+        "returncode": 0,
+        "version": "bsdtar 3.8.4 - libarchive 3.8.4 zlib/1.2.5.f-ipp cng/2.0 libb2/bundled",
+        "usable": true
+      },
+      {
+        "tool": "py7zr",
+        "source": "import",
+        "path": null,
+        "exists": true,
+        "version": "1.1.4",
+        "usable": true
+      }
+    ]
+  },
+  "synthetic_build": [
+    {
+      "name": "synthetic-lzma2.7z",
+      "expected_files": [
+        "合成样本/简体中文.chs.srt",
+        "合成样本/子目录/英文.eng.srt"
+      ]
+    },
+    {
+      "name": "synthetic-copy.7z",
+      "expected_files": [
+        "合成样本/简体中文.chs.srt"
+      ]
+    },
+    {
+      "name": "synthetic-gbk-names-7z.zip",
+      "expected_files": [
+        "简体字幕/秋刀鱼之味.简体.srt",
+        "简体字幕/肖申克的救赎.英文.srt"
+      ],
+      "raw_names_verified": true
+    },
+    {
+      "name": "synthetic-big5-names-7z.zip",
+      "expected_files": [
+        "繁體字幕/成功的電影.繁體.srt",
+        "繁體字幕/許願.英文.srt"
+      ],
+      "raw_names_verified": true
+    },
+    {
+      "name": "synthetic-gbk-names-raw.zip",
+      "expected_files": [
+        "简体字幕/秋刀鱼之味.简体.srt",
+        "简体字幕/肖申克的救赎.英文.srt"
+      ]
+    },
+    {
+      "name": "synthetic-big5-names-raw.zip",
+      "expected_files": [
+        "繁體字幕/成功的電影.繁體.srt",
+        "繁體字幕/許願.英文.srt"
+      ]
+    },
+    {
+      "name": "synthetic-nested.zip",
+      "expected_files": [
+        "外层目录/中英双语.chs&eng.srt",
+        "外层目录/内层/inner.zip",
+        "外层目录/内层/inner.7z"
+      ]
+    }
+  ],
+  "archives": [
+    {
+      "archive": "assrt/[秋刀鱼之味].An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.zip",
+      "origin": "real",
+      "depth": 0,
+      "size": 34152,
+      "sha256": "c9efd097e38a98972ee3d80cada86e10f69eafd59eeffb10e32d6da5800268b5",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5bc7efb5b6d3e3d6aeceb65d2e416e2e417574756d6e2e41667465726e6f6f6e2e313936322e4456445269702e587669442e494d42542e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "[秋刀鱼之味].An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "[⑦絮赶眳庤].An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.srt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "[秋刀鱼之味].An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.srt",
+          "is_dir": false,
+          "size": 134196
+        }
+      ],
+      "member_count": 1,
+      "max_directory_depth": 0,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "[秋刀鱼之味].An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.srt",
+          "encoding": "utf-16-le-bom",
+          "format": "srt",
+          "events": 1395,
+          "dialogue_lines": 1395,
+          "line_kinds": {
+            "han": 1394,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 1878,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "请进",
+            "为什么会变成那样？真是笨蛋",
+            "走了吗？嗯，走了",
+            "一起去吧，去吧",
+            "在生什么闷气，想去就去啊",
+            "老师，睡一下吧，我会送你回家",
+            "啊？",
+            "我也这样认为"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "assrt/[秋刀鱼之味][CC标准收藏版 DIY花絮预告简繁中字]An Autumn Afternoon 1962 CC Blu-Ray 1080P AVC LPCM 1.0-DIY-Anitafayer.zip",
+      "origin": "real",
+      "depth": 0,
+      "size": 92538,
+      "sha256": "411086fc0bb7e41eb672c79144c62b4f996aed70711aa9587e89601d8acb05a1",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "3031d0deb6a9d5fdc6ac206368732e617373",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "01修订正片 chs.ass",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "01党隆淏え chs.ass",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "01修订正片 chs.ass",
+          "is_dir": false,
+          "size": 111485
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "3031d0deb6a9d5fdc6ac206368742e617373",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "01修订正片 cht.ass",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "01党隆淏え cht.ass",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "01修订正片 cht.ass",
+          "is_dir": false,
+          "size": 111496
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "3032b7c3ccb85f6368732e617373",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "02访谈_chs.ass",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "02溼抶_chs.ass",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "02访谈_chs.ass",
+          "is_dir": false,
+          "size": 19877
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "3032b7c3ccb85f6368742e617373",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "02访谈_cht.ass",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "02溼抶_cht.ass",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "02访谈_cht.ass",
+          "is_dir": false,
+          "size": 19877
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "3033d4a4b8e66368732e617373",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "03预告chs.ass",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "03啎豢chs.ass",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "03预告chs.ass",
+          "is_dir": false,
+          "size": 4912
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "3033d4a4b8e66368742e617373",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "03预告cht.ass",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "03啎豢cht.ass",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "03预告cht.ass",
+          "is_dir": false,
+          "size": 4918
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "3034d4a4b8e632206368732e617373",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "04预告2 chs.ass",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "04啎豢2 chs.ass",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "04预告2 chs.ass",
+          "is_dir": false,
+          "size": 6167
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "3034d4a4b8e632206368742e617373",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "04预告2 cht.ass",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "04啎豢2 cht.ass",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "04预告2 cht.ass",
+          "is_dir": false,
+          "size": 5866
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "d7d6c4bbcbb5c3f72e747874",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "字幕说明.txt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "趼躉佽隴.txt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "字幕说明.txt",
+          "is_dir": false,
+          "size": 733
+        }
+      ],
+      "member_count": 9,
+      "max_directory_depth": 0,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 9,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 9,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 9,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "01修订正片 chs.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 1346,
+          "dialogue_lines": 1782,
+          "line_kinds": {
+            "han": 1781,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 2239,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "Default": {
+              "han": 1781,
+              "latin": 1
+            }
+          },
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "片名：秋刀鱼之味",
+            "请保重",
+            "老师，帽子在楼下呀",
+            "告辞了",
+            "去问机械部的塩川看看吧， / 他会想要的",
+            "就让他睡吧。 / 瓢箪也很寂寞的呀",
+            "让您久等了",
+            "啊，幸好是谎言"
+          ]
+        },
+        {
+          "member_path": "01修订正片 cht.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 1346,
+          "dialogue_lines": 1782,
+          "line_kinds": {
+            "han": 1781,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 2239,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "Default": {
+              "han": 1781,
+              "latin": 1
+            }
+          },
+          "suggested_language": "cht",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "片名：秋刀魚之味",
+            "請保重",
+            "老師，帽子在樓下呀",
+            "告辭了",
+            "去問機械部的鹽川看看吧， / 他會想要的",
+            "就讓他睡吧。 / 瓢簞也很寂寞的呀",
+            "讓您久等了",
+            "啊，幸好是謊言"
+          ]
+        },
+        {
+          "member_path": "02访谈_chs.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 183,
+          "dialogue_lines": 281,
+          "line_kinds": {
+            "han": 281,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 396,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "Default": {
+              "han": 281
+            }
+          },
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "最近上映了一部小津安二郎 / 的电影《东京物语》",
+            "他的摄像机总是固定的",
+            "在他逝世15年后的今天， / 这些电影才在法国得以上映。",
+            "园艺、茶会、诗歌、",
+            "场景的构成",
+            "是一种非常谦谨的电影技艺",
+            "据说小津安二郎的电影构造 / 很像“海卡”（日本俳句）",
+            "小津安二郎沉默而怅惘"
+          ]
+        },
+        {
+          "member_path": "02访谈_cht.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 183,
+          "dialogue_lines": 281,
+          "line_kinds": {
+            "han": 281,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 396,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "Default": {
+              "han": 281
+            }
+          },
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "最近上映了一部小津安二郎 / 的电影《东京物语》",
+            "他的摄像机总是固定的",
+            "在他逝世15年后的今天， / 这些电影才在法国得以上映。",
+            "园艺、茶会、诗歌、",
+            "场景的构成",
+            "是一种非常谦谨的电影技艺",
+            "据说小津安二郎的电影构造 / 很像“海卡”（日本俳句）",
+            "小津安二郎沉默而怅惘"
+          ]
+        },
+        {
+          "member_path": "03预告chs.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 41,
+          "dialogue_lines": 49,
+          "line_kinds": {
+            "han": 49,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 48,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "Default": {
+              "han": 49
+            }
+          },
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "松竹映画",
+            "【第一个预告片】 / 影片讲述了一个单身父亲对女儿的照顾",
+            "我不会说不出嫁， / 不是那样打算的，",
+            "牵手的程度倒是有啦",
+            "你的心会被爱温暖",
+            "不是我吹牛，",
+            "荟萃于影片",
+            "游刃有余的拍摄"
+          ]
+        },
+        {
+          "member_path": "03预告cht.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 41,
+          "dialogue_lines": 49,
+          "line_kinds": {
+            "han": 49,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 48,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "Default": {
+              "han": 49
+            }
+          },
+          "suggested_language": "cht",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "松竹映畫",
+            "【第一個預告片】 / 影片講述了一個單身父親對女兒的照顧",
+            "我不會說不出嫁， / 不是那樣打算的，",
+            "牽手的程度倒是有啦",
+            "你的心會被愛溫暖",
+            "不是我吹牛，",
+            "薈萃於影片",
+            "游刃有餘的拍攝"
+          ]
+        },
+        {
+          "member_path": "04预告2 chs.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 53,
+          "dialogue_lines": 61,
+          "line_kinds": {
+            "han": 61,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 71,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "Default": {
+              "han": 61
+            }
+          },
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "松竹映画",
+            "什么事?",
+            "我只是之后不想后悔而已",
+            "体现在无尽的父爱中",
+            "可是都忍着没买",
+            "小津导演真实的表现着生活的洪流. / 用心良苦",
+            "到头来 / 人生不就是一个人吗",
+            "是爱的散文诗"
+          ]
+        },
+        {
+          "member_path": "04预告2 cht.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 53,
+          "dialogue_lines": 61,
+          "line_kinds": {
+            "han": 61,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 71,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "Default": {
+              "han": 61
+            }
+          },
+          "suggested_language": "cht",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "松竹映畫",
+            "什麼事?",
+            "我只是之後不想後悔而已",
+            "體現在無盡的父愛中",
+            "可是都忍著沒買",
+            "小津導演真實的表現著生活的洪流. / 用心良苦",
+            "到頭來 / 人生不就是一個人嗎",
+            "是愛的散文詩"
+          ]
+        }
+      ],
+      "non_subtitle_members": [
+        "字幕说明.txt"
+      ],
+      "inner_archives": []
+    },
+    {
+      "archive": "assrt/[阳光灿烂的日子]日二修改.rar",
+      "origin": "real",
+      "depth": 0,
+      "size": 36027,
+      "sha256": "60eedec564a7792a74757ee9ba225cf4a96eb86ed30fa73745b7217fb0a432f9",
+      "extension": ".rar",
+      "true_format": "rar4",
+      "extension_matches": true,
+      "name_reference": "7z -sccUTF-8 列表",
+      "member_names": null,
+      "rar4_unicode_name_flags": [
+        true
+      ],
+      "member_count": 1,
+      "max_directory_depth": 0,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "status": "不适用"
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar"
+        ]
+      },
+      "content_source_tool": "7z",
+      "subtitles": [
+        {
+          "member_path": "[阳光灿烂的日子]日二修改.srt",
+          "encoding": "gb18030",
+          "format": "srt",
+          "events": 1730,
+          "dialogue_lines": 1768,
+          "line_kinds": {
+            "han": 1768,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 2308,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "北京",
+            "我向来只开明锁，因为安全",
+            "眼睛给封了，棍子也给打成了两截",
+            "找人带话来要跟我们碴架",
+            "别不高兴",
+            "玩儿去，两包？",
+            "会犯很大的错误",
+            "得，就算没有吧"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "assrt/In.the.heat.of.the.sun.dvdrip.divx-imbt.CnEn.subs.zip",
+      "origin": "real",
+      "depth": 0,
+      "size": 72539,
+      "sha256": "caf84476568f3834ef94c801be764653b6ab4b1fb7986e738f4bc2021cc9ad2b",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [],
+          "raw_hex": "5bd1f4b9e2b2d3c0c3b5c4c8d5d7d35d2e696e2e7468652e686561742e6f662e7468652e73756e2e6364312e6476647269702e646976782d696d62742e6368732e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd1.dvdrip.divx-imbt.chs.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": null,
+              "score": 0.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd1.dvdrip.divx-imbt.chs.srt",
+          "is_dir": false,
+          "size": 43869
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [],
+          "raw_hex": "5bd1f4b9e2b2d3c0c3b5c4c8d5d7d35d2e696e2e7468652e686561742e6f662e7468652e73756e2e6364312e6476647269702e646976782d696d62742e656e672e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd1.dvdrip.divx-imbt.eng.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": null,
+              "score": 0.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd1.dvdrip.divx-imbt.eng.srt",
+          "is_dir": false,
+          "size": 49995
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [],
+          "raw_hex": "5bd1f4b9e2b2d3c0c3b5c4c8d5d7d35d2e696e2e7468652e686561742e6f662e7468652e73756e2e6364322e6476647269702e646976782d696d62742e6368732e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd2.dvdrip.divx-imbt.chs.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": null,
+              "score": 0.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd2.dvdrip.divx-imbt.chs.srt",
+          "is_dir": false,
+          "size": 44978
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [],
+          "raw_hex": "5bd1f4b9e2b2d3c0c3b5c4c8d5d7d35d2e696e2e7468652e686561742e6f662e7468652e73756e2e6364322e6476647269702e646976782d696d62742e656e672e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd2.dvdrip.divx-imbt.eng.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": null,
+              "score": 0.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd2.dvdrip.divx-imbt.eng.srt",
+          "is_dir": false,
+          "size": 47073
+        }
+      ],
+      "member_count": 4,
+      "max_directory_depth": 0,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 4,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 4,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 4,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd1.dvdrip.divx-imbt.chs.srt",
+          "encoding": "gb18030",
+          "format": "srt",
+          "events": 808,
+          "dialogue_lines": 828,
+          "line_kinds": {
+            "han": 828,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 1031,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "北京",
+            "我问谁是班长的目的",
+            "但我却鬼使神差的打开了一个暗锁",
+            "不是还有南朝鲜的吗",
+            "大哥 没我事",
+            "要不你家长该打你了",
+            "时间是礼拜一",
+            "那你就天天上什刹海去练吧"
+          ]
+        },
+        {
+          "member_path": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd1.dvdrip.divx-imbt.eng.srt",
+          "encoding": "gb18030",
+          "format": "srt",
+          "events": 768,
+          "dialogue_lines": 768,
+          "line_kinds": {
+            "han": 1,
+            "latin": 763,
+            "kana": 0,
+            "hangul": 0,
+            "other": 4
+          },
+          "simplified_hits": 3,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "eng",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "Peiking has changed so fast.",
+            "I am asking class monitor to identify herself.",
+            "it only increased the thrill.",
+            "Maybe this one's from South Korea?",
+            "Girls stay behind.",
+            "So?",
+            "His mates sent word...",
+            "Put it over there."
+          ]
+        },
+        {
+          "member_path": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd2.dvdrip.divx-imbt.chs.srt",
+          "encoding": "gb18030",
+          "format": "srt",
+          "events": 828,
+          "dialogue_lines": 844,
+          "line_kinds": {
+            "han": 844,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 1137,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "生气了",
+            "你是不是和余北蓓一个农场的",
+            "再加两包凤凰过滤",
+            "你去把那个大衣给我找出来",
+            "不看了",
+            "你丫够肥的 什么",
+            "同志 我们点的东西赶紧上吧",
+            "抽你丫的"
+          ]
+        },
+        {
+          "member_path": "[阳光灿烂的日子].in.the.heat.of.the.sun.cd2.dvdrip.divx-imbt.eng.srt",
+          "encoding": "utf-8",
+          "format": "srt",
+          "events": 715,
+          "dialogue_lines": 723,
+          "line_kinds": {
+            "han": 0,
+            "latin": 723,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "eng",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "Angry?",
+            "You work at the same farm as Yu Beipei.",
+            "Has anyway ever climbed to the top?",
+            "Mi Lan.",
+            "The moonlight stirs my heart on this eachanted evening.",
+            "Not just your waist.",
+            "Relax, we don't need it.",
+            "something keeps interfering."
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "assrt/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.zip",
+      "origin": "real",
+      "depth": 0,
+      "size": 417458,
+      "sha256": "54e3f390f09503e951080498710372d1e9187371ddb9253a736cd32f5b33c3b6",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/",
+          "is_dir": true,
+          "size": 0
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee5afbce8af84e5ad97e5b9952e737274",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.导评字幕.srt",
+          "is_dir": false,
+          "size": 191328
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee7ae80e4bd9326e88bb1e696872e617373",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.ass",
+          "is_dir": false,
+          "size": 300761
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee7ae80e4bd9326e88bb1e696872e737274",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.srt",
+          "is_dir": false,
+          "size": 242758
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee7ae80e4bd932e617373",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体.ass",
+          "is_dir": false,
+          "size": 154407
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee88bb1e6968726e7ae80e4bd932e617373",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文&简体.ass",
+          "is_dir": false,
+          "size": 300763
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee88bb1e696872e617373",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文.ass",
+          "is_dir": false,
+          "size": 160800
+        }
+      ],
+      "member_count": 6,
+      "max_directory_depth": 1,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 6,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 6,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 6,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.导评字幕.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2295,
+          "dialogue_lines": 3205,
+          "line_kinds": {
+            "han": 3204,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 1
+          },
+          "simplified_hits": 5455,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "--==CMCT团队荣誉出品==-- / 字幕调校: 铭瑄  影片压制: 壞到ゞ剛剛好 / 招募Q号:76846146",
+            "我们在这里拍摄的时候 / 没有太多临时演员…",
+            "这点我一直非常感激",
+            "这个房间是他们另一项杰作…",
+            "曼斯菲尔是一个… / 它是个小城市，位在…",
+            "我发现观众其实更乐意 / 帮我们填满那个缺口…",
+            "因为你最不想做的就是 / 让音乐切进来的时候…",
+            "我喜欢那一刻"
+          ]
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 3462,
+          "dialogue_lines": 3469,
+          "line_kinds": {
+            "han": 1753,
+            "latin": 1714,
+            "kana": 0,
+            "hangul": 0,
+            "other": 2
+          },
+          "simplified_hits": 2644,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 1,
+          "style_kinds": {
+            "title": {
+              "han": 1
+            },
+            "chs": {
+              "han": 1752,
+              "latin": 1
+            },
+            "eng": {
+              "latin": 1713,
+              "other": 2
+            }
+          },
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "华纳兄弟影业公司",
+            "我需要12名自愿者工作一星期",
+            "晚上我不能入睡",
+            "这是我的人生!你明白吗?",
+            "\"瑞德也来过\"",
+            "I do believe those first two years were the worst for him.",
+            "I keep thinking",
+            "Get him out!"
+          ]
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 3462,
+          "dialogue_lines": 3469,
+          "line_kinds": {
+            "han": 1753,
+            "latin": 1714,
+            "kana": 0,
+            "hangul": 0,
+            "other": 2
+          },
+          "simplified_hits": 2644,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 1,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "华纳兄弟影业公司",
+            "嗨 新来的",
+            "超过100人报名参加劳动",
+            "Any favorite passages?",
+            "我不喜欢这地方",
+            "It'll lead to somebody.",
+            "Sweet Jesus.",
+            "Reasonable he'd be here in the morning."
+          ]
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 1747,
+          "dialogue_lines": 1753,
+          "line_kinds": {
+            "han": 1753,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 2644,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "title": {
+              "han": 2
+            },
+            "Default": {
+              "han": 1751
+            }
+          },
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "华纳兄弟影业公司",
+            "我把赌注押在安迪·德弗瑞恩身上",
+            "五月是户外劳动的好时间",
+            "很高兴看见你在看这本书",
+            "它令我感到害怕 我决定",
+            "总会有人被牵扯",
+            "1947 那是多少 19年",
+            "快走"
+          ]
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文&简体.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 3462,
+          "dialogue_lines": 3469,
+          "line_kinds": {
+            "han": 1753,
+            "latin": 1714,
+            "kana": 0,
+            "hangul": 0,
+            "other": 2
+          },
+          "simplified_hits": 2644,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 1,
+          "style_kinds": {
+            "eng": {
+              "latin": 1713,
+              "other": 2
+            },
+            "title": {
+              "han": 1
+            },
+            "chs": {
+              "han": 1752,
+              "latin": 1
+            }
+          },
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "<If I Didn't Care>   The Ink Spots",
+            "I made my usual 20 percent, of course.",
+            "He should have died in here.",
+            "Floyd, come on.",
+            "∮ 为什么我会颤抖?",
+            "我当然也像往常一样赚了20%",
+            "我怀疑他们会争论 但不是为我这种老坏蛋",
+            "汤姆·威廉姆斯 是 在这"
+          ]
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 1715,
+          "dialogue_lines": 1715,
+          "line_kinds": {
+            "han": 0,
+            "latin": 1713,
+            "kana": 0,
+            "hangul": 0,
+            "other": 2
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "Default": {
+              "latin": 1713,
+              "other": 2
+            }
+          },
+          "suggested_language": "eng",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "<If I Didn't Care>   The Ink Spots",
+            "The boys always go fishing with first-timers.",
+            "Wouldn't you know it?",
+            "\"Watch ye, therefore, for ye know not",
+            "I don't like it here.",
+            "It'll lead to somebody.",
+            "I mean, for real innocent?",
+            "You see Dufresne's name there? I sure do. Right there."
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "assrt/肖申克的救赎.The.Shawshank.Redemption.1994.2160p.UHD.BluRay.4K适配HDR.zip",
+      "origin": "real",
+      "depth": 0,
+      "size": 66833,
+      "sha256": "583f3edf6a16618140e126e430d3d4dea9beb626c350e9d34d620992702b6c5e",
+      "extension": ".zip",
+      "true_format": "rar4",
+      "extension_matches": false,
+      "name_reference": "7z -sccUTF-8 列表",
+      "member_names": null,
+      "rar4_unicode_name_flags": [
+        true
+      ],
+      "member_count": 1,
+      "max_directory_depth": 0,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "status": "不适用"
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar"
+        ]
+      },
+      "content_source_tool": "7z",
+      "subtitles": [
+        {
+          "member_path": "肖申克的救赎.The.Shawshank.Redemption.1994.2160p.UHD.BluRay.x265-REDANDY.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 1739,
+          "dialogue_lines": 3460,
+          "line_kinds": {
+            "han": 1746,
+            "latin": 1711,
+            "kana": 0,
+            "hangul": 0,
+            "other": 3
+          },
+          "simplified_hits": 1821,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 1711,
+          "style_kinds": {
+            "Default": {
+              "han": 1746,
+              "latin": 1711,
+              "other": 3
+            }
+          },
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "same-event",
+          "dialogue_preview": [
+            "--==本影片由 CMCT 团队 荣誉出品==-- / 更多精彩影视 请访问 http://cmct.cc",
+            "想亲近你 / Iove to make your acquaintance.",
+            "这不是很巧吗 / Wouldn't you know it?",
+            "圣经 / Bible",
+            "不管他在何处  我祝他过的好  有新朋友 / I hope, wherever he is, he's doing okay and making new friends.",
+            "总有人要遭殃 / It'll lead to somebody.",
+            "教育委员会来的 / Board of Education.",
+            "把他找到 / I want him found."
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "subhd/An.Autumn.Afternoon.1962.1080p.Bluray.x264-usury.zip",
+      "origin": "real",
+      "depth": 0,
+      "size": 34707,
+      "sha256": "312183b82bfece0e695d3e6667cdab3fd8efedef032b89ebc1ee04161f186048",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "416e2e417574756d6e2e41667465726e6f6f6e2e313936322e31303830702e426c757261792e783236342d75737572792e737274",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "ascii",
+          "decoded": "An.Autumn.Afternoon.1962.1080p.Bluray.x264-usury.srt",
+          "is_dir": false,
+          "size": 95994
+        }
+      ],
+      "member_count": 1,
+      "max_directory_depth": 0,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "utf-8"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "An.Autumn.Afternoon.1962.1080p.Bluray.x264-usury.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 1439,
+          "dialogue_lines": 1439,
+          "line_kinds": {
+            "han": 1438,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 2189,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "请进",
+            "批评以后再听，无论什么都好",
+            "- 再见  - 再见",
+            "嗯，是啊",
+            "嗯",
+            "让他睡吧，“瓢箪”也很寂寞的",
+            "那我会尽快去问问看",
+            "原来如此，真是坏家伙们呢"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "subhd/An.Autumn.Afternoon.1962.720p.BluRay.x264-WiKi.rar",
+      "origin": "real",
+      "depth": 0,
+      "size": 67911,
+      "sha256": "b60c72b3f53dd7b6745404ba4f462974064a8ca2215257c64d4031de2f793a47",
+      "extension": ".rar",
+      "true_format": "rar4",
+      "extension_matches": true,
+      "name_reference": "7z -sccUTF-8 列表",
+      "member_names": null,
+      "rar4_unicode_name_flags": [
+        true,
+        true
+      ],
+      "member_count": 2,
+      "max_directory_depth": 0,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "status": "不适用"
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar"
+        ]
+      },
+      "content_source_tool": "7z",
+      "subtitles": [
+        {
+          "member_path": "秋刀鱼之味 肥内提供中字 简体化.srt",
+          "encoding": "gb18030",
+          "format": "srt",
+          "events": 1344,
+          "dialogue_lines": 1515,
+          "line_kinds": {
+            "han": 1513,
+            "latin": 2,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 2213,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "请进",
+            "喂！我可是放弃夜间球赛来的耶",
+            "啊！对呀！ / 是！是！是这样没错",
+            "舰长！不是舰长吗",
+            "你不行吗",
+            "嗯",
+            "让您久等",
+            "可是平山先生，路子不在，就会变得寂寞呀"
+          ]
+        },
+        {
+          "member_path": "秋刀鱼之味 肥内提供中字.srt",
+          "encoding": "utf-16-le-bom",
+          "format": "srt",
+          "events": 1344,
+          "dialogue_lines": 1515,
+          "line_kinds": {
+            "han": 1513,
+            "latin": 2,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 2213,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "cht",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "請進",
+            "喂！我可是放棄夜間球賽來的耶",
+            "啊！對呀！ / 是！是！是這樣沒錯",
+            "艦長！不是艦長嗎",
+            "你不行嗎",
+            "嗯",
+            "讓您久等",
+            "可是平山先生，路子不在，就會變得寂寞呀"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "subhd/In.the.Heat.of.the.Sun.1994.CHINESE.1080p.BluRay.x264.DTS-NOGRP 官方简体字幕.zip",
+      "origin": "real",
+      "depth": 0,
+      "size": 44334,
+      "sha256": "045d63d62cbfba41abfe95a90636b753352ba9f357092b713b298ce97973a1c1",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0x5455",
+            "0x7875"
+          ],
+          "raw_hex": "496e2e7468652e486561742e6f662e7468652e53756e2e313939342e4348494e4553452e31303830702e426c755261792e783236342e4454532d4e4f4752502e6368732e737274",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "ascii",
+          "decoded": "In.the.Heat.of.the.Sun.1994.CHINESE.1080p.BluRay.x264.DTS-NOGRP.chs.srt",
+          "is_dir": false,
+          "size": 114566
+        }
+      ],
+      "member_count": 1,
+      "max_directory_depth": 0,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "utf-8"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "In.the.Heat.of.the.Sun.1994.CHINESE.1080p.BluRay.x264.DTS-NOGRP.chs.srt",
+          "encoding": "utf-8",
+          "format": "srt",
+          "events": 1931,
+          "dialogue_lines": 1937,
+          "line_kinds": {
+            "han": 1937,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 2564,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "北京",
+            "可我们一直叫她于北蓓(PEI)",
+            "要不要？要不要？",
+            "这种战备观念",
+            "遗憾的是",
+            "马猴，你别乱动，马猴",
+            "什么？",
+            "对你表示过谢意了"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "subhd/The.Shawshank.Redemption.1994.2160p.BluRay.x265.10bit.SDR.DTS-HD.MA.5.1-SWTYBLZ.zip",
+      "origin": "real",
+      "depth": 0,
+      "size": 72708,
+      "sha256": "8fa1c39fead379b94f1d8eeb05838186ae35390c7bc5b8e43d8225f9e4960239",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e32313630702e426c755261792e783236352e31306269742e5344522e4454532d48442e4d412e352e312d53575459424c5a2e7a682e617373",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "ascii",
+          "decoded": "The.Shawshank.Redemption.1994.2160p.BluRay.x265.10bit.SDR.DTS-HD.MA.5.1-SWTYBLZ.zh.ass",
+          "is_dir": false,
+          "size": 199161
+        }
+      ],
+      "member_count": 1,
+      "max_directory_depth": 0,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "utf-8"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "The.Shawshank.Redemption.1994.2160p.BluRay.x265.10bit.SDR.DTS-HD.MA.5.1-SWTYBLZ.zh.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 1737,
+          "dialogue_lines": 3457,
+          "line_kinds": {
+            "han": 1743,
+            "latin": 1711,
+            "kana": 0,
+            "hangul": 0,
+            "other": 3
+          },
+          "simplified_hits": 1815,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 1711,
+          "style_kinds": {
+            "Default": {
+              "han": 1743,
+              "latin": 1711,
+              "other": 3
+            }
+          },
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "same-event",
+          "dialogue_preview": [
+            "肖申克的救赎",
+            "天哪 / God!",
+            "安迪·杜弗伦 / Andrew Dufresne.",
+            "面对墙 / Face the wall.",
+            "做着从高处坠落的恶梦 / I have bad dreams like I'm falling.",
+            "那是谁 / All right, who?",
+            "-没错  -你要拆  或是拿着傻看 / You going to open it or stand there with your thumb up your butt?",
+            "是的 / Yes, sir."
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "subhd/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.zip",
+      "origin": "real",
+      "depth": 0,
+      "size": 417458,
+      "sha256": "54e3f390f09503e951080498710372d1e9187371ddb9253a736cd32f5b33c3b6",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/",
+          "is_dir": true,
+          "size": 0
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee5afbce8af84e5ad97e5b9952e737274",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.导评字幕.srt",
+          "is_dir": false,
+          "size": 191328
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee7ae80e4bd9326e88bb1e696872e617373",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.ass",
+          "is_dir": false,
+          "size": 300761
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee7ae80e4bd9326e88bb1e696872e737274",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.srt",
+          "is_dir": false,
+          "size": 242758
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee7ae80e4bd932e617373",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体.ass",
+          "is_dir": false,
+          "size": 154407
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee88bb1e6968726e7ae80e4bd932e617373",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文&简体.ass",
+          "is_dir": false,
+          "size": 300763
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [
+            "0xa"
+          ],
+          "raw_hex": "5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542f5468652e536861777368616e6b2e526564656d7074696f6e2e313939342e426c755261792e31303830702e783236342e4143332d434d43542ee88bb1e696872e617373",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文.ass",
+          "is_dir": false,
+          "size": 160800
+        }
+      ],
+      "member_count": 6,
+      "max_directory_depth": 1,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 6,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 6,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 6,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.导评字幕.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2295,
+          "dialogue_lines": 3205,
+          "line_kinds": {
+            "han": 3204,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 1
+          },
+          "simplified_hits": 5455,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "--==CMCT团队荣誉出品==-- / 字幕调校: 铭瑄  影片压制: 壞到ゞ剛剛好 / 招募Q号:76846146",
+            "我们在这里拍摄的时候 / 没有太多临时演员…",
+            "这点我一直非常感激",
+            "这个房间是他们另一项杰作…",
+            "曼斯菲尔是一个… / 它是个小城市，位在…",
+            "我发现观众其实更乐意 / 帮我们填满那个缺口…",
+            "因为你最不想做的就是 / 让音乐切进来的时候…",
+            "我喜欢那一刻"
+          ]
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 3462,
+          "dialogue_lines": 3469,
+          "line_kinds": {
+            "han": 1753,
+            "latin": 1714,
+            "kana": 0,
+            "hangul": 0,
+            "other": 2
+          },
+          "simplified_hits": 2644,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 1,
+          "style_kinds": {
+            "title": {
+              "han": 1
+            },
+            "chs": {
+              "han": 1752,
+              "latin": 1
+            },
+            "eng": {
+              "latin": 1713,
+              "other": 2
+            }
+          },
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "华纳兄弟影业公司",
+            "我需要12名自愿者工作一星期",
+            "晚上我不能入睡",
+            "这是我的人生!你明白吗?",
+            "\"瑞德也来过\"",
+            "I do believe those first two years were the worst for him.",
+            "I keep thinking",
+            "Get him out!"
+          ]
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 3462,
+          "dialogue_lines": 3469,
+          "line_kinds": {
+            "han": 1753,
+            "latin": 1714,
+            "kana": 0,
+            "hangul": 0,
+            "other": 2
+          },
+          "simplified_hits": 2644,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 1,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "华纳兄弟影业公司",
+            "嗨 新来的",
+            "超过100人报名参加劳动",
+            "Any favorite passages?",
+            "我不喜欢这地方",
+            "It'll lead to somebody.",
+            "Sweet Jesus.",
+            "Reasonable he'd be here in the morning."
+          ]
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 1747,
+          "dialogue_lines": 1753,
+          "line_kinds": {
+            "han": 1753,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 2644,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "title": {
+              "han": 2
+            },
+            "Default": {
+              "han": 1751
+            }
+          },
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "华纳兄弟影业公司",
+            "我把赌注押在安迪·德弗瑞恩身上",
+            "五月是户外劳动的好时间",
+            "很高兴看见你在看这本书",
+            "它令我感到害怕 我决定",
+            "总会有人被牵扯",
+            "1947 那是多少 19年",
+            "快走"
+          ]
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文&简体.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 3462,
+          "dialogue_lines": 3469,
+          "line_kinds": {
+            "han": 1753,
+            "latin": 1714,
+            "kana": 0,
+            "hangul": 0,
+            "other": 2
+          },
+          "simplified_hits": 2644,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 1,
+          "style_kinds": {
+            "eng": {
+              "latin": 1713,
+              "other": 2
+            },
+            "title": {
+              "han": 1
+            },
+            "chs": {
+              "han": 1752,
+              "latin": 1
+            }
+          },
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "<If I Didn't Care>   The Ink Spots",
+            "I made my usual 20 percent, of course.",
+            "He should have died in here.",
+            "Floyd, come on.",
+            "∮ 为什么我会颤抖?",
+            "我当然也像往常一样赚了20%",
+            "我怀疑他们会争论 但不是为我这种老坏蛋",
+            "汤姆·威廉姆斯 是 在这"
+          ]
+        },
+        {
+          "member_path": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文.ass",
+          "encoding": "utf-8-sig",
+          "format": "ass",
+          "events": 1715,
+          "dialogue_lines": 1715,
+          "line_kinds": {
+            "han": 0,
+            "latin": 1713,
+            "kana": 0,
+            "hangul": 0,
+            "other": 2
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "Default": {
+              "latin": 1713,
+              "other": 2
+            }
+          },
+          "suggested_language": "eng",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "<If I Didn't Care>   The Ink Spots",
+            "The boys always go fishing with first-timers.",
+            "Wouldn't you know it?",
+            "\"Watch ye, therefore, for ye know not",
+            "I don't like it here.",
+            "It'll lead to somebody.",
+            "I mean, for real innocent?",
+            "You see Dufresne's name there? I sure do. Right there."
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "subhd/阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.1080p.WEB-DL.H264.AAC-TJUPT.zip",
+      "origin": "real",
+      "depth": 0,
+      "size": 42460,
+      "sha256": "f6954d21e26d46de46faa057f8aedc84abf39df04ff819334a4339ef9adf460b",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa",
+            "0x7075"
+          ],
+          "raw_hex": "d1f4b9e2b2d3c0c3b5c4c8d5d7d32e496e2e7468652e486561742e6f662e7468652e53756e2e313939342e31303830702e5745422d444c2e483236342e4141432d544a5550542e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.1080p.WEB-DL.H264.AAC-TJUPT.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": null,
+              "score": 0.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "heuristic_matches_unicode_path": true,
+          "chosen_encoding": "unicode-path-extra",
+          "decoded": "阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.1080p.WEB-DL.H264.AAC-TJUPT.srt",
+          "is_dir": false,
+          "size": 113057
+        }
+      ],
+      "member_count": 1,
+      "max_directory_depth": 0,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.1080p.WEB-DL.H264.AAC-TJUPT.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 1803,
+          "dialogue_lines": 1803,
+          "line_kinds": {
+            "han": 1803,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 2453,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "北京",
+            "其实连她也不清楚      自己的名字是PEI还是BEI",
+            "你管得着吗你",
+            "住了一个月的院",
+            "甚至开过她的家",
+            "马猴   别扔了",
+            "我已经将它安全的转移了  你看在那",
+            "不忙 给我们先来点水吧"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "subhd/阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.CHINESE.1080p.BluRay.x265-VXT.简中.ass",
+      "origin": "real",
+      "depth": 0,
+      "size": 189944,
+      "sha256": "2b4fb1212372a2f38e8e79d82068adb1ade597d4c16ed5612b9217654b089d03",
+      "extension": ".ass",
+      "true_format": "loose",
+      "extension_matches": null,
+      "subtitles": [
+        {
+          "member_path": null,
+          "encoding": "utf-8-sig",
+          "format": "ssa",
+          "events": 1789,
+          "dialogue_lines": 1790,
+          "line_kinds": {
+            "han": 1790,
+            "latin": 0,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 2446,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": {
+            "Default": {
+              "han": 1790
+            }
+          },
+          "suggested_language": "chs",
+          "suggested_bilingual": false,
+          "suggested_layout": null,
+          "dialogue_preview": [
+            "北京",
+            "可我们一直叫她于北蓓（PEI）",
+            "我拍婆子",
+            "六条的那孩子被我们打成重伤",
+            "我告诉她我会配钥匙",
+            "下来吧",
+            "是 请叫我米兰同志",
+            "你可真没良心"
+          ]
+        }
+      ]
+    },
+    {
+      "archive": "synthetic-lzma2.7z",
+      "origin": "synthetic",
+      "depth": 0,
+      "size": 305,
+      "sha256": "7151dacb164c55ba8c6c0b90bc5e78c308b2345d770a851748563e6717bd1338",
+      "extension": ".7z",
+      "true_format": "7z",
+      "extension_matches": true,
+      "name_reference": "7z -sccUTF-8 列表",
+      "member_names": null,
+      "member_count": 2,
+      "max_directory_depth": 2,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": false,
+            "list_names_ok": false,
+            "extract_ok": false,
+            "disk_names_ok": false,
+            "files_on_disk": 0,
+            "disk_names": [],
+            "listed_names": [],
+            "list_error": "tar.EXE: LZMA codec is unsupported tar.EXE: Error exit delayed from previous errors.",
+            "extract_error": "tar.EXE: LZMA codec is unsupported tar.EXE: Error exit delayed from previous errors.",
+            "stdout_encoding": "utf-8"
+          },
+          "py7zr": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "zipfile": {
+            "status": "不适用"
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "py7zr"
+        ]
+      },
+      "content_source_tool": "7z",
+      "subtitles": [
+        {
+          "member_path": "合成样本/子目录/英文.eng.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "英文.eng",
+            "synthetic sample"
+          ]
+        },
+        {
+          "member_path": "合成样本/简体中文.chs.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "简体中文.chs",
+            "synthetic sample"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": [],
+      "synthetic_expected_files": [
+        "合成样本/简体中文.chs.srt",
+        "合成样本/子目录/英文.eng.srt"
+      ],
+      "synthetic_reference_matches": true
+    },
+    {
+      "archive": "synthetic-copy.7z",
+      "origin": "synthetic",
+      "depth": 0,
+      "size": 275,
+      "sha256": "9abb392a69d3a1d59b26f3a5d3646b1c4b0d4831b23f2ff38214ef76f6dc2c2a",
+      "extension": ".7z",
+      "true_format": "7z",
+      "extension_matches": true,
+      "name_reference": "7z -sccUTF-8 列表",
+      "member_names": null,
+      "member_count": 1,
+      "max_directory_depth": 1,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 1,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "zipfile": {
+            "status": "不适用"
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "py7zr",
+          "tar"
+        ]
+      },
+      "content_source_tool": "7z",
+      "subtitles": [
+        {
+          "member_path": "合成样本/简体中文.chs.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "简体中文.chs",
+            "synthetic sample"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": [],
+      "synthetic_expected_files": [
+        "合成样本/简体中文.chs.srt"
+      ],
+      "synthetic_reference_matches": true
+    },
+    {
+      "archive": "synthetic-gbk-names-7z.zip",
+      "origin": "synthetic",
+      "depth": 0,
+      "size": 942,
+      "sha256": "45786fb089fe4fb6175c27c8bb6e84cd25ab140e2231d346b0d9823c981bf899",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa",
+            "0x7075"
+          ],
+          "raw_hex": "bcf2cce5d7d6c4bb2f",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "简体字幕/",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "潠极趼躉/",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "heuristic_matches_unicode_path": true,
+          "chosen_encoding": "unicode-path-extra",
+          "decoded": "简体字幕/",
+          "is_dir": true,
+          "size": 0
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa",
+            "0x7075"
+          ],
+          "raw_hex": "bcf2cce5d7d6c4bb2fc7efb5b6d3e3d6aeceb62ebcf2cce52e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "简体字幕/秋刀鱼之味.简体.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "潠极趼躉/⑦絮赶眳庤.潠极.srt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "heuristic_matches_unicode_path": true,
+          "chosen_encoding": "unicode-path-extra",
+          "decoded": "简体字幕/秋刀鱼之味.简体.srt",
+          "is_dir": false,
+          "size": 115
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa",
+            "0x7075"
+          ],
+          "raw_hex": "bcf2cce5d7d6c4bb2fd0a4c9eabfcbb5c4bec8caea2ed3a2cec42e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "简体字幕/肖申克的救赎.英文.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "潠极趼躉/苳扠親腔寰抏.荎恅.srt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "heuristic_matches_unicode_path": true,
+          "chosen_encoding": "unicode-path-extra",
+          "decoded": "简体字幕/肖申克的救赎.英文.srt",
+          "is_dir": false,
+          "size": 118
+        }
+      ],
+      "member_count": 2,
+      "max_directory_depth": 1,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "简体字幕/秋刀鱼之味.简体.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 1,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "秋刀鱼之味.简体",
+            "synthetic sample"
+          ]
+        },
+        {
+          "member_path": "简体字幕/肖申克的救赎.英文.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "肖申克的救赎.英文",
+            "synthetic sample"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": [],
+      "synthetic_expected_files": [
+        "简体字幕/秋刀鱼之味.简体.srt",
+        "简体字幕/肖申克的救赎.英文.srt"
+      ],
+      "synthetic_reference_matches": true
+    },
+    {
+      "archive": "synthetic-big5-names-7z.zip",
+      "origin": "synthetic",
+      "depth": 0,
+      "size": 894,
+      "sha256": "5880cdb891a9735a7b20f830a189907a79f0f0e041dd5f1621803f2380d87aa3",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa",
+            "0x7075"
+          ],
+          "raw_hex": "c163c5e9a672b9f52f",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "羉砰辊/",
+              "score": 0.0
+            },
+            "big5": {
+              "text": "繁體字幕/",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "big5",
+          "heuristic_matches_unicode_path": true,
+          "chosen_encoding": "unicode-path-extra",
+          "decoded": "繁體字幕/",
+          "is_dir": true,
+          "size": 0
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa",
+            "0x7075"
+          ],
+          "raw_hex": "c163c5e9a672b9f52fa6a8a55caabab971bc762ec163c5e92e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "羉砰辊/Θ筿紇.羉砰.srt",
+              "score": 0.0
+            },
+            "big5": {
+              "text": "繁體字幕/成功的電影.繁體.srt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "big5",
+          "heuristic_matches_unicode_path": true,
+          "chosen_encoding": "unicode-path-extra",
+          "decoded": "繁體字幕/成功的電影.繁體.srt",
+          "is_dir": false,
+          "size": 115
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [
+            "0xa",
+            "0x7075"
+          ],
+          "raw_hex": "c163c5e9a672b9f52fb35cc4402ead5ea4e52e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "羉砰辊/砛腀.璣ゅ.srt",
+              "score": 0.0
+            },
+            "big5": {
+              "text": "繁體字幕/許願.英文.srt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "big5",
+          "heuristic_matches_unicode_path": true,
+          "chosen_encoding": "unicode-path-extra",
+          "decoded": "繁體字幕/許願.英文.srt",
+          "is_dir": false,
+          "size": 106
+        }
+      ],
+      "member_count": 2,
+      "max_directory_depth": 1,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "繁體字幕/成功的電影.繁體.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 1,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "cht+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "成功的電影.繁體",
+            "synthetic sample"
+          ]
+        },
+        {
+          "member_path": "繁體字幕/許願.英文.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "許願.英文",
+            "synthetic sample"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": [],
+      "synthetic_expected_files": [
+        "繁體字幕/成功的電影.繁體.srt",
+        "繁體字幕/許願.英文.srt"
+      ],
+      "synthetic_reference_matches": true
+    },
+    {
+      "archive": "synthetic-gbk-names-raw.zip",
+      "origin": "synthetic",
+      "depth": 0,
+      "size": 462,
+      "sha256": "6e0b568f7cd4d25337e250541526c62b7034bd83db8b8cf9019f69f1222e1743",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [],
+          "raw_hex": "bcf2cce5d7d6c4bb2fc7efb5b6d3e3d6aeceb62ebcf2cce52e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "简体字幕/秋刀鱼之味.简体.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "潠极趼躉/⑦絮赶眳庤.潠极.srt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "简体字幕/秋刀鱼之味.简体.srt",
+          "is_dir": false,
+          "size": 115
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [],
+          "raw_hex": "bcf2cce5d7d6c4bb2fd0a4c9eabfcbb5c4bec8caea2ed3a2cec42e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "简体字幕/肖申克的救赎.英文.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "潠极趼躉/苳扠親腔寰抏.荎恅.srt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "简体字幕/肖申克的救赎.英文.srt",
+          "is_dir": false,
+          "size": 118
+        }
+      ],
+      "member_count": 2,
+      "max_directory_depth": 1,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "简体字幕/秋刀鱼之味.简体.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 1,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "秋刀鱼之味.简体",
+            "synthetic sample"
+          ]
+        },
+        {
+          "member_path": "简体字幕/肖申克的救赎.英文.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "肖申克的救赎.英文",
+            "synthetic sample"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": [],
+      "synthetic_expected_files": [
+        "简体字幕/秋刀鱼之味.简体.srt",
+        "简体字幕/肖申克的救赎.英文.srt"
+      ],
+      "synthetic_reference_matches": true
+    },
+    {
+      "archive": "synthetic-big5-names-raw.zip",
+      "origin": "synthetic",
+      "depth": 0,
+      "size": 434,
+      "sha256": "05018d55c50eadd11b1193b9bdc94c640c280767c23b366ff42539922e2ac420",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [],
+          "raw_hex": "c163c5e9a672b9f52fa6a8a55caabab971bc762ec163c5e92e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "羉砰辊/Θ筿紇.羉砰.srt",
+              "score": 0.0
+            },
+            "big5": {
+              "text": "繁體字幕/成功的電影.繁體.srt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "big5",
+          "chosen_encoding": "big5",
+          "decoded": "繁體字幕/成功的電影.繁體.srt",
+          "is_dir": false,
+          "size": 115
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [],
+          "raw_hex": "c163c5e9a672b9f52fb35cc4402ead5ea4e52e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "羉砰辊/砛腀.璣ゅ.srt",
+              "score": 0.0
+            },
+            "big5": {
+              "text": "繁體字幕/許願.英文.srt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "big5",
+          "chosen_encoding": "big5",
+          "decoded": "繁體字幕/許願.英文.srt",
+          "is_dir": false,
+          "size": 106
+        }
+      ],
+      "member_count": 2,
+      "max_directory_depth": 1,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": false,
+            "extract_ok": true,
+            "disk_names_ok": false,
+            "files_on_disk": 2,
+            "disk_names": [
+              "羉砰辊/Θ筿紇.羉砰.srt",
+              "羉砰辊/砛腀.璣ゅ.srt"
+            ],
+            "listed_names": [
+              "羉砰辊/Θ筿紇.羉砰.srt",
+              "羉砰辊/砛腀.璣ゅ.srt"
+            ],
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": false,
+            "extract_ok": true,
+            "disk_names_ok": false,
+            "files_on_disk": 2,
+            "disk_names": [
+              "羉砰辊/Θ筿紇.羉砰.srt",
+              "羉砰辊/砛腀.璣ゅ.srt"
+            ],
+            "listed_names": [
+              "羉砰/246r辊/Θ/245///252/272筿紇.羉砰.srt",
+              "羉砰/246r辊/砛腀.璣ゅ.srt"
+            ],
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "繁體字幕/成功的電影.繁體.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 1,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "cht+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "成功的電影.繁體",
+            "synthetic sample"
+          ]
+        },
+        {
+          "member_path": "繁體字幕/許願.英文.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "許願.英文",
+            "synthetic sample"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": [],
+      "synthetic_expected_files": [
+        "繁體字幕/成功的電影.繁體.srt",
+        "繁體字幕/許願.英文.srt"
+      ],
+      "synthetic_reference_matches": true
+    },
+    {
+      "archive": "synthetic-nested.zip",
+      "origin": "synthetic",
+      "depth": 0,
+      "size": 1108,
+      "sha256": "1bac914802a75bd5b7a4603cea74002b66aa69a7a1fed1f0d2ecd69b70004182",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [],
+          "raw_hex": "e5a496e5b182e79baee5bd952fe4b8ade88bb1e58f8ce8afad2e63687326656e672e737274",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "外层目录/中英双语.chs&eng.srt",
+          "is_dir": false,
+          "size": 96
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [],
+          "raw_hex": "e5a496e5b182e79baee5bd952fe58685e5b1822f696e6e65722e7a6970",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "外层目录/内层/inner.zip",
+          "is_dir": false,
+          "size": 462
+        },
+        {
+          "utf8_flag": true,
+          "extra_field_ids": [],
+          "raw_hex": "e5a496e5b182e79baee5bd952fe58685e5b1822f696e6e65722e377a",
+          "candidates": {},
+          "heuristic_choice": null,
+          "chosen_encoding": "utf8-flag",
+          "decoded": "外层目录/内层/inner.7z",
+          "is_dir": false,
+          "size": 305
+        }
+      ],
+      "member_count": 3,
+      "max_directory_depth": 2,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 3,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 3,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 3,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "外层目录/中英双语.chs&eng.srt",
+          "encoding": "utf-8",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "外层",
+            "synthetic sample"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": [
+        {
+          "member_path": "外层目录/内层/inner.7z",
+          "true_format": "7z"
+        },
+        {
+          "member_path": "外层目录/内层/inner.zip",
+          "true_format": "zip"
+        }
+      ],
+      "synthetic_expected_files": [
+        "外层目录/中英双语.chs&eng.srt",
+        "外层目录/内层/inner.zip",
+        "外层目录/内层/inner.7z"
+      ],
+      "synthetic_reference_matches": true
+    },
+    {
+      "archive": "synthetic-nested.zip!/外层目录/内层/inner.7z",
+      "origin": "synthetic",
+      "depth": 1,
+      "size": 305,
+      "sha256": "7151dacb164c55ba8c6c0b90bc5e78c308b2345d770a851748563e6717bd1338",
+      "extension": ".7z",
+      "true_format": "7z",
+      "extension_matches": true,
+      "name_reference": "7z -sccUTF-8 列表",
+      "member_names": null,
+      "member_count": 2,
+      "max_directory_depth": 2,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": false,
+            "list_names_ok": false,
+            "extract_ok": false,
+            "disk_names_ok": false,
+            "files_on_disk": 0,
+            "disk_names": [],
+            "listed_names": [],
+            "list_error": "tar.EXE: LZMA codec is unsupported tar.EXE: Error exit delayed from previous errors.",
+            "extract_error": "tar.EXE: LZMA codec is unsupported tar.EXE: Error exit delayed from previous errors.",
+            "stdout_encoding": "utf-8"
+          },
+          "py7zr": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "zipfile": {
+            "status": "不适用"
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "py7zr"
+        ]
+      },
+      "content_source_tool": "7z",
+      "subtitles": [
+        {
+          "member_path": "合成样本/子目录/英文.eng.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "英文.eng",
+            "synthetic sample"
+          ]
+        },
+        {
+          "member_path": "合成样本/简体中文.chs.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "简体中文.chs",
+            "synthetic sample"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    },
+    {
+      "archive": "synthetic-nested.zip!/外层目录/内层/inner.zip",
+      "origin": "synthetic",
+      "depth": 1,
+      "size": 462,
+      "sha256": "6e0b568f7cd4d25337e250541526c62b7034bd83db8b8cf9019f69f1222e1743",
+      "extension": ".zip",
+      "true_format": "zip",
+      "extension_matches": true,
+      "name_reference": "zipfile 回转",
+      "member_names": [
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [],
+          "raw_hex": "bcf2cce5d7d6c4bb2fc7efb5b6d3e3d6aeceb62ebcf2cce52e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "简体字幕/秋刀鱼之味.简体.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "潠极趼躉/⑦絮赶眳庤.潠极.srt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "简体字幕/秋刀鱼之味.简体.srt",
+          "is_dir": false,
+          "size": 115
+        },
+        {
+          "utf8_flag": false,
+          "extra_field_ids": [],
+          "raw_hex": "bcf2cce5d7d6c4bb2fd0a4c9eabfcbb5c4bec8caea2ed3a2cec42e737274",
+          "candidates": {
+            "utf-8": {
+              "text": null,
+              "score": 0.0
+            },
+            "gb18030": {
+              "text": "简体字幕/肖申克的救赎.英文.srt",
+              "score": 1.0
+            },
+            "big5": {
+              "text": "潠极趼躉/苳扠親腔寰抏.荎恅.srt",
+              "score": 1.0
+            }
+          },
+          "heuristic_choice": "gb18030",
+          "chosen_encoding": "gb18030",
+          "decoded": "简体字幕/肖申克的救赎.英文.srt",
+          "is_dir": false,
+          "size": 118
+        }
+      ],
+      "member_count": 2,
+      "max_directory_depth": 1,
+      "tool_matrix": {
+        "by_tool": {
+          "7z": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          },
+          "tar": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": "mbcs"
+          },
+          "py7zr": {
+            "status": "不适用"
+          },
+          "zipfile": {
+            "list_ok": true,
+            "list_names_ok": true,
+            "extract_ok": true,
+            "disk_names_ok": true,
+            "files_on_disk": 2,
+            "disk_names": null,
+            "listed_names": null,
+            "list_error": null,
+            "extract_error": null,
+            "stdout_encoding": null
+          }
+        },
+        "content_consistent": true,
+        "tools_compared": [
+          "7z",
+          "tar",
+          "zipfile"
+        ]
+      },
+      "content_source_tool": "zipfile",
+      "subtitles": [
+        {
+          "member_path": "简体字幕/秋刀鱼之味.简体.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 1,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "秋刀鱼之味.简体",
+            "synthetic sample"
+          ]
+        },
+        {
+          "member_path": "简体字幕/肖申克的救赎.英文.srt",
+          "encoding": "utf-8-sig",
+          "format": "srt",
+          "events": 2,
+          "dialogue_lines": 2,
+          "line_kinds": {
+            "han": 1,
+            "latin": 1,
+            "kana": 0,
+            "hangul": 0,
+            "other": 0
+          },
+          "simplified_hits": 0,
+          "traditional_hits": 0,
+          "mixed_han_latin_events": 0,
+          "style_kinds": null,
+          "suggested_language": "chs+eng",
+          "suggested_bilingual": true,
+          "suggested_layout": "separate-events",
+          "dialogue_preview": [
+            "肖申克的救赎.英文",
+            "synthetic sample"
+          ]
+        }
+      ],
+      "non_subtitle_members": [],
+      "inner_archives": []
+    }
+  ],
+  "sample_summary": {
+    "unique_archives_and_loose_files": 12,
+    "duplicates_removed": 1,
+    "true_format": {
+      "loose": 1,
+      "rar4": 3,
+      "zip": 8
+    },
+    "extension_mismatch": 1,
+    "zip_member_name_encoding": {
+      "ascii": 3,
+      "gb18030": 14,
+      "unicode-path-extra": 1,
+      "utf8-flag": 6
+    },
+    "rar4_members_with_unicode_name": {
+      "True": 4
+    },
+    "archives_with_subdirectories": 1,
+    "archives_with_inner_archives": 0,
+    "subtitle_files": 28,
+    "subtitle_encoding": {
+      "gb18030": 5,
+      "utf-16-le-bom": 2,
+      "utf-8": 2,
+      "utf-8-sig": 19
+    },
+    "subtitle_format": {
+      "ass": 14,
+      "srt": 13,
+      "ssa": 1
+    },
+    "max_subtitles_in_one_archive": 8,
+    "non_subtitle_members": 1,
+    "language_source": "manifest.json（人工标注）",
+    "language": {
+      "chs": 16,
+      "chs+eng": 5,
+      "cht": 4,
+      "eng": 3
+    },
+    "bilingual_layout": {
+      "same-event": 2,
+      "separate-events": 3,
+      "单语": 23
+    },
+    "content_scope": {
+      "commentary": 1,
+      "extra": 6,
+      "feature": 17,
+      "part": 4
+    },
+    "archive_bilingual_form": {
+      "none": 8,
+      "separate-files": 1,
+      "single-file": 2,
+      "single-file+separate-files": 1
+    }
+  },
+  "fixtures_unchanged": true
+}
