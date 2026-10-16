@@ -28,6 +28,8 @@ output/
 # 只保留一份站点前端脚本 subhd.js（6 份哈希相同），用于查看下载按钮等 JS 逻辑
 tests/fixtures/subhd/*_files/*
 !tests/fixtures/subhd/秋刀鱼之味-search.rendered_files/subhd.js.download
+# Jellyfin 实测用的测试媒体库（探针脚本生成的视频和字幕，可随时重建）
+tests/jellyfin-lib/
 
 # 编辑器与系统
 .vscode/
