@@ -1,0 +1,323 @@
+{
+  "generated_at": "2026-10-16 01:23:21 AM",
+  "request_count": 12,
+  "max_requests_per_run": 40,
+  "min_seconds_between_requests": 4.0,
+  "stop_reason": "HTTP 509，停止运行（不重试）",
+  "requests": [
+    {
+      "seq": 1,
+      "time": "01:22:23 AM",
+      "label": "GET api/doc",
+      "url": "https://assrt.net/api/doc",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 35630,
+      "elapsed_ms": 1373,
+      "saved_as": "api-doc.html"
+    },
+    {
+      "seq": 2,
+      "time": "01:22:29 AM",
+      "label": "GET user/quota ",
+      "url": "https://api.assrt.net/v1/user/quota",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 68,
+      "elapsed_ms": 862,
+      "api_status": 0,
+      "items": null,
+      "saved_as": "quota-r1-1-start.json"
+    },
+    {
+      "seq": 3,
+      "time": "01:22:34 AM",
+      "label": "GET sub/search q=秋刀鱼之味 cnt=15",
+      "url": "https://api.assrt.net/v1/sub/search?q=%E7%A7%8B%E5%88%80%E9%B1%BC%E4%B9%8B%E5%91%B3&cnt=15",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 1838,
+      "elapsed_ms": 849,
+      "api_status": 0,
+      "items": 7,
+      "saved_as": "秋刀鱼之味-search-zh.json"
+    },
+    {
+      "seq": 4,
+      "time": "01:22:39 AM",
+      "label": "GET sub/search q=肖申克的救赎 cnt=15",
+      "url": "https://api.assrt.net/v1/sub/search?q=%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E&cnt=15",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 4115,
+      "elapsed_ms": 1084,
+      "api_status": 0,
+      "items": 15,
+      "saved_as": "肖申克的救赎-search-zh.json"
+    },
+    {
+      "seq": 5,
+      "time": "01:22:44 AM",
+      "label": "GET sub/search q=阳光灿烂的日子 cnt=15",
+      "url": "https://api.assrt.net/v1/sub/search?q=%E9%98%B3%E5%85%89%E7%81%BF%E7%83%82%E7%9A%84%E6%97%A5%E5%AD%90&cnt=15",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 3598,
+      "elapsed_ms": 970,
+      "api_status": 0,
+      "items": 15,
+      "saved_as": "阳光灿烂的日子-search-zh.json"
+    },
+    {
+      "seq": 6,
+      "time": "01:22:49 AM",
+      "label": "GET user/quota ",
+      "url": "https://api.assrt.net/v1/user/quota",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 68,
+      "elapsed_ms": 897,
+      "api_status": 0,
+      "items": null,
+      "saved_as": "quota-r1-2-after-3-searches.json"
+    },
+    {
+      "seq": 7,
+      "time": "01:22:53 AM",
+      "label": "GET sub/search q=An Autumn Afternoon cnt=15",
+      "url": "https://api.assrt.net/v1/sub/search?q=An+Autumn+Afternoon&cnt=15",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 2137,
+      "elapsed_ms": 891,
+      "api_status": 0,
+      "items": 8,
+      "saved_as": "秋刀鱼之味-search-en.json"
+    },
+    {
+      "seq": 8,
+      "time": "01:22:58 AM",
+      "label": "GET sub/search q=The Shawshank Redemption cnt=15",
+      "url": "https://api.assrt.net/v1/sub/search?q=The+Shawshank+Redemption&cnt=15",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 4521,
+      "elapsed_ms": 1947,
+      "api_status": 0,
+      "items": 15,
+      "saved_as": "肖申克的救赎-search-en.json"
+    },
+    {
+      "seq": 9,
+      "time": "01:23:04 AM",
+      "label": "GET sub/search q=In the Heat of the Sun cnt=15",
+      "url": "https://api.assrt.net/v1/sub/search?q=In+the+Heat+of+the+Sun&cnt=15",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 2938,
+      "elapsed_ms": 807,
+      "api_status": 0,
+      "items": 11,
+      "saved_as": "阳光灿烂的日子-search-en.json"
+    },
+    {
+      "seq": 10,
+      "time": "01:23:09 AM",
+      "label": "GET sub/search q=tt0056444 cnt=15",
+      "url": "https://api.assrt.net/v1/sub/search?q=tt0056444&cnt=15",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 90,
+      "elapsed_ms": 864,
+      "api_status": 0,
+      "items": null,
+      "saved_as": "秋刀鱼之味-search-imdb.json"
+    },
+    {
+      "seq": 11,
+      "time": "01:23:14 AM",
+      "label": "GET sub/search q=tt0111161 cnt=15",
+      "url": "https://api.assrt.net/v1/sub/search?q=tt0111161&cnt=15",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 90,
+      "elapsed_ms": 917,
+      "api_status": 0,
+      "items": null,
+      "saved_as": "肖申克的救赎-search-imdb.json"
+    },
+    {
+      "seq": 12,
+      "time": "01:23:19 AM",
+      "label": "GET sub/search q=tt0111797 cnt=15",
+      "url": "https://api.assrt.net/v1/sub/search?q=tt0111797&cnt=15",
+      "final_url": null,
+      "http_status": 509,
+      "body_bytes": 61,
+      "elapsed_ms": 1915
+    }
+  ],
+  "films": {
+    "秋刀鱼之味": {
+      "queries": {
+        "zh": {
+          "params": {
+            "q": "秋刀鱼之味",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 7,
+          "ids": [
+            604957,
+            304118,
+            217802,
+            202051,
+            182574,
+            22279,
+            22169
+          ]
+        },
+        "en": {
+          "params": {
+            "q": "An Autumn Afternoon",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 8,
+          "ids": [
+            604957,
+            601291,
+            304118,
+            217802,
+            217656,
+            182574,
+            22279,
+            22169
+          ]
+        },
+        "imdb": {
+          "params": {
+            "q": "tt0056444",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 0,
+          "ids": []
+        }
+      }
+    },
+    "肖申克的救赎": {
+      "queries": {
+        "zh": {
+          "params": {
+            "q": "肖申克的救赎",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 15,
+          "ids": [
+            716687,
+            692174,
+            645886,
+            623542,
+            612531,
+            611802,
+            416312,
+            415767,
+            415768,
+            415769,
+            414894,
+            410764,
+            410765,
+            307242,
+            305568
+          ]
+        },
+        "en": {
+          "params": {
+            "q": "The Shawshank Redemption",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 15,
+          "ids": [
+            716687,
+            692174,
+            691945,
+            645886,
+            675949,
+            673119,
+            629001,
+            623542,
+            612531,
+            611802,
+            425381,
+            416312,
+            415767,
+            415768,
+            415769
+          ]
+        },
+        "imdb": {
+          "params": {
+            "q": "tt0111161",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 0,
+          "ids": []
+        }
+      }
+    },
+    "阳光灿烂的日子": {
+      "queries": {
+        "zh": {
+          "params": {
+            "q": "阳光灿烂的日子",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 15,
+          "ids": [
+            629874,
+            629864,
+            629347,
+            629274,
+            602819,
+            411119,
+            411120,
+            308981,
+            308979,
+            308980,
+            304821,
+            199078,
+            197568,
+            165591,
+            140229
+          ]
+        },
+        "en": {
+          "params": {
+            "q": "In the Heat of the Sun",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 11,
+          "ids": [
+            629874,
+            629864,
+            629347,
+            411119,
+            411120,
+            197568,
+            165591,
+            140229,
+            12220,
+            118222,
+            135275
+          ]
+        }
+      }
+    }
+  }
+}

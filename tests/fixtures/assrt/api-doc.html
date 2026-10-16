@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0064)/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="“http://open.weibo.com/wb”" lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>API文档 - 射手网(伪) - 与别人分享，别人与你分享</title>
+<link rel="search" type="application/opensearchdescription+xml" href="/searchprovider.xml" title="射手网字幕搜索">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="alternate" type="application/rss+xml" title="字幕" href="/sub/feed.xml">
+<link rel="stylesheet" type="text/css" href="/css/style.min.css?150326">
+<link rel="stylesheet" type="text/css" href="/css/doc.min.css?151223h">
+<style> 
+.homeadv_text a{color:blue;font:12px/1.5 arial,sans-serif;}
+</style>
+<!--<script src="/js/wb.js" type="text/javascript" charset="utf-8"></script>-->
+<style type="text/css">object,embed{-webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;-ms-animation-duration:.001s;-ms-animation-name:playerInserted;-o-animation-duration:.001s;-o-animation-name:playerInserted;animation-duration:.001s;animation-name:playerInserted;}@-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head>
+<body ondragover="hspdo(event)" ondrop="hspfs(event)" class="detail"><div id="wm-ipp" lang="en" style="display: none;">
+</div>
+</div>
+<div class="main">
+    <div class="head">
+        <div class="headbox">
+            <div class="line1">
+                <!--<span class="select" id="svrloc" style="visibility:hidden;width:60px;overflow:hidden;"> &nbsp;&nbsp;&nbsp;&nbsp; </span>-->
+                <span class="bottomlist">
+                    <a class="waves-effect" href="/xml/list/sub/">最新字幕</a>
+                    <a class="waves-effect" href="/xml/list/sub/subdown24.xml">本日热门</a>
+                    <a class="waves-effect" href="/xml/list/sub/subdown7x24.xml">本周热门</a>
+          <a class="waves-effect hei" data-wide="我要" href="/sub/upload.html">贡献字幕</a>
+                </span>
+                <span class="reguser" id="useract">
+                    <!-- <a href="/user/register.xml">加入我们</a>
+          <a class="denglu" href="/user/logon.xml">登录</a> -->
+                </span>
+            </div>
+            <div class="loge">
+                <a href="/"><img src="/images/shooter_logo.png" alt="射手网(伪)Logo" title="射手网(伪)Logo"></a>
+            </div>
+            <div class="logbot" >Cut off one head, two more take its place</br>
+            </div>
+        </div><!--headbox end-->
+    
+    </div><!--head end-->
+    <div class="clear"></div>
+    <div class="body">
+    <div class="bodybox" style="max-width:1440px">
+        <article class="markdown-body"><a name="api" href="#api" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><h1>ASSRT API文档</h1>
+<ul class="float-box">
+<li><a href="#summary">概述</a><ul>
+<li><a href="#usetoken">使用Token</a></li>
+<li><a href="#apiquota">API配额</a></li>
+</ul>
+</li>
+<li><a href="#endpoints">Endpoints</a><ul>
+<li><a href="#sub">sub</a><ul>
+<li><a href="#subsearch">search</a></li>
+<li><a href="#subdetail">detail</a></li>
+<li><a href="#subsimilar">similar</a></li>
+<li><del><a href="#subvote">vote</a></del></li>
+<li><del><a href="#subupload">upload</a></del></li>
+</ul>
+</li>
+<li><a href="#user">user</a><ul>
+<li><a href="#userquota">quota</a></li>
+<li><del><a href="#userresettoken">reset_token</a></del></li>
+<li><del><a href="#usergettoken">get_token</a></del></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#datatypes">数据类型</a><ul>
+<li><a href="#subs">subs</a></li>
+</ul>
+</li>
+<li><a href="#errors">错误值</a><ul>
+<li><a href="#apierror">APIError</a></li>
+<li><a href="#clientfail">ClientFail</a></li>
+<li><a href="#serverfail">ServerFail</a></li>
+</ul>
+</li>
+<li><del><a href="/api/console">API测试</a></del></li>
+<li><a href="//api.assrt.net/stat.html">API统计</a></li>
+<li><a href="/api/changelog">Change Log</a></li>
+</ul><div class="float-right">
+<p>本文档给出ASSRT API的使用方法。</p>
+<p>我们承诺为个人用户提供免费的API服务，商业合作请洽<img alt="img" src="https://assrt.net/images/email.jpg" />。</p>
+<p>使用ASSRT API完全免费，但请在合适的位置添加来源说明及本站链接。例如：</p>
+<blockquote>
+    <p>字幕服务由<a href="https://assrt.net" target="_blank">assrt.net</a>提供</p>
+</blockquote>
+<h2>
+<a name="概述" class="anchor" href="#%E6%A6%82%E8%BF%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a><a name="summary"></a>概述</h2>
+<p>本API使用HTTP协议进行通信，回复数据采用JSON封装。</p>
+<p>API服务器的域名为<code>api.assrt.net</code>。一个典型的API终结点(endpoint)形如<code>/v1/foo/bar?{args}</code>。可以使用HTTP或者HTTPS方式访问API服务，对应的url为<code>http://api.assrt.net</code>和<code>https://api.assrt.net</code></p>
+<p>由于网络原因，也可以使用以下替代域名访问：<code>api.makedie.me</code></p>
+<p>不限使用GET或者POST，例如以下的请求是等价的：</p>
+<pre><code>GET /v1/foo/bar?arg1=a&amp;arg2=b HTTP/1.1
+</code></pre>
+<pre><code>POST /v1/foo/bar HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+arg1=a&amp;arg2=b
+</code></pre>
+<p>但请注意，POST请求中的url参数会被忽略。如：</p>
+<pre><code>POST /v1/foo/bar&amp;arg1=c HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+arg1=a&amp;arg2=b
+</code></pre>
+<p>以上请求中的arg1会被认为是<em>a</em>而不是<em>c</em></p>
+<h3>
+<a name="使用token" class="anchor" href="#%E4%BD%BF%E7%94%A8token" aria-hidden="true"><span class="octicon octicon-link"></span></a><a name="usetoken"></a>使用Token</h3>
+<p>Token为32位随机数字和大小写字母组合。用户<a href="/user/register.xml">注册</a>后即可在<a href="/usercp.php">用户面板</a>中查看自己的API密钥(Token)，并可以重置Token。</p>
+<p>所有API请求如无特别说明均需带上Token。使用的方法有两种：</p>
+<p>方法一：</p>
+<pre><code>GET /v1/foo/bar?token=TOKEN HTTP/1.1
+Host: api.assrt.net
+User-Agent: curl/7.43.0
+Accept: */*
+</code></pre>
+<p>方法二：</p>
+<pre><code>GET /v1/sub/detail HTTP/1.1
+Host: api.assrt.net
+User-Agent: curl/7.43.0
+Accept: */*
+Authorization: Bearer TOKEN
+</code></pre>
+<div>请将请求中的TOKEN替换成你自己的密钥。</div>
+<p><strong>在下文中如无特别说明，所有API请求均需带上Token。</strong></p>
+<h3>
+<a name="api配额" class="anchor" href="#api%E9%85%8D%E9%A2%9D" aria-hidden="true"><span class="octicon octicon-link"></span></a><a name="apiquota"></a>API配额</h3>
+<p>为了公平使用的原则，API初始配额为 <strong>20次每分钟</strong>。注意每个token以及每个IP共享同一个配额，如A用户和B用户使用不同的token，但是IP相同，则ta们一共可以使用20次每分钟的配额；同理不同IP的用户使用同一token也只能合计使用20次每分钟的API请求。</p>
+<p>如果你需要更高的请求速率，请将您的应用场景以及所需的配额发送邮件至<a href="/images/email.jpg" target="_blank"><img src="/images/email.jpg" alt="img" data-canonical-src="/images/email.jpg" style="max-width:100%;"></a>，我们将在审核后为你开通。</p>
+<p>对于非商业应用场景，我们会优先审核发布更多高质量字幕的个人用户。</p>
+<p>另外你可以在<a href="/usercp.php">用户面板</a>或<a href="#userquota">使用api</a>查询当前可用配额。</p>
+<h2>
+<a name="endpoints" class="anchor" href="#endpoints" aria-hidden="true"><span class="octicon octicon-link"></span></a>Endpoints</h2>
+<p>以下列举了API服务的所有终结点</p>
+<h3>
+<a name="sub" class="anchor" href="#sub" aria-hidden="true"><span class="octicon octicon-link"></span></a>sub</h3>
+<p>字幕相关服务</p>
+<h4>
+<a name="subsearch" class="anchor" href="#subsearch" aria-hidden="true"><span class="octicon octicon-link"></span></a>sub/search</h4>
+<p>搜索字幕</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>是否可选</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>q</td>
+<td></td>
+<td>搜索字符串，至少长度为3</td>
+</tr>
+<tr>
+<td>pos</td>
+<td>可选</td>
+<td>分页时的起始位置</td>
+</tr>
+<tr>
+<td>cnt</td>
+<td>可选</td>
+<td>返回的结果数量，最多一次返回15个结果，默认为15</td>
+</tr>
+<tr>
+<td>is_file</td>
+<td>可选</td>
+<td>值为1时指定搜索字符串为（不包含扩展名的）视频文件名</td>
+</tr>
+<tr>
+<td>no_muxer</td>
+<td>可选</td>
+<td>值为1时指定忽略搜索字符串中的压制组和视频参数信息</td>
+</tr>
+<tr>
+<td>filelist</td>
+<td>可选</td>
+<td>值为1时同时返回压缩包内的文件列表，但不返回文件的下载链接</td>
+</tr>
+</tbody>
+</table>
+<p>典型请求举例:</p>
+<div class="highlight highlight-source-shell"><pre>curl <span class="pl-s"><span class="pl-pds">"</span>https://api.assrt.net/v1/sub/search?token=TOKEN&amp;q=big&amp;cnt=1&amp;pos=0<span class="pl-pds">"</span></span></pre></div>
+<p>典型响应举例:</p>
+<div class="highlight highlight-source-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>status<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+    <span class="pl-s"><span class="pl-pds">"</span>sub<span class="pl-pds">"</span></span>: {
+        <span class="pl-s"><span class="pl-pds">"</span>subs<span class="pl-pds">"</span></span>: [{
+            <span class="pl-s"><span class="pl-pds">"</span>native_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>老大哥（美版） 第17季第26集<span class="pl-cce">\/</span>Big Brother US S17E26<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>videoname<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>big.brother.us.s17e26.720p.hdtv.x264-bajskorv<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>revision<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>subtype<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>VobSub<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>upload_time<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>2015-08-21 22:11:00<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>vote_score<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-c1">594897</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>release_site<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>人人影视YYeTs<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>lang<span class="pl-pds">"</span></span>: {
+                <span class="pl-s"><span class="pl-pds">"</span>langlist<span class="pl-pds">"</span></span>: {
+                    <span class="pl-s"><span class="pl-pds">"</span>langdou<span class="pl-pds">"</span></span>: <span class="pl-c1">true</span>,
+                    <span class="pl-s"><span class="pl-pds">"</span>langkor<span class="pl-pds">"</span></span>: <span class="pl-c1">true</span>
+                },
+                <span class="pl-s"><span class="pl-pds">"</span>desc<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>韩  双语<span class="pl-pds">"</span></span>
+            }
+        },
+        {
+            <span class="pl-s"><span class="pl-pds">"</span>native_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>老大哥（美版） 第17季第24集<span class="pl-cce">\/</span>Big Brother US S14E24<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>videoname<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>big.brother.us.s17e24.720p.hdtv.x264-bajskorv<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>revision<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>subtype<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Subrip(srt)<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>upload_time<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>2015-08-18 10:02:00<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>vote_score<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-c1">594867</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>release_site<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>人人影视YYeTs<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>lang<span class="pl-pds">"</span></span>: {
+                <span class="pl-s"><span class="pl-pds">"</span>langlist<span class="pl-pds">"</span></span>: {
+                    <span class="pl-s"><span class="pl-pds">"</span>langdou<span class="pl-pds">"</span></span>: <span class="pl-c1">true</span>,
+                    <span class="pl-s"><span class="pl-pds">"</span>langkor<span class="pl-pds">"</span></span>: <span class="pl-c1">true</span>
+                },
+                <span class="pl-s"><span class="pl-pds">"</span>desc<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>韩 双语<span class="pl-pds">"</span></span>
+            }
+        }],
+        <span class="pl-s"><span class="pl-pds">"</span>action<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>search<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>keyword<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>big<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>result<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>succeed<span class="pl-pds">"</span></span>
+    }
+}</pre></div>
+<p>如果可以确定搜索字符串为视频文件名，则可以使用<em>is_file=1</em>，除了压制组和视频参数以外的内容将被忽略。或者使用<em>no_muxer=1</em>，这样搜索字符串中的压制组也会被忽略；使用<em>no_muxer=1</em>将默认<em>is_file=1</em>。建议仅在结果太多时使用<em>is_file=1</em>。</p>
+<p>对于<code>q=Gone.with.the.Wind.1939.1080p.BluRay.x264-WiKi</code></p>
+<table>
+<thead>
+<tr>
+<th>额外参数</th>
+<th>实际搜索字符串</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Gone.with.the.Wind.1939.1080p.BluRay.x264-WiKi</td>
+</tr>
+<tr>
+<td>&amp;is_file=1</td>
+<td>Gone with the Wind 1939  -WiKi</td>
+</tr>
+<tr>
+<td>&amp;no_muxer=1</td>
+<td>Gone with the Wind 1939</td>
+</tr>
+</tbody>
+</table>
+<p>关于返回的字幕信息的结构，见<a href="#subs">subs</a></p>
+<h4>
+<a name="subdetail" class="anchor" href="#subdetail" aria-hidden="true"><span class="octicon octicon-link"></span></a>sub/detail</h4>
+<p>获取字幕详细信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>是否可选</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td></td>
+<td>字幕ID，为6位整数</td>
+</tr>
+</tbody>
+</table>
+<p>典型请求举例:</p>
+<div class="highlight highlight-source-shell"><pre>curl <span class="pl-s"><span class="pl-pds">"</span>https://api.assrt.net/v1/sub/detail?token=TOKEN&amp;id=602333<span class="pl-pds">"</span></span></pre></div>
+<p>典型响应举例:</p>
+<div class="highlight highlight-source-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>status<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+    <span class="pl-s"><span class="pl-pds">"</span>sub<span class="pl-pds">"</span></span>: {
+        <span class="pl-s"><span class="pl-pds">"</span>result<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>succeed<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>action<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>detail<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>subs<span class="pl-pds">"</span></span>: [{
+            <span class="pl-s"><span class="pl-pds">"</span>filename<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>洛东江大决战.Does the Nak-Dong River Flow.1976.DVD.X264.AAC.HALFCDi.rar<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>native_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>洛东江大决战<span class="pl-cce">\/</span>Commando on the Nakdong River<span class="pl-cce">\/</span>Does the Nak-Dong River Flow<span class="pl-cce">\/</span>洛東江大決戦<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-c1">602333</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>down_count<span class="pl-pds">"</span></span>: <span class="pl-c1">14</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>revision<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>upload_time<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>2015-07-03 11:28:53<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>url<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http:<span class="pl-cce">\/\/</span>file0.assrt.net<span class="pl-cce">\/</span>download<span class="pl-cce">\/</span>602333<span class="pl-cce">\/</span>洛东江大决战.Does the Nak-Dong River Flow.1976.DVD.X264.AAC.HALFCDi.rar?_=1450914208&amp;-=f281c84ea1a1d01280bd105e5f4a0baf&amp;api=1<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>size<span class="pl-pds">"</span></span>: <span class="pl-c1">20180</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>producer<span class="pl-pds">"</span></span>: {
+                <span class="pl-s"><span class="pl-pds">"</span>producer<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>chenchun8219<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>verifier<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>谢里登大道<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>source<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>校订翻译<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>uploader<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>谢里登大道<span class="pl-pds">"</span></span>
+            },
+            <span class="pl-s"><span class="pl-pds">"</span>filelist<span class="pl-pds">"</span></span>: [{
+                <span class="pl-s"><span class="pl-pds">"</span>url<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>http:<span class="pl-cce">\/\/</span>file0.assrt.net<span class="pl-cce">\/</span>onthefly<span class="pl-cce">\/</span>602333<span class="pl-cce">\/</span>-<span class="pl-cce">\/</span>1<span class="pl-cce">\/</span>洛东江大决战.Does the Nak-Dong River Flow.1976.DVD.X264.AAC.HALFCDi.srt?_=1450914208&amp;-=af6b1e5c372713868f36e3c4f3864458&amp;api=1<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>f<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>洛东江大决战.Does the Nak-Dong River Flow.1976.DVD.X264.AAC.HALFCDi.srt<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>s<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>52KB<span class="pl-pds">"</span></span>
+            }],
+            <span class="pl-s"><span class="pl-pds">"</span>subtype<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>VobSub<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>洛东江大决战<span class="pl-cce">\/</span>Commando on the Nakdong River<span class="pl-cce">\/</span>Does the Nak-Dong River Flow<span class="pl-cce">\/</span>洛東江大決戦<span class="pl-cce">\/</span>洛东江大决战.Does the Nak-Dong River Flow.1976.DVD.X264.AAC.HALFCDi<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>vote_score<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>release_site<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>个人<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>videoname<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>낙동강은 흐르는가<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>view_count<span class="pl-pds">"</span></span>: <span class="pl-c1">289</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>lang<span class="pl-pds">"</span></span>: {
+                <span class="pl-s"><span class="pl-pds">"</span>desc<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>双语<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>langlist<span class="pl-pds">"</span></span>: {
+                    <span class="pl-s"><span class="pl-pds">"</span>langdou<span class="pl-pds">"</span></span>: <span class="pl-c1">true</span>
+                }
+            }
+        }]
+    }
+}</pre></div>
+<p>关于返回的字幕信息的结构，见<a href="#subs">subs</a></p>
+
+<h4>
+<a id="subsimilar" class="anchor" href="#subsimilar" aria-hidden="true"><span class="octicon octicon-link"></span></a>sub/similar</h4>
+
+<p>获取与某个字幕类似的其他5个字幕</p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>是否可选</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td></td>
+<td>字幕ID，为6位整数</td>
+</tr>
+</tbody>
+</table>
+
+<p>典型请求举例:</p>
+
+<div class="highlight highlight-source-shell"><pre>curl <span class="pl-s"><span class="pl-pds">"</span>https://api.assrt.net/v1/sub/similar?token=TOKEN&amp;id=603765<span class="pl-pds">"</span></span></pre></div>
+
+<p>典型响应举例:</p>
+
+<div class="highlight highlight-source-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>status<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+    <span class="pl-s"><span class="pl-pds">"</span>sub<span class="pl-pds">"</span></span>: {
+        <span class="pl-s"><span class="pl-pds">"</span>result<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>succeed<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>action<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>similar<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>subs<span class="pl-pds">"</span></span>: [{
+            <span class="pl-s"><span class="pl-pds">"</span>native_name<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>无限斯托拉托斯<span class="pl-cce">\/</span>BD 两季+OVA1<span class="pl-cce">\/</span>2全<span class="pl-cce">\/</span>IS<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>videoname<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Infinite Stratos<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>revision<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>subtype<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>Subrip(srt)<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>upload_time<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>2015-08-22 18:37:08<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>vote_score<span class="pl-pds">"</span></span>: <span class="pl-c1">50</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>: <span class="pl-c1">602887</span>,
+            <span class="pl-s"><span class="pl-pds">"</span>release_site<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>个人<span class="pl-pds">"</span></span>,
+            <span class="pl-s"><span class="pl-pds">"</span>lang<span class="pl-pds">"</span></span>: {
+                <span class="pl-s"><span class="pl-pds">"</span>desc<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>双语<span class="pl-pds">"</span></span>,
+                <span class="pl-s"><span class="pl-pds">"</span>langlist<span class="pl-pds">"</span></span>: {
+                    <span class="pl-s"><span class="pl-pds">"</span>langdou<span class="pl-pds">"</span></span>: <span class="pl-c1">true</span>
+                }
+            }
+        },
+        <span class="pl-s"><span class="pl-pds">"</span>此处省略其余4个结果<span class="pl-pds">"</span></span>,
+        ]
+    }
+}</pre></div>
+
+<p>这个请求的响应格式与<a href="#subsearch">sub/search</a>相同</p>
+
+<h3>
+<a name="user" class="anchor" href="#user" aria-hidden="true"><span class="octicon octicon-link"></span></a>user</h3>
+<p>用户信息相关服务</p>
+<h4>
+<a name="userquota" class="anchor" href="#userquota" aria-hidden="true"><span class="octicon octicon-link"></span></a>user/quota</h4>
+<p>获取当前用户可用配额</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>是否可选</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>典型请求举例:</p>
+<div class="highlight highlight-source-shell"><pre>curl <span class="pl-s"><span class="pl-pds">"</span>https://api.assrt.net/v1/user/quota?token=TOKEN<span class="pl-pds">"</span></span></pre></div>
+<p>典型响应举例:</p>
+<div class="highlight highlight-source-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>status<span class="pl-pds">"</span></span>: <span class="pl-c1">0</span>,
+    <span class="pl-s"><span class="pl-pds">"</span>user<span class="pl-pds">"</span></span>: {
+        <span class="pl-s"><span class="pl-pds">"</span>result<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>succeed<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>action<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>quota<span class="pl-pds">"</span></span>,
+        <span class="pl-s"><span class="pl-pds">"</span>quota<span class="pl-pds">"</span></span>: <span class="pl-c1">20</span>
+    }
+}</pre></div>
+<h2>
+<a name="数据类型" class="anchor" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a><a name="datatypes"></a>数据类型</h2>
+<h3>
+<a name="subs" class="anchor" href="#subs" aria-hidden="true"><span class="octicon octicon-link"></span></a>subs</h3>
+<p>字幕基本信息由以下键构成：</p>
+<ul>
+<li>
+<strong>id</strong> 字幕ID</li>
+<li>
+<strong>native_name</strong> 影片原始名称</li>
+<li>
+<strong>revision</strong> 字幕的修订版本ID，如不存在则为0</li>
+<li>
+<strong>upload_time</strong> 上传时间</li>
+<li>
+<strong>subtype</strong> 字幕格式</li>
+<li>
+<strong>vote_score</strong> 用户评分，如果没有人评分则为0</li>
+<li>
+<strong>release_site</strong> 发行的字幕组名称 (可选)</li>
+<li>
+<strong>videoname</strong> 字幕匹配的视频文件名 (可选)</li>
+<li>
+<strong>vote_machine_translate</strong> 用户评价此字幕为机器翻译字幕 (可选)</li>
+<li>
+<strong>lang</strong> 字幕语言 (可选)
+<ul>
+<li>
+<strong>langlist</strong> 字幕语言列表</li>
+<li>
+<strong>desc</strong> 字幕语言描述</li>
+</ul>
+</li>
+</ul>
+<p>以下仅为<a href="#subdetail">字幕详细信息</a>才可见的键：</p>
+<ul>
+<li>
+<strong>filename</strong> 字幕文件名</li>
+<li>
+<strong>size</strong> 字幕文件大小</li>
+<li>
+<strong>url</strong> 字幕下载地址</li>
+<li>
+<strong>view_count</strong> 浏览次数</li>
+<li>
+<strong>down_count</strong> 下载次数</li>
+<li>
+<strong>title</strong> 标题</li>
+<li>
+<strong>filelist</strong> 字幕压缩包内含的文件列表 (可选)
+<ul>
+<li>
+<strong>s</strong> 文件大小</li>
+<li>
+<strong>f</strong> 文件名</li>
+<li>
+<strong>url</strong>该文件下载地址</li>
+</ul>
+</li>
+<li>
+<strong>producer</strong> 发布人 (可选)
+<ul>
+<li>
+<strong>uploader</strong> 上传者</li>
+<li>
+<strong>verifier</strong> 校订者</li>
+<li>
+<strong>producer</strong> 制作者</li>
+<li>
+<strong>source</strong> 字幕来源</li>
+</ul>
+</li>
+</ul>
+<h2>
+<a name="错误值" class="anchor" href="#%E9%94%99%E8%AF%AF%E5%80%BC" aria-hidden="true"><span class="octicon octicon-link"></span></a><a name="errors"></a>错误值</h2>
+<p>开发者应判断回复信息中的status值，如果不为零，说明发生了错误。需要注意的是，错误有时会影响HTTP状态码，其中APIError为200，ClientFail和ServerFail分别为4xx和5xx。</p>
+<p>请不要保存下载地址，因为每次生成的下载地址都是唯一的而且具有一定的有效时间。</p>
+<h3>
+<a name="apierror" class="anchor" href="#apierror" aria-hidden="true"><span class="octicon octicon-link"></span></a>APIError</h3>
+<table>
+<thead>
+<tr>
+<th>错误代码</th>
+<th>错误信息</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>no such user</td>
+<td>用户不存在</td>
+</tr>
+<tr>
+<td>101</td>
+<td>length of keyword must be longer than 3</td>
+<td>搜索关键词长度必须大于3</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="clientfail" class="anchor" href="#clientfail" aria-hidden="true"><span class="octicon octicon-link"></span></a>ClientFail</h3>
+<table>
+<thead>
+<tr>
+<th>错误代码</th>
+<th>错误信息</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20000</td>
+<td>your request is missing essential arguments</td>
+<td>请求缺少参数</td>
+</tr>
+<tr>
+<td>20001</td>
+<td>invalid token</td>
+<td>Token不存在</td>
+</tr>
+<tr>
+<td>20400</td>
+<td>API endpoint not found</td>
+<td>API终结点不存在</td>
+</tr>
+<tr>
+<td>20900</td>
+<td>subtitle not found</td>
+<td>字幕不存在</td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a name="serverfail" class="anchor" href="#serverfail" aria-hidden="true"><span class="octicon octicon-link"></span></a>ServerFail</h3>
+<table>
+<thead>
+<tr>
+<th>错误代码</th>
+<th>错误信息</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30000</td>
+<td>server is encounting errors</td>
+<td>服务器抽风了</td>
+</tr>
+<tr>
+<td>30001</td>
+<td>database is unavailable</td>
+<td>数据库挂了</td>
+</tr>
+<tr>
+<td>30002</td>
+<td>search engine is unavailable</td>
+<td>搜索引擎挂了</td>
+</tr>
+<tr>
+<td>30300</td>
+<td>API is temporarily unavailable</td>
+<td>站长改代码少打了一个分号</td>
+</tr>
+<tr>
+<td>30900</td>
+<td>you are exceeding request limits</td>
+<td>配额超限</td>
+</tr>
+</tbody>
+</table>
+<p>最后修改：2020/04/27</p>
+</article>
+    </div><!--bodybox end-->
+    <div class="foot" style="padding-top:30px;">
+    <center style="margin-bottom:30px;" class="homeadv_text" id="homeadv1"></center>
+    <br>
+        <div class="footbox">
+        <span class="copyright">©2014-2020  <a href="javascript:shtg_addBookmark('射手网(伪)');">加入收藏夹</a>
+        <br></span>
+        <span class="menu">
+            <a href="/downpack/">镜像</a>
+            <a href="/calendar#today" target="_blank">美剧时间表</a>
+            <a href="/about">关于</a>
+            <a href="mailto:admin@assrt.net">联系我们</a>
+            <a href="/disclaimer.xml">声明</a>
+            <a href="/api/doc">API</a>
+            <a href="/oss">开源及集成</a>
+             <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"><img style="vertical-align:text-top" src="/images/cc.gif"></a>	 
+        </span>
+        </div>
+    </div>
+    </div><!--body end-->
+</div><!--rootpage end-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-35723104-4', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">var sc_project=10158536; var sc_invisible=1; var sc_security="6a66e73a"; var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");document.write("<sc"+"ript type='text/javascript' src='" +scJsHost+"statcounter.com/counter/counter.js'></"+"script>");</script><noscript><div class="statcounter"><a title="" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/10158536/0/6a66e73a/1/" alt="click tracking"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+<script src="/js/waves.js"></script>
+<script type="text/javascript">Waves.displayEffect();</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"66b3a68b52bd472191a0c72003edd510","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

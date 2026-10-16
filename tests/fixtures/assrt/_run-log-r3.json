@@ -1,0 +1,658 @@
+{
+  "generated_at": "2026-10-16 01:51:52 AM",
+  "run_tag": "r3",
+  "request_count": 18,
+  "max_requests_per_run": 40,
+  "min_seconds_between_requests": 16.0,
+  "stop_reason": null,
+  "requests": [
+    {
+      "seq": 1,
+      "time": "01:47:03 AM",
+      "label": "GET user/quota ",
+      "url": "https://api.assrt.net/v1/user/quota",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 68,
+      "elapsed_ms": 926,
+      "api_status": 0,
+      "items": null,
+      "saved_as": "quota-r3-1-start.json",
+      "quota": 5
+    },
+    {
+      "seq": 2,
+      "time": "01:47:20 AM",
+      "label": "GET sub/detail id=716687",
+      "url": "https://api.assrt.net/v1/sub/detail?id=716687",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 916,
+      "elapsed_ms": 778,
+      "api_status": 0,
+      "items": 1,
+      "saved_as": "肖申克的救赎-detail-716687.json"
+    },
+    {
+      "seq": 3,
+      "time": "01:47:37 AM",
+      "label": "GET sub/detail id=692174",
+      "url": "https://api.assrt.net/v1/sub/detail?id=692174",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 1300,
+      "elapsed_ms": 872,
+      "api_status": 0,
+      "items": 1,
+      "saved_as": "肖申克的救赎-detail-692174.json"
+    },
+    {
+      "seq": 4,
+      "time": "01:47:54 AM",
+      "label": "GET sub/detail id=645886",
+      "url": "https://api.assrt.net/v1/sub/detail?id=645886",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 1013,
+      "elapsed_ms": 767,
+      "api_status": 0,
+      "items": 1,
+      "saved_as": "肖申克的救赎-detail-645886.json"
+    },
+    {
+      "seq": 5,
+      "time": "01:48:10 AM",
+      "label": "GET sub/detail id=612531",
+      "url": "https://api.assrt.net/v1/sub/detail?id=612531",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 2723,
+      "elapsed_ms": 826,
+      "api_status": 0,
+      "items": 1,
+      "saved_as": "肖申克的救赎-detail-612531.json"
+    },
+    {
+      "seq": 6,
+      "time": "01:48:27 AM",
+      "label": "GET sub/detail id=611802",
+      "url": "https://api.assrt.net/v1/sub/detail?id=611802",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 3968,
+      "elapsed_ms": 807,
+      "api_status": 0,
+      "items": 1,
+      "saved_as": "肖申克的救赎-detail-611802.json"
+    },
+    {
+      "seq": 7,
+      "time": "01:48:44 AM",
+      "label": "GET download id=692174",
+      "url": "http://file0.assrt.net/download/692174/%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E.The.Shawshank.Redemption.1994.2160p.UHD.BluRay.4K%E9%80%82%E9%85%8DHDR.zip?_=1792129658&-=36b2ef4406541cf19d49cc0b47d4a5cd&api=1",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 66833,
+      "elapsed_ms": 767,
+      "saved_as": "肖申克的救赎.The.Shawshank.Redemption.1994.2160p.UHD.BluRay.4K适配HDR.zip",
+      "magic_format": "rar4",
+      "content_type": "application/octet-stream"
+    },
+    {
+      "seq": 8,
+      "time": "01:49:01 AM",
+      "label": "GET download id=612531",
+      "url": "http://file0.assrt.net/download/612531/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.zip?_=1792129692&-=9148c79fe764ad304207626e220dac77&api=1",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 417458,
+      "elapsed_ms": 630,
+      "saved_as": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.zip",
+      "magic_format": "zip",
+      "content_type": "application/octet-stream"
+    },
+    {
+      "seq": 9,
+      "time": "01:49:17 AM",
+      "label": "GET sub/detail id=629874",
+      "url": "https://api.assrt.net/v1/sub/detail?id=629874",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 1115,
+      "elapsed_ms": 817,
+      "api_status": 0,
+      "items": 1,
+      "saved_as": "阳光灿烂的日子-detail-629874.json"
+    },
+    {
+      "seq": 10,
+      "time": "01:49:34 AM",
+      "label": "GET sub/detail id=629864",
+      "url": "https://api.assrt.net/v1/sub/detail?id=629864",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 979,
+      "elapsed_ms": 722,
+      "api_status": 0,
+      "items": 1,
+      "saved_as": "阳光灿烂的日子-detail-629864.json"
+    },
+    {
+      "seq": 11,
+      "time": "01:49:51 AM",
+      "label": "GET sub/detail id=629347",
+      "url": "https://api.assrt.net/v1/sub/detail?id=629347",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 1278,
+      "elapsed_ms": 1023,
+      "api_status": 0,
+      "items": 1,
+      "saved_as": "阳光灿烂的日子-detail-629347.json"
+    },
+    {
+      "seq": 12,
+      "time": "01:50:08 AM",
+      "label": "GET sub/detail id=12220",
+      "url": "https://api.assrt.net/v1/sub/detail?id=12220",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 2118,
+      "elapsed_ms": 797,
+      "api_status": 0,
+      "items": 1,
+      "saved_as": "阳光灿烂的日子-detail-12220.json"
+    },
+    {
+      "seq": 13,
+      "time": "01:50:25 AM",
+      "label": "GET download id=12220",
+      "url": "http://file1.assrt.net/download/012220/In.the.heat.of.the.sun.dvdrip.divx-imbt.CnEn.subs.zip?_=1792129810&-=602a631ea84f898751d02bfb5fc37016&api=1",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 72539,
+      "elapsed_ms": 1638,
+      "saved_as": "In.the.heat.of.the.sun.dvdrip.divx-imbt.CnEn.subs.zip",
+      "magic_format": "zip",
+      "content_type": "application/octet-stream"
+    },
+    {
+      "seq": 14,
+      "time": "01:50:42 AM",
+      "label": "GET download id=629874",
+      "url": "http://file1.assrt.net/download/629874/%5B%E9%98%B3%E5%85%89%E7%81%BF%E7%83%82%E7%9A%84%E6%97%A5%E5%AD%90%5D%E6%97%A5%E4%BA%8C%E4%BF%AE%E6%94%B9.rar?_=1792129759&-=15e2825b00b498a1d52ec1e6fc995c89&api=1",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 36027,
+      "elapsed_ms": 1200,
+      "saved_as": "[阳光灿烂的日子]日二修改.rar",
+      "magic_format": "rar4",
+      "content_type": "application/octet-stream"
+    },
+    {
+      "seq": 15,
+      "time": "01:51:00 AM",
+      "label": "GET download id=217802（旧链接）",
+      "url": "http://file0.assrt.net/download/217802/%5B%E7%A7%8B%E5%88%80%E9%B1%BC%E4%B9%8B%E5%91%B3%5D.An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.zip?_=1792128859&-=333dd0b54cd4b7904e7eb64b99a70cec&api=1",
+      "final_url": "http://assrt.net/download/failed/L2Rvd25sb2FkLzIxNzgwMi9b56eL5YiA6bG85LmL5ZGzXS5Bbi5BdXR1bW4uQWZ0ZXJub29uLjE5NjIuRFZEUmlwLlh2aUQuSU1CVC56aXA=",
+      "http_status": 492,
+      "body_bytes": 869,
+      "elapsed_ms": 1562,
+      "saved_as": "download-error-217802-http492.bin",
+      "note": "非 200 或超过大小上限，未当作字幕包保存",
+      "content_type": "text/xml"
+    },
+    {
+      "seq": 16,
+      "time": "01:51:17 AM",
+      "label": "GET sub/detail id=217802",
+      "url": "https://api.assrt.net/v1/sub/detail?id=217802",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 1144,
+      "elapsed_ms": 818,
+      "api_status": 0,
+      "items": 1,
+      "saved_as": "秋刀鱼之味-detail-217802-r3.json"
+    },
+    {
+      "seq": 17,
+      "time": "01:51:34 AM",
+      "label": "GET download id=217802（刷新后）",
+      "url": "http://file0.assrt.net/download/217802/%5B%E7%A7%8B%E5%88%80%E9%B1%BC%E4%B9%8B%E5%91%B3%5D.An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.zip?_=1792129879&-=1e0b81c4bc8bf96dc20f14d1912484dc&api=1",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 34152,
+      "elapsed_ms": 1450,
+      "saved_as": "[秋刀鱼之味].An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.zip",
+      "magic_format": "zip",
+      "content_type": "application/octet-stream"
+    },
+    {
+      "seq": 18,
+      "time": "01:51:52 AM",
+      "label": "GET user/quota ",
+      "url": "https://api.assrt.net/v1/user/quota",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 68,
+      "elapsed_ms": 819,
+      "api_status": 0,
+      "items": null,
+      "saved_as": "quota-r3-4-end.json",
+      "quota": 5
+    }
+  ],
+  "films": {
+    "秋刀鱼之味": {
+      "queries": {
+        "zh": {
+          "params": {
+            "q": "秋刀鱼之味",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 7,
+          "ids": [
+            604957,
+            304118,
+            217802,
+            202051,
+            182574,
+            22279,
+            22169
+          ]
+        },
+        "en": {
+          "params": {
+            "q": "An Autumn Afternoon",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 8,
+          "ids": [
+            604957,
+            601291,
+            304118,
+            217802,
+            217656,
+            182574,
+            22279,
+            22169
+          ]
+        },
+        "imdb": {
+          "params": {
+            "q": "tt0056444",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 0,
+          "ids": []
+        }
+      },
+      "merged_candidates": 9,
+      "detail_ids": [
+        604957,
+        304118,
+        217802
+      ],
+      "download_selection_order": [
+        {
+          "id": 604957,
+          "bilingual_guess": false,
+          "file_name": "[秋刀鱼之味][CC标准收藏版 DIY花絮预告简繁中字]An Autumn Afternoon 1962 CC Blu-Ray 1080P AVC LPCM 1.0-DIY-Anitafayer.zip",
+          "source_rank": 1,
+          "detail_fresh": false
+        },
+        {
+          "id": 217802,
+          "bilingual_guess": false,
+          "file_name": "[秋刀鱼之味].An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.zip",
+          "source_rank": 3,
+          "detail_fresh": true
+        },
+        {
+          "id": 304118,
+          "bilingual_guess": false,
+          "file_name": "An.Autumn.Afternoon.1962.BD.REMUX.H264.1080p.DD20(Jpn).Mysilu.srt",
+          "source_rank": 2,
+          "detail_fresh": false
+        }
+      ],
+      "download_attempted_ids": [
+        217802
+      ],
+      "downloads": [
+        {
+          "id": 604957,
+          "file": "[秋刀鱼之味][CC标准收藏版 DIY花絮预告简繁中字]An Autumn Afternoon 1962 CC Blu-Ray 1080P AVC LPCM 1.0-DIY-Anitafayer.zip",
+          "bytes": 92538,
+          "magic": "zip",
+          "from_previous_run": true,
+          "bilingual_guess": false,
+          "source_rank": 1
+        },
+        {
+          "id": 217802,
+          "file": "[秋刀鱼之味].An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.zip",
+          "bytes": 34152,
+          "magic": "zip",
+          "bilingual_guess": false,
+          "source_rank": 3
+        }
+      ]
+    },
+    "肖申克的救赎": {
+      "queries": {
+        "zh": {
+          "params": {
+            "q": "肖申克的救赎",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 15,
+          "ids": [
+            716687,
+            692174,
+            645886,
+            623542,
+            612531,
+            611802,
+            416312,
+            415767,
+            415768,
+            415769,
+            414894,
+            410764,
+            410765,
+            307242,
+            305568
+          ]
+        },
+        "en": {
+          "params": {
+            "q": "The Shawshank Redemption",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 15,
+          "ids": [
+            716687,
+            692174,
+            691945,
+            645886,
+            675949,
+            673119,
+            629001,
+            623542,
+            612531,
+            611802,
+            425381,
+            416312,
+            415767,
+            415768,
+            415769
+          ]
+        },
+        "imdb-retest": {
+          "params": {
+            "q": "tt0111161",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 0,
+          "ids": []
+        },
+        "zh-cnt50": {
+          "params": {
+            "q": "肖申克的救赎",
+            "cnt": 50
+          },
+          "status": 0,
+          "count": 15,
+          "ids": [
+            null,
+            null,
+            645886,
+            623542,
+            612531,
+            611802,
+            416312,
+            415767,
+            415768,
+            415769,
+            414894,
+            410764,
+            410765,
+            307242,
+            305568
+          ]
+        },
+        "zh-pos15-cnt15": {
+          "params": {
+            "q": "肖申克的救赎",
+            "cnt": 15,
+            "pos": 15
+          },
+          "status": 0,
+          "count": 15,
+          "ids": [
+            305574,
+            305614,
+            305563,
+            305567,
+            320391,
+            320389,
+            320390,
+            301346,
+            260385,
+            254955,
+            254860,
+            254846,
+            238320,
+            214263,
+            212474
+          ]
+        },
+        "zh-pos10-cnt10": {
+          "params": {
+            "q": "肖申克的救赎",
+            "cnt": 10,
+            "pos": 10
+          },
+          "status": 0,
+          "count": 10,
+          "ids": [
+            414894,
+            410764,
+            410765,
+            307242,
+            305568,
+            305574,
+            305614,
+            305563,
+            305567,
+            320391
+          ]
+        }
+      },
+      "merged_candidates": 20,
+      "detail_ids": [
+        716687,
+        692174,
+        645886,
+        612531,
+        611802
+      ],
+      "download_selection_order": [
+        {
+          "id": 692174,
+          "bilingual_guess": true,
+          "file_name": "肖申克的救赎.The.Shawshank.Redemption.1994.2160p.UHD.BluRay.4K适配HDR.zip",
+          "source_rank": 2,
+          "detail_fresh": true
+        },
+        {
+          "id": 612531,
+          "bilingual_guess": true,
+          "file_name": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.zip",
+          "source_rank": 5,
+          "detail_fresh": true
+        },
+        {
+          "id": 611802,
+          "bilingual_guess": true,
+          "file_name": "包内带种：The.Shawshank.Redemption.1994.1080p.BluRay.H264.AAC-RARBG.zip",
+          "source_rank": 6,
+          "detail_fresh": true
+        },
+        {
+          "id": 645886,
+          "bilingual_guess": false,
+          "file_name": "The.Shawshank.Redemption.1994.REMASTERED.1080p.BluRay.rar",
+          "source_rank": 3,
+          "detail_fresh": true
+        },
+        {
+          "id": 716687,
+          "bilingual_guess": false,
+          "file_name": "肖申克的救赎国配特效字幕(匹配02.22.32).zip",
+          "source_rank": 1,
+          "detail_fresh": true
+        }
+      ],
+      "download_attempted_ids": [
+        692174,
+        612531
+      ],
+      "downloads": [
+        {
+          "id": 692174,
+          "file": "肖申克的救赎.The.Shawshank.Redemption.1994.2160p.UHD.BluRay.4K适配HDR.zip",
+          "bytes": 66833,
+          "magic": "rar4",
+          "bilingual_guess": true,
+          "source_rank": 2
+        },
+        {
+          "id": 612531,
+          "file": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.zip",
+          "bytes": 417458,
+          "magic": "zip",
+          "bilingual_guess": true,
+          "source_rank": 5
+        }
+      ]
+    },
+    "阳光灿烂的日子": {
+      "queries": {
+        "zh": {
+          "params": {
+            "q": "阳光灿烂的日子",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 15,
+          "ids": [
+            629874,
+            629864,
+            629347,
+            629274,
+            602819,
+            411119,
+            411120,
+            308981,
+            308979,
+            308980,
+            304821,
+            199078,
+            197568,
+            165591,
+            140229
+          ]
+        },
+        "en": {
+          "params": {
+            "q": "In the Heat of the Sun",
+            "cnt": 15
+          },
+          "status": 0,
+          "count": 11,
+          "ids": [
+            629874,
+            629864,
+            629347,
+            411119,
+            411120,
+            197568,
+            165591,
+            140229,
+            12220,
+            118222,
+            135275
+          ]
+        }
+      },
+      "merged_candidates": 18,
+      "detail_ids": [
+        629874,
+        629864,
+        629347,
+        12220
+      ],
+      "download_selection_order": [
+        {
+          "id": 12220,
+          "bilingual_guess": true,
+          "file_name": "In.the.heat.of.the.sun.dvdrip.divx-imbt.CnEn.subs.zip",
+          "source_rank": 16,
+          "detail_fresh": true
+        },
+        {
+          "id": 629874,
+          "bilingual_guess": false,
+          "file_name": "[阳光灿烂的日子]日二修改.rar",
+          "source_rank": 1,
+          "detail_fresh": true
+        },
+        {
+          "id": 629864,
+          "bilingual_guess": false,
+          "file_name": "In.the.Heat.of.the.Sun.1994.1080p.rar",
+          "source_rank": 2,
+          "detail_fresh": true
+        },
+        {
+          "id": 629347,
+          "bilingual_guess": false,
+          "file_name": "阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.1080p.WEB-DL.H264.AAC-TJUPT.rar",
+          "source_rank": 3,
+          "detail_fresh": true
+        }
+      ],
+      "download_attempted_ids": [
+        12220,
+        629874
+      ],
+      "downloads": [
+        {
+          "id": 12220,
+          "file": "In.the.heat.of.the.sun.dvdrip.divx-imbt.CnEn.subs.zip",
+          "bytes": 72539,
+          "magic": "zip",
+          "bilingual_guess": true,
+          "source_rank": 16
+        },
+        {
+          "id": 629874,
+          "file": "[阳光灿烂的日子]日二修改.rar",
+          "bytes": 36027,
+          "magic": "rar4",
+          "bilingual_guess": false,
+          "source_rank": 1
+        }
+      ]
+    }
+  }
+}
