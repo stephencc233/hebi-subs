@@ -5,7 +5,7 @@
 | 阶段 | 状态 | 开始 | 完成 | 产出 |
 |---|---|---|---|---|
 | P0 准备 | ✅ 完成 | 2026-10-15 | 2026-10-15 | 仓库、CLAUDE.md、文档 v0.1、api-notes（MP V3 开发要点 / 本机环境）、最小空插件 v0.0.1（实机冒烟通过） |
-| P1 研读海拉鲁 | 🟡 进行中 | 2026-10-15 | | study-hailulu/README 研读规则、01-module-map、02-search-pain12、03-archive-pain3 |
+| P1 研读海拉鲁 | 🟡 进行中 | 2026-10-15 | | study-hailulu/README 研读规则 + 笔记目录、01-module-map、02-search-pain12、03-archive-pain3、04-auto-chain |
 | P2 接口实测 | ⬜ 未开始 | | | |
 | P3 需求定稿 + 架构 | ⬜ 未开始 | | | |
 | P4 MVP | ⬜ 未开始 | | | |
@@ -33,7 +33,7 @@
 - [x] S1 P1-1-module-map：模块地图 + 研读规则 → `study-hailulu/01-module-map.md`
 - [x] S2 P1-2-search-pain12：痛点①SubHD 不按下载量排序、②不显示制作组 → `study-hailulu/02-search-pain12.md`
 - [x] S3 P1-3-archive-pain3：痛点③整包（压缩包）无法处理 → `study-hailulu/03-archive-pain3.md`
-- [ ] S4 P1-4-auto-chain：整理完成 → 识别 → 搜索 → 下载 → 解包 → 落盘的完整链路 → `04-*.md`
+- [x] S4 P1-4-auto-chain：整理完成 → 识别 → 搜索 → 下载 → 解包 → 落盘的完整链路 → `study-hailulu/04-auto-chain.md`
 - [ ] C11 复盘：claude.ai 阶段对话评审 P1 笔记，提炼借鉴/避免清单
 
 ## 交接卡模板
@@ -52,6 +52,16 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-15 · P1-4-auto-chain
+- 阶段：P1（S4 完成，S1–S4 全部完成）
+- 完成：`study-hailulu/04-auto-chain.md`：端到端时序图（每步标文件:行号，搜索 / 解包引用 02、03）、各步要点表、TransferComplete 字段对照表（2a）、Q1–Q5 逐项回答（2b）、借鉴 5 条 / 避免 5 条、给 P3 的架构输入 10 项、P2 待验证 6 条；README「笔记」补了 01–04 目录和一句话结论；`01-module-map.md` §7 #5–#7 标为已答。范围内读了 15 个文件；范围外用 Grep + 小段读取确认了 5 处（`target_normalizers`、`config_runtime`、`subtitle_language`、`shell_helpers`、`subtitle_writer`，合计约 100 行），`_reference` 无改动
+- 决定：无新增（§4 是建议，留 P3 定稿）
+- 主要发现：①事件只入队、后台单线程处理；路径**只看 `transferinfo.file_list_new`**（兜底的 `target_path` 在 V3 里不存在，推测是旧版遗留），`target_item`、`idempotency_key`、`transfer_history_id` 都没用到；外层 `event_data` 必须是 dict，内层用 `event_value` 同时兼容键和属性。②识别 = 事件 mediainfo/meta + 文件名集数 + TMDb 详情补别名，不读 NFO、不用 IMDb；候选过分数线（≥20）后按服务排序依次试前 5 个，第一个写成功就停。③幂等三层：300 秒内存去重（签名含父目录 mtime）→ 活跃任务去重 → 「已有任意中文字幕就跳过」；队列、结果不持久化，stop 是软停，热重载时 pending 任务会丢、可能出现双 worker（推测）。④限速每源 5 次/分钟，但一次 search 只记 1 次、下载不计。⑤只写中文字幕（外语转 AI）；「匹配历史」是扫描磁盘的快照（`match_history_cache.json`），没有来源和失败记录；失败只在内存任务表（≤200 条）和日志里
+- 未完成 / 下一步：**回 C11（claude.ai）做 P1 复盘**：评审 01–04 笔记，提炼借鉴 / 避免清单，然后进入 P2
+- 卡点与风险：§5 的 6 条需要实机验证（事件实际形态、重复事件、热重载是新实例还是同一实例、剧集事件间隔、ffprobe 是否可用、刮削与事件的先后），其中 #1 #2 #4 #6 要整理一部测试影片，必须你同意并指定测试目录；04 的行号基于 `8146218`
+- 需要更新的文档：无（本次已更新 04、README、01、本文件）；P3 定事件适配层、任务表、落盘历史时参考 04 §4
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P1，读 03-progress 最新交接卡后开始：C11 P1 复盘，评审 study-hailulu 01–04 笔记，提炼借鉴 / 避免清单并确认进入 P2
 
 ### 交接 2026-10-15 · P1-3-archive-pain3
 - 阶段：P1（S3 完成）

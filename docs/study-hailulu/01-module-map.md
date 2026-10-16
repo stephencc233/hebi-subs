@@ -313,9 +313,9 @@ flowchart LR
 | 2 | `score` 的具体计算与源优先级权重 | S2 已答，见 02 §2 |
 | 3 | 「整包」的症状（需用户补充）；Windows 下 rar/7z 工具缺失是否就是原因 | S3 已答：是，且更严重：rar/7z 都只认文件名恰为 `unar` 的程序，Windows 的 `unar.exe` 也认不出；7z 无替代实现，见 03 §2、§7 |
 | 4 | rarfile 是否依赖外部 unrar | S3 部分回答：海拉鲁的报错文案自称「仍需要外部解压程序」；rarfile 自身行为不确定，留 P2（03 §9 #2） |
-| 5 | 完整链路：`handle_transfer_complete` → 队列 → worker → `process_entry` → `search_write_subtitle` → 挑选 → 写入 | S4 |
-| 6 | `services.online_subtitles()` 由哪个工厂构造、`install_shell_helpers` 的委托映射 | S4 |
-| 7 | `runtime/transfer_history_reader.py` 的调用方 | S4 |
+| 5 | 完整链路：`handle_transfer_complete` → 队列 → worker → `process_entry` → `search_write_subtitle` → 挑选 → 写入 | S4 已答，见 04 §1、§2 |
+| 6 | `services.online_subtitles()` 由哪个工厂构造、`install_shell_helpers` 的委托映射 | S4 已答：`service_factories.py:276 online_service`；委托 = `owner._xxx` → `services.<服务>().<方法>`，**每次调用都新建服务实例**（`shell_helpers.py:43-54`），见 04 §2 步 0 |
+| 7 | `runtime/transfer_history_reader.py` 的调用方 | S4 已答：只有 `local_media_catalog`（`service_factories.py:230`）用它建本地索引，自动链路不用，见 04 §2「附 历史补偿」 |
 
 ### 附注：与本项目决策的差异
 
