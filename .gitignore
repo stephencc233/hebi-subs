@@ -24,6 +24,10 @@ output/
 *.rar
 *.7z
 !tests/fixtures/**
+# SubHD 浏览器另存网页的附属资源（vendor 库、统计脚本、海报，每页一份重复）不提交；
+# 只保留一份站点前端脚本 subhd.js（6 份哈希相同），用于查看下载按钮等 JS 逻辑
+tests/fixtures/subhd/*_files/*
+!tests/fixtures/subhd/秋刀鱼之味-search.rendered_files/subhd.js.download
 
 # 编辑器与系统
 .vscode/

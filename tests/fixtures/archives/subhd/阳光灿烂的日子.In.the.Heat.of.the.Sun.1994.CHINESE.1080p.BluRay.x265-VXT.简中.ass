@@ -1,0 +1,1799 @@
+﻿[Script Info]
+;LB@坚持鍀信念
+
+[V4 Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, TertiaryColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, AlphaLevel, Encoding
+Style: Default,黑体,18,&HFFFFFF,&HFFFFFF,&H000000,&H000000,1,0,1,2,3,2,20,20,2,0,134
+
+[Events]
+Format: Marked, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:01:30.12,0:01:32.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}北京
+Dialogue: 0,0:01:32.52,0:01:35.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}变得这么快
+Dialogue: 0,0:01:37.20,0:01:40.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}二十年的功夫她已经成为一个现代化城市
+Dialogue: 0,0:01:41.60,0:01:44.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我几乎从中找不到任何记忆里的东西
+Dialogue: 0,0:01:45.40,0:01:48.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}事实上这种变化已破坏了我的记忆
+Dialogue: 0,0:01:48.80,0:01:51.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}使我分不清幻觉和真实
+Dialogue: 0,0:01:53.48,0:01:56.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我的故事总是发生在夏天
+Dialogue: 0,0:01:56.80,0:01:59.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}炎热的气候使人们裸露得更多
+Dialogue: 0,0:01:59.52,0:02:02.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}也更难以掩饰心中的欲望
+Dialogue: 0,0:02:03.28,0:02:06.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那时候好像永远是夏天
+Dialogue: 0,0:02:06.92,0:02:09.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}太阳总是有空出来伴随着我
+Dialogue: 0,0:02:09.96,0:02:11.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}阳光充足
+Dialogue: 0,0:02:11.68,0:02:12.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}太亮
+Dialogue: 0,0:02:13.12,0:02:15.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}使得眼前一阵阵发黑
+Dialogue: 0,0:02:34.16,0:02:37.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}革命风雷激荡
+Dialogue: 0,0:02:38.16,0:02:41.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}战士胸有朝阳
+Dialogue: 0,0:02:42.16,0:02:45.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}毛主席呀毛主席
+Dialogue: 0,0:02:45.16,0:02:52.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们有多少知心的话儿要对你讲
+Dialogue: 0,0:02:52.72,0:02:57.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}您亲手发动的文化大革命
+Dialogue: 0,0:02:57.20,0:03:00.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}火一样的辉煌
+Dialogue: 0,0:03:00.56,0:03:05.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}您的光辉思想像雨露阳光
+Dialogue: 0,0:03:05.32,0:03:08.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哺育我们成长
+Dialogue: 0,0:03:10.20,0:03:11.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}九大以后
+Dialogue: 0,0:03:11.60,0:03:14.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我爸爸他们部队接受了新任务
+Dialogue: 0,0:03:14.52,0:03:16.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要去贵州进行三支两军工作
+Dialogue: 0,0:03:17.20,0:03:19.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}当军代表
+Dialogue: 0,0:03:30.92,0:03:34.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我最大的幻想便是中苏开战
+Dialogue: 0,0:03:34.36,0:03:35.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}因为我坚信
+Dialogue: 0,0:03:35.72,0:03:37.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}在新的一场世界大战中
+Dialogue: 0,0:03:37.80,0:03:42.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我军的铁拳定会把苏美两军的战争机器砸得粉碎
+Dialogue: 0,0:03:42.92,0:03:47.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一名举世瞩目的战争英雄将由此诞生
+Dialogue: 0,0:03:47.24,0:03:49.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那就是我
+Dialogue: 0,0:05:26.32,0:05:29.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}远飞的大雁
+Dialogue: 0,0:05:32.32,0:05:37.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}请你快快飞
+Dialogue: 0,0:05:43.32,0:05:50.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}捎个信儿到北京
+Dialogue: 0,0:05:51.36,0:06:00.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}翻身的农奴想念恩人毛主席
+Dialogue: 0,0:06:02.92,0:06:04.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}爸爸走了
+Dialogue: 0,0:06:04.20,0:06:06.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我获得了空前的自由
+Dialogue: 0,0:06:07.12,0:06:10.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我特别羡慕父母都在外地工作的那些孩子们
+Dialogue: 0,0:06:11.36,0:06:14.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}如今我终于加入了他们的行列
+Dialogue: 0,0:06:37.40,0:06:38.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱们打赌
+Dialogue: 0,0:06:38.68,0:06:39.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看谁把书包扔得最高
+Dialogue: 0,0:06:39.92,0:06:41.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}赌什么呢
+Dialogue: 0,0:06:41.88,0:06:42.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}冰棍
+Dialogue: 0,0:06:42.60,0:06:43.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}奶油的
+Dialogue: 0,0:06:43.40,0:06:44.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}两根
+Dialogue: 0,0:06:44.40,0:06:45.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好好 没问题
+Dialogue: 0,0:06:45.40,0:06:46.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我先来 我先来
+Dialogue: 0,0:06:46.40,0:06:48.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别急 别急
+Dialogue: 0,0:06:48.32,0:06:49.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}从大蚂蚁开始
+Dialogue: 0,0:06:49.60,0:06:53.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱们得把书包扔得跟楼顶那么高
+Dialogue: 0,0:06:53.60,0:06:54.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}行行
+Dialogue: 0,0:06:54.44,0:06:56.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}蚂蚁先来
+Dialogue: 0,0:06:56.32,0:06:59.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一 二 三
+Dialogue: 0,0:06:59.44,0:07:00.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎呀
+Dialogue: 0,0:07:00.44,0:07:03.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}该你了 刘思甜
+Dialogue: 0,0:07:03.44,0:07:06.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一 二 三
+Dialogue: 0,0:07:08.44,0:07:11.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不行
+Dialogue: 0,0:07:11.44,0:07:12.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}羊搞 该你了
+Dialogue: 0,0:07:12.44,0:07:15.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一 二 三
+Dialogue: 0,0:07:16.44,0:07:18.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}什么破玩意儿 哎哟
+Dialogue: 0,0:07:18.44,0:07:21.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴 看你了
+Dialogue: 0,0:07:21.44,0:07:24.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一 二 三
+Dialogue: 0,0:07:37.68,0:07:38.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我操
+Dialogue: 0,0:07:38.80,0:07:40.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你丫怎么这么懒呀
+Dialogue: 0,0:07:40.12,0:07:41.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}连书包都懒得拿
+Dialogue: 0,0:07:41.32,0:07:41.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}赶紧走
+Dialogue: 0,0:07:42.72,0:07:45.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}大蚂蚁 大蚂蚁
+Dialogue: 0,0:07:45.60,0:07:47.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}小学就这么毕业了
+Dialogue: 0,0:07:47.76,0:07:49.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}大家升入了不同的中学
+Dialogue: 0,0:07:50.12,0:07:53.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是校方为了拆散像我们这样的小集体
+Dialogue: 0,0:07:53.16,0:07:55.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}而专门采取的措施
+Dialogue: 0,0:07:55.48,0:07:56.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可是没过几年
+Dialogue: 0,0:07:56.72,0:08:00.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们便随大人搬到了东城的一个军队家属院
+Dialogue: 0,0:08:00.52,0:08:02.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}本来分开了的好哥们儿
+Dialogue: 0,0:08:02.52,0:08:03.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}又相聚了
+Dialogue: 0,0:08:03.52,0:08:05.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}古伦木
+Dialogue: 0,0:08:05.52,0:08:06.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}古伦木 欧巴
+Dialogue: 0,0:08:06.52,0:08:08.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}古伦木
+Dialogue: 0,0:08:08.80,0:08:10.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}欧巴
+Dialogue: 0,0:08:29.52,0:08:30.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}七十年代中期
+Dialogue: 0,0:08:31.08,0:08:34.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}北京还没有那么多的汽车和豪华饭店
+Dialogue: 0,0:08:34.52,0:08:36.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}街上也没有那么多的人
+Dialogue: 0,0:08:36.88,0:08:39.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}比我们大几岁的都去了农村和部队
+Dialogue: 0,0:08:40.52,0:08:42.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这座城市属于我们
+Dialogue: 0,0:08:43.24,0:08:44.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}上课 起立
+Dialogue: 0,0:08:46.92,0:08:48.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}同学们好
+Dialogue: 0,0:08:48.32,0:08:50.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}老师好
+Dialogue: 0,0:08:53.12,0:08:55.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不要笑
+Dialogue: 0,0:08:56.16,0:08:58.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}很简单的一个物理现象
+Dialogue: 0,0:08:58.72,0:09:00.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}坐下
+Dialogue: 0,0:09:05.52,0:09:07.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁让你离开座位的
+Dialogue: 0,0:09:07.56,0:09:09.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}无组织无纪律 回去
+Dialogue: 0,0:09:10.32,0:09:14.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我让你把帽子给我放在这儿再回去 懂吗
+Dialogue: 0,0:09:14.76,0:09:17.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}懂 胡老师
+Dialogue: 0,0:09:17.72,0:09:19.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁是班长
+Dialogue: 0,0:09:21.24,0:09:22.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她 她是班长
+Dialogue: 0,0:09:22.84,0:09:24.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}给我回来
+Dialogue: 0,0:09:25.56,0:09:27.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁问你啦
+Dialogue: 0,0:09:28.24,0:09:30.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我问谁是班长的目的
+Dialogue: 0,0:09:31.12,0:09:33.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是要让她自己站起来
+Dialogue: 0,0:09:34.08,0:09:37.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}下课之后 把这堆煤球 都拖到外头去
+Dialogue: 0,0:09:39.60,0:09:42.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}大家把书翻到第35页
+Dialogue: 0,0:10:08.64,0:10:12.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱们讲讲中俄尼布楚条约
+Dialogue: 0,0:10:14.28,0:10:15.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}中
+Dialogue: 0,0:10:15.64,0:10:17.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}清政府
+Dialogue: 0,0:10:18.12,0:10:19.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}俄
+Dialogue: 0,0:10:19.64,0:10:21.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}沙俄政府
+Dialogue: 0,0:10:28.12,0:10:31.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊 尼布楚
+Dialogue: 0,0:10:31.64,0:10:34.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}何为尼布楚
+Dialogue: 0,0:10:38.04,0:10:41.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}贝加尔湖以东的地区
+Dialogue: 0,0:10:47.20,0:10:50.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是谁干的 谁干的
+Dialogue: 0,0:10:52.20,0:10:54.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是什么意思
+Dialogue: 0,0:10:54.68,0:10:55.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁
+Dialogue: 0,0:10:55.52,0:10:57.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不是我 不是我 你瞧我手干净的
+Dialogue: 0,0:10:58.12,0:11:00.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}都把手伸出来
+Dialogue: 0,0:11:07.68,0:11:08.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}胡老师
+Dialogue: 0,0:11:08.84,0:11:09.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你说
+Dialogue: 0,0:11:09.92,0:11:12.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}算了不说了
+Dialogue: 0,0:11:14.68,0:11:16.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你说
+Dialogue: 0,0:11:16.68,0:11:17.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不要怕
+Dialogue: 0,0:11:18.04,0:11:21.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我说那个他可能怕那帽子再给风吹走
+Dialogue: 0,0:11:22.12,0:11:24.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我说这动机是好的
+Dialogue: 0,0:11:25.04,0:11:26.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我问的你是谁
+Dialogue: 0,0:11:26.60,0:11:29.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那我可不知道
+Dialogue: 0,0:11:32.72,0:11:33.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}坐下
+Dialogue: 0,0:11:33.84,0:11:36.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}老师你千万别生气啊
+Dialogue: 0,0:11:37.72,0:11:40.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这个课咱们不上了
+Dialogue: 0,0:11:40.32,0:11:43.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我 我跟你说 我要查清楚 我得查清楚
+Dialogue: 0,0:12:02.32,0:12:04.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}胡老师 胡老师
+Dialogue: 0,0:12:05.40,0:12:07.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}把脚下鞋给我捡出来
+Dialogue: 0,0:12:08.12,0:12:12.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你是不是上厕所也要老师给你擦屁股啊
+Dialogue: 0,0:12:13.04,0:12:16.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}给你鞋 我给你穿上得了
+Dialogue: 0,0:12:16.12,0:12:16.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那倒不用
+Dialogue: 0,0:12:16.72,0:12:17.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你给我扔出来就行了
+Dialogue: 0,0:12:17.92,0:12:18.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}滚
+Dialogue: 0,0:12:19.28,0:12:20.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你这些害群之马
+Dialogue: 0,0:12:21.12,0:12:22.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不学无术
+Dialogue: 0,0:12:22.72,0:12:25.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}焦师傅 焦师傅
+Dialogue: 0,0:12:25.60,0:12:27.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哪位同学啊
+Dialogue: 0,0:12:27.12,0:12:30.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}赶紧去把咱们工宣队的焦师傅给请到教室这儿来
+Dialogue: 0,0:12:30.64,0:12:31.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}嘿 姓胡的
+Dialogue: 0,0:12:31.92,0:12:32.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你别给脸不要脸
+Dialogue: 0,0:12:32.96,0:12:34.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}求你这么点儿事你都不给我办
+Dialogue: 0,0:12:34.32,0:12:35.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}行 你等着
+Dialogue: 0,0:12:35.44,0:12:37.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}嘿 笑话
+Dialogue: 0,0:12:37.36,0:12:39.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我等什么啊
+Dialogue: 0,0:12:40.36,0:12:42.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你还能把我怎么样
+Dialogue: 0,0:12:42.04,0:12:43.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你不要来这套恐吓讹诈
+Dialogue: 0,0:12:44.00,0:12:46.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}行 行 你等着 我还不要了
+Dialogue: 0,0:12:46.20,0:12:47.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你回来 你回来
+Dialogue: 0,0:12:47.52,0:12:49.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}难道你会叫人打我吗
+Dialogue: 0,0:12:49.44,0:12:52.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你扎我的车胎 你暗害我不成吗
+Dialogue: 0,0:12:54.32,0:12:57.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我没人希罕你这只破鞋
+Dialogue: 0,0:14:25.52,0:14:28.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}敬礼 齐步走
+Dialogue: 0,0:14:35.40,0:14:37.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}请首长放心 我们保证完成任务
+Dialogue: 0,0:14:38.20,0:14:40.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}851 851 我是延安 我是延安
+Dialogue: 0,0:14:40.32,0:14:43.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}向我开炮 向我开炮
+Dialogue: 0,0:16:16.40,0:16:18.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我迷恋上了钥匙
+Dialogue: 0,0:16:18.04,0:16:19.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}并开始制造它们
+Dialogue: 0,0:16:19.92,0:16:22.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}先是把自己家的各种锁一一打开
+Dialogue: 0,0:16:22.60,0:16:24.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}偷看大人的秘密
+Dialogue: 0,0:16:24.52,0:16:28.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}后来就发展到未经邀请的去开别人家的锁着的门
+Dialogue: 0,0:16:29.04,0:16:31.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}每当锁舌铛的一声跳开
+Dialogue: 0,0:16:31.28,0:16:33.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我便陷入无限的欣喜之中
+Dialogue: 0,0:16:34.12,0:16:35.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这种感觉
+Dialogue: 0,0:16:35.88,0:16:38.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这种感觉只有二战中攻克柏林的
+Dialogue: 0,0:16:38.52,0:16:41.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}苏联红军战士才能体会得到
+Dialogue: 0,0:16:42.60,0:16:43.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不瞒你说
+Dialogue: 0,0:16:44.00,0:16:46.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我的才华是来自爸爸的遗传
+Dialogue: 0,0:16:46.80,0:16:48.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}抗美援朝战争中
+Dialogue: 0,0:16:48.52,0:16:50.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他曾无师自通地拆除了无数
+Dialogue: 0,0:16:50.80,0:16:53.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}美国兵投下的定时炸弹上的引信
+Dialogue: 0,0:16:54.00,0:16:55.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}很多人为此壮烈牺牲了
+Dialogue: 0,0:16:56.36,0:16:57.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可他却安然无恙
+Dialogue: 0,0:16:58.32,0:17:01.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}以至于妈妈经常怀疑他在朝鲜那几年
+Dialogue: 0,0:17:01.24,0:17:03.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一直是躲在山洞里
+Dialogue: 0,0:17:05.28,0:17:07.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我进行了仔细的侦察
+Dialogue: 0,0:17:07.72,0:17:09.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}发现人们都没什么钱
+Dialogue: 0,0:17:10.24,0:17:12.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那些现在被认为是必不可少的
+Dialogue: 0,0:17:12.24,0:17:14.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}家用电器当时闻所未闻
+Dialogue: 0,0:17:14.84,0:17:17.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}屋里多是单位发的家具
+Dialogue: 0,0:17:17.72,0:17:18.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我也可以作证
+Dialogue: 0,0:17:19.12,0:17:21.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那时候除了一些政治品质可疑的干部
+Dialogue: 0,0:17:21.76,0:17:23.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}贪官污吏凤毛麟角
+Dialogue: 0,0:17:24.92,0:17:26.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}在我的溜撬生涯中
+Dialogue: 0,0:17:26.56,0:17:30.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}只见过一台苏联产的老式黑白电视机
+Dialogue: 0,0:17:30.44,0:17:32.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我的确想把它搬走来着
+Dialogue: 0,0:17:32.32,0:17:34.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可是太沉
+Dialogue: 0,0:17:34.88,0:17:35.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我发誓
+Dialogue: 0,0:17:35.88,0:17:38.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我仅仅是开锁 不是做贼
+Dialogue: 0,0:17:39.40,0:17:40.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}玩累了
+Dialogue: 0,0:17:40.32,0:17:42.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就躺在陌生人的床上睡会
+Dialogue: 0,0:17:42.76,0:17:46.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}想像着它的主人在床上可能干过的一些事
+Dialogue: 0,0:17:47.24,0:17:51.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}放心 我绝对有把握不会被人擒住
+Dialogue: 0,0:17:51.20,0:17:53.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那时候人们上班是从来不溜号的
+Dialogue: 0,0:17:53.84,0:17:56.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}而且因为没丢失任何东西
+Dialogue: 0,0:17:56.48,0:17:58.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}也从未引起任何的警惕
+Dialogue: 0,0:18:07.68,0:18:11.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}当然 偶尔也会碰到点小麻烦
+Dialogue: 0,0:19:01.36,0:19:04.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这点小事 不会让我丧失勇气
+Dialogue: 0,0:19:05.12,0:19:08.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}只能使我从中体会到更多的刺激
+Dialogue: 0,0:19:34.00,0:19:37.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我向来只开明锁 因为安全
+Dialogue: 0,0:19:38.32,0:19:43.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可是那天 我却鬼使神差的打开了一个暗锁
+Dialogue: 0,0:21:30.72,0:21:31.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我操
+Dialogue: 0,0:21:39.24,0:21:40.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哇操
+Dialogue: 0,0:21:52.12,0:21:56.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我操
+Dialogue: 0,0:22:01.04,0:22:02.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我操
+Dialogue: 0,0:22:10.20,0:22:14.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}姓胡的 你也有今天哪 哈哈哈
+Dialogue: 0,0:23:53.44,0:23:55.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是于北蓓
+Dialogue: 0,0:23:55.20,0:23:56.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}外交部大院的
+Dialogue: 0,0:23:56.44,0:23:58.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是马小军 哥们儿
+Dialogue: 0,0:23:58.44,0:24:00.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}上来吧
+Dialogue: 0,0:24:00.04,0:24:01.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他叫刘忆苦
+Dialogue: 0,0:24:01.60,0:24:03.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是刘思甜同父异母的哥哥
+Dialogue: 0,0:24:04.12,0:24:05.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}刚当兵复员回来
+Dialogue: 0,0:24:05.96,0:24:07.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}人长得精神
+Dialogue: 0,0:24:07.20,0:24:09.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}打起架来手特黑
+Dialogue: 0,0:24:09.48,0:24:11.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们都很佩服他 你好
+Dialogue: 0,0:24:11.48,0:24:13.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}因为他经常带些外院的女孩来玩
+Dialogue: 0,0:24:13.48,0:24:15.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}玩了半天了 都在等你
+Dialogue: 0,0:24:15.48,0:24:17.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}上哪儿去了
+Dialogue: 0,0:24:17.48,0:24:19.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那女孩叫于北蓓
+Dialogue: 0,0:24:19.48,0:24:21.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}蓓蕾的蓓
+Dialogue: 0,0:24:21.48,0:24:23.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可我们一直叫她于北蓓（PEI）
+Dialogue: 0,0:24:23.48,0:24:27.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}其实连她也不清楚 自己的名字是PEI还是BEI
+Dialogue: 0,0:24:29.48,0:24:31.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁让你们在这儿等我呀
+Dialogue: 0,0:24:31.60,0:24:32.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}也没人告诉我
+Dialogue: 0,0:24:32.92,0:24:33.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}约会去了
+Dialogue: 0,0:24:33.92,0:24:36.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}去你妈的
+Dialogue: 0,0:24:37.52,0:24:40.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别不好意思 马猴
+Dialogue: 0,0:24:41.52,0:24:44.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}说谁约会去了 是我是我
+Dialogue: 0,0:24:51.72,0:24:53.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}得了 得了
+Dialogue: 0,0:24:55.52,0:24:57.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}脸皮还挺薄
+Dialogue: 0,0:24:57.88,0:24:59.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}约会怕什么的
+Dialogue: 0,0:24:59.52,0:25:01.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我不是上这儿约会来了吗
+Dialogue: 0,0:25:01.72,0:25:03.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}跟谁啊
+Dialogue: 0,0:25:04.12,0:25:04.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他
+Dialogue: 0,0:25:07.92,0:25:09.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}坐我这儿
+Dialogue: 0,0:25:14.52,0:25:15.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}甭理他们
+Dialogue: 0,0:25:15.52,0:25:17.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}思想太复杂了 他们
+Dialogue: 0,0:25:17.72,0:25:19.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对 大蚂蚁 说你呐
+Dialogue: 0,0:25:19.92,0:25:22.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不学无术 思想肮脏
+Dialogue: 0,0:25:22.52,0:25:24.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你前功尽弃了 你
+Dialogue: 0,0:25:24.52,0:25:27.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哟 来劲儿
+Dialogue: 0,0:25:27.52,0:25:30.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}先抽颗烟吧
+Dialogue: 0,0:25:30.52,0:25:33.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 于北蓓
+Dialogue: 0,0:25:33.52,0:25:36.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}下回把那个米兰也带来
+Dialogue: 0,0:25:36.52,0:25:38.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}让咱也认识认识
+Dialogue: 0,0:25:38.52,0:25:40.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我不管
+Dialogue: 0,0:25:40.52,0:25:42.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看上她 你自个儿拍呀
+Dialogue: 0,0:25:42.52,0:25:45.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你不号称没有你拍不上的吗
+Dialogue: 0,0:25:46.52,0:25:47.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}说真格的
+Dialogue: 0,0:25:47.84,0:25:49.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}老听人提起她
+Dialogue: 0,0:25:49.32,0:25:50.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}倍儿传奇
+Dialogue: 0,0:25:50.24,0:25:51.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好多人为她打架
+Dialogue: 0,0:25:51.12,0:25:53.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}连哥们儿都掰了 有的还出人命了
+Dialogue: 0,0:25:54.56,0:25:57.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就不可以帮个忙 认识一下还不行吗
+Dialogue: 0,0:25:57.56,0:26:00.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}得了吧 其实米兰挺正经的
+Dialogue: 0,0:26:01.56,0:26:03.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我也没说她不正经啊
+Dialogue: 0,0:26:03.56,0:26:04.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我跟她提过
+Dialogue: 0,0:26:04.92,0:26:06.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她根本不想上这儿来
+Dialogue: 0,0:26:09.12,0:26:12.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}下午发现的那张照片把我弄的恍恍惚惚
+Dialogue: 0,0:26:12.92,0:26:15.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}视野有多大 她的形象便有多大
+Dialogue: 0,0:26:16.00,0:26:17.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}想像力有多丰富
+Dialogue: 0,0:26:17.80,0:26:20.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她的神情里便有多少种暗示
+Dialogue: 0,0:26:20.92,0:26:23.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}当时我并不觉得他们所议论的米兰
+Dialogue: 0,0:26:24.20,0:26:26.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}与那张照片有什么联系
+Dialogue: 0,0:26:33.44,0:26:34.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}古伦木
+Dialogue: 0,0:26:34.48,0:26:35.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}欧巴
+Dialogue: 0,0:26:57.68,0:26:59.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看见了没 没穿衣服
+Dialogue: 0,0:27:00.16,0:27:01.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没穿衣服
+Dialogue: 0,0:27:01.68,0:27:03.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看见了没 看见了
+Dialogue: 0,0:27:03.72,0:27:06.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没穿了唉 这帮土匪
+Dialogue: 0,0:27:06.52,0:27:08.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}喊什么喊啊 下来
+Dialogue: 0,0:27:08.92,0:27:11.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你怎么那么流氓 喊什么喊啊
+Dialogue: 0,0:27:11.84,0:27:14.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看什么看 我看了没劲
+Dialogue: 0,0:27:14.24,0:27:16.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看看嘛 瞎喊什么呀
+Dialogue: 0,0:27:16.32,0:27:17.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}想看什么呀
+Dialogue: 0,0:27:18.20,0:27:19.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没看见过是吗
+Dialogue: 0,0:27:19.92,0:27:22.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不是 我说
+Dialogue: 0,0:27:22.00,0:27:23.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们仨不知道怎么睡的
+Dialogue: 0,0:27:23.92,0:27:25.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}屋里就两张床
+Dialogue: 0,0:27:25.88,0:27:28.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}上边这张床 下边那张床呗
+Dialogue: 0,0:27:33.72,0:27:36.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴 你先前是不是来过一趟 敲过门
+Dialogue: 0,0:27:36.40,0:27:38.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没有 甭不承认 就是你
+Dialogue: 0,0:27:38.52,0:27:40.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}得了 把书包搁屋里 跟我到食堂打饭去
+Dialogue: 0,0:27:46.20,0:27:49.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}唉 别都走啊
+Dialogue: 0,0:27:49.32,0:27:51.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}留下一个 跟我说会话
+Dialogue: 0,0:27:51.80,0:27:53.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}嗯 要谁吧
+Dialogue: 0,0:27:55.12,0:27:57.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还是你吧
+Dialogue: 0,0:27:57.00,0:27:58.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么又是我啊
+Dialogue: 0,0:27:59.24,0:28:00.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}走
+Dialogue: 0,0:28:17.60,0:28:18.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}进来吧
+Dialogue: 0,0:28:25.68,0:28:27.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你在家是个好孩子吧
+Dialogue: 0,0:28:27.72,0:28:30.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊我 我根本就不是
+Dialogue: 0,0:28:31.24,0:28:33.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}其实我坏着呢
+Dialogue: 0,0:28:33.12,0:28:34.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}只不过看着老实
+Dialogue: 0,0:28:35.44,0:28:38.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们学校老师也都是刚见我都特喜欢
+Dialogue: 0,0:28:38.48,0:28:40.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}到后来没一个不烦我的
+Dialogue: 0,0:28:45.04,0:28:46.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那你呢
+Dialogue: 0,0:28:46.52,0:28:47.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你说呢
+Dialogue: 0,0:28:47.80,0:28:49.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你
+Dialogue: 0,0:28:49.12,0:28:50.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你还上学吗
+Dialogue: 0,0:28:50.48,0:28:52.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我上班了 早就不上学了
+Dialogue: 0,0:28:52.76,0:28:55.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我比你们都大 是大姐
+Dialogue: 0,0:28:56.52,0:28:57.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可是
+Dialogue: 0,0:28:57.80,0:28:59.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你整天老在外边
+Dialogue: 0,0:28:59.68,0:29:01.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不回家睡觉
+Dialogue: 0,0:29:01.40,0:29:03.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那你们家长不管你啊
+Dialogue: 0,0:29:04.32,0:29:05.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我爸都快气死了
+Dialogue: 0,0:29:05.96,0:29:07.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好几次都说不认我这个女儿了
+Dialogue: 0,0:29:09.04,0:29:10.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}打你吗
+Dialogue: 0,0:29:10.44,0:29:11.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么不打
+Dialogue: 0,0:29:11.64,0:29:12.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}捆起来打
+Dialogue: 0,0:29:12.92,0:29:14.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}够狠的他可
+Dialogue: 0,0:29:29.20,0:29:30.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你会吐烟圈吗
+Dialogue: 0,0:29:30.36,0:29:32.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不会 嗷会
+Dialogue: 0,0:29:32.32,0:29:33.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}吐一个
+Dialogue: 0,0:29:43.08,0:29:44.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看我的吧
+Dialogue: 0,0:29:51.40,0:29:52.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么回事儿
+Dialogue: 0,0:29:52.72,0:29:54.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}前天还吐了一个特大个的呢
+Dialogue: 0,0:29:57.80,0:30:01.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}其实 你没必要整天不回家
+Dialogue: 0,0:30:01.12,0:30:02.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}在男的这儿住
+Dialogue: 0,0:30:03.52,0:30:05.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们都挺坏的
+Dialogue: 0,0:30:05.32,0:30:07.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}万一哪天 真出了事儿那多不好
+Dialogue: 0,0:30:09.12,0:30:10.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}出什么事儿
+Dialogue: 0,0:30:10.12,0:30:12.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还特么能出什么事儿
+Dialogue: 0,0:30:17.88,0:30:19.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}该出的早出了
+Dialogue: 0,0:30:19.64,0:30:22.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还等得到你们这儿再出 真是的
+Dialogue: 0,0:30:26.48,0:30:29.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}于北蓓到了一个烟圈也没吐成
+Dialogue: 0,0:30:29.92,0:30:31.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我也吐不成
+Dialogue: 0,0:30:31.84,0:30:34.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}直到现在也吐不成
+Dialogue: 0,0:30:40.68,0:30:41.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}古伦木
+Dialogue: 0,0:30:42.68,0:30:46.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}欧巴 欧巴 欧巴
+Dialogue: 0,0:30:46.08,0:30:47.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你吃吗 不要不要
+Dialogue: 0,0:31:03.64,0:31:06.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}吻一下 再吻一下
+Dialogue: 0,0:31:08.44,0:31:11.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}追上他 快跟上
+Dialogue: 0,0:31:12.80,0:31:14.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}把他抓住啊
+Dialogue: 0,0:31:33.68,0:31:36.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没事吧
+Dialogue: 0,0:31:39.68,0:31:42.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}碰哪儿了
+Dialogue: 0,0:31:42.68,0:31:45.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我咬死你
+Dialogue: 0,0:31:53.68,0:31:55.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}松开 松开
+Dialogue: 0,0:31:55.68,0:31:57.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快松开 我抽你了
+Dialogue: 0,0:31:57.68,0:32:00.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快松开 放手
+Dialogue: 0,0:32:03.72,0:32:06.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我操你丫
+Dialogue: 0,0:32:07.72,0:32:10.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}算了 于北蓓 得得得
+Dialogue: 0,0:32:26.72,0:32:29.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}美丽的鲜花在开放 在开放
+Dialogue: 0,0:32:29.72,0:32:32.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}贵宾客人来自远方 来自远方
+Dialogue: 0,0:32:33.72,0:32:36.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}欢乐的歌儿高声唱 高声唱
+Dialogue: 0,0:32:37.72,0:32:40.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}友谊的花开万里香 万里香
+Dialogue: 0,0:32:40.72,0:32:43.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}欢迎 欢迎 热烈欢迎
+Dialogue: 0,0:32:44.72,0:32:50.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}欢迎 欢迎 热烈欢迎
+Dialogue: 0,0:35:32.52,0:35:35.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我终日游荡在这栋楼的周围
+Dialogue: 0,0:35:35.84,0:35:38.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}像只热铁皮屋顶上的猫
+Dialogue: 0,0:35:38.32,0:35:41.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}焦躁不安的守候着画中人的出现
+Dialogue: 0,0:35:42.16,0:35:43.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她像一个幽灵
+Dialogue: 0,0:35:43.68,0:35:45.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}来无踪 去无影
+Dialogue: 0,0:35:46.32,0:35:48.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}只有我的感觉和嗅觉里
+Dialogue: 0,0:35:48.24,0:35:50.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}留下了一些痕迹和芳香
+Dialogue: 0,0:35:50.24,0:35:52.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}能证实她的存在
+Dialogue: 0,0:35:53.52,0:35:55.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我延长了守候的时间
+Dialogue: 0,0:35:55.76,0:35:57.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}甚至披星戴月
+Dialogue: 0,0:35:58.08,0:35:59.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}仍旧一无所获
+Dialogue: 0,0:39:10.12,0:39:11.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}拉倒吧 那是大使
+Dialogue: 0,0:39:11.88,0:39:12.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你丫怎么知道是大使
+Dialogue: 0,0:39:12.88,0:39:14.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真的 跨上写着呢
+Dialogue: 0,0:39:14.12,0:39:15.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}唉 苦儿
+Dialogue: 0,0:39:15.20,0:39:17.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱昨天看得那一场 不是也有朝鲜大使的吗
+Dialogue: 0,0:39:21.64,0:39:25.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么那么没知识 朝鲜大使就一个人
+Dialogue: 0,0:39:25.32,0:39:26.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}得有两仨个吧
+Dialogue: 0,0:39:26.88,0:39:29.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再不 不是还有南朝鲜的吗
+Dialogue: 0,0:39:29.40,0:39:31.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}操你大爷 南朝鲜
+Dialogue: 0,0:39:31.80,0:39:33.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}南朝鲜那是美国的
+Dialogue: 0,0:39:33.56,0:39:34.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱们能让他到这儿来
+Dialogue: 0,0:39:34.88,0:39:37.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}走狗 丫一走狗
+Dialogue: 0,0:39:37.24,0:39:38.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁走狗呀
+Dialogue: 0,0:39:41.72,0:39:43.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那是哪国大使啊
+Dialogue: 0,0:39:59.12,0:40:01.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你过去 叫她过来
+Dialogue: 0,0:40:51.24,0:40:53.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你跟她说什么来着 她过来了
+Dialogue: 0,0:40:53.92,0:40:54.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}管得着吗
+Dialogue: 0,0:40:54.92,0:40:56.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你是跳舞的吧
+Dialogue: 0,0:40:56.72,0:40:58.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}在少年宫 对啊
+Dialogue: 0,0:40:59.64,0:41:01.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 你叫什么 能告诉我吗
+Dialogue: 0,0:41:02.68,0:41:04.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我叫马小军
+Dialogue: 0,0:41:04.12,0:41:06.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我叫张晓梅 拂晓的晓
+Dialogue: 0,0:41:06.12,0:41:07.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 那我是大小的小
+Dialogue: 0,0:41:10.00,0:41:11.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这帮人真闹
+Dialogue: 0,0:41:11.88,0:41:14.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}往哪儿跑
+Dialogue: 0,0:41:14.52,0:41:15.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就是爱好音乐
+Dialogue: 0,0:41:15.92,0:41:17.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就想看看演出
+Dialogue: 0,0:41:17.16,0:41:18.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没别的意思
+Dialogue: 0,0:41:18.12,0:41:21.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}爱好音乐还冒充外国人
+Dialogue: 0,0:41:21.40,0:41:22.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}冒充朝鲜大使
+Dialogue: 0,0:41:23.92,0:41:25.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这什么这个
+Dialogue: 0,0:41:25.76,0:41:26.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}什么呀
+Dialogue: 0,0:41:27.92,0:41:28.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}叫什么
+Dialogue: 0,0:41:28.72,0:41:29.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么了
+Dialogue: 0,0:41:29.60,0:41:30.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}什么怎么了
+Dialogue: 0,0:41:30.12,0:41:30.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}干嘛
+Dialogue: 0,0:41:31.04,0:41:32.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}干嘛呢
+Dialogue: 0,0:41:32.12,0:41:33.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这儿没我事儿
+Dialogue: 0,0:41:33.12,0:41:33.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么没你事儿
+Dialogue: 0,0:41:33.76,0:41:35.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看你半天了 快走
+Dialogue: 0,0:41:35.00,0:41:37.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我怎么了 没我事儿
+Dialogue: 0,0:41:37.72,0:41:40.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那女孩子 你也走 快点
+Dialogue: 0,0:41:40.32,0:41:41.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没我事儿 快走
+Dialogue: 0,0:41:47.12,0:41:48.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你爸叫什么
+Dialogue: 0,0:41:48.68,0:41:49.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马文中
+Dialogue: 0,0:41:49.88,0:41:50.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你妈呢
+Dialogue: 0,0:41:50.72,0:41:51.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}翟茹
+Dialogue: 0,0:41:51.52,0:41:52.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们家住哪儿
+Dialogue: 0,0:41:53.00,0:41:54.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}内务府街11号
+Dialogue: 0,0:42:11.76,0:42:13.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看什么看 转过去
+Dialogue: 0,0:42:16.12,0:42:18.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}刚搜出来的 多悬
+Dialogue: 0,0:42:18.52,0:42:20.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}以后你们仔细着点儿
+Dialogue: 0,0:42:23.92,0:42:26.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}今儿外面那堆人走不了了
+Dialogue: 0,0:42:26.56,0:42:28.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}刚那犯人身上还带着凶器呢
+Dialogue: 0,0:42:28.72,0:42:29.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}反了他们了
+Dialogue: 0,0:42:30.04,0:42:31.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}晚上把他们都带走
+Dialogue: 0,0:42:31.44,0:42:33.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}国庆 听见了吗 知道了
+Dialogue: 0,0:42:34.04,0:42:36.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}叔叔 您放了我得了
+Dialogue: 0,0:42:37.48,0:42:40.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哭什么 怎么抓进来的
+Dialogue: 0,0:42:40.92,0:42:43.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}其实没我事 我就跟那儿等退票来着
+Dialogue: 0,0:42:44.12,0:42:45.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就给我带进来了
+Dialogue: 0,0:42:45.72,0:42:46.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瞧你这德行
+Dialogue: 0,0:42:47.20,0:42:50.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还镇王府井 镇动物园 镇定安门
+Dialogue: 0,0:42:50.40,0:42:52.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我告诉你 公安局全镇
+Dialogue: 0,0:42:52.04,0:42:53.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}知道吗 知道
+Dialogue: 0,0:42:55.92,0:42:57.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}擦擦鼻子 滚蛋
+Dialogue: 0,0:42:57.72,0:42:59.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}以后少来展览馆这一带胡混
+Dialogue: 0,0:42:59.92,0:43:00.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}听见没有
+Dialogue: 0,0:43:01.72,0:43:02.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}去
+Dialogue: 0,0:43:03.44,0:43:05.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这根不是我的
+Dialogue: 0,0:43:07.80,0:43:09.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要不要 要不要
+Dialogue: 0,0:43:09.00,0:43:09.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要 要 要
+Dialogue: 0,0:43:09.80,0:43:10.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不要跟我在这儿多住两天
+Dialogue: 0,0:43:10.88,0:43:12.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要 要 就这根吧
+Dialogue: 0,0:44:05.20,0:44:06.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你把我那根腰带给我拿过来
+Dialogue: 0,0:44:06.88,0:44:08.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我那根 找去
+Dialogue: 0,0:44:09.68,0:44:12.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你不牛逼吗 你不是横吗
+Dialogue: 0,0:44:12.00,0:44:13.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你现在怎么怂了
+Dialogue: 0,0:44:13.88,0:44:15.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你还甭跪这儿求我
+Dialogue: 0,0:44:15.24,0:44:16.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}甭流眼泪
+Dialogue: 0,0:44:16.44,0:44:17.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就不吃那套
+Dialogue: 0,0:44:18.44,0:44:19.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我哭怎么了
+Dialogue: 0,0:44:19.92,0:44:22.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我那是迷惑你们的 孙子
+Dialogue: 0,0:44:22.88,0:44:24.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我拍婆子
+Dialogue: 0,0:44:24.92,0:44:26.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你管得着吗你
+Dialogue: 0,0:44:26.08,0:44:27.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我又没拍你妈
+Dialogue: 0,0:44:27.52,0:44:28.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我还明告诉你了
+Dialogue: 0,0:44:28.80,0:44:29.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我明儿还去那儿拍
+Dialogue: 0,0:44:30.44,0:44:31.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就一个人去
+Dialogue: 0,0:44:31.60,0:44:33.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你要不去逮我 你是我孙子
+Dialogue: 0,0:44:34.44,0:44:36.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我镇东单 镇西单
+Dialogue: 0,0:44:36.52,0:44:38.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我还镇你们炮局呢
+Dialogue: 0,0:44:39.44,0:44:41.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}行 行 行 擦鼻子滚蛋
+Dialogue: 0,0:44:41.80,0:44:44.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}滚不滚 你不愿滚就跟这儿多呆两天
+Dialogue: 0,0:45:00.96,0:45:02.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁呀
+Dialogue: 0,0:45:15.08,0:45:17.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}羊搞让人给花了
+Dialogue: 0,0:45:17.08,0:45:18.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我操
+Dialogue: 0,0:45:19.08,0:45:21.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}今天羊搞回家的时候
+Dialogue: 0,0:45:21.08,0:45:23.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看见六条的几个孩子欺负傻子
+Dialogue: 0,0:45:23.12,0:45:25.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他们逼傻子吃猫屎
+Dialogue: 0,0:45:25.12,0:45:28.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还要抢走傻子骑了好几年的棍子
+Dialogue: 0,0:45:28.12,0:45:29.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}羊搞上去帮忙
+Dialogue: 0,0:45:29.12,0:45:31.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}结果让他们给打了
+Dialogue: 0,0:45:31.12,0:45:34.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}眼睛给封了 棍子给打成了两半
+Dialogue: 0,0:45:38.12,0:45:41.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}走
+Dialogue: 0,0:45:45.12,0:45:46.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那我怎么办
+Dialogue: 0,0:45:46.12,0:45:49.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你留这儿吧
+Dialogue: 0,0:47:07.04,0:47:08.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}大哥 没我事
+Dialogue: 0,0:47:11.00,0:47:11.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}躲开
+Dialogue: 0,0:47:18.56,0:47:21.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}羊搞 有他没有
+Dialogue: 0,0:47:56.24,0:47:59.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}撤
+Dialogue: 0,0:48:27.80,0:48:29.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴
+Dialogue: 0,0:48:29.28,0:48:31.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你丫的手怎么那么黑呀
+Dialogue: 0,0:48:31.68,0:48:33.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么了
+Dialogue: 0,0:48:33.52,0:48:36.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那板砖拍得 连我都怕
+Dialogue: 0,0:48:36.56,0:48:38.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}天太黑 看不清楚
+Dialogue: 0,0:48:39.00,0:48:41.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要不然 非废了丫挺的
+Dialogue: 0,0:48:41.28,0:48:43.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哟 哟 哟
+Dialogue: 0,0:48:43.44,0:48:46.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}说你胖 你还喘上了你
+Dialogue: 0,0:49:08.72,0:49:09.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}其实
+Dialogue: 0,0:49:09.88,0:49:12.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}说什么呀
+Dialogue: 0,0:49:12.32,0:49:14.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}其实可能没那孩子
+Dialogue: 0,0:49:14.92,0:49:16.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}去你妈的
+Dialogue: 0,0:49:16.32,0:49:19.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}孙子 你丫早干嘛来着
+Dialogue: 0,0:49:19.32,0:49:21.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不是 我还没看清楚
+Dialogue: 0,0:49:21.32,0:49:23.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}丫一板砖就拍下去了
+Dialogue: 0,0:49:23.12,0:49:24.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}反正都他们的人
+Dialogue: 0,0:49:24.52,0:49:25.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}打就打了
+Dialogue: 0,0:49:25.60,0:49:27.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你走 你走
+Dialogue: 0,0:49:31.32,0:49:34.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁呀
+Dialogue: 0,0:49:36.32,0:49:37.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}于北蓓
+Dialogue: 0,0:49:46.00,0:49:47.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴
+Dialogue: 0,0:49:47.60,0:49:50.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你可真不是东西
+Dialogue: 0,0:49:50.32,0:49:53.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}等会非抽你不可
+Dialogue: 0,0:49:54.36,0:49:56.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}来啊 现在就来吧
+Dialogue: 0,0:49:56.36,0:49:59.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}来啊
+Dialogue: 0,0:50:01.68,0:50:03.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}讨厌
+Dialogue: 0,0:50:06.36,0:50:09.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}往这瞧瞧 衣服全给弄湿了
+Dialogue: 0,0:50:09.92,0:50:12.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}胳膊都摔破了
+Dialogue: 0,0:50:12.36,0:50:13.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么那么讨厌呀
+Dialogue: 0,0:50:13.80,0:50:15.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}于北蓓 你先出去
+Dialogue: 0,0:50:15.88,0:50:16.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不
+Dialogue: 0,0:50:17.36,0:50:18.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就不
+Dialogue: 0,0:50:19.36,0:50:22.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我跟你说 你出去啊
+Dialogue: 0,0:50:23.20,0:50:24.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真没劲
+Dialogue: 0,0:50:25.32,0:50:28.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还藏起来了
+Dialogue: 0,0:50:29.04,0:50:32.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}弄得我多爱看你们似的
+Dialogue: 0,0:50:37.40,0:50:40.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}于北蓓 那是我的衣服
+Dialogue: 0,0:50:40.40,0:50:42.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我才不管谁的衣服呢
+Dialogue: 0,0:50:42.40,0:50:43.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴 马猴
+Dialogue: 0,0:50:44.32,0:50:47.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}找上你了
+Dialogue: 0,0:50:49.40,0:50:52.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}直了
+Dialogue: 0,0:50:52.44,0:50:54.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这丫直了
+Dialogue: 0,0:50:54.44,0:50:57.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}丫直了
+Dialogue: 0,0:51:10.88,0:51:12.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}丫怎那么流氓啊
+Dialogue: 0,0:51:12.68,0:51:15.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我 我是尿憋的
+Dialogue: 0,0:51:15.44,0:51:18.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}滚蛋
+Dialogue: 0,0:52:51.52,0:52:54.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 哎
+Dialogue: 0,0:52:56.12,0:52:57.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你叫我吗
+Dialogue: 0,0:52:58.52,0:53:00.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱们好像在哪儿见过吧
+Dialogue: 0,0:53:00.52,0:53:02.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}得了吧 小毛孩
+Dialogue: 0,0:53:02.68,0:53:04.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你才多大就干这个了
+Dialogue: 0,0:53:11.08,0:53:12.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}等等 别走啊
+Dialogue: 0,0:53:12.48,0:53:14.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 你是不是就住前面那楼啊
+Dialogue: 0,0:53:14.68,0:53:17.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你是那中学的学生吧 是啊
+Dialogue: 0,0:53:17.08,0:53:18.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我见过你
+Dialogue: 0,0:53:18.08,0:53:19.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有一天在派出所门口
+Dialogue: 0,0:53:19.64,0:53:22.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你跟一个女警察一块儿出来
+Dialogue: 0,0:53:22.08,0:53:23.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱们能认识认识吗
+Dialogue: 0,0:53:23.32,0:53:24.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有必要吗 有啊
+Dialogue: 0,0:53:24.92,0:53:26.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我觉着没必要
+Dialogue: 0,0:53:26.24,0:53:29.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要不咱们交个朋友吧
+Dialogue: 0,0:53:31.76,0:53:33.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一看你就是一坏孩子
+Dialogue: 0,0:53:34.00,0:53:35.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就认识认识 有什么
+Dialogue: 0,0:53:35.64,0:53:37.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要不你可以当我姐嘛
+Dialogue: 0,0:53:38.44,0:53:41.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你呀 上别处认姐姐去吧
+Dialogue: 0,0:53:44.12,0:53:46.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你要不跟我认识 我可
+Dialogue: 0,0:53:49.44,0:53:50.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你想怎么着
+Dialogue: 0,0:53:50.80,0:53:51.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}打我
+Dialogue: 0,0:53:52.04,0:53:52.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}嗯
+Dialogue: 0,0:53:52.96,0:53:53.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是吗
+Dialogue: 0,0:54:00.56,0:54:01.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你打得过我吗
+Dialogue: 0,0:54:23.28,0:54:25.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 那小孩
+Dialogue: 0,0:54:25.72,0:54:26.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}过来
+Dialogue: 0,0:54:31.84,0:54:32.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你多大了
+Dialogue: 0,0:54:32.76,0:54:33.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}十六
+Dialogue: 0,0:54:35.96,0:54:37.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}让我看看
+Dialogue: 0,0:54:39.04,0:54:40.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你哪有十六啊 骗我
+Dialogue: 0,0:54:41.04,0:54:42.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那你呢 你多大
+Dialogue: 0,0:54:42.72,0:54:43.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}反正比你大
+Dialogue: 0,0:54:44.36,0:54:47.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你想认我当姐姐 真的
+Dialogue: 0,0:54:47.64,0:54:50.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一见你 怎么说
+Dialogue: 0,0:54:50.32,0:54:52.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就觉得你特像我姐
+Dialogue: 0,0:54:52.40,0:54:53.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有姐姐吗
+Dialogue: 0,0:54:53.28,0:54:54.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没有
+Dialogue: 0,0:54:55.68,0:54:56.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}叫什么
+Dialogue: 0,0:54:56.60,0:54:57.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军
+Dialogue: 0,0:54:58.16,0:54:59.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真的
+Dialogue: 0,0:54:59.92,0:55:01.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我书包 马小军
+Dialogue: 0,0:55:02.40,0:55:04.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不骗你 你呢
+Dialogue: 0,0:55:04.36,0:55:05.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,0:55:06.16,0:55:08.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你就是米兰
+Dialogue: 0,0:55:08.32,0:55:10.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么了 没什么
+Dialogue: 0,0:55:10.52,0:55:12.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 你不是老在家住吧
+Dialogue: 0,0:55:12.88,0:55:13.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你怎么知道
+Dialogue: 0,0:55:13.84,0:55:16.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们家住5号楼 我去过你们家楼
+Dialogue: 0,0:55:16.76,0:55:19.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好了 你该回家了
+Dialogue: 0,0:55:19.40,0:55:21.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要不你家长该打你了
+Dialogue: 0,0:55:21.40,0:55:22.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}回去吧
+Dialogue: 0,0:55:25.88,0:55:29.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 哎 我还没说完呢
+Dialogue: 0,0:55:58.32,0:56:00.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我忘了一件事
+Dialogue: 0,0:56:01.20,0:56:04.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你去过
+Dialogue: 0,0:56:06.32,0:56:07.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}北海吗
+Dialogue: 0,0:56:09.64,0:56:10.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}算了吧你
+Dialogue: 0,0:56:11.24,0:56:12.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}什么北海不北海的
+Dialogue: 0,0:56:14.24,0:56:16.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}行了 小毛孩回家吧
+Dialogue: 0,0:56:16.24,0:56:18.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 哎
+Dialogue: 0,0:56:18.76,0:56:20.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那你当我姐吗
+Dialogue: 0,0:56:22.52,0:56:23.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你得听话
+Dialogue: 0,0:56:23.64,0:56:24.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}保证听
+Dialogue: 0,0:56:24.40,0:56:25.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}赶紧回家
+Dialogue: 0,0:56:25.24,0:56:26.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}成
+Dialogue: 0,0:56:29.12,0:56:31.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}以后不准再到街上追女孩了
+Dialogue: 0,0:56:32.60,0:56:35.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我向毛主席保证 我这头一回
+Dialogue: 0,0:56:36.60,0:56:38.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再见 再见
+Dialogue: 0,0:56:38.40,0:56:41.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 我可真来找你啊
+Dialogue: 0,0:56:50.60,0:56:52.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真是你爸的好儿子
+Dialogue: 0,0:56:53.12,0:56:54.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他是年年不回家
+Dialogue: 0,0:56:54.36,0:56:55.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你天天不回家你
+Dialogue: 0,0:56:56.28,0:56:58.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真把这家当旅馆了
+Dialogue: 0,0:56:58.28,0:57:00.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}把我当老妈子
+Dialogue: 0,0:57:00.40,0:57:02.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}美得你
+Dialogue: 0,0:57:03.04,0:57:04.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}给我弄点水
+Dialogue: 0,0:57:09.88,0:57:11.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}拿碗
+Dialogue: 0,0:57:12.32,0:57:13.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}烫死我呀你
+Dialogue: 0,0:57:16.64,0:57:17.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}妈 我不
+Dialogue: 0,0:57:17.60,0:57:18.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}气死我了 你 你
+Dialogue: 0,0:57:18.88,0:57:20.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我不了 妈
+Dialogue: 0,0:57:20.52,0:57:21.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你 你
+Dialogue: 0,0:57:21.56,0:57:24.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我 我打死你
+Dialogue: 0,0:57:24.44,0:57:25.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我打死你
+Dialogue: 0,0:57:25.32,0:57:26.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}妈 我不了
+Dialogue: 0,0:57:26.32,0:57:28.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我 我
+Dialogue: 0,0:57:28.32,0:57:31.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}打死你
+Dialogue: 0,0:57:31.32,0:57:32.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}天天不着家
+Dialogue: 0,0:57:32.32,0:57:35.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你天天不着家
+Dialogue: 0,0:57:36.32,0:57:39.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你成天成天等现成的
+Dialogue: 0,0:57:39.32,0:57:42.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你小王八犊子你
+Dialogue: 0,0:57:44.32,0:57:48.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你就 你就跟那些坏孩子去混去吧
+Dialogue: 0,0:57:48.32,0:57:51.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你早晚 你就上公安局去作客
+Dialogue: 0,0:57:52.88,0:57:54.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没人心疼
+Dialogue: 0,0:57:57.68,0:58:00.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你看 你老师留了信
+Dialogue: 0,0:58:01.32,0:58:04.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你看看哪 你看看
+Dialogue: 0,0:58:05.32,0:58:07.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}人家别人家的孩子
+Dialogue: 0,0:58:07.32,0:58:09.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}人家一放学就回去做功课
+Dialogue: 0,0:58:10.00,0:58:11.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你呢
+Dialogue: 0,0:58:11.52,0:58:13.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}天不黑你就不回来
+Dialogue: 0,0:58:13.36,0:58:16.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你干啥去了你
+Dialogue: 0,0:58:20.36,0:58:21.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}干脆
+Dialogue: 0,0:58:21.84,0:58:23.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就跟你爸一样
+Dialogue: 0,0:58:24.32,0:58:25.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}都别回家
+Dialogue: 0,0:58:25.80,0:58:26.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}滚蛋
+Dialogue: 0,0:58:27.36,0:58:28.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}走
+Dialogue: 0,0:58:30.12,0:58:31.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}自由吧 你们
+Dialogue: 0,0:58:31.44,0:58:34.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你上公安局去做客去吧 你
+Dialogue: 0,0:58:35.36,0:58:37.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你搬到公安局去吧你
+Dialogue: 0,0:58:38.36,0:58:40.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎呀
+Dialogue: 0,0:58:55.68,0:58:57.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你妈妈我呀
+Dialogue: 0,0:59:00.88,0:59:03.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是一个有文化有教养的人
+Dialogue: 0,0:59:05.40,0:59:07.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}跟你爸随军以后
+Dialogue: 0,0:59:08.80,0:59:10.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}当了家属
+Dialogue: 0,0:59:11.12,0:59:13.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我是家属的料吗 我
+Dialogue: 0,0:59:14.32,0:59:16.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}气急了我把这房子都给烧了我
+Dialogue: 0,0:59:18.68,0:59:20.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们马家没一个好种
+Dialogue: 0,0:59:21.44,0:59:23.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}从小看到大
+Dialogue: 0,0:59:23.64,0:59:26.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你就跟你那贼爸爸是一路货色呀你
+Dialogue: 0,0:59:28.68,0:59:30.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你要是一只小鸡
+Dialogue: 0,0:59:30.44,0:59:31.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我把你杀了
+Dialogue: 0,0:59:32.12,0:59:33.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我也不吃那肉
+Dialogue: 0,0:59:34.24,0:59:35.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}恨死我了
+Dialogue: 0,0:59:37.44,0:59:39.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}恨死我了 你
+Dialogue: 0,0:59:41.12,0:59:44.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你咋就不给你妈妈争口气呢
+Dialogue: 0,0:59:46.88,0:59:49.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你真是让我太失望了
+Dialogue: 0,0:59:49.80,0:59:51.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}太让我后悔了你
+Dialogue: 0,0:59:52.80,0:59:54.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}王八犊子
+Dialogue: 0,0:59:56.60,0:59:57.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你妈我呀
+Dialogue: 0,0:59:58.48,1:00:00.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}从来都不会骂人
+Dialogue: 0,1:00:00.72,1:00:02.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}更不会打人
+Dialogue: 0,1:00:02.88,1:00:05.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}都是让你们这姓马的给我逼出来的
+Dialogue: 0,1:00:07.48,1:00:08.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你王八犊子
+Dialogue: 0,1:00:08.72,1:00:11.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你给我滚
+Dialogue: 0,1:00:24.52,1:00:27.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我妈妈一怒之下生下了她的第二个儿子
+Dialogue: 0,1:00:29.12,1:00:31.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哥儿几个是用食堂买菜的平板车
+Dialogue: 0,1:00:31.72,1:00:33.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}把妈妈送进了陆军总医院
+Dialogue: 0,1:00:34.32,1:00:36.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}因为司机班的那辆吉普
+Dialogue: 0,1:00:36.04,1:00:37.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么也打不着火
+Dialogue: 0,1:00:38.16,1:00:39.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我当时想
+Dialogue: 0,1:00:39.88,1:00:41.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这种战备观念
+Dialogue: 0,1:00:41.52,1:00:43.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要是帝国主义发动突然袭击
+Dialogue: 0,1:00:44.12,1:00:45.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还不全他妈完蛋
+Dialogue: 0,1:00:47.52,1:00:49.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}妈妈每次打我总要骂上爸爸
+Dialogue: 0,1:00:50.68,1:00:52.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这回爸爸真让她给骂回来了
+Dialogue: 0,1:00:54.68,1:00:57.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}长大懂事后我才恍然大悟
+Dialogue: 0,1:00:57.44,1:00:59.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}弟弟的出生与我偷开爸爸的
+Dialogue: 0,1:00:59.60,1:01:01.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}抽屉玩那只大气球有关系
+Dialogue: 0,1:01:02.52,1:01:04.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}因为气球被扎漏了
+Dialogue: 0,1:01:24.32,1:01:26.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}六条的那孩子被我们打成重伤
+Dialogue: 0,1:01:26.84,1:01:27.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}住了一个月的院
+Dialogue: 0,1:01:28.44,1:01:29.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}但他们不服
+Dialogue: 0,1:01:29.96,1:01:32.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}找人带话来要跟我们打架
+Dialogue: 0,1:01:32.24,1:01:33.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}时间是礼拜一
+Dialogue: 0,1:01:33.68,1:01:35.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}地点约在卢沟桥
+Dialogue: 0,1:01:35.44,1:01:36.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可带上百人
+Dialogue: 0,1:01:38.16,1:01:39.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我不由得紧张起来
+Dialogue: 0,1:01:40.08,1:01:42.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}后悔不该逞英雄拍那孩子一砖头
+Dialogue: 0,1:01:43.32,1:01:45.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}因为对方点名 非我参加不可
+Dialogue: 0,1:01:47.12,1:01:48.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我想到米兰
+Dialogue: 0,1:01:48.72,1:01:50.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}想马上见到她
+Dialogue: 0,1:01:50.56,1:01:53.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}说不定这就是生离死别
+Dialogue: 0,1:02:51.20,1:02:52.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那人让我过去
+Dialogue: 0,1:02:52.72,1:02:55.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那过去干嘛呀
+Dialogue: 0,1:02:55.32,1:02:56.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}机灵点
+Dialogue: 0,1:02:56.68,1:02:58.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看一下我手势
+Dialogue: 0,1:03:01.64,1:03:02.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你是马小军
+Dialogue: 0,1:03:02.72,1:03:03.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊
+Dialogue: 0,1:03:04.04,1:03:05.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那板砖是你拍的
+Dialogue: 0,1:03:05.92,1:03:07.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是 是我
+Dialogue: 0,1:04:11.72,1:04:12.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}和了
+Dialogue: 0,1:04:13.12,1:04:15.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这场颇费苦心安排的架
+Dialogue: 0,1:04:15.08,1:04:16.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就这么没打起来
+Dialogue: 0,1:04:16.72,1:04:17.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们拥进了老莫
+Dialogue: 0,1:04:17.96,1:04:19.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就是现在的莫斯科餐厅
+Dialogue: 0,1:04:33.88,1:04:36.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}四海之内皆兄弟
+Dialogue: 0,1:04:36.52,1:04:39.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}五洲震荡和为贵
+Dialogue: 0,1:04:39.64,1:04:43.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}喝
+Dialogue: 0,1:05:05.76,1:05:08.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}正当梨花开遍了天涯
+Dialogue: 0,1:05:09.76,1:05:12.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}河上飘着柔漫的轻纱
+Dialogue: 0,1:05:13.76,1:05:16.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}喀秋莎站在峻峭的岸上
+Dialogue: 0,1:05:16.92,1:05:18.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我发现了一个规律
+Dialogue: 0,1:05:18.32,1:05:20.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}几个人十几个人的遭遇战打得最狠
+Dialogue: 0,1:05:21.24,1:05:22.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}也常出人命
+Dialogue: 0,1:05:22.80,1:05:25.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}几十人上百人的架却往往打不起来
+Dialogue: 0,1:05:26.12,1:05:27.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}因为人勾来的越多
+Dialogue: 0,1:05:27.68,1:05:28.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就越容易勾来熟人
+Dialogue: 0,1:05:29.24,1:05:31.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}甚至两拔儿都去勾了同一拔儿人
+Dialogue: 0,1:05:31.80,1:05:32.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这次就是
+Dialogue: 0,1:05:33.12,1:05:35.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}两边都去找了当时威震北京的小坏蛋
+Dialogue: 0,1:05:36.96,1:05:38.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他的确是鼎鼎大名
+Dialogue: 0,1:05:39.12,1:05:42.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}人人都知道几个关于他胆大手黑的传说
+Dialogue: 0,1:05:43.20,1:05:44.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是我第一次
+Dialogue: 0,1:05:44.52,1:05:46.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}也是唯一次见到他
+Dialogue: 0,1:05:47.20,1:05:48.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这事儿过后不久
+Dialogue: 0,1:05:48.88,1:05:51.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他就被几个十五六岁想取代他的孩子扎死了
+Dialogue: 0,1:05:53.52,1:05:55.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我只记得他的手特柔软
+Dialogue: 0,1:05:55.84,1:05:57.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}像女人的
+Dialogue: 0,1:06:00.44,1:06:01.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我终于没出意外
+Dialogue: 0,1:06:02.28,1:06:04.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}但另一件事却使我怒上心头
+Dialogue: 0,1:06:04.92,1:06:06.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我总是寻不见米兰
+Dialogue: 0,1:06:07.12,1:06:09.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她似乎存心在躲着我
+Dialogue: 0,1:06:13.60,1:06:14.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,1:06:16.84,1:06:18.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,1:06:22.08,1:06:23.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,1:06:25.28,1:06:27.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁呀
+Dialogue: 0,1:06:31.16,1:06:34.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哦 是你呀
+Dialogue: 0,1:06:34.20,1:06:35.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}上这边来吧
+Dialogue: 0,1:06:57.36,1:06:58.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你怎么没去上课啊
+Dialogue: 0,1:06:58.76,1:06:59.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那什么
+Dialogue: 0,1:06:59.56,1:07:00.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们老师病了
+Dialogue: 0,1:07:00.72,1:07:02.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}上午改自习 我就溜出来了
+Dialogue: 0,1:07:03.72,1:07:05.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你来找过我吗
+Dialogue: 0,1:07:06.00,1:07:06.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没有
+Dialogue: 0,1:07:07.88,1:07:08.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}为什么
+Dialogue: 0,1:07:10.24,1:07:12.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们快期末考试了
+Dialogue: 0,1:07:12.40,1:07:13.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}课程挺紧的
+Dialogue: 0,1:07:13.92,1:07:15.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}所以也没时间来找你
+Dialogue: 0,1:07:15.72,1:07:17.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我现在太忙
+Dialogue: 0,1:07:17.60,1:07:18.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}实在是忙
+Dialogue: 0,1:07:19.76,1:07:21.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我还想呢
+Dialogue: 0,1:07:22.16,1:07:24.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么见了一面 人就没影了
+Dialogue: 0,1:07:25.12,1:07:27.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是不是在哪儿认了姐姐
+Dialogue: 0,1:07:27.68,1:07:28.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}给绊住了
+Dialogue: 0,1:07:28.72,1:07:30.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不是 不是
+Dialogue: 0,1:07:35.48,1:07:36.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我问你
+Dialogue: 0,1:07:37.44,1:07:40.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你最近没有新认识什么人吧
+Dialogue: 0,1:07:40.28,1:07:41.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瞧你说的
+Dialogue: 0,1:07:41.72,1:07:44.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好像我除了在大街上闲逛
+Dialogue: 0,1:07:44.08,1:07:46.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就不干别的了 没有
+Dialogue: 0,1:07:46.92,1:07:48.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}绝对没有
+Dialogue: 0,1:07:53.68,1:07:54.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好吧
+Dialogue: 0,1:07:56.44,1:07:58.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 帮我个忙成吗
+Dialogue: 0,1:07:58.64,1:07:59.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}成
+Dialogue: 0,1:07:59.60,1:08:01.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你到楼道里 把那壶开水拎来
+Dialogue: 0,1:08:02.88,1:08:04.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 小心点 别烫着
+Dialogue: 0,1:08:04.52,1:08:06.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没问题 放心吧
+Dialogue: 0,1:08:19.24,1:08:20.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我帮你冲吧
+Dialogue: 0,1:08:20.56,1:08:21.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好啊
+Dialogue: 0,1:08:22.48,1:08:23.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}兑上点凉水
+Dialogue: 0,1:08:23.72,1:08:25.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你想烫死我啊 对 对 对
+Dialogue: 0,1:08:33.48,1:08:34.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}烫吗
+Dialogue: 0,1:08:34.32,1:08:37.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}嗯 不烫 浇吧
+Dialogue: 0,1:09:03.16,1:09:04.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}天可真热
+Dialogue: 0,1:09:04.52,1:09:05.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}才几月份哪
+Dialogue: 0,1:09:05.64,1:09:06.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你会游泳吗
+Dialogue: 0,1:09:06.92,1:09:07.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我不会
+Dialogue: 0,1:09:08.52,1:09:09.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你呢
+Dialogue: 0,1:09:09.60,1:09:11.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}等哪天我游给你看吧
+Dialogue: 0,1:09:11.32,1:09:12.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那好啊
+Dialogue: 0,1:09:12.32,1:09:14.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}赶明儿我要是掉进水里
+Dialogue: 0,1:09:14.04,1:09:15.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你可以来救我了
+Dialogue: 0,1:09:15.00,1:09:16.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那 那没问题
+Dialogue: 0,1:09:16.20,1:09:18.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不过你个儿太大了 我的技术还得再练练才成
+Dialogue: 0,1:09:19.08,1:09:21.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那你就天天到什刹海去练吧
+Dialogue: 0,1:09:21.52,1:09:22.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那我就不上课啦
+Dialogue: 0,1:09:23.04,1:09:24.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}等期终考完试
+Dialogue: 0,1:09:24.24,1:09:24.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}搁那边
+Dialogue: 0,1:09:25.08,1:09:26.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱俩一块去吧
+Dialogue: 0,1:09:30.96,1:09:34.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好吧 站那儿别动
+Dialogue: 0,1:09:35.96,1:09:36.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎
+Dialogue: 0,1:09:37.00,1:09:39.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们现在上课都学些什么呀
+Dialogue: 0,1:09:39.68,1:09:41.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊 学什么呢
+Dialogue: 0,1:09:41.52,1:09:43.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我也不知道学什么
+Dialogue: 0,1:09:43.36,1:09:46.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对 学了 学那个造酒
+Dialogue: 0,1:09:47.92,1:09:48.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}做小提琴
+Dialogue: 0,1:09:49.00,1:09:50.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还有做芝麻酱什么的
+Dialogue: 0,1:09:51.24,1:09:53.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}在哪儿学的这些乱七八糟的东西
+Dialogue: 0,1:09:53.32,1:09:54.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}学工学农啊
+Dialogue: 0,1:09:54.84,1:09:56.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们在造酒厂学了一个月工啊
+Dialogue: 0,1:09:57.24,1:09:59.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们还跟那边大孩子打架
+Dialogue: 0,1:09:59.08,1:10:00.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他们来了二百多人
+Dialogue: 0,1:10:00.56,1:10:01.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}全让我们给打回去了
+Dialogue: 0,1:10:02.24,1:10:04.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}后来我们上课时包里全是菜刀
+Dialogue: 0,1:10:04.84,1:10:06.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}然后有一大孩子都说服了
+Dialogue: 0,1:10:06.72,1:10:08.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那人被砍了好几菜刀呢
+Dialogue: 0,1:10:09.32,1:10:10.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是吗
+Dialogue: 0,1:10:12.32,1:10:14.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那你们考试考什么呀
+Dialogue: 0,1:10:14.60,1:10:17.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是考造酒啊 还是考打架
+Dialogue: 0,1:10:17.44,1:10:18.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 你坐吧
+Dialogue: 0,1:10:18.40,1:10:19.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那哪儿成啊
+Dialogue: 0,1:10:19.72,1:10:21.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们就学了一个月工
+Dialogue: 0,1:10:21.92,1:10:23.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}其他时候还得上课
+Dialogue: 0,1:10:23.52,1:10:25.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不过平时我自己也找书看
+Dialogue: 0,1:10:25.40,1:10:27.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们都看什么书啊
+Dialogue: 0,1:10:27.64,1:10:29.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}《钢铁是怎样练成的》
+Dialogue: 0,1:10:29.64,1:10:31.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}《牛虻》
+Dialogue: 0,1:10:31.16,1:10:34.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}《青春之歌》还有《苦菜花》什么的
+Dialogue: 0,1:10:36.48,1:10:38.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}喜欢冬妮娅吗
+Dialogue: 0,1:10:38.04,1:10:39.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我喜欢保尔
+Dialogue: 0,1:10:39.48,1:10:40.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}冬妮娅也喜欢
+Dialogue: 0,1:10:40.64,1:10:42.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可惜后来她变了
+Dialogue: 0,1:10:42.20,1:10:43.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}成了资产阶级了
+Dialogue: 0,1:10:43.92,1:10:45.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这些书你都看完了吗 没有
+Dialogue: 0,1:10:46.40,1:10:47.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}为什么
+Dialogue: 0,1:10:47.24,1:10:50.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}嗨 都是些没头没尾的旧书
+Dialogue: 0,1:10:50.92,1:10:53.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 二百首你看过吗
+Dialogue: 0,1:10:53.68,1:10:54.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}当然
+Dialogue: 0,1:10:55.32,1:10:57.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那本书叫外国民歌二百首
+Dialogue: 0,1:10:58.68,1:11:00.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是歌本
+Dialogue: 0,1:11:03.68,1:11:06.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我不识谱 我就拿来当书看了
+Dialogue: 0,1:11:07.16,1:11:08.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}赶明儿你教我唱吧
+Dialogue: 0,1:11:08.72,1:11:10.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}行 没问题
+Dialogue: 0,1:11:19.56,1:11:20.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你在哪儿上班啊
+Dialogue: 0,1:11:21.04,1:11:21.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}特远
+Dialogue: 0,1:11:22.08,1:11:22.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那你就不去了
+Dialogue: 0,1:11:23.36,1:11:26.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}去啊 前一阵儿我一直在那儿
+Dialogue: 0,1:11:26.12,1:11:27.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还住那儿呢
+Dialogue: 0,1:11:27.32,1:11:29.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}说你怎么老不在家呆着
+Dialogue: 0,1:11:32.24,1:11:33.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你来找过我
+Dialogue: 0,1:11:33.52,1:11:33.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没有
+Dialogue: 0,1:11:34.12,1:11:34.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你骗人 没有
+Dialogue: 0,1:11:34.96,1:11:36.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我外婆都告诉过我了 没有那
+Dialogue: 0,1:11:36.72,1:11:37.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有个小孩儿 那不是我
+Dialogue: 0,1:11:37.80,1:11:38.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一开门他就跑了
+Dialogue: 0,1:11:38.84,1:11:40.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那真不是我
+Dialogue: 0,1:11:47.32,1:11:48.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真的
+Dialogue: 0,1:11:49.32,1:11:50.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好吧
+Dialogue: 0,1:11:50.72,1:11:52.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这阵儿我病了 在家里
+Dialogue: 0,1:11:52.80,1:11:53.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有空你过来吧
+Dialogue: 0,1:11:54.12,1:11:56.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你得什么病了 少打听
+Dialogue: 0,1:11:58.72,1:12:00.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哦 哦 哦
+Dialogue: 0,1:12:01.16,1:12:04.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你是不是有张照片 穿游泳衣的
+Dialogue: 0,1:12:04.72,1:12:05.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你胡说
+Dialogue: 0,1:12:05.72,1:12:07.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我什么时候有穿游泳衣的
+Dialogue: 0,1:12:07.72,1:12:09.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}原来就挂在这儿的 没错
+Dialogue: 0,1:12:09.72,1:12:12.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这儿是有一张照片 可没有穿游泳衣
+Dialogue: 0,1:12:12.52,1:12:13.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不可能 拿出来我看
+Dialogue: 0,1:12:13.68,1:12:15.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}叫朋友拿走了
+Dialogue: 0,1:12:15.84,1:12:17.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不对 绝对是穿游泳衣的
+Dialogue: 0,1:12:18.20,1:12:20.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你这孩子真倔
+Dialogue: 0,1:12:20.56,1:12:23.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}给你看
+Dialogue: 0,1:12:23.80,1:12:26.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不可能 绝对有
+Dialogue: 0,1:12:30.24,1:12:31.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有吗
+Dialogue: 0,1:12:35.88,1:12:37.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}跟这张一模一样的
+Dialogue: 0,1:12:38.40,1:12:40.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}穿游泳衣的
+Dialogue: 0,1:12:41.76,1:12:42.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不对呀
+Dialogue: 0,1:12:42.72,1:12:43.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就是挂在这儿这张
+Dialogue: 0,1:12:43.68,1:12:45.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你先说 有没有穿游泳衣呀
+Dialogue: 0,1:12:45.68,1:12:48.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没有 还真没有
+Dialogue: 0,1:12:48.92,1:12:50.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么回事
+Dialogue: 0,1:12:51.12,1:12:53.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}原来就挂在这儿 还彩色的我记得
+Dialogue: 0,1:12:54.40,1:12:57.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好了 好了 好了
+Dialogue: 0,1:12:57.04,1:12:59.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}等以后 你给我拍一张得了
+Dialogue: 0,1:12:59.32,1:13:00.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊 嗯
+Dialogue: 0,1:13:00.52,1:13:01.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那这张给我吧
+Dialogue: 0,1:13:02.08,1:13:03.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不行
+Dialogue: 0,1:13:03.76,1:13:04.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}给我嘛
+Dialogue: 0,1:13:04.76,1:13:05.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不行
+Dialogue: 0,1:13:05.72,1:13:07.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你要照片干嘛
+Dialogue: 0,1:13:07.12,1:13:08.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真不给我 不给
+Dialogue: 0,1:13:08.92,1:13:09.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那我可抢了
+Dialogue: 0,1:13:09.84,1:13:10.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你敢
+Dialogue: 0,1:13:12.92,1:13:15.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 你站住
+Dialogue: 0,1:13:16.92,1:13:19.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎呀 哎呀
+Dialogue: 0,1:13:33.92,1:13:35.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}生气了
+Dialogue: 0,1:13:37.32,1:13:39.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别不高兴 真的
+Dialogue: 0,1:13:39.72,1:13:41.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}拿女孩照片不好
+Dialogue: 0,1:13:42.04,1:13:43.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}过来坐吧
+Dialogue: 0,1:13:58.56,1:13:59.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}送你样东西
+Dialogue: 0,1:14:00.20,1:14:01.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}过来
+Dialogue: 0,1:14:03.52,1:14:04.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}给
+Dialogue: 0,1:14:06.72,1:14:08.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有三种颜色
+Dialogue: 0,1:14:19.68,1:14:22.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有段时间我几乎天天和她见面
+Dialogue: 0,1:14:22.60,1:14:23.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}为了吹嘘自己
+Dialogue: 0,1:14:23.72,1:14:26.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我总是把别人干过的事都安在自己头上
+Dialogue: 0,1:14:26.92,1:14:28.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}经过夸大和渲染
+Dialogue: 0,1:14:28.40,1:14:29.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}娓娓道出
+Dialogue: 0,1:14:30.32,1:14:31.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}遗憾的是
+Dialogue: 0,1:14:31.52,1:14:34.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我已扮成一个和自己年龄极不相称的
+Dialogue: 0,1:14:34.04,1:14:35.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}胆大妄为的强盗
+Dialogue: 0,1:14:35.76,1:14:38.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她竟从不以惊愕来为我喝彩
+Dialogue: 0,1:14:39.76,1:14:41.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我告诉她我会配钥匙
+Dialogue: 0,1:14:41.76,1:14:43.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}能开各种不同的锁
+Dialogue: 0,1:14:43.44,1:14:44.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}甚至开过她的家
+Dialogue: 0,1:14:44.92,1:14:46.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}玩过她的望远镜
+Dialogue: 0,1:14:46.44,1:14:48.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看见过她的大照片什么的
+Dialogue: 0,1:14:48.76,1:14:51.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她也只是说 是吗
+Dialogue: 0,1:14:52.76,1:14:55.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有时候 说着 说着 她就睡着了
+Dialogue: 0,1:14:55.88,1:14:57.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}而我则尽力不去看她那
+Dialogue: 0,1:14:57.60,1:14:59.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}无意中裸露出来的身体
+Dialogue: 0,1:14:59.68,1:15:01.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可脑子里却在胡思乱想
+Dialogue: 0,1:15:02.44,1:15:03.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}慢着
+Dialogue: 0,1:15:03.76,1:15:05.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我的记忆好像出了毛病
+Dialogue: 0,1:15:05.76,1:15:07.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}事实和幻觉又搅到了一块儿
+Dialogue: 0,1:15:08.12,1:15:10.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可能她根本就没有当我的面睡过觉
+Dialogue: 0,1:15:11.12,1:15:13.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可能她根本就没有这样凝视过我
+Dialogue: 0,1:15:13.76,1:15:15.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那么她锥子般锐利的目光
+Dialogue: 0,1:15:16.00,1:15:17.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}和熟睡的样子
+Dialogue: 0,1:15:17.12,1:15:20.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}又是怎么跑到我的头脑中来的呢
+Dialogue: 0,1:15:46.12,1:15:48.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}总算考完了最后一门课
+Dialogue: 0,1:15:48.84,1:15:51.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}过两天 我们就要放暑假了
+Dialogue: 0,1:15:58.84,1:16:01.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你还买菜 像个小媳妇
+Dialogue: 0,1:16:03.44,1:16:05.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}小媳妇就小媳妇呗
+Dialogue: 0,1:16:05.48,1:16:07.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不买菜 吃什么
+Dialogue: 0,1:16:08.12,1:16:09.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}后天我们就放假了
+Dialogue: 0,1:16:10.32,1:16:12.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还是当学生好啊
+Dialogue: 0,1:16:12.00,1:16:13.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}每年还有两个假期
+Dialogue: 0,1:16:13.84,1:16:16.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可能一不上学 我就不能天天来找你了
+Dialogue: 0,1:16:20.28,1:16:21.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 跟我上楼吧
+Dialogue: 0,1:16:21.60,1:16:24.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎不 我得回去了
+Dialogue: 0,1:16:24.52,1:16:26.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我都等了你一下午了
+Dialogue: 0,1:16:26.52,1:16:28.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是吗 找我有事
+Dialogue: 0,1:16:29.88,1:16:32.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 哪天你到我们那儿玩去
+Dialogue: 0,1:16:33.44,1:16:34.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不去
+Dialogue: 0,1:16:34.92,1:16:37.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我才不想认识你们那帮坏孩子呢
+Dialogue: 0,1:16:37.72,1:16:40.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那你又不认识 你怎么知道是坏小孩呢
+Dialogue: 0,1:16:41.32,1:16:42.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你去看看
+Dialogue: 0,1:16:42.32,1:16:43.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真的挺好玩的
+Dialogue: 0,1:16:44.44,1:16:45.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再说吧
+Dialogue: 0,1:16:45.24,1:16:46.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别再说啊
+Dialogue: 0,1:16:47.36,1:16:48.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}到时候就不好联系了
+Dialogue: 0,1:16:49.20,1:16:50.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你还是说准的吧
+Dialogue: 0,1:16:51.36,1:16:53.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好吧 那你说哪天
+Dialogue: 0,1:16:53.28,1:16:56.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}星期一 星期一我们院大人少
+Dialogue: 0,1:16:57.40,1:16:58.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}行
+Dialogue: 0,1:16:58.52,1:17:00.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是我画的联络图
+Dialogue: 0,1:17:00.20,1:17:02.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你顺着箭头走 准能找着我
+Dialogue: 0,1:17:02.68,1:17:04.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就在院门口等你
+Dialogue: 0,1:17:05.08,1:17:05.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好吧
+Dialogue: 0,1:17:13.80,1:17:14.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 这边
+Dialogue: 0,1:17:17.12,1:17:19.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}唉 抽根烟得了
+Dialogue: 0,1:17:20.44,1:17:22.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你丫怎么老蹭人烟呀
+Dialogue: 0,1:17:22.44,1:17:24.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}从来就没见你买过
+Dialogue: 0,1:17:24.40,1:17:26.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有什么呀 回头还你一盒不得了吗
+Dialogue: 0,1:17:27.52,1:17:29.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不给 就一根
+Dialogue: 0,1:17:29.92,1:17:30.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}玩去
+Dialogue: 0,1:17:30.92,1:17:32.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}大门口还抽烟
+Dialogue: 0,1:17:32.12,1:17:33.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就跟你有多大烟瘾似的
+Dialogue: 0,1:17:33.92,1:17:36.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再说了 让人米兰看见
+Dialogue: 0,1:17:36.72,1:17:38.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对咱印象多不好
+Dialogue: 0,1:17:38.20,1:17:41.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}说这马猴净跟什么样的孩子在一起玩
+Dialogue: 0,1:17:41.12,1:17:42.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是吧 马猴
+Dialogue: 0,1:17:43.08,1:17:44.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还来不来啦
+Dialogue: 0,1:17:44.40,1:17:45.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别把咱给骗了
+Dialogue: 0,1:17:45.68,1:17:47.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对啊 马猴
+Dialogue: 0,1:17:47.72,1:17:49.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你让人给骗了吧
+Dialogue: 0,1:17:49.92,1:17:52.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那是米兰吗
+Dialogue: 0,1:17:59.96,1:18:01.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们还是先回去得了
+Dialogue: 0,1:18:01.96,1:18:03.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}跟这儿乱七八糟瞎嚷什么啊
+Dialogue: 0,1:18:04.16,1:18:07.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好吧 那我们在后山等你 走
+Dialogue: 0,1:18:12.16,1:18:13.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}古伦木
+Dialogue: 0,1:18:13.48,1:18:14.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}欧巴
+Dialogue: 0,1:18:14.56,1:18:15.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}古伦木
+Dialogue: 0,1:18:15.20,1:18:16.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}欧巴
+Dialogue: 0,1:18:16.96,1:18:19.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}欧巴
+Dialogue: 0,1:18:19.28,1:18:20.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 马猴
+Dialogue: 0,1:18:22.12,1:18:23.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}陪会儿你行吗
+Dialogue: 0,1:18:23.68,1:18:25.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}行 甭跟这乱闹啊
+Dialogue: 0,1:18:27.72,1:18:30.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 米兰长什么样啊
+Dialogue: 0,1:18:30.48,1:18:32.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}特精神吧 你也到后山去得了
+Dialogue: 0,1:18:32.92,1:18:36.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不是 你告诉我 我也好帮你盯着点儿
+Dialogue: 0,1:18:36.16,1:18:36.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不用
+Dialogue: 0,1:18:38.52,1:18:39.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎
+Dialogue: 0,1:18:41.00,1:18:43.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎
+Dialogue: 0,1:18:53.56,1:18:55.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是她吧 是
+Dialogue: 0,1:18:59.52,1:19:02.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你怎么从这边来了
+Dialogue: 0,1:19:03.52,1:19:06.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}抱歉 我迷了路
+Dialogue: 0,1:19:06.76,1:19:08.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}都是你这张联络图搞的
+Dialogue: 0,1:19:08.92,1:19:09.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}图
+Dialogue: 0,1:19:13.16,1:19:15.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}从这儿上去
+Dialogue: 0,1:19:15.52,1:19:18.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他们都在上面亭子那儿等着我们呢
+Dialogue: 0,1:19:19.52,1:19:20.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我见过你
+Dialogue: 0,1:19:21.92,1:19:24.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你是不是和于北蓓一个农场的
+Dialogue: 0,1:19:25.52,1:19:28.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊 是
+Dialogue: 0,1:19:33.92,1:19:36.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}于北蓓跟我们特熟
+Dialogue: 0,1:19:36.40,1:19:37.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是吗
+Dialogue: 0,1:19:39.12,1:19:41.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她是认识人挺多的
+Dialogue: 0,1:19:41.52,1:19:43.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是我常跟你说的刘忆苦
+Dialogue: 0,1:19:43.52,1:19:45.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是他弟弟 刘思甜
+Dialogue: 0,1:19:45.56,1:19:46.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是大蚂蚁
+Dialogue: 0,1:19:46.56,1:19:47.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你已经知道了
+Dialogue: 0,1:19:47.64,1:19:48.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 羊搞呢
+Dialogue: 0,1:19:48.92,1:19:49.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}买冰棍
+Dialogue: 0,1:19:50.16,1:19:51.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还有一个呢
+Dialogue: 0,1:19:51.20,1:19:52.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}全都我哥们
+Dialogue: 0,1:19:56.56,1:19:58.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们这真不错
+Dialogue: 0,1:19:58.04,1:19:59.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}蚂蚁 帮哥们一把
+Dialogue: 0,1:19:59.76,1:20:01.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这就是羊搞
+Dialogue: 0,1:20:02.04,1:20:04.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么这么慢才回来
+Dialogue: 0,1:20:04.56,1:20:07.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你好 她是米兰 你好
+Dialogue: 0,1:20:09.56,1:20:10.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谢谢
+Dialogue: 0,1:20:10.68,1:20:12.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我都快渴死了
+Dialogue: 0,1:20:14.44,1:20:17.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你怎么会从这儿过来的 多悬哪
+Dialogue: 0,1:20:17.88,1:20:20.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这儿 捷径 捷径
+Dialogue: 0,1:20:20.88,1:20:23.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你知道今天放什么片子吗
+Dialogue: 0,1:20:23.16,1:20:24.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}什么呀
+Dialogue: 0,1:20:24.12,1:20:25.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}列宁在一九一八
+Dialogue: 0,1:20:25.12,1:20:26.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真哒 是吗 好
+Dialogue: 0,1:20:26.52,1:20:28.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瓦西里
+Dialogue: 0,1:20:28.72,1:20:30.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}让我来
+Dialogue: 0,1:20:38.28,1:20:39.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}捷尔任斯基
+Dialogue: 0,1:20:40.00,1:20:41.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}布哈林
+Dialogue: 0,1:20:41.40,1:20:42.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}洛夫斯基
+Dialogue: 0,1:20:42.60,1:20:44.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他们是叛徒
+Dialogue: 0,1:20:44.60,1:20:46.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他们要刺杀列宁
+Dialogue: 0,1:20:46.64,1:20:49.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不要紧
+Dialogue: 0,1:20:51.20,1:20:54.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你丫怎么不死呀
+Dialogue: 0,1:20:55.12,1:20:57.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 那女的一看老战士
+Dialogue: 0,1:20:57.84,1:20:59.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}屁股都给操圆了
+Dialogue: 0,1:20:59.40,1:21:02.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我抽你丫的
+Dialogue: 0,1:21:08.16,1:21:09.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你觉得她好看吗
+Dialogue: 0,1:21:09.64,1:21:10.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好看
+Dialogue: 0,1:21:10.72,1:21:12.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那你动过她了
+Dialogue: 0,1:21:14.64,1:21:16.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你想我能闲着吗
+Dialogue: 0,1:21:16.68,1:21:19.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 发兄弟我一个
+Dialogue: 0,1:21:19.68,1:21:22.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}发兄弟我一个吧
+Dialogue: 0,1:21:26.12,1:21:27.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}起来
+Dialogue: 0,1:21:28.68,1:21:30.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我操 站住
+Dialogue: 0,1:21:31.24,1:21:33.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你要会拉小提琴就好了
+Dialogue: 0,1:21:33.32,1:21:35.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我爹他们文工团就缺把小提琴
+Dialogue: 0,1:21:35.40,1:21:37.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}能弹琵琶不能拉小提琴吗
+Dialogue: 0,1:21:37.68,1:21:38.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}两回事
+Dialogue: 0,1:21:38.68,1:21:40.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一个是弹拨乐 一个是弦乐
+Dialogue: 0,1:21:40.68,1:21:41.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}得使弓子
+Dialogue: 0,1:21:41.68,1:21:44.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,1:21:44.68,1:21:46.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你可千万别进他爹那文工团
+Dialogue: 0,1:21:46.68,1:21:49.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一去啊 先让他爹给糟蹋了
+Dialogue: 0,1:21:49.36,1:21:52.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴 记错了吧你 那是你爹
+Dialogue: 0,1:21:52.48,1:21:54.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你爹不是因为作风问题降的职吗
+Dialogue: 0,1:21:55.00,1:21:57.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你爹 那是你爹
+Dialogue: 0,1:21:57.12,1:21:58.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}反正我知道 你爹有俩老婆
+Dialogue: 0,1:21:58.92,1:22:00.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一个在乡下 一个就是现在的
+Dialogue: 0,1:22:01.12,1:22:03.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要不你们怎么一个叫忆苦 一个叫思甜呢
+Dialogue: 0,1:22:03.72,1:22:06.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}回去问家长吧
+Dialogue: 0,1:22:07.08,1:22:08.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}今天给他点面子
+Dialogue: 0,1:22:08.24,1:22:12.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}得 得 得 甭这么着急\N我又不是马上就去文工团
+Dialogue: 0,1:22:13.88,1:22:16.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 你是特别想当兵吗
+Dialogue: 0,1:22:16.40,1:22:17.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}想啊
+Dialogue: 0,1:22:17.72,1:22:19.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你干嘛不去考战友呢
+Dialogue: 0,1:22:19.76,1:22:21.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我还想考总政呢
+Dialogue: 0,1:22:22.52,1:22:24.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你会弹琵琶 一定会弹吉它吧
+Dialogue: 0,1:22:24.92,1:22:26.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那还差不多
+Dialogue: 0,1:22:26.32,1:22:28.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我家有把琴 我去给你拿来
+Dialogue: 0,1:22:28.16,1:22:29.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你丫闹不闹啊
+Dialogue: 0,1:22:29.68,1:22:31.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我想飞
+Dialogue: 0,1:22:31.52,1:22:33.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我想飞上天空
+Dialogue: 0,1:22:33.20,1:22:34.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}飞入云霄
+Dialogue: 0,1:22:34.60,1:22:37.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我要飞向克里姆林宫
+Dialogue: 0,1:22:37.68,1:22:40.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我要飞向列宁格勒
+Dialogue: 0,1:22:42.64,1:22:44.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}飞呀 飞呀
+Dialogue: 0,1:22:44.92,1:22:46.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}飞呀 飞呀 还是飞呀
+Dialogue: 0,1:22:46.32,1:22:47.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}坐着干嘛
+Dialogue: 0,1:22:48.24,1:22:49.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我要登高远望
+Dialogue: 0,1:22:50.24,1:22:52.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}今儿个马猴是有点不一样
+Dialogue: 0,1:22:52.12,1:22:53.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}说起话来倍儿有诗意
+Dialogue: 0,1:22:54.16,1:22:55.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是吗
+Dialogue: 0,1:22:57.24,1:23:00.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你干嘛那么吓人 一惊一乍的
+Dialogue: 0,1:23:00.04,1:23:01.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没听说他要登高远望吗
+Dialogue: 0,1:23:01.68,1:23:03.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这儿也不算高啊
+Dialogue: 0,1:23:03.44,1:23:04.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们这儿还有更高的地儿吗
+Dialogue: 0,1:23:05.16,1:23:07.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有啊 大烟囱
+Dialogue: 0,1:23:07.84,1:23:09.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那儿 那儿 那儿高
+Dialogue: 0,1:23:09.64,1:23:11.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}羊搞 你别来劲
+Dialogue: 0,1:23:11.16,1:23:12.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你怎么不上去呀
+Dialogue: 0,1:23:12.28,1:23:13.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你先上去我看看
+Dialogue: 0,1:23:13.28,1:23:15.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我没说要登高远望
+Dialogue: 0,1:23:15.36,1:23:16.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这上面 上去过人吗
+Dialogue: 0,1:23:16.92,1:23:17.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我上去过
+Dialogue: 0,1:23:17.72,1:23:18.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是吗
+Dialogue: 0,1:23:19.28,1:23:20.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可以啊
+Dialogue: 0,1:23:20.64,1:23:22.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}表演一回给咱们看
+Dialogue: 0,1:23:22.24,1:23:22.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}算了
+Dialogue: 0,1:23:22.96,1:23:24.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}来一回 让米兰也开开眼
+Dialogue: 0,1:23:25.04,1:23:26.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}下来后 我给你两包牡丹过滤
+Dialogue: 0,1:23:26.60,1:23:28.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}玩去 两包
+Dialogue: 0,1:23:28.52,1:23:30.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再加两包凤凰过滤
+Dialogue: 0,1:23:30.00,1:23:32.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}苦哥 上一回 四包过滤了
+Dialogue: 0,1:23:32.68,1:23:33.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我上去过
+Dialogue: 0,1:23:34.08,1:23:35.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好汉不提当年勇
+Dialogue: 0,1:23:35.56,1:23:37.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不要吃老本 要立新功嘛
+Dialogue: 0,1:23:37.44,1:23:38.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你怎么不立新功啊
+Dialogue: 0,1:23:38.80,1:23:39.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 这样吧
+Dialogue: 0,1:23:39.80,1:23:41.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}四包过滤都归你
+Dialogue: 0,1:23:41.12,1:23:43.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再加两包中华怎么样
+Dialogue: 0,1:23:44.00,1:23:44.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真的
+Dialogue: 0,1:23:44.72,1:23:47.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 马小军
+Dialogue: 0,1:23:48.68,1:23:51.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军
+Dialogue: 0,1:23:54.72,1:23:56.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他真去了
+Dialogue: 0,1:23:56.40,1:23:58.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不会的 他根本就不知道从哪儿上
+Dialogue: 0,1:23:58.60,1:24:00.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}下半截扶手缠着铁丝网哪
+Dialogue: 0,1:24:00.52,1:24:01.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}上不去
+Dialogue: 0,1:24:01.92,1:24:03.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}蚂蚁 他上不去吧
+Dialogue: 0,1:24:03.40,1:24:05.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不会的 他吓唬你的 真的
+Dialogue: 0,1:24:05.72,1:24:07.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没事 他一会儿准回来
+Dialogue: 0,1:24:08.76,1:24:10.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瓦西里
+Dialogue: 0,1:24:10.68,1:24:13.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}在那儿 在那儿呐
+Dialogue: 0,1:24:14.32,1:24:15.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瓦西里
+Dialogue: 0,1:24:15.60,1:24:17.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真是马猴呢 真上去了
+Dialogue: 0,1:24:17.56,1:24:19.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}丫怎么上去的
+Dialogue: 0,1:24:22.32,1:24:24.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瓦西里
+Dialogue: 0,1:24:26.24,1:24:27.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}下来吧 你丫怎么上去的
+Dialogue: 0,1:24:27.84,1:24:29.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}下来吧 你下来 马猴
+Dialogue: 0,1:24:29.32,1:24:32.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瓦西里
+Dialogue: 0,1:24:32.32,1:24:34.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴 你丫别乱动
+Dialogue: 0,1:24:34.32,1:24:37.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}下来吧
+Dialogue: 0,1:24:37.32,1:24:40.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}下来吧 你快点下来
+Dialogue: 0,1:24:40.32,1:24:41.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}走
+Dialogue: 0,1:24:41.76,1:24:42.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我操
+Dialogue: 0,1:24:42.68,1:24:44.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴 别扔了
+Dialogue: 0,1:24:44.12,1:24:45.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快下来
+Dialogue: 0,1:24:45.40,1:24:47.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别扔了 快下来吧 下来吧
+Dialogue: 0,1:24:47.80,1:24:49.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快下来
+Dialogue: 0,1:24:49.20,1:24:50.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}疯了
+Dialogue: 0,1:24:50.36,1:24:53.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们都是神枪手
+Dialogue: 0,1:24:53.36,1:24:55.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}每一颗子弹消灭一个敌人
+Dialogue: 0,1:24:55.36,1:24:57.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴 马猴 马猴 马小军
+Dialogue: 0,1:24:57.92,1:24:58.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不喊了
+Dialogue: 0,1:24:58.76,1:25:01.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}会吓着他的
+Dialogue: 0,1:25:14.44,1:25:16.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎哟 冒烟了
+Dialogue: 0,1:25:17.12,1:25:18.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军
+Dialogue: 0,1:25:19.04,1:25:20.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你在哪儿
+Dialogue: 0,1:25:50.32,1:25:53.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}给我买烟去
+Dialogue: 0,1:25:53.72,1:25:56.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}给我买烟去
+Dialogue: 0,1:26:01.44,1:26:03.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰 你今晚别走了
+Dialogue: 0,1:26:03.44,1:26:06.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}跟这儿看电影
+Dialogue: 0,1:26:08.44,1:26:11.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}大家都觉得我是个神奇的人
+Dialogue: 0,1:26:11.44,1:26:14.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那时候 还没有人体特异功能的传说
+Dialogue: 0,1:26:14.44,1:26:17.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要不然我早出名了
+Dialogue: 0,1:26:17.44,1:26:20.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}后来才知道 是大烟囱那上升的气流
+Dialogue: 0,1:26:20.44,1:26:23.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}和沉积多年的烟灰 救了我一命
+Dialogue: 0,1:26:27.48,1:26:29.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你真把人给吓死了
+Dialogue: 0,1:26:29.80,1:26:31.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}居然没受伤
+Dialogue: 0,1:26:32.12,1:26:33.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你也真够神的
+Dialogue: 0,1:26:40.12,1:26:42.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}干嘛傻愣着不说话
+Dialogue: 0,1:26:46.32,1:26:48.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还挺爱生气的
+Dialogue: 0,1:26:50.48,1:26:53.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你不理我 我可走了
+Dialogue: 0,1:26:53.68,1:26:55.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁生气了
+Dialogue: 0,1:26:56.72,1:27:00.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你是不是特爱跟不认识的男的聊
+Dialogue: 0,1:27:02.52,1:27:03.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你说呢
+Dialogue: 0,1:27:03.88,1:27:05.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我不知道
+Dialogue: 0,1:27:07.68,1:27:10.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还挺爱吃醋的
+Dialogue: 0,1:27:11.28,1:27:14.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}行了 我是那样的人吗
+Dialogue: 0,1:27:14.68,1:27:16.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁吃醋啊
+Dialogue: 0,1:27:16.88,1:27:19.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你老跟刘忆苦在那儿瞎聊什么
+Dialogue: 0,1:27:19.32,1:27:20.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没聊什么呀
+Dialogue: 0,1:27:21.28,1:27:24.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就说我想当兵 他说他能帮我
+Dialogue: 0,1:27:24.68,1:27:26.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我怎么不知道你想当兵啊
+Dialogue: 0,1:27:27.20,1:27:28.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你从来没跟我说过
+Dialogue: 0,1:27:28.92,1:27:31.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么头一回见他就跟他说啦
+Dialogue: 0,1:27:31.52,1:27:33.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}熟得够快的
+Dialogue: 0,1:27:34.52,1:27:35.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那干嘛
+Dialogue: 0,1:27:35.84,1:27:37.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}干坐着呀
+Dialogue: 0,1:27:37.24,1:27:38.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可是你约我来的
+Dialogue: 0,1:27:38.92,1:27:40.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我来了你又不理我
+Dialogue: 0,1:27:41.24,1:27:43.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}跟大蚂蚁当英雄 玩什么瓦西里
+Dialogue: 0,1:27:43.72,1:27:45.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}列宁在十月
+Dialogue: 0,1:27:45.48,1:27:47.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那是列宁在一九一八
+Dialogue: 0,1:27:47.04,1:27:50.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哦 行 列宁在一九一八
+Dialogue: 0,1:27:51.12,1:27:53.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可你也不能把我晒一边啊
+Dialogue: 0,1:27:57.00,1:27:58.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}爸
+Dialogue: 0,1:28:00.80,1:28:03.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这 这是我爸
+Dialogue: 0,1:28:03.52,1:28:04.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是
+Dialogue: 0,1:28:04.84,1:28:05.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你好 叔叔
+Dialogue: 0,1:28:05.96,1:28:07.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们老师
+Dialogue: 0,1:28:07.52,1:28:09.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊 你好
+Dialogue: 0,1:28:11.12,1:28:12.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那我先回去了
+Dialogue: 0,1:28:13.56,1:28:15.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再见 马小军
+Dialogue: 0,1:28:15.52,1:28:17.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再见 叔叔 啊再见
+Dialogue: 0,1:28:17.72,1:28:19.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}小同志 你叫
+Dialogue: 0,1:28:20.24,1:28:21.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}贵姓啊
+Dialogue: 0,1:28:21.52,1:28:22.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我叫米兰
+Dialogue: 0,1:28:24.88,1:28:26.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那您还有事吗
+Dialogue: 0,1:28:26.52,1:28:28.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没事啦
+Dialogue: 0,1:28:28.04,1:28:29.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没事 那我先走了
+Dialogue: 0,1:28:29.24,1:28:30.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好
+Dialogue: 0,1:28:30.12,1:28:31.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再见 再见
+Dialogue: 0,1:28:35.08,1:28:36.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你去把那个大衣给我找出来
+Dialogue: 0,1:28:36.96,1:28:38.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这么热的天 你要大衣干嘛
+Dialogue: 0,1:28:38.88,1:28:41.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}去把大衣找出来 哦好
+Dialogue: 0,1:28:53.60,1:28:56.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}爸 大衣
+Dialogue: 0,1:28:58.52,1:29:00.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}坐这儿 好
+Dialogue: 0,1:29:09.40,1:29:12.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你这个老师 在哪个单位工作呀
+Dialogue: 0,1:29:12.64,1:29:15.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊 我们老师 啊 我们学校啊
+Dialogue: 0,1:29:15.84,1:29:16.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}新来的吧
+Dialogue: 0,1:29:16.72,1:29:18.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对 新来的
+Dialogue: 0,1:29:19.64,1:29:20.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}住哪儿
+Dialogue: 0,1:29:21.00,1:29:23.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她从西城什么的
+Dialogue: 0,1:29:23.52,1:29:25.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎不 是西单
+Dialogue: 0,1:29:25.00,1:29:26.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}西单调来的
+Dialogue: 0,1:29:27.12,1:29:29.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你这老师教你啥功课啊
+Dialogue: 0,1:29:29.32,1:29:31.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她啊 她什么都教
+Dialogue: 0,1:29:31.20,1:29:33.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这不刚来做家访了吗
+Dialogue: 0,1:29:33.32,1:29:35.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}现在可能 又到别的同学家去了
+Dialogue: 0,1:29:36.28,1:29:37.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啥老师啊
+Dialogue: 0,1:29:37.88,1:29:39.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哪个老师管我叫叔叔
+Dialogue: 0,1:29:41.68,1:29:43.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你骗到你老子头上来了
+Dialogue: 0,1:29:43.08,1:29:44.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你好大的胆
+Dialogue: 0,1:29:44.08,1:29:45.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}把军装给我脱了
+Dialogue: 0,1:29:46.68,1:29:48.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}装模作样的
+Dialogue: 0,1:29:48.12,1:29:50.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我一看就不是那么回事
+Dialogue: 0,1:29:51.20,1:29:52.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不好好温习功课
+Dialogue: 0,1:29:52.56,1:29:53.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}在家里不学好
+Dialogue: 0,1:29:53.56,1:29:55.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你交个那女 女朋友来了你
+Dialogue: 0,1:29:55.92,1:29:57.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁交女朋友了
+Dialogue: 0,1:29:57.24,1:29:58.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她就来这洗洗脸
+Dialogue: 0,1:29:58.60,1:29:59.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}什么洗脸
+Dialogue: 0,1:29:59.32,1:30:00.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}洗什么脸呀
+Dialogue: 0,1:30:00.40,1:30:02.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那个脸蛋都是红的 我还看不出来
+Dialogue: 0,1:30:03.68,1:30:04.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你别忘了
+Dialogue: 0,1:30:04.88,1:30:05.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我是你爸爸
+Dialogue: 0,1:30:05.88,1:30:07.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我吃的盐比你吃的饭都多
+Dialogue: 0,1:30:08.36,1:30:10.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你不是交女朋友是啥
+Dialogue: 0,1:30:12.68,1:30:14.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你这叫早恋
+Dialogue: 0,1:30:14.68,1:30:16.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那是犯错误的
+Dialogue: 0,1:30:17.80,1:30:19.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她是从哪儿来的啊
+Dialogue: 0,1:30:19.20,1:30:21.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊行了 我没时间跟你论
+Dialogue: 0,1:30:21.72,1:30:23.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你妈从姥姥家回来告诉她
+Dialogue: 0,1:30:23.92,1:30:25.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我去内蒙古野营拉练了
+Dialogue: 0,1:30:25.92,1:30:27.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是紧急任务
+Dialogue: 0,1:30:27.40,1:30:28.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}您什么时候回来
+Dialogue: 0,1:30:28.52,1:30:29.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一个月
+Dialogue: 0,1:30:31.12,1:30:32.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}干啥
+Dialogue: 0,1:30:33.60,1:30:35.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你又可以胡闹了
+Dialogue: 0,1:30:36.40,1:30:37.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}敢
+Dialogue: 0,1:30:37.32,1:30:39.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马参谋长
+Dialogue: 0,1:30:39.08,1:30:40.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}走了 哦来了
+Dialogue: 0,1:30:43.72,1:30:45.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是我这个月的工资
+Dialogue: 0,1:30:45.60,1:30:47.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}给你妈
+Dialogue: 0,1:30:47.52,1:30:48.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别惹你妈生气
+Dialogue: 0,1:30:49.12,1:30:50.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我再说一遍
+Dialogue: 0,1:30:53.72,1:30:55.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这两块钱是给你的
+Dialogue: 0,1:30:55.72,1:30:56.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不许乱花啊
+Dialogue: 0,1:31:00.72,1:31:03.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别随便带女孩子到咱家
+Dialogue: 0,1:31:06.72,1:31:08.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不要骗我 以后
+Dialogue: 0,1:31:11.72,1:31:13.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}行了 走了
+Dialogue: 0,1:31:42.12,1:31:44.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}羊搞
+Dialogue: 0,1:31:46.76,1:31:49.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}羊搞
+Dialogue: 0,1:31:51.76,1:31:54.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}羊搞
+Dialogue: 0,1:32:00.80,1:32:02.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}同志们 大家静一静
+Dialogue: 0,1:32:02.80,1:32:07.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}喔
+Dialogue: 0,1:32:07.92,1:32:11.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}下面上演第二部 列宁在一九一八
+Dialogue: 0,1:32:17.72,1:32:19.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}刘忆苦
+Dialogue: 0,1:32:20.80,1:32:22.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}刘思甜
+Dialogue: 0,1:32:23.52,1:32:24.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瓦西里
+Dialogue: 0,1:32:26.64,1:32:28.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瓦西里
+Dialogue: 0,1:32:28.48,1:32:30.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快去救列宁
+Dialogue: 0,1:32:34.16,1:32:35.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}羊搞
+Dialogue: 0,1:32:36.84,1:32:38.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}羊搞
+Dialogue: 0,1:32:41.32,1:32:44.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}嘿 当心哪 有毒的
+Dialogue: 0,1:32:45.16,1:32:49.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}当心哪 有毒的
+Dialogue: 0,1:33:08.36,1:33:10.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我操 你丫上哪儿去了
+Dialogue: 0,1:33:10.12,1:33:11.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你上哪儿去了
+Dialogue: 0,1:33:11.12,1:33:12.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我出来找你
+Dialogue: 0,1:33:12.16,1:33:13.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我也找你半天了
+Dialogue: 0,1:33:13.36,1:33:14.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快走吧
+Dialogue: 0,1:33:45.04,1:33:46.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你怎么现在才来
+Dialogue: 0,1:33:46.40,1:33:47.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}找你们去了
+Dialogue: 0,1:33:47.40,1:33:50.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他们呢
+Dialogue: 0,1:34:20.92,1:34:22.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}同志们
+Dialogue: 0,1:34:22.92,1:34:25.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}现在礼堂里混进了几个小孩
+Dialogue: 0,1:34:25.92,1:34:28.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对不起了 电影要暂时停放
+Dialogue: 0,1:34:29.92,1:34:32.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}小孩在哪里
+Dialogue: 0,1:34:33.08,1:34:34.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}遍地都是啊
+Dialogue: 0,1:34:35.96,1:34:37.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我怎么没看见
+Dialogue: 0,1:34:37.80,1:34:39.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们都起来
+Dialogue: 0,1:34:39.40,1:34:40.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}起来 起来 那边的
+Dialogue: 0,1:34:41.16,1:34:42.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}起来
+Dialogue: 0,1:34:46.60,1:34:48.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么搞的是
+Dialogue: 0,1:34:49.96,1:34:52.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你是怎么负责看的门
+Dialogue: 0,1:34:52.96,1:34:55.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这些孩子可没有一个是从门走进来的
+Dialogue: 0,1:34:56.96,1:35:00.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是部受批判的电影
+Dialogue: 0,1:35:01.24,1:35:03.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}毒性非常之大
+Dialogue: 0,1:35:03.80,1:35:06.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}小孩看了会犯错误的
+Dialogue: 0,1:35:06.92,1:35:09.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}会犯很大的错误
+Dialogue: 0,1:35:09.68,1:35:11.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不看了
+Dialogue: 0,1:35:12.00,1:35:13.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别 别 别
+Dialogue: 0,1:35:13.60,1:35:15.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这样吧
+Dialogue: 0,1:35:15.24,1:35:18.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁的孩子 大人出来把他们都领走
+Dialogue: 0,1:35:34.00,1:35:37.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}月色多么好
+Dialogue: 0,1:35:38.00,1:35:41.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}令我心神往
+Dialogue: 0,1:35:42.00,1:35:49.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那样迷人的晚上
+Dialogue: 0,1:35:50.00,1:35:57.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我的心上人 坐在我身旁
+Dialogue: 0,1:35:58.04,1:36:03.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}默默看着我 不声响
+Dialogue: 0,1:36:03.60,1:36:08.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}夜色多么好
+Dialogue: 0,1:36:08.04,1:36:12.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}令我心神往
+Dialogue: 0,1:36:12.68,1:36:19.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}多少迷人的晚上
+Dialogue: 0,1:36:20.44,1:36:27.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}长夜快过去 天色濛濛亮
+Dialogue: 0,1:36:28.36,1:36:33.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}衷心祝福你 好姑娘
+Dialogue: 0,1:36:34.32,1:36:38.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}但愿从今后
+Dialogue: 0,1:36:39.08,1:36:43.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你我永不忘
+Dialogue: 0,1:36:43.40,1:36:50.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}莫斯科郊外的晚上
+Dialogue: 0,1:37:12.92,1:37:14.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你睡着了
+Dialogue: 0,1:37:14.12,1:37:16.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没有啊
+Dialogue: 0,1:37:16.28,1:37:17.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那怎么一直没说话啊
+Dialogue: 0,1:37:17.92,1:37:20.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你也没说话呀
+Dialogue: 0,1:37:22.12,1:37:23.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要不 你就睡会儿得了
+Dialogue: 0,1:37:23.80,1:37:25.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那还不掉下来呀
+Dialogue: 0,1:37:25.24,1:37:26.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你扶住我腰嘛
+Dialogue: 0,1:37:26.60,1:37:27.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}合适吗
+Dialogue: 0,1:37:27.92,1:37:28.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}合适
+Dialogue: 0,1:37:32.76,1:37:35.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那是我一生中最美好的一天
+Dialogue: 0,1:37:36.40,1:37:39.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}晨风的抚摸使我一阵阵起了鸡皮疙瘩
+Dialogue: 0,1:37:39.48,1:37:41.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}周身发麻
+Dialogue: 0,1:37:41.72,1:37:44.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我还记得有股烧荒草的味道特别好闻
+Dialogue: 0,1:37:45.24,1:37:47.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可是大夏天哪来的荒草呢
+Dialogue: 0,1:37:49.24,1:37:50.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}但无论怎样
+Dialogue: 0,1:37:50.44,1:37:53.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}记忆中那年夏天发生的事
+Dialogue: 0,1:37:53.12,1:37:56.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}总是伴随着那么一股烧荒草的味
+Dialogue: 0,1:37:59.44,1:38:00.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就这儿吧 小军
+Dialogue: 0,1:38:01.12,1:38:04.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瞧 从这儿开始
+Dialogue: 0,1:38:04.12,1:38:06.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那边都是我们农场 是吗
+Dialogue: 0,1:38:08.88,1:38:11.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谢谢你 送我这么远的路
+Dialogue: 0,1:38:12.32,1:38:15.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没事 我再送你会吧
+Dialogue: 0,1:38:15.04,1:38:17.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不用了 我从这儿穿过去就到了
+Dialogue: 0,1:38:17.92,1:38:19.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}赶快回家睡觉吧
+Dialogue: 0,1:38:19.92,1:38:22.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再见 再见
+Dialogue: 0,1:39:03.00,1:39:04.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁啊 你是
+Dialogue: 0,1:39:05.12,1:39:06.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别往这儿跳
+Dialogue: 0,1:39:06.20,1:39:08.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴同志 我正在找你
+Dialogue: 0,1:39:09.64,1:39:10.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么不说话
+Dialogue: 0,1:39:11.64,1:39:14.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}唉 情况这么紧急
+Dialogue: 0,1:39:14.24,1:39:16.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你怎么能在这儿睡觉呢
+Dialogue: 0,1:39:16.04,1:39:17.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是你 是我 快起来
+Dialogue: 0,1:39:17.92,1:39:19.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是 卧倒
+Dialogue: 0,1:39:22.52,1:39:24.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别动 有敌人
+Dialogue: 0,1:39:24.68,1:39:26.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哪儿 你看呀
+Dialogue: 0,1:39:31.04,1:39:32.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊呀 你是米兰吧
+Dialogue: 0,1:39:32.68,1:39:34.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是 请叫我米兰同志
+Dialogue: 0,1:39:34.56,1:39:36.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我的自行车呢 米兰同志
+Dialogue: 0,1:39:36.00,1:39:37.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我已经将它安全的转移了 你看在那
+Dialogue: 0,1:39:40.20,1:39:43.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}停停 同志们
+Dialogue: 0,1:39:43.48,1:39:44.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}同志们
+Dialogue: 0,1:39:45.40,1:39:47.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱们两眼一抹黑
+Dialogue: 0,1:39:47.88,1:39:50.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要特别的小心
+Dialogue: 0,1:39:51.28,1:39:53.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}打枪滴不要
+Dialogue: 0,1:39:54.04,1:39:56.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}悄悄滴进村儿
+Dialogue: 0,1:39:56.12,1:39:57.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是 开路
+Dialogue: 0,1:39:57.72,1:39:59.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他们怎么也叫同志啊
+Dialogue: 0,1:39:59.32,1:40:01.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那是为了欺骗群众
+Dialogue: 0,1:40:02.28,1:40:04.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}唉不对 他们骑的是我的自行车
+Dialogue: 0,1:40:04.56,1:40:06.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴同志 不要胡说
+Dialogue: 0,1:40:06.68,1:40:08.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你的自行车还挂在树上呢
+Dialogue: 0,1:40:08.32,1:40:10.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那是我们特制的自行车雷
+Dialogue: 0,1:40:10.32,1:40:13.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}来 这根绳子你拿着
+Dialogue: 0,1:40:13.12,1:40:15.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}待会儿战斗打响了 你就往下拉
+Dialogue: 0,1:40:15.60,1:40:17.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}现在是考验你的时刻 听见了吗
+Dialogue: 0,1:40:17.88,1:40:20.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}请组织放心 保证完成任务
+Dialogue: 0,1:40:20.24,1:40:23.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}侵略者 让你尝尝人民的子弹
+Dialogue: 0,1:40:26.72,1:40:28.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}卧槽 怎么没响啊
+Dialogue: 0,1:40:32.12,1:40:34.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军 快
+Dialogue: 0,1:40:54.40,1:40:57.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}冬妮娅 你难道也拒绝工作吗
+Dialogue: 0,1:40:57.44,1:40:59.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别理他 跟我走
+Dialogue: 0,1:40:59.60,1:41:00.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我真痛心 冬妮娅
+Dialogue: 0,1:41:00.92,1:41:03.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你竟然跟刘艺苦这种人混在一起了
+Dialogue: 0,1:41:06.56,1:41:09.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}带上我
+Dialogue: 0,1:41:10.76,1:41:12.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}带上我
+Dialogue: 0,1:41:13.68,1:41:15.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊 是游击队
+Dialogue: 0,1:41:35.48,1:41:40.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,1:41:44.88,1:41:47.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}临行前我是咋跟你说的
+Dialogue: 0,1:41:47.40,1:41:50.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰 抓紧时间
+Dialogue: 0,1:42:03.32,1:42:07.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么了马小军 睡着了还哭
+Dialogue: 0,1:42:07.28,1:42:11.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰 我梦见你死了 哈哈哈
+Dialogue: 0,1:42:11.56,1:42:13.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你没死就好
+Dialogue: 0,1:42:13.32,1:42:15.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}天哪 可把我急坏了
+Dialogue: 0,1:42:15.00,1:42:16.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你还真惦记着我
+Dialogue: 0,1:42:21.36,1:42:24.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对不起 我肚子特别疼
+Dialogue: 0,1:42:24.20,1:42:26.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我去找个地儿
+Dialogue: 0,1:42:27.00,1:42:33.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快来看啊 快来啊 快来看啊
+Dialogue: 0,1:42:33.32,1:42:35.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你别跟着我你
+Dialogue: 0,1:42:35.52,1:42:40.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快来啊 你怎么这么流氓啊 快来看啊
+Dialogue: 0,1:42:41.80,1:42:47.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快来看哪 哈哈 快来啊
+Dialogue: 0,1:42:54.00,1:43:00.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快来看哪 哈哈 快来看啊
+Dialogue: 0,1:43:15.92,1:43:18.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快来啊 我求求你了 哈哈哈
+Dialogue: 0,1:43:23.88,1:43:28.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你怎么这么流氓啊你 快来看哪
+Dialogue: 0,1:43:28.72,1:43:32.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}孩子 快起来吧 你怎么这么流氓啊
+Dialogue: 0,1:43:32.12,1:43:34.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你没病吧
+Dialogue: 0,1:43:34.08,1:43:35.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不是让这梦不醒啊
+Dialogue: 0,1:43:35.88,1:43:39.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}孩子 起来吧
+Dialogue: 0,1:43:39.40,1:43:42.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你没有病吧 哎呀 起来吧
+Dialogue: 0,1:43:42.24,1:43:45.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}孩子 你没有病吧
+Dialogue: 0,1:43:45.52,1:43:46.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰呢
+Dialogue: 0,1:43:46.72,1:43:51.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊呀孩子 你是睡糊涂了
+Dialogue: 0,1:43:52.00,1:43:54.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这儿一直是咱们爷儿两个呀
+Dialogue: 0,1:43:55.12,1:43:58.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哪还有个什么 兰儿
+Dialogue: 0,1:44:00.36,1:44:02.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}从那天起到现在
+Dialogue: 0,1:44:02.12,1:44:03.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就没做过别的梦
+Dialogue: 0,1:44:03.88,1:44:07.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不知道这是为什么 连医生也说不清楚
+Dialogue: 0,1:44:07.20,1:44:10.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}昨天我在梦里 又见到了米兰
+Dialogue: 0,1:44:13.20,1:44:16.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}爸
+Dialogue: 0,1:44:53.24,1:44:56.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}姥爷死了
+Dialogue: 0,1:45:06.24,1:45:15.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}东海扬波红日升
+Dialogue: 0,1:45:16.28,1:45:17.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}按当时的说法
+Dialogue: 0,1:45:17.28,1:45:19.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}姥爷是畏罪自杀
+Dialogue: 0,1:45:19.28,1:45:20.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他有四顶帽子
+Dialogue: 0,1:45:20.28,1:45:24.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}大地主 大资本家 国民党员 历史反革命
+Dialogue: 0,1:45:25.28,1:45:27.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}文革以来 不断有人抄他的家
+Dialogue: 0,1:45:27.28,1:45:29.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要他交出黄金和委任状
+Dialogue: 0,1:45:29.28,1:45:32.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}在饱受皮肉之苦和精神折磨后
+Dialogue: 0,1:45:32.28,1:45:34.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他愤然死去
+Dialogue: 0,1:45:34.28,1:45:36.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}后来才知道
+Dialogue: 0,1:45:36.28,1:45:38.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}父母的婚姻上级是不赞成的
+Dialogue: 0,1:45:38.32,1:45:40.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}因为他们不属于同一阶级
+Dialogue: 0,1:45:40.32,1:45:43.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}但他们一意孤行 不听劝告
+Dialogue: 0,1:45:43.32,1:45:46.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}结果 爸爸为此断送了前途
+Dialogue: 0,1:45:46.32,1:45:48.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}妈妈也丢失了原来的教师工作
+Dialogue: 0,1:45:48.32,1:45:49.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}成了随军家属
+Dialogue: 0,1:45:49.32,1:45:52.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}而且脾气变得越来越坏
+Dialogue: 0,1:45:52.32,1:45:54.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}上学以前 我生活在姥姥家
+Dialogue: 0,1:45:54.32,1:45:56.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我一直不明白
+Dialogue: 0,1:45:56.32,1:45:59.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}姥爷竟是一个无产阶级的专政对像
+Dialogue: 0,1:46:00.32,1:46:01.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}姥爷死后
+Dialogue: 0,1:46:02.00,1:46:04.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}妈妈变得沉默了
+Dialogue: 0,1:46:04.16,1:46:06.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我却有点破罐破摔
+Dialogue: 0,1:46:10.84,1:46:12.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}从唐山回来第一件事
+Dialogue: 0,1:46:12.84,1:46:15.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就是去找米兰
+Dialogue: 0,1:46:15.84,1:46:17.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,1:46:18.20,1:46:20.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哪一个呀
+Dialogue: 0,1:46:29.44,1:46:31.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哪一个呀
+Dialogue: 0,1:46:34.32,1:46:37.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 你莫跑
+Dialogue: 0,1:47:01.88,1:47:04.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别哭啊
+Dialogue: 0,1:47:13.88,1:47:15.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}古伦木
+Dialogue: 0,1:47:18.04,1:47:19.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}欧巴
+Dialogue: 0,1:48:02.84,1:48:04.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军
+Dialogue: 0,1:48:12.92,1:48:15.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哟 是马猴啊
+Dialogue: 0,1:48:15.44,1:48:16.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你从哪儿钻出来的
+Dialogue: 0,1:48:16.92,1:48:18.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这些日子没见着 我们特想你
+Dialogue: 0,1:48:18.96,1:48:21.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊 是啊 我也特想你们
+Dialogue: 0,1:48:22.32,1:48:24.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我姥姥家出了点事 是吗
+Dialogue: 0,1:48:24.80,1:48:27.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这两天跟他们回了趟唐山
+Dialogue: 0,1:48:27.48,1:48:28.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我正找你呢
+Dialogue: 0,1:48:28.72,1:48:30.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我这儿一特好的主意
+Dialogue: 0,1:48:30.64,1:48:31.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}什么
+Dialogue: 0,1:48:32.12,1:48:33.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是你的主意吗
+Dialogue: 0,1:48:33.84,1:48:35.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么新学得爱吹牛啊
+Dialogue: 0,1:48:36.52,1:48:37.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你刚发现呀
+Dialogue: 0,1:48:37.52,1:48:38.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可不是刚发现吗
+Dialogue: 0,1:48:38.96,1:48:41.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}以前怎么不知道你爱吹牛啊
+Dialogue: 0,1:48:41.96,1:48:43.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我这是隐藏得比较深
+Dialogue: 0,1:48:43.92,1:48:45.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你还隐藏什么
+Dialogue: 0,1:48:45.12,1:48:46.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你现在想知道
+Dialogue: 0,1:48:46.44,1:48:48.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对 现在就想知道
+Dialogue: 0,1:48:48.04,1:48:49.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那我告诉你啊
+Dialogue: 0,1:48:50.00,1:48:50.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}说吧
+Dialogue: 0,1:48:51.12,1:48:53.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你这么想知道
+Dialogue: 0,1:48:54.68,1:48:57.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}废话 呵呵
+Dialogue: 0,1:48:59.04,1:49:03.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}喂 马小军 晚上过来啊
+Dialogue: 0,1:51:49.28,1:51:51.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你是不是觉得我特笨
+Dialogue: 0,1:51:51.72,1:51:53.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是不是太胖了
+Dialogue: 0,1:51:56.16,1:51:58.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你丫够肥的 什么
+Dialogue: 0,1:51:58.16,1:52:01.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是唉呀的呀 不是你丫挺的丫
+Dialogue: 0,1:52:01.16,1:52:02.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哼
+Dialogue: 0,1:52:02.16,1:52:03.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}狗嘴里吐不出象牙来
+Dialogue: 0,1:52:03.68,1:52:06.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那人嘴里也吐不出象牙来啊
+Dialogue: 0,1:52:06.04,1:52:07.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你能吐出象牙来吗
+Dialogue: 0,1:52:15.16,1:52:16.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,1:52:17.12,1:52:18.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}他是想跳水给你看
+Dialogue: 0,1:52:18.44,1:52:19.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是吗 我不想看
+Dialogue: 0,1:52:20.00,1:52:23.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 对了 马小军
+Dialogue: 0,1:52:26.60,1:52:28.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}讨厌
+Dialogue: 0,1:52:31.72,1:52:34.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}其实 我就是腰粗了一点
+Dialogue: 0,1:52:34.72,1:52:36.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}何止是腰啊
+Dialogue: 0,1:52:36.72,1:52:39.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瞧你这腿 你这肚子
+Dialogue: 0,1:52:39.72,1:52:41.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再瞧瞧这儿
+Dialogue: 0,1:52:41.72,1:52:42.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这儿 这儿
+Dialogue: 0,1:52:42.72,1:52:45.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}够出口标准了
+Dialogue: 0,1:52:46.04,1:52:48.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我是胖了点啊
+Dialogue: 0,1:52:48.72,1:52:51.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你说 我是不是不该穿这件游泳衣
+Dialogue: 0,1:52:51.72,1:52:53.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}是不是太暴露了
+Dialogue: 0,1:52:53.72,1:52:55.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}其实你不穿这游泳衣我也看得出来
+Dialogue: 0,1:52:55.72,1:52:56.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}什么
+Dialogue: 0,1:52:56.72,1:52:57.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你看出什么啦
+Dialogue: 0,1:52:57.72,1:53:00.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}啊 算了 算了 你生气了
+Dialogue: 0,1:53:00.72,1:53:03.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你说 你说呗 说呗 我不生气
+Dialogue: 0,1:53:03.72,1:53:06.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}跟那刚生了孩子似的
+Dialogue: 0,1:53:06.40,1:53:09.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军 嗯
+Dialogue: 0,1:53:10.20,1:53:10.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不理你
+Dialogue: 0,1:53:10.96,1:53:12.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}下来啊
+Dialogue: 0,1:53:12.12,1:53:14.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哈哈 不 我不下来
+Dialogue: 0,1:53:14.24,1:53:15.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你上来
+Dialogue: 0,1:53:15.20,1:53:16.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}10米怎么样
+Dialogue: 0,1:53:16.52,1:53:17.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我不跳
+Dialogue: 0,1:53:17.56,1:53:18.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,1:53:18.52,1:53:21.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快 快下来 米兰 我教你跳水
+Dialogue: 0,1:53:21.76,1:53:24.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你下来
+Dialogue: 0,1:53:33.28,1:53:36.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军 你不是人
+Dialogue: 0,1:54:05.40,1:54:07.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}去你妈的
+Dialogue: 0,1:54:14.32,1:54:17.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你别理他
+Dialogue: 0,1:54:20.32,1:54:23.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你叫刘忆苦 对
+Dialogue: 0,1:54:24.32,1:54:26.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰你带着的
+Dialogue: 0,1:54:26.32,1:54:29.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对
+Dialogue: 0,1:54:33.32,1:54:36.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哥们 你们彼此还都不认识
+Dialogue: 0,1:54:37.32,1:54:39.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}大刘 我给你介绍介绍
+Dialogue: 0,1:54:39.32,1:54:41.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这是彪哥
+Dialogue: 0,1:54:41.32,1:54:42.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}大名鼎鼎
+Dialogue: 0,1:54:48.32,1:54:49.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没什么
+Dialogue: 0,1:54:49.96,1:54:51.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就是问问
+Dialogue: 0,1:54:52.32,1:54:54.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没事 我们就走了
+Dialogue: 0,1:54:54.60,1:54:56.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}后会有期 朋友
+Dialogue: 0,1:54:57.72,1:54:58.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}走
+Dialogue: 0,1:55:18.36,1:55:19.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,1:55:19.36,1:55:22.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那彪哥 彪哥是谁呀
+Dialogue: 0,1:55:27.92,1:55:29.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你也想了解吗
+Dialogue: 0,1:55:33.36,1:55:36.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}少打听吧
+Dialogue: 0,1:55:37.40,1:55:39.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}每当我问起关于彪子的事
+Dialogue: 0,1:55:39.40,1:55:41.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她总是说少打听
+Dialogue: 0,1:55:42.00,1:55:44.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}后来听说 彪子曾经和她很熟
+Dialogue: 0,1:55:44.80,1:55:47.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}甚至还为她瞎了一只眼睛
+Dialogue: 0,1:55:48.68,1:55:49.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}从那天起
+Dialogue: 0,1:55:49.72,1:55:52.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}刘忆苦竟公然以带着米兰自居
+Dialogue: 0,1:56:07.12,1:56:10.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}八月二十三号 罗马尼亚祖国解放日那天
+Dialogue: 0,1:56:10.72,1:56:12.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}也是我和刘忆苦的生日
+Dialogue: 0,1:56:13.12,1:56:16.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们俩同月同日但是不同年
+Dialogue: 0,1:56:16.56,1:56:19.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}晚上我们奔了老莫
+Dialogue: 0,1:56:26.44,1:56:29.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好 好
+Dialogue: 0,1:56:30.08,1:56:31.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}来了
+Dialogue: 0,1:56:31.32,1:56:33.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们好 你好
+Dialogue: 0,1:56:33.20,1:56:35.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}见到你们格外亲嘛
+Dialogue: 0,1:56:35.44,1:56:37.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}格外亲
+Dialogue: 0,1:56:37.44,1:56:40.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瞧瞧 我给俩位寿星带了什么
+Dialogue: 0,1:56:42.20,1:56:43.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}手干净吗
+Dialogue: 0,1:56:43.24,1:56:43.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你瞧
+Dialogue: 0,1:56:44.44,1:56:46.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好吧
+Dialogue: 0,1:56:50.48,1:56:53.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}一本诗集
+Dialogue: 0,1:56:58.48,1:57:00.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}冬天戴上它去冰场 帅不帅
+Dialogue: 0,1:57:00.48,1:57:02.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}帅 帅 帅 可以啊
+Dialogue: 0,1:57:02.32,1:57:03.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不对
+Dialogue: 0,1:57:03.32,1:57:05.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}妞都围着他 还用得着拍吗
+Dialogue: 0,1:57:05.00,1:57:06.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不成不成 太危险了
+Dialogue: 0,1:57:06.60,1:57:09.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}妞都围成一团 非掉冰窟窿不可
+Dialogue: 0,1:57:09.60,1:57:10.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哥 还让我戴吧
+Dialogue: 0,1:57:11.48,1:57:13.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谢谢啊
+Dialogue: 0,1:57:13.48,1:57:16.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}瞧你那样 光谢谢就得了
+Dialogue: 0,1:57:16.80,1:57:17.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那还怎么着
+Dialogue: 0,1:57:18.32,1:57:19.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}自己想吧
+Dialogue: 0,1:57:19.52,1:57:22.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看看你的马小军
+Dialogue: 0,1:57:27.52,1:57:29.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哇 这种关怀得算无微不至了吧
+Dialogue: 0,1:57:29.52,1:57:31.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}操 你丫可算是造句造对了一回
+Dialogue: 0,1:57:31.52,1:57:33.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 试试 拿出来试试
+Dialogue: 0,1:57:33.24,1:57:34.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我看那腰肯定合适
+Dialogue: 0,1:57:34.52,1:57:36.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}腰合适 那不就得了
+Dialogue: 0,1:57:36.20,1:57:39.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 那可不一定 马猴得试试
+Dialogue: 0,1:57:39.12,1:57:40.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马猴试试 还是试试吧
+Dialogue: 0,1:57:40.32,1:57:42.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}操 流氓
+Dialogue: 0,1:57:42.72,1:57:45.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}甭理他们 你加紧练吧
+Dialogue: 0,1:57:45.24,1:57:46.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我还等你来救我呢
+Dialogue: 0,1:57:46.52,1:57:48.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}得 那这么着 我也用不着谢你了
+Dialogue: 0,1:57:48.92,1:57:50.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}反正也是为了救你的命
+Dialogue: 0,1:57:50.60,1:57:52.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再说刚才刘忆苦已经深情的
+Dialogue: 0,1:57:52.24,1:57:53.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对你表示过谢意了
+Dialogue: 0,1:57:53.28,1:57:54.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}也就代表我了
+Dialogue: 0,1:57:54.40,1:57:55.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你可真没良心
+Dialogue: 0,1:57:55.52,1:57:56.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}得 就算没有吧
+Dialogue: 0,1:57:56.52,1:57:58.96,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}同志 我们点的东西赶紧上吧
+Dialogue: 0,1:57:58.96,1:57:59.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们人都来齐了
+Dialogue: 0,1:57:59.92,1:58:02.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不忙 给我们先来点水吧
+Dialogue: 0,1:58:02.24,1:58:04.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 她怎么不说话呀
+Dialogue: 0,1:58:04.04,1:58:06.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱先玩咱们的
+Dialogue: 0,1:58:06.04,1:58:07.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有什么好玩的
+Dialogue: 0,1:58:07.04,1:58:08.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}想想啊 你不是主意多吗
+Dialogue: 0,1:58:08.72,1:58:11.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要玩咱玩丢手绢
+Dialogue: 0,1:58:11.24,1:58:13.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就拿马猴那红裤衩怎么样
+Dialogue: 0,1:58:13.04,1:58:16.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那叫丢裤衩
+Dialogue: 0,1:58:17.04,1:58:19.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}得 这么着得了
+Dialogue: 0,1:58:19.04,1:58:21.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱俩玩个游戏
+Dialogue: 0,1:58:21.04,1:58:23.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不许拿生日礼物乱糟蹋
+Dialogue: 0,1:58:23.04,1:58:25.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没问题 你放心
+Dialogue: 0,1:58:25.04,1:58:27.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 你们谁有钢蹦儿
+Dialogue: 0,1:58:27.08,1:58:30.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么玩啊
+Dialogue: 0,1:58:30.52,1:58:32.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}赌钱哪
+Dialogue: 0,1:58:32.08,1:58:35.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}今儿当众考验你的诚实和勇气
+Dialogue: 0,1:58:35.08,1:58:38.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看看你是否还是处女
+Dialogue: 0,1:58:43.08,1:58:45.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}来吧
+Dialogue: 0,1:58:45.08,1:58:47.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我把这个蹦子夹在这儿
+Dialogue: 0,1:58:47.08,1:58:48.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}向你提出一些问题
+Dialogue: 0,1:58:48.08,1:58:50.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你必须如实回答
+Dialogue: 0,1:58:50.08,1:58:51.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要简短
+Dialogue: 0,1:58:51.08,1:58:54.08,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}而且要把这蹦儿从这儿抽出来
+Dialogue: 0,1:58:54.08,1:58:55.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}来吧 好吧
+Dialogue: 0,1:58:55.88,1:58:57.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你不使坏啊
+Dialogue: 0,1:58:58.32,1:58:59.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}第一个问题
+Dialogue: 0,1:59:00.00,1:59:01.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你今年多大了
+Dialogue: 0,1:59:01.52,1:59:03.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不行 这问题我不能告诉你
+Dialogue: 0,1:59:03.52,1:59:04.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}反正比你们都大
+Dialogue: 0,1:59:04.88,1:59:06.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}得 先让你一把
+Dialogue: 0,1:59:06.52,1:59:09.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}请问你的生日是几月几号 我是一月
+Dialogue: 0,1:59:09.32,1:59:11.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 你得先把蹦儿拔出来再说
+Dialogue: 0,1:59:11.36,1:59:13.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对啊 看人大蚂蚁都记住了
+Dialogue: 0,1:59:13.20,1:59:14.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}来 几月几号
+Dialogue: 0,1:59:14.12,1:59:17.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我是一月一号 跟年是同一天生日
+Dialogue: 0,1:59:17.16,1:59:19.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好 比你们俩罗马尼亚牛逼
+Dialogue: 0,1:59:19.12,1:59:22.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}第二个问题 蹦还给我
+Dialogue: 0,1:59:22.12,1:59:25.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你和你第一个男朋友认识时是多大
+Dialogue: 0,1:59:28.12,1:59:30.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}十六
+Dialogue: 0,1:59:30.12,1:59:33.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}嗯 够小的
+Dialogue: 0,1:59:33.12,1:59:35.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}第三个问题
+Dialogue: 0,1:59:35.20,1:59:38.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你第一次和男朋友约会时 他都说了些什么
+Dialogue: 0,1:59:41.12,1:59:43.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}说了什么
+Dialogue: 0,1:59:43.12,1:59:45.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你夹这么紧我拔不出来 什么
+Dialogue: 0,1:59:45.12,1:59:48.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你夹这么紧 我拔不出来
+Dialogue: 0,1:59:56.12,1:59:58.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好你个马猴 你不是人
+Dialogue: 0,1:59:58.40,2:00:00.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你这么坏啊
+Dialogue: 0,2:00:00.24,2:00:01.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真没看出来
+Dialogue: 0,2:00:01.44,2:00:03.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}打我脑袋干什么
+Dialogue: 0,2:00:03.40,2:00:04.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我又不是你儿子
+Dialogue: 0,2:00:05.12,2:00:07.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}本来就傻 越打越笨了
+Dialogue: 0,2:00:10.16,2:00:13.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么啦马小军 别动
+Dialogue: 0,2:00:18.16,2:00:19.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 马小军
+Dialogue: 0,2:00:19.76,2:00:22.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}为什么 别碰我
+Dialogue: 0,2:00:26.40,2:00:27.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军
+Dialogue: 0,2:00:28.16,2:00:30.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}生气了
+Dialogue: 0,2:00:30.16,2:00:32.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没生气
+Dialogue: 0,2:00:32.16,2:00:34.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}生什么气啊
+Dialogue: 0,2:00:34.32,2:00:35.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那你怎么就急了
+Dialogue: 0,2:00:35.80,2:00:37.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁急了 没急
+Dialogue: 0,2:00:37.60,2:00:40.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不是 我哪点 我怎么招着你了
+Dialogue: 0,2:00:40.28,2:00:40.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你对我这样
+Dialogue: 0,2:00:41.20,2:00:44.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没有 没有 你没招我 没惹我 都挺好
+Dialogue: 0,2:00:45.72,2:00:46.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军
+Dialogue: 0,2:00:47.72,2:00:49.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}今儿大家都挺高兴的
+Dialogue: 0,2:00:50.00,2:00:51.68,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你拿别人开逗行
+Dialogue: 0,2:00:51.68,2:00:53.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}别人碰你一下怎么就这样
+Dialogue: 0,2:00:53.32,2:00:54.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我动口不动手啊
+Dialogue: 0,2:00:54.56,2:00:56.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你也可以拿我开心啊
+Dialogue: 0,2:00:56.92,2:00:58.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你这样可不好
+Dialogue: 0,2:00:58.12,2:00:59.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我是不好
+Dialogue: 0,2:00:59.52,2:01:01.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我是说 你对我不像以前那么好
+Dialogue: 0,2:01:01.52,2:01:03.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我以前对你这样一直对你这样
+Dialogue: 0,2:01:03.44,2:01:04.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你以前不这样
+Dialogue: 0,2:01:04.52,2:01:06.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你以前还不这样哪
+Dialogue: 0,2:01:12.84,2:01:15.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你是不是有点讨厌我啦
+Dialogue: 0,2:01:15.68,2:01:16.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}讨厌怎么着
+Dialogue: 0,2:01:16.84,2:01:18.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不讨厌怎么着
+Dialogue: 0,2:01:18.92,2:01:21.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不讨厌 我们就好好过生日
+Dialogue: 0,2:01:21.52,2:01:22.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}讨厌我就走了
+Dialogue: 0,2:01:22.92,2:01:23.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎
+Dialogue: 0,2:01:23.60,2:01:25.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}服务员同志 我们的菜得上了吧
+Dialogue: 0,2:01:25.92,2:01:27.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}大家都饿得不行了
+Dialogue: 0,2:01:27.68,2:01:29.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那你走吧
+Dialogue: 0,2:01:32.92,2:01:34.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我能问为什么吗
+Dialogue: 0,2:01:35.00,2:01:36.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不为什么
+Dialogue: 0,2:01:36.72,2:01:38.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军 你消消气
+Dialogue: 0,2:01:38.52,2:01:39.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}算了
+Dialogue: 0,2:01:40.00,2:01:41.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不行 你让她走
+Dialogue: 0,2:01:41.80,2:01:43.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}菜都马上就上了
+Dialogue: 0,2:01:43.32,2:01:44.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}人一饿就爱犯脾气
+Dialogue: 0,2:01:44.92,2:01:46.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我看我们都有点犯急了
+Dialogue: 0,2:01:47.40,2:01:48.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}算了啊
+Dialogue: 0,2:01:48.32,2:01:49.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 你怎么还不走啊
+Dialogue: 0,2:01:49.60,2:01:52.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不是你自个儿说要走的吗 滚
+Dialogue: 0,2:01:53.52,2:01:54.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我还是走吧
+Dialogue: 0,2:01:57.20,2:01:58.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}就坐这儿
+Dialogue: 0,2:01:59.52,2:02:01.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军 别让她走成不成
+Dialogue: 0,2:02:01.72,2:02:02.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}看在我面上
+Dialogue: 0,2:02:02.56,2:02:03.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我今天谁的面子都不看
+Dialogue: 0,2:02:03.80,2:02:05.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁要护着她 我就跟谁急
+Dialogue: 0,2:02:05.32,2:02:07.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军 你别给脸不要脸啊
+Dialogue: 0,2:02:07.32,2:02:08.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我可没功夫搭理你
+Dialogue: 0,2:02:08.56,2:02:10.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我去你妈的 我今天就冲着你
+Dialogue: 0,2:02:10.80,2:02:12.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我抽你丫的
+Dialogue: 0,2:02:19.68,2:02:21.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我非叉了你
+Dialogue: 0,2:02:39.20,2:02:41.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}千万别相信这个
+Dialogue: 0,2:02:41.20,2:02:43.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我从来就没有这样勇敢过
+Dialogue: 0,2:02:43.16,2:02:44.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这样壮烈过
+Dialogue: 0,2:02:44.68,2:02:46.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我不断发誓 要老老实实讲故事
+Dialogue: 0,2:02:47.36,2:02:49.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可是说真话的愿望有多么强烈
+Dialogue: 0,2:02:50.16,2:02:52.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}受到的各种干扰就有多么大
+Dialogue: 0,2:02:52.52,2:02:53.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我悲哀的发现
+Dialogue: 0,2:02:54.16,2:02:56.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}根本就无法还原真实
+Dialogue: 0,2:02:57.52,2:03:00.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}记忆总是被我的情感改头换面
+Dialogue: 0,2:03:00.12,2:03:02.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}并随之捉弄我 背叛我
+Dialogue: 0,2:03:02.60,2:03:04.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}把我搞的头脑混乱
+Dialogue: 0,2:03:04.32,2:03:05.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}真伪难辨
+Dialogue: 0,2:03:06.32,2:03:09.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我现在怀疑和米兰第一次相识就是伪造的
+Dialogue: 0,2:03:10.32,2:03:12.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}其实我根本就没在马路上遇见过她
+Dialogue: 0,2:03:13.24,2:03:15.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那天下午我和大蚂蚁受刘忆苦的委派
+Dialogue: 0,2:03:15.92,2:03:17.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}在门口等米兰
+Dialogue: 0,2:03:17.32,2:03:19.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}才是我们第一次认识
+Dialogue: 0,2:03:19.88,2:03:22.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这也说明为什么我和大蚂蚁去玩什么瓦西里
+Dialogue: 0,2:03:23.00,2:03:24.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}而没有参加谈话
+Dialogue: 0,2:03:24.60,2:03:27.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}因为我和米兰根本就不熟
+Dialogue: 0,2:03:27.60,2:03:30.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我和米兰从来就没熟过
+Dialogue: 0,2:03:31.36,2:03:33.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我的天哪
+Dialogue: 0,2:03:33.88,2:03:36.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰是照片上的那个女孩吗
+Dialogue: 0,2:03:37.16,2:03:40.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还有于北蓓 怎么突然消失了呢
+Dialogue: 0,2:03:40.72,2:03:42.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}或许
+Dialogue: 0,2:03:42.84,2:03:46.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}或许她们俩 原本就是同一个人
+Dialogue: 0,2:03:46.68,2:03:49.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我简直不敢再往下想
+Dialogue: 0,2:03:49.48,2:03:51.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我以真诚的愿望开始讲述的故事
+Dialogue: 0,2:03:51.92,2:03:55.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}经过巨大坚韧不拔的努力却变成了谎言
+Dialogue: 0,2:03:55.36,2:03:57.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}难道就此放弃吗
+Dialogue: 0,2:03:57.16,2:03:58.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不 绝不能
+Dialogue: 0,2:03:59.28,2:04:01.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你忍心让我这样做吗
+Dialogue: 0,2:04:02.40,2:04:04.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我现在非常理解
+Dialogue: 0,2:04:04.52,2:04:06.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那些坚持谎言的人的处境
+Dialogue: 0,2:04:06.88,2:04:08.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}要做个诚实的人
+Dialogue: 0,2:04:08.68,2:04:10.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}简直不可能
+Dialogue: 0,2:04:11.72,2:04:14.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}听 你听
+Dialogue: 0,2:04:14.68,2:04:17.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有时候一种声音或是一种味道
+Dialogue: 0,2:04:17.52,2:04:20.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可以把人带回真实的过去
+Dialogue: 0,2:04:37.20,2:04:40.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}现在我的头脑 如皎洁的月亮一般清醒
+Dialogue: 0,2:04:41.52,2:04:43.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好吧 就此继续说我们的故事
+Dialogue: 0,2:04:44.08,2:04:47.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}先不管它是真是假
+Dialogue: 0,2:04:47.72,2:04:49.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}记得过生日那天
+Dialogue: 0,2:04:49.20,2:04:52.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}根本没发生过任何不快
+Dialogue: 0,2:04:52.24,2:04:54.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我和刘忆苦都很高兴
+Dialogue: 0,2:04:54.36,2:04:56.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}还轮流和米兰碰杯
+Dialogue: 0,2:04:56.72,2:04:59.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哦对了 于北蓓也在
+Dialogue: 0,2:04:59.24,2:05:01.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}差点又忘了
+Dialogue: 0,2:05:01.24,2:05:03.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}大家还送了很多礼品
+Dialogue: 0,2:05:03.24,2:05:05.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰对我也格外亲切
+Dialogue: 0,2:05:06.00,2:05:09.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那锥子般的目光频频凝视着我
+Dialogue: 0,2:05:11.12,2:05:12.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}后来
+Dialogue: 0,2:05:12.52,2:05:13.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我们都醉了
+Dialogue: 0,2:05:28.32,2:05:31.40,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}好几次 好几次
+Dialogue: 0,2:05:31.72,2:05:34.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她都把我给脱了
+Dialogue: 0,2:05:34.04,2:05:36.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我也把她给脱了
+Dialogue: 0,2:05:36.44,2:05:38.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就是往下
+Dialogue: 0,2:05:38.72,2:05:41.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就不知道该怎么办了
+Dialogue: 0,2:05:42.04,2:05:43.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你信吗 信
+Dialogue: 0,2:05:43.72,2:05:45.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}信 我信
+Dialogue: 0,2:05:48.12,2:05:50.52,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我也没法给你参谋
+Dialogue: 0,2:05:50.52,2:05:53.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}咱俩就跟昨儿这样
+Dialogue: 0,2:05:54.92,2:05:58.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}谁给谁呀 都出不了主意
+Dialogue: 0,2:06:00.20,2:06:05.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你是不是觉得我特流氓 特黄色
+Dialogue: 0,2:06:06.92,2:06:10.00,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}那我倒没觉得
+Dialogue: 0,2:06:10.20,2:06:14.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不过 我就是觉得你悬哪
+Dialogue: 0,2:06:14.76,2:06:18.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}没生孩子就是万幸
+Dialogue: 0,2:06:18.60,2:06:21.76,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你说的是啊
+Dialogue: 0,2:06:21.76,2:06:25.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我就觉得
+Dialogue: 0,2:06:25.84,2:06:29.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}她比我 我胆儿还大呀
+Dialogue: 0,2:06:55.32,2:07:00.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,2:07:01.32,2:07:07.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,2:07:09.32,2:07:12.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,2:07:15.32,2:07:18.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,2:07:19.32,2:07:22.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,2:07:28.32,2:07:29.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰
+Dialogue: 0,2:07:29.32,2:07:32.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军
+Dialogue: 0,2:07:32.32,2:07:34.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}怎么啦
+Dialogue: 0,2:07:34.32,2:07:37.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你怎么了
+Dialogue: 0,2:07:37.92,2:07:40.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你到底怎么了 快告诉我
+Dialogue: 0,2:07:41.32,2:07:43.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我喜欢你
+Dialogue: 0,2:07:44.32,2:07:47.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你说什么
+Dialogue: 0,2:07:47.68,2:07:49.16,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你刚才说什么
+Dialogue: 0,2:07:49.16,2:07:52.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我车掉沟里了
+Dialogue: 0,2:08:19.44,2:08:20.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}雨过天晴
+Dialogue: 0,2:08:20.88,2:08:23.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}似乎什么事都没发生过
+Dialogue: 0,2:08:23.92,2:08:25.88,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我试图提醒她
+Dialogue: 0,2:08:25.88,2:08:27.84,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可她仍没反应
+Dialogue: 0,2:08:28.12,2:08:31.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对我依然是亲切中带有客气
+Dialogue: 0,2:08:32.24,2:08:36.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}难道下雨那天晚上发生的事儿是不真实的
+Dialogue: 0,2:08:36.40,2:08:39.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}可是我身上摔伤的地方还在疼
+Dialogue: 0,2:10:00.48,2:10:03.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}马小军
+Dialogue: 0,2:10:06.20,2:10:07.32,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你干什么
+Dialogue: 0,2:10:07.32,2:10:08.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}放开我
+Dialogue: 0,2:10:08.48,2:10:10.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}快放开我
+Dialogue: 0,2:10:15.52,2:10:18.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你
+Dialogue: 0,2:11:26.20,2:11:28.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你觉得这样有劲吗
+Dialogue: 0,2:11:29.12,2:11:30.64,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}有劲
+Dialogue: 0,2:12:07.60,2:12:10.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}米兰和我彻底掰了
+Dialogue: 0,2:12:10.60,2:12:11.60,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}不久
+Dialogue: 0,2:12:11.88,2:12:14.28,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}我被大家孤立起来
+Dialogue: 0,2:12:14.28,2:12:18.44,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}在万分痛苦中度过一天又一天
+Dialogue: 0,2:15:33.04,2:15:36.12,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}两个月后 米兰和我们断绝了来往
+Dialogue: 0,2:15:36.80,2:15:39.04,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}年底 刘忆苦又当兵走了
+Dialogue: 0,2:15:39.32,2:15:41.48,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}而且有了正式的女朋友
+Dialogue: 0,2:15:42.80,2:15:45.24,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}后来我们也都分别去了部队
+Dialogue: 0,2:15:45.56,2:15:47.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}听说刘忆苦在南边打仗的时候
+Dialogue: 0,2:15:48.20,2:15:49.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}被炮弹震傻了
+Dialogue: 0,2:15:51.20,2:15:52.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}再后来
+Dialogue: 0,2:15:52.72,2:15:54.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}彼此音信皆无
+Dialogue: 0,2:16:59.00,2:17:01.56,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}你们看这是谁在这儿
+Dialogue: 0,2:17:01.56,2:17:02.72,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}这不是谁吗
+Dialogue: 0,2:17:02.72,2:17:04.36,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}什么 古伦木那是
+Dialogue: 0,2:17:04.36,2:17:06.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}对 对 对 古伦木
+Dialogue: 0,2:17:06.92,2:17:09.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}古伦木
+Dialogue: 0,2:17:10.92,2:17:12.92,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}哎 古伦木
+Dialogue: 0,2:17:12.92,2:17:19.20,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}古伦木
+Dialogue: 0,2:17:19.20,2:17:21.80,Default,NTP,0000,0000,0000,Effect,{\3c&HFF8000&}傻逼

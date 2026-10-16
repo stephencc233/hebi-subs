@@ -1,0 +1,471 @@
+(function () {
+  var searchRoot = document.getElementById("site-search");
+  var searchInput = document.getElementById("sn");
+  var searchButton = document.getElementById("searchbutton");
+  var menu = document.getElementById("search-suggestions");
+  if (!searchRoot || !searchInput || !searchButton || !menu) return;
+
+  var debounceTimer = null;
+  var requestController = null;
+  var activeIndex = -1;
+  var suggestionLinks = [];
+  var lastQuery = "";
+  var composing = false;
+  var historyStorageKey = "subhd.searchHistory.v2";
+  var historyLimit = 10;
+
+  function searchValue() {
+    return searchInput.value.trim();
+  }
+
+  function canLoadSuggestions(query) {
+    var hasChinese = /[\u3400-\u9fff\uf900-\ufaff]/.test(query);
+    return hasChinese ? Array.from(query).length >= 1 : Array.from(query).length >= 2;
+  }
+
+  function readSearchHistory() {
+    try {
+      var stored = JSON.parse(window.localStorage.getItem(historyStorageKey) || "[]");
+      if (!Array.isArray(stored)) return [];
+      return stored.filter(function (item) {
+        return typeof item === "string" && item.trim();
+      }).slice(0, historyLimit);
+    } catch (error) {
+      return [];
+    }
+  }
+
+  function saveSearchHistory(value) {
+    var text = String(value || "").trim().slice(0, 200);
+    if (!text) return;
+    var normalized = text.toLocaleLowerCase();
+    var history = readSearchHistory().filter(function (item) {
+      return item.toLocaleLowerCase() !== normalized;
+    });
+    history.unshift(text);
+    try {
+      window.localStorage.setItem(historyStorageKey, JSON.stringify(history.slice(0, historyLimit)));
+    } catch (error) {
+      // Search remains available when browser storage is disabled or full.
+    }
+  }
+
+  function clearSearchHistory() {
+    try {
+      window.localStorage.removeItem(historyStorageKey);
+    } catch (error) {
+      // Search remains available when browser storage is disabled.
+    }
+  }
+
+  function goSearch() {
+    var query = searchValue();
+    if (query === "") {
+      alert("请填写内容");
+      return;
+    }
+    saveSearchHistory(query);
+    var text = encodeURIComponent(query).replace(/'/g, "%27");
+    searchButton.textContent = "搜索中....";
+    searchButton.disabled = true;
+    window.location.href = "/search/" + text;
+  }
+
+  function hideSuggestions() {
+    menu.classList.remove("show");
+    searchInput.setAttribute("aria-expanded", "false");
+    searchInput.removeAttribute("aria-activedescendant");
+    activeIndex = -1;
+    updateActiveSuggestion();
+  }
+
+  function showSuggestions() {
+    if (!suggestionLinks.length) return;
+    menu.classList.add("show");
+    searchInput.setAttribute("aria-expanded", "true");
+  }
+
+  function updateActiveSuggestion() {
+    suggestionLinks.forEach(function (link, index) {
+      var active = index === activeIndex;
+      link.classList.toggle("active", active);
+      link.setAttribute("aria-selected", active ? "true" : "false");
+    });
+
+    if (activeIndex >= 0 && suggestionLinks[activeIndex]) {
+      searchInput.setAttribute("aria-activedescendant", suggestionLinks[activeIndex].id);
+      suggestionLinks[activeIndex].scrollIntoView({ block: "nearest" });
+    } else {
+      searchInput.removeAttribute("aria-activedescendant");
+    }
+  }
+
+  function appendText(parent, className, value) {
+    if (!value) return;
+    var span = document.createElement("span");
+    span.className = className;
+    span.textContent = value;
+    parent.appendChild(span);
+  }
+
+  function createSuggestion(item, index) {
+    var link = document.createElement("a");
+    link.className = "search-suggestion-item";
+    link.id = "search-suggestion-" + index;
+    link.href = "/d/" + encodeURIComponent(item.id);
+    link.setAttribute("role", "option");
+    link.setAttribute("aria-selected", "false");
+    link.dataset.historyValue = item.title || item.title2 || "";
+    link.addEventListener("click", function () {
+      saveSearchHistory(link.dataset.historyValue);
+    });
+
+    var poster = document.createElement("img");
+    poster.className = "search-suggestion-poster";
+    poster.src = item.poster;
+    poster.alt = "";
+    poster.width = 38;
+    poster.height = 54;
+    poster.loading = "lazy";
+    poster.addEventListener("error", function () {
+      if (!poster.src.endsWith("/public/images/movie-default.jpg")) {
+        poster.src = "/public/images/movie-default.jpg";
+      }
+    });
+    link.appendChild(poster);
+
+    var content = document.createElement("span");
+    content.className = "search-suggestion-content";
+    var titleRow = document.createElement("span");
+    titleRow.className = "search-suggestion-title-row";
+    appendText(titleRow, "search-suggestion-title", item.title);
+    appendText(titleRow, "search-suggestion-year", item.year ? "(" + item.year + ")" : "");
+    content.appendChild(titleRow);
+
+    var meta = document.createElement("span");
+    meta.className = "search-suggestion-meta";
+    appendText(
+      meta,
+      item.type === "TVSeries" ? "search-suggestion-type search-suggestion-type-tv" : "search-suggestion-type search-suggestion-type-movie",
+      item.type === "TVSeries" ? menu.dataset.tvLabel : menu.dataset.movieLabel
+    );
+    appendText(meta, "search-suggestion-rating", item.rating);
+    appendText(meta, "search-suggestion-title2", item.title2);
+    content.appendChild(meta);
+    link.appendChild(content);
+    return link;
+  }
+
+  function renderSearchHistory() {
+    var history = readSearchHistory();
+    menu.replaceChildren();
+    suggestionLinks = [];
+    activeIndex = -1;
+    if (!history.length || searchValue()) {
+      hideSuggestions();
+      return;
+    }
+
+    var header = document.createElement("div");
+    header.className = "search-history-header";
+    var label = document.createElement("span");
+    label.textContent = menu.dataset.historyLabel;
+    header.appendChild(label);
+
+    var clearButton = document.createElement("button");
+    clearButton.className = "search-history-clear";
+    clearButton.type = "button";
+    clearButton.textContent = menu.dataset.clearLabel;
+    clearButton.addEventListener("click", function () {
+      clearSearchHistory();
+      renderSearchHistory();
+    });
+    header.appendChild(clearButton);
+    menu.appendChild(header);
+
+    var list = document.createElement("div");
+    list.className = "search-history-list";
+    history.forEach(function (item, index) {
+      var link = document.createElement("a");
+      link.className = "search-history-item";
+      link.id = "search-history-" + index;
+      link.href = "/search/" + encodeURIComponent(item).replace(/'/g, "%27");
+      link.textContent = item;
+      link.dataset.historyValue = item;
+      link.setAttribute("role", "option");
+      link.setAttribute("aria-selected", "false");
+      link.addEventListener("click", function () {
+        saveSearchHistory(item);
+      });
+      suggestionLinks.push(link);
+      list.appendChild(link);
+    });
+    menu.appendChild(list);
+    showSuggestions();
+  }
+
+  function renderSuggestions(items, query) {
+    menu.replaceChildren();
+    suggestionLinks = [];
+    activeIndex = -1;
+
+    items.forEach(function (item, index) {
+      var link = createSuggestion(item, index);
+      suggestionLinks.push(link);
+      menu.appendChild(link);
+    });
+
+    if (items.length) {
+      var allLink = document.createElement("a");
+      allLink.className = "search-suggestion-all";
+      allLink.href = "/search/" + encodeURIComponent(query).replace(/'/g, "%27");
+      allLink.textContent = menu.dataset.searchLabel + " “" + query + "”";
+      allLink.addEventListener("click", function () {
+        saveSearchHistory(query);
+      });
+      menu.appendChild(allLink);
+      showSuggestions();
+    } else {
+      hideSuggestions();
+    }
+  }
+
+  async function loadSuggestions() {
+    var query = searchValue();
+    if (!canLoadSuggestions(query)) {
+      if (!query) renderSearchHistory();
+      else {
+        hideSuggestions();
+        menu.replaceChildren();
+        suggestionLinks = [];
+      }
+      return;
+    }
+
+    lastQuery = query;
+    if (requestController) requestController.abort();
+    requestController = new AbortController();
+
+    try {
+      var response = await fetch("/searchD/" + encodeURIComponent(query), {
+        method: "GET",
+        cache: "no-cache",
+        signal: requestController.signal
+      });
+      if (!response.ok) throw new Error("Network error");
+
+      var data = await response.json();
+      if (query !== searchValue()) return;
+      renderSuggestions(data.success && Array.isArray(data.items) ? data.items : [], query);
+    } catch (error) {
+      if (error.name !== "AbortError") hideSuggestions();
+    }
+  }
+
+  function scheduleSuggestions() {
+    window.clearTimeout(debounceTimer);
+    var query = searchValue();
+    if (!canLoadSuggestions(query)) {
+      if (requestController) requestController.abort();
+      if (!query) renderSearchHistory();
+      else {
+        menu.replaceChildren();
+        suggestionLinks = [];
+        hideSuggestions();
+      }
+      return;
+    }
+    debounceTimer = window.setTimeout(loadSuggestions, 400);
+  }
+
+  searchButton.addEventListener("click", goSearch);
+  searchInput.addEventListener("compositionstart", function () {
+    composing = true;
+  });
+  searchInput.addEventListener("compositionend", function () {
+    composing = false;
+    scheduleSuggestions();
+  });
+  searchInput.addEventListener("input", function () {
+    if (!composing) scheduleSuggestions();
+  });
+  searchInput.addEventListener("focus", function () {
+    if (!searchValue()) renderSearchHistory();
+    else if (suggestionLinks.length && lastQuery === searchValue()) showSuggestions();
+  });
+  searchInput.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowDown" && suggestionLinks.length) {
+      event.preventDefault();
+      activeIndex = Math.min(activeIndex + 1, suggestionLinks.length - 1);
+      updateActiveSuggestion();
+      return;
+    }
+    if (event.key === "ArrowUp" && suggestionLinks.length) {
+      event.preventDefault();
+      activeIndex = activeIndex <= 0 ? suggestionLinks.length - 1 : activeIndex - 1;
+      updateActiveSuggestion();
+      return;
+    }
+    if (event.key === "Escape") {
+      hideSuggestions();
+      return;
+    }
+    if (event.key === "Enter") {
+      event.preventDefault();
+      if (activeIndex >= 0 && suggestionLinks[activeIndex]) {
+        saveSearchHistory(suggestionLinks[activeIndex].dataset.historyValue);
+        window.location.href = suggestionLinks[activeIndex].href;
+      } else {
+        goSearch();
+      }
+    }
+  });
+
+  document.addEventListener("pointerdown", function (event) {
+    if (!searchRoot.contains(event.target)) {
+      hideSuggestions();
+    }
+  });
+})();
+
+(function () {
+  if (!window.jQuery) return;
+
+  $(document).on("click", ".subtitle-prepare-download", function (event) {
+    event.preventDefault();
+
+    var button = $(this);
+    if (button.data("preparePending")) return;
+
+    var subtitleId = String(button.data("sid") || "");
+    var text = button.find(".download-prepare-text");
+    var originalText = text.text();
+    var loadingText = String(button.data("loadingText") || originalText);
+    var fallbackError = String(button.data("errorText") || "");
+    var downloadWindow = null;
+
+    try {
+      downloadWindow = window.open("", "_blank");
+    } catch (error) {
+      downloadWindow = null;
+    }
+    if (downloadWindow) {
+      try {
+        downloadWindow.opener = null;
+      } catch (error) {
+        // Some older browsers expose opener as read-only.
+      }
+    }
+
+    button.data("preparePending", true).attr("aria-busy", "true").prop("disabled", true);
+    text.text(loadingText);
+
+    function closeDownloadWindow() {
+      if (!downloadWindow || downloadWindow.closed) return;
+      try {
+        downloadWindow.close();
+      } catch (error) {
+        // The original page can still show the failure message.
+      }
+    }
+
+    function showPrepareError(message) {
+      closeDownloadWindow();
+      alert(message || fallbackError);
+    }
+
+    $.ajax({
+      type: "POST",
+      url: "/api/sub/prepare-download",
+      cache: false,
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
+      data: JSON.stringify({ sid: subtitleId }),
+      success: function (data) {
+        if (!data || data.success !== true || typeof data.url !== "string" || data.url.indexOf("/down/") !== 0) {
+          showPrepareError(data && data.msg);
+          return;
+        }
+
+        if (downloadWindow && !downloadWindow.closed) {
+          try {
+            downloadWindow.location.replace(data.url);
+            return;
+          } catch (error) {
+            closeDownloadWindow();
+          }
+        }
+
+        window.location.href = data.url;
+      },
+      error: function (xhr) {
+        var response = xhr && xhr.responseJSON;
+        showPrepareError(response && response.msg);
+      },
+      complete: function () {
+        button.data("preparePending", false).removeAttr("aria-busy").prop("disabled", false);
+        text.text(originalText);
+      }
+    });
+  });
+})();
+
+(function () {
+  if (!window.jQuery) return;
+
+  $(document).on("click", ".thumb", function () {
+    var thumb = $(this);
+    var userId = thumb.attr("name");
+    if (userId == 0) {
+      alert("请登录后给这条字幕点赞");
+      return;
+    }
+    if (thumb.data("ratingPending")) return;
+
+    var subtitleId = $(".subtitle-prepare-download").data("sid");
+    var previousSele = thumb.attr("sele");
+    var previousValue = Number(thumb.find(".upv").text()) || 0;
+
+    function setThumbState(sele, value) {
+      if (sele == 1) {
+        thumb.find(".up1").addClass("d-none").removeClass("d-inline");
+        thumb.find(".up2").addClass("d-inline").removeClass("d-none");
+      } else {
+        thumb.find(".up1").addClass("d-inline").removeClass("d-none");
+        thumb.find(".up2").addClass("d-none").removeClass("d-inline");
+      }
+      thumb.attr("sele", sele);
+      thumb.attr("aria-pressed", sele == 1 ? "true" : "false");
+      thumb.toggleClass("is-active", sele == 1);
+      thumb.find(".upv").text(Math.max(Number(value) || 0, 0));
+    }
+
+    thumb.data("ratingPending", true).attr("aria-busy", "true").prop("disabled", true);
+    setThumbState(previousSele == 2 ? 1 : 2, previousSele == 2 ? previousValue + 1 : previousValue - 1);
+
+    $.ajax({
+      type: "POST",
+      url: "/api/sub/rating",
+      cache: false,
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
+      data: JSON.stringify({ sid: subtitleId }),
+      success: function (data) {
+        if (data.success === true) {
+          setThumbState(data.rated ? 1 : 2, data.count);
+          window.location.reload();
+          return;
+        }
+        setThumbState(previousSele, previousValue);
+        alert(data.msg);
+      },
+      error: function () {
+        setThumbState(previousSele, previousValue);
+        alert("系统错误，请稍后再试");
+      },
+      complete: function () {
+        thumb.data("ratingPending", false).removeAttr("aria-busy").prop("disabled", false);
+      }
+    });
+  });
+})();
