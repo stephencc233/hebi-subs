@@ -41,7 +41,7 @@
 > 顺序：P2-A → P2-B → P2-C → P2-D → C12 复盘。P2-E（MP 事件实测）推迟到 P5。输入见 `study-hailulu/05-p1-review.md` §6。
 
 - [x] P2-A P2-subhd-probe：SubHD 页面结构（离线解析手动保存的 HTML）→ `api-notes/subhd.md` + `scripts/subhd_parse_probe.py`
-- [ ] P2-B P2-assrt-probe：ASSRT API 字段、分页、限额 → `api-notes/assrt.md` + `scripts/assrt_probe.py`
+- [x] P2-B P2-assrt-probe：ASSRT API 字段、分页、限额 → `api-notes/assrt.md` + `scripts/assrt_probe.py`
 - [ ] P2-C P2-archive-tools：Windows 解包工具链 + 字幕包样本统计与真值标注 → `api-notes/archive-tools.md`
 - [ ] P2-D P2-jellyfin-naming：Jellyfin 外挂字幕命名与子目录识别 → `api-notes/jellyfin-subtitle-naming.md`
 - [ ] C12 复盘：claude.ai 阶段对话定 F6.6 / F6.7、D015 定稿，确认进入 P3
@@ -62,6 +62,16 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-16 · P2-assrt-probe
+- 阶段：P2（P2-B 完成）
+- 完成：`scripts/assrt_probe.py`（标准库 urllib；token 只从环境变量读，用 `Authorization: Bearer` + `add_unredirected_header` 传，URL 不含 token，落盘前再替换为 `***`；统一限速客户端，16 秒间隔、每次运行 ≤40 次；`--dry-run` 打印请求清单、`--resume` 复用已保存响应续跑、`--run-tag` 区分运行）；3 次运行共 42 次请求（r1 12 次被 509 截停、r2 首次 1 次因脚本 bug 丢响应、r2 11 次被下载超时截停、r3 18 次完成）；`tests/fixtures/assrt/` 官方文档原文 + 原始 JSON + 3 份运行日志；`tests/fixtures/archives/assrt/` 6 个字幕包；`api-notes/assrt.md` §0–§8；02 §4、§7.2 标为已答；fixtures 与日志中 token 命中 0 处
+- 决定：无新增编号（设计建议在 assrt.md §5.2、§8，留 P3 定）
+- 主要发现：①search 只有轻字段（`vote_score`、`upload_time`、可选 `release_site` / `lang`），**下载量 `down_count`、发布人 / 来源 `producer`、包内文件 `filelist` 只在 detail**；②**本账号配额 5 次/分钟**（文档写 20），4 秒间隔连发第 12 次返回 HTTP 509，16 秒间隔稳定；③`cnt` 上限 15，`cnt=50` 时前 2 条混入无 `id` 的内部记录（接口 bug）；`pos` 是条目偏移；无总数字段；无结果时 `subs` 是 `{}`；④`lang` = `{langlist:{langchs,langcht,langeng,langdou}, desc}`，`langdou` = 双语，但 47% 条目没有 `lang`，「英 简」可能是分开的单语文件；⑤不支持 IMDb 搜索，全文模糊匹配会混进别片；默认按上传时间降序；⑥下载链接 ≤17 分钟过期（HTTP 492 → `/download/failed/`），刷新 detail 即可；`filelist` 每个文件有单独下载链接；扩展名不可信（.zip 实为 RAR4）；⑦与 SubHD：肖申克 CMCT 包字节相同，确认重叠 3 条；同包下载量 ASSRT 明显少于 SubHD，跨源不能直接比
+- 未完成 / 下一步：P2-C P2-archive-tools（Windows 解包工具链 + 字幕包样本统计与真值标注；ASSRT 新增 2 个 RAR4、4 个 zip 样本，其中一个扩展名与内容不符）
+- 卡点与风险：配额语义只是推断（令牌桶式回补？下载与 `user/quota` 是否计数？）；r1 的 509 响应体没保存；`filelist=1` / `is_file` / `no_muxer` / `sub/similar` 未测；`upload_time` 时区、`vote_score` 量纲、链接确切有效期未知
+- 需要更新的文档：C12 复盘时——01-requirements 非功能需求「ASSRT 初始 20 次/分钟」改为以账号实际配额为准（本账号 5 次/分钟），F8.2 限速默认值据此设；D014 字段细节带入 assrt.md §4（`vote_score=0` → 无、`release_site="个人"` → 无、上传时间时区统一）；F5.1 补「扩展名不可信」样例；知识库镜像同步 03
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P2，读 03-progress 最新交接卡后开始：P2-C P2-archive-tools，实测 Windows 解包工具链并统计字幕包样本
 
 ### 交接 2026-10-16 · P2-subhd-probe
 - 阶段：P2（P2-A 完成）

@@ -95,6 +95,8 @@ sequenceDiagram
 
 ## §4 ASSRT 附表：API 字段取用情况
 
+> 2026-10-16 实测核对见 `docs/api-notes/assrt.md` §4：下表「否」行的字段名 `down_count`、`vote_score`、`release_site`、`producer`、`upload_time` 都存在；其中 `down_count`、`producer` 只在 detail 里有。
+
 | 字段 | 海拉鲁是否读取 | 用途 | 出处 |
 |---|---|---|---|
 | `id` | 是 | `result_id`、详情 URL、下载 | `providers/assrt.py:73`、`104-105` |
@@ -177,6 +179,8 @@ sequenceDiagram
 | 11 | **新增要查**：评分、上传时间、「官方 / 原创 / 转载」之类的标签在不在列表页 | F4.1–F4.2 | — |
 
 ### 7.2 ASSRT
+
+> 2026-10-16 已答 → `docs/api-notes/assrt.md` §3（#1–#4）、§4 字段表：search 有评分、上传时间、可选的 `release_site` 和 `lang`，**没有下载量**；下载量、发布人、来源类型、包内文件只在 detail；`cnt` 上限 15、`pos` 是条目偏移；本账号配额 5 次/分钟（文档写 20）。
 
 | # | 问题 |
 |---|---|
