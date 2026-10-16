@@ -6,7 +6,7 @@
 |---|---|---|---|---|
 | P0 准备 | ✅ 完成 | 2026-10-15 | 2026-10-15 | 仓库、CLAUDE.md、文档 v0.1、api-notes（MP V3 开发要点 / 本机环境）、最小空插件 v0.0.1（实机冒烟通过） |
 | P1 研读海拉鲁 | ✅ 完成 | 2026-10-15 | 2026-10-16 | study-hailulu 01–05（模块地图、痛点①②、痛点③、自动链路、复盘）；01-requirements v0.2；D014–D017 |
-| P2 接口实测 | 🟡 进行中 | 2026-10-16 | | |
+| P2 接口实测 | ✅ 完成 | 2026-10-16 | 2026-10-16 | api-notes（subhd / assrt / archive-tools / jellyfin-subtitle-naming）；探针脚本 4 个；fixtures（SubHD 网页、ASSRT 响应、13 个字幕包 + manifest、Jellyfin 报告与截图）；01-requirements v0.3；D018–D024 |
 | P3 需求定稿 + 架构 | ⬜ 未开始 | | | |
 | P4 MVP | ⬜ 未开始 | | | |
 | P5 自动化 | ⬜ 未开始 | | | |
@@ -44,7 +44,55 @@
 - [x] P2-B P2-assrt-probe：ASSRT API 字段、分页、限额 → `api-notes/assrt.md` + `scripts/assrt_probe.py`
 - [x] P2-C P2-archive-tools：Windows 解包工具链 + 字幕包样本统计与真值标注 → `api-notes/archive-tools.md` + `scripts/archive_probe.py` + `tests/fixtures/archives/manifest.json`
 - [x] P2-D P2-jellyfin-naming：Jellyfin 外挂字幕命名与子目录识别 → `api-notes/jellyfin-subtitle-naming.md` + `scripts/jellyfin_naming_probe.py` + `tests/fixtures/jellyfin/`
-- [ ] C12 复盘：claude.ai 阶段对话定 F6.6 / F6.7、D015 定稿，确认进入 P3
+- [x] C12 复盘：评审四份 api-notes；定 F6.6（D018）、F6.7（D019）、D015 定稿（D020）、源分工（D021）、Top 2 选择（D022）、限速预算（D023）、D014 字段细节（D024）；01-requirements v0.3；确认进入 P3
+
+## P3 任务清单
+
+> 顺序：P3-A → C13 → P3-B → C14。P3 只产出文档和接口签名，不写实现代码。输入：01 v0.3、02（D014、D018–D024）、四份 api-notes、study-hailulu/05。
+
+- [ ] P3-A P3-prechecks（Claude Code）：①ASSRT 补测：`sub/search?filelist=1` 是否返回包内文件清单；下载请求、`user/quota` 是否计入配额（每次请求前后读 quota；总请求 ≤10 次）→ 追加 `api-notes/assrt.md` §9；②MP 源码静态核实：TransferComplete 事件 `mediainfo` 里有没有豆瓣 ID、IMDb ID、原始语言 / 地区字段（F2.1、F6.8）→ 追加 `api-notes/mp-v3-plugin.md`；③只读列 MP 共享环境已装的 HTTP / 解析相关包和版本（为 pyproject 准备）→ 追加 `api-notes/mp-local-env.md`
+- [ ] C13 需求定稿（claude.ai）：01 → v1.0。定开放问题 2（外语优先级）、7（内嵌轨）、8（「合格」判定与重试次数）；F4.3 打分权重具体化；F6.8 华语片判定；F8.1 状态机；P4 MVP 范围
+- [ ] P3-B P3-architecture（Claude Code）：按下方大纲写 `docs/architecture.md`（含 Mermaid 图、数据模型字段表、接口签名，不写实现）
+- [ ] C14 架构评审（claude.ai）：评审 architecture.md，新增决策从 D025 起，确认进入 P4，产出 P4 任务清单
+
+### architecture.md 大纲（C12 拟定，P3-B 照此展开）
+
+| § | 内容 | 依据 |
+|---|---|---|
+| 0 | 目标、约束、术语（链接 01 / 02，不重复正文） | 00、01 |
+| 1 | 分层：MP 适配层 / 应用层（任务编排）/ 领域核心（候选、打分、挑选、命名）/ 基础设施（Provider、HTTP + 限速、解包、文本分析、落盘、存储）；依赖方向只能向内 | D007、非功能「可维护」 |
+| 2 | 目录与模块：`plugins.v3/hebisubs/` 下子包清单，每个模块一句职责 | mp-v3-plugin §4 |
+| 3 | 数据模型：MediaIdentity、Candidate（D014 / D024 全字段 + 「无」的表示）、DownloadedArtifact、ExtractedFile、SubtitleAnalysis（语言、简繁、双语排列、content_scope、ASS 节头）、Placement、TaskRecord | D014、D024、archive-tools §5 |
+| 4 | 主流程时序：自动触发 / 手动 / 批量扫描三条；SubHD 优先 → 不足补 ASSRT → 合并 Top 2 的判定流程图 | D021、D022、04-auto-chain |
+| 5 | Provider 接口与实现要点：SubHD（影片页 / 搜索页 / prepare-download / 域名切换 / 转人工判据）、ASSRT（search / detail / 链接过期刷新 / 类型防御） | subhd §5–§8、assrt §8 |
+| 6 | HTTP 与限速：全局令牌桶、按请求计数、实时优先、熔断与恢复、配额读数 | D023、F8.2 |
+| 7 | 排序与挑选：打分层级、源内归一化、去重规则（同包 / 同字幕组）、「合格」判定（下载前标签 / 下载后正文） | F4.3、D022 |
+| 8 | 解包与文本分析：魔数、工具探测与依赖状态、zip 名回转、资源上限、编码检测、语言 / 简繁 / 双语排列、content_scope、ASS 校验修复 | D020、F5.1–F5.4 |
+| 9 | 落盘：命名函数与清洗规则、已有字幕判定（与 Jellyfin 等价的解析）、`Subs/HebiSubs/` 存档与 index.json、原子写入、不覆盖 | D018、D019、F1.4、F6.5 |
+| 10 | 持久化：插件数据目录、状态记录与缓存的存储选型（SQLite / JSON 对比）、热重载与重启后的恢复 | F8.1、04 §4 |
+| 11 | MP 接口层：事件订阅、定时服务、API、配置表单与页面、通知、Jellyfin 刷新；热重载两轮下的幂等注册 | mp-v3-plugin、P0 遗留 #11 |
+| 12 | 配置项清单（名称、默认值、说明） | D019、D020、D023 |
+| 13 | 错误处理与转人工：错误分类、投喂目录、通知文案 | D004、F8.3 |
+| 14 | 日志与可观测性 | — |
+| 15 | 测试策略：单测期望值（manifest.json、Jellyfin `_probe-report.json`）、录制响应离线测、测试库集成测 | archive-tools §9、jellyfin §9 |
+| 16 | 依赖与环境：pyproject、7z、ffprobe、Python 3.14 | D020 |
+| 17 | P4 MVP 切分建议、风险与未决项 | — |
+
+### P2 遗留不确定项分配
+
+| 项 | 阶段 | 怎么验证 |
+|---|---|---|
+| ASSRT `filelist=1`；下载与 `user/quota` 是否计入配额 | P3-A | 补测 ≤10 次请求 |
+| MP mediainfo 有无豆瓣 ID / 原始语言 | P3-A | 静态读 MP 源码 |
+| SubHD 验证码在哪一步出现、`/down/` 真实响应、直接 GET `/down/{sid}`、`/search/tt…`、影片页分页 | P4 | 真实下载时每步留证（响应头、魔数、前 512 字节） |
+| MP 进程能否找到 Scoop 用户 PATH 里的 7z | P4 开头 | 插件 init 记录 `shutil.which("7z")` 和探测结果 |
+| ffprobe 在 MP 环境是否可用 | P4 | 先试配置 Jellyfin 自带 ffprobe 的路径 |
+| ASSRT 配额回补机制、超额响应体 | P4 | 限速器日志长期观察；收到 509 时保存响应体 |
+| SubHD 限速默认值是否够保守 | P4–P5 | 低速批量试跑，记录是否出现验证码 |
+| `Subs/HebiSubs/` 在 MP 整理 / 洗版 / 删除媒体时的处理；整理事件与刮削先后 | P5 | 实机 |
+| 只测过 JMP 一个客户端 | P4 验收 | Web 端看一眼列表和渲染 |
+| RAR5 / 7z / Big5 / 嵌套包真实样本 | 随遇随补 | 放进 `tests/fixtures/archives/other/` 重跑探针 |
+| 剧集季包规模 | P7 | — |
 
 ## 交接卡模板
 
@@ -62,6 +110,16 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-16 · C12 P2 复盘
+- 阶段：P2 → 完成
+- 完成：评审 api-notes 四份（subhd / assrt / archive-tools / jellyfin-subtitle-naming），结论均成立；对照 05-p1-review 关闭 §2 #3（SubHD 列表页已有下载量 / 制作组）；用代码复算 manifest 统计（13 包、去重 28 个字幕、zip 成员名 14/24 需回转，与笔记一致）；01-requirements v0.3；02 新增 D018–D024，更新 D003 / D006 / D014 / D015 状态；本文件 P3 任务清单、architecture.md 大纲、P2 遗留不确定项分配；CLAUDE.md「合规」条改为按账号实际配额限速
+- 决定：D018（F6.6 命名）、D019（F6.7 `Subs/HebiSubs/`）、D020（D015 定稿，py7zr 不声明依赖）、D021（SubHD 为主、ASSRT 补，取代 D003 分工）、D022（Top 2 选择与去重）、D023（限速预算默认值）、D024（D014 字段细节）
+- 评审修正（P3 / P4 落实）：①ASSRT 批量吞吐按留给实时任务的配额重算，约 22–45 部/小时（现在 ASSRT 只作补充，影响变小）；②manifest 应增加「ASS 是否有 `[Script Info]` 节头」字段（CMCT 4 个 ASS 为 false）；③命名清洗补「Windows 非法字符」；④ffprobe 可配置用 Jellyfin 自带的；⑤SubHD 来源类型「其他来源」占 67%，打分里是弱信号
+- 未完成 / 下一步：P3-A P3-prechecks（Claude Code）
+- 卡点与风险：SubHD 改为主力后，验证码触发条件未知是最大风险（D023 先取保守值，熔断后自动由 ASSRT 补）；`Subs/HebiSubs/` 在 MP 整理时的行为 P5 才能验证；批量扫描默认约 5–8 部/小时，大库需要数天
+- 需要更新的文档：无（本次已更新 01、02、03、CLAUDE.md「合规」条的限速数值；知识库镜像已同步 01–03）；P3-A 追加 assrt.md §9、mp-v3-plugin.md、mp-local-env.md
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P3，读 03-progress 最新交接卡后开始：P3-A P3-prechecks，补测 ASSRT filelist 与配额计数，静态核实 MP mediainfo 字段
 
 ### 交接 2026-10-16 · P2-jellyfin-naming
 - 阶段：P2（P2-D 完成，P2-A–D 全部完成）
