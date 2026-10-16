@@ -40,7 +40,7 @@
 
 > 顺序：P2-A → P2-B → P2-C → P2-D → C12 复盘。P2-E（MP 事件实测）推迟到 P5。输入见 `study-hailulu/05-p1-review.md` §6。
 
-- [ ] P2-A P2-subhd-probe：SubHD 页面结构（离线解析手动保存的 HTML）→ `api-notes/subhd.md`
+- [x] P2-A P2-subhd-probe：SubHD 页面结构（离线解析手动保存的 HTML）→ `api-notes/subhd.md` + `scripts/subhd_parse_probe.py`
 - [ ] P2-B P2-assrt-probe：ASSRT API 字段、分页、限额 → `api-notes/assrt.md` + `scripts/assrt_probe.py`
 - [ ] P2-C P2-archive-tools：Windows 解包工具链 + 字幕包样本统计与真值标注 → `api-notes/archive-tools.md`
 - [ ] P2-D P2-jellyfin-naming：Jellyfin 外挂字幕命名与子目录识别 → `api-notes/jellyfin-subtitle-naming.md`
@@ -62,6 +62,16 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-16 · P2-subhd-probe
+- 阶段：P2（P2-A 完成）
+- 完成：仓库根建 `.venv`（MP 自带 Python 3.14.7 的 venv，未装任何包，后续 P2 共用）；整理 fixtures（starter.zip 移出；`*_files` 只提交一份 `subhd.js`，其余用 .gitignore 排除）；`scripts/subhd_parse_probe.py`（标准库 HTMLParser 建 DOM，先解包 view-source 另存页，解析搜索页 / 影片页 / 详情页，输出 D014 字段，拿不到为 null；`--compare-raw-rendered` 逐字段对比）；`tests/fixtures/subhd/parsed/` 共 18 个 JSON + 1 份对比；`api-notes/subhd.md` §0–§8。全程联网 0 次
+- 决定：无新增编号（设计建议在 subhd.md §6、§8，留 P3 定）
+- 主要发现：①列表页（搜索页 / 影片页）就有下载量、上传时间（ISO）、发布人、来源类型、语言、格式、可选字幕组，**全部服务器直接给出**（raw 与 rendered 逐字段一致），05 §2 #3 的请求预算冲突不存在；②**SubHD 没有评分**，只有「支持」点赞数；③字幕组 `/zu/` ≠ 视频压制组（发布名末尾 `-XXX`）；④影片页 `/d/{豆瓣ID}` 一页列出全部字幕、只含本片、默认排序接近下载量降序；搜索页模糊匹配会混进别片、按时间降序、每页 20 条；⑤下载 = `POST /api/sub/prepare-download {sid}` → `/down/…`；详情页有包内文件清单；⑥域名 subhd.tv / subhd.me / subhd.one 并存；⑦海拉鲁假设 #1 #5 #6 #7 部分成立，#2 #3 #4 成立
+- 未完成 / 下一步：P2-B P2-assrt-probe（ASSRT API 字段、分页、限额）
+- 卡点与风险：验证码在哪一步出现**没有实测依据**（用户 7 次手动下载都没遇到），转人工规则（subhd.md §5.2）是推断；`/search/tt…`、影片页分页、`?order=time`、`/down/` 响应都需要联网验证，本次没做；`.venv` 依赖 MP 的基础解释器，MP 升级 Python 后要重建
+- 需要更新的文档：C12 复盘时把 subhd.md §8 #1–#3（`rating` 恒为 null、来源类型映射、字幕组与视频压制组分开）带进 D014 字段细节；知识库镜像同步 03
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P2，读 03-progress 最新交接卡后开始：P2-B P2-assrt-probe，实测 ASSRT API 字段、分页与限额
 
 ### 交接 2026-10-16 · C11 P1 复盘
 - 阶段：P1 → 完成
