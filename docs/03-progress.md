@@ -43,7 +43,7 @@
 - [x] P2-A P2-subhd-probe：SubHD 页面结构（离线解析手动保存的 HTML）→ `api-notes/subhd.md` + `scripts/subhd_parse_probe.py`
 - [x] P2-B P2-assrt-probe：ASSRT API 字段、分页、限额 → `api-notes/assrt.md` + `scripts/assrt_probe.py`
 - [x] P2-C P2-archive-tools：Windows 解包工具链 + 字幕包样本统计与真值标注 → `api-notes/archive-tools.md` + `scripts/archive_probe.py` + `tests/fixtures/archives/manifest.json`
-- [ ] P2-D P2-jellyfin-naming：Jellyfin 外挂字幕命名与子目录识别 → `api-notes/jellyfin-subtitle-naming.md`
+- [x] P2-D P2-jellyfin-naming：Jellyfin 外挂字幕命名与子目录识别 → `api-notes/jellyfin-subtitle-naming.md` + `scripts/jellyfin_naming_probe.py` + `tests/fixtures/jellyfin/`
 - [ ] C12 复盘：claude.ai 阶段对话定 F6.6 / F6.7、D015 定稿，确认进入 P3
 
 ## 交接卡模板
@@ -62,6 +62,16 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-16 · P2-jellyfin-naming
+- 阶段：P2（P2-D 完成，P2-A–D 全部完成）
+- 完成：`.gitignore` 忽略 `tests/jellyfin-lib/`；`scripts/jellyfin_naming_probe.py`（标准库；build 用 Jellyfin 自带 ffmpeg 生成 3 分钟测试视频和 49 个字幕变体，真实双语 ASS 从 fixtures zip 只读取出、平移时间轴；refresh 只对校验过库名和路径的 HebiTest 发 FullRefresh；collect 只读，逐条拉服务器转出的字幕文本，检查编码；凭据从进程或用户级环境变量读取，不打印、不落盘）；用户在 Jellyfin 里建了 HebiTest 库（关闭元数据、图片、Nfo、字幕下载器）；`tests/fixtures/jellyfin/_probe-report.json` + 17 张 JMP 截图（剪贴板自动保存，按内容命名）；读了官方文档（jellyfin.org 文档仓库源文件）和 v12.1 源码 6 个文件（`ExternalPathParser`、`NamingOptions`、`MediaInfoResolver`、`MediaStreamSelector`、`IgnorePatterns`、parser 单测）；`api-notes/jellyfin-subtitle-naming.md` §0–§9；api-notes/README 更新。Jellyfin 没有往测试目录写入任何文件；除 HebiTest 的 Refresh 外全部是 GET
+- 决定：无新增编号；F6.6 三个方案、F6.7 四个选项见 jellyfin-subtitle-naming.md §6、§7，交 C12
+- 主要发现：①只认视频同目录、「视频名 + `.`」开头的文件，子目录一律不读；②从后往前解析：最后一个语言码生效，其余段拼成标题，所以 `.CMCT.zh` 等于 `.zh.CMCT`；default / forced / foreign 是**子串匹配**；③`zh/chi/zho/Chinese` → zho「Chinese」；`zh-CN/zh-Hans` → 「Chinese (Simplified)」；`chs/cht/chi&eng` 不是语言，显示「未定义」；④客户端显示的就是服务器的 DisplayTitle，**能用来区分两份的只有标题**，实测因为显示相同点错了一次；⑤自动选择按语言码**整串匹配**用户偏好（本机是 zho），`zh-hans` 不会被自动选中；两条 default 时选 Index 小的；⑥GBK / Big5 / UTF-16 都能正确显示；⑦**缺 `[Script Info]` 的 ASS 会被静默跳过**：CMCT 的 4 个 ASS 都是这样，补一行就好；⑧`Subs/` 和点目录在内置忽略名单里；`subtitles/` 等普通名字会变成 Folder 条目
+- 未完成 / 下一步：C12 复盘（claude.ai）：定 F6.6 / F6.7、D015 定稿，确认进入 P3
+- 卡点与风险：只测了 JMP 一个客户端；`.hebisubs/`、`Subs/` 在 MP 整理时的行为未知（P5）；MP 环境里有没有 ffprobe 可用来校验 ASS **不确定**；Folder 条目在客户端视图里会不会显示没有核实
+- 需要更新的文档：C12 复盘时——01 F6.6 / F6.7 按决定改写并新增决策编号；F5.x / F6.x 补「ASS 落盘前校验 `[Script Info]` 节头」；F1.4 补「按 Jellyfin 规则判定已有字幕（同目录、前缀 + `.`、子目录不算）」；D006 状态更新；知识库镜像同步 03
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P2，读 03-progress 最新交接卡后开始：C12 P2 复盘，评审 api-notes（subhd / assrt / archive-tools / jellyfin-subtitle-naming），定 F6.6、F6.7 和 D015，确认进入 P3
 
 ### 交接 2026-10-16 · P2-archive-tools
 - 阶段：P2（P2-C 完成）
