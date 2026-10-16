@@ -1,0 +1,630 @@
+{
+  "input_file": "肖申克的救赎-search.raw.html",
+  "input_kind": "raw(view-source)",
+  "saved_from_url": "https://subhd.tv/search/肖申克的救赎",
+  "canonical_url": null,
+  "page_type": "search",
+  "parsed_at": "2026-10-16T00:26:53",
+  "navigation": {
+    "total_results": 36,
+    "current_page": 1,
+    "pagination_links": [
+      "/search/肖申克的救赎/1",
+      "/search/肖申克的救赎/2"
+    ],
+    "sort_options": null
+  },
+  "candidates": [
+    {
+      "title": "肖申克的救赎.The.Shawshank.Redemption.1994.UHD.BluRay.2160p.DTS-HD.MA.5.1.DV.HEVC.HYBRID.REMUX-FraMeSToR",
+      "sid": "MWQ9in",
+      "detail_url": "https://subhd.tv/a/MWQ9in",
+      "download_count": 1932,
+      "release_group": null,
+      "uploader": "字幕Robot",
+      "upload_time": "2026-03-15T20:53:15.000Z",
+      "rating": null,
+      "source_type": "官方字幕",
+      "language_tags": [
+        "双语",
+        "简体",
+        "繁体",
+        "英语"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 1,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#00a3ff",
+        "size_text": "153k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "03-15 20:53",
+        "video_release_group_guess": "FraMeSToR"
+      }
+    },
+    {
+      "title": "The.Shawshank.Redemption.1994.Remastered.Remux.BluRay.1080p.x265-CDRS",
+      "sid": "MW9iIn",
+      "detail_url": "https://subhd.tv/a/MW9iIn",
+      "download_count": 864,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2025-09-10T04:15:01.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 2,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "201k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2025-09-10",
+        "video_release_group_guess": "CDRS"
+      }
+    },
+    {
+      "title": "肖申克的救赎.The.Shawshank.Redemption.1994.Remastered.Remux.BluRay.1080p.x265-CDRS.北影简中",
+      "sid": "kAik6K",
+      "detail_url": "https://subhd.tv/a/kAik6K",
+      "download_count": 198,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2025-09-06T03:12:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 3,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "204k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2025-09-06",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "肖申克的救赎.The.Shawshank.Redemption.1994.Remastered.Remux.BluRay.1080p.x265-CDRS.简英",
+      "sid": "Z39ZdM",
+      "detail_url": "https://subhd.tv/a/Z39ZdM",
+      "download_count": 266,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2025-09-06T03:11:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 4,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "307k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2025-09-06",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "20250512_095149.auto",
+      "sid": "pQmxIk",
+      "detail_url": "https://subhd.tv/a/pQmxIk",
+      "download_count": 1496,
+      "release_group": "Orange字幕组",
+      "uploader": "小乘不吃饭",
+      "upload_time": "2025-06-14T14:48:41.000Z",
+      "rating": null,
+      "source_type": "官方字幕",
+      "language_tags": [
+        "双语",
+        "简体"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 5,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": "66",
+        "source_type_color": "#00a3ff",
+        "size_text": "37k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2025-06-14",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "The.Shawshank.Redemption.1994.2160p.BluRay.x265.10bit.SDR.DTS-HD.MA.5.1-SWTYBLZ",
+      "sid": "9LyEOF",
+      "detail_url": "https://subhd.tv/a/9LyEOF",
+      "download_count": 1493,
+      "release_group": null,
+      "uploader": "装B王",
+      "upload_time": "2025-05-10T01:53:13.000Z",
+      "rating": null,
+      "source_type": "官方字幕",
+      "language_tags": [
+        "双语",
+        "简体",
+        "英语"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 6,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#00a3ff",
+        "size_text": "212k",
+        "comment_count": 1,
+        "like_count": null,
+        "upload_time_display": "2025-05-10",
+        "video_release_group_guess": "SWTYBLZ"
+      }
+    },
+    {
+      "title": "肖申克的救赎..The.Shawshank.Redemption.1994.1080P.BluRay.H265.DTS.上中下英",
+      "sid": "Pu7UlN",
+      "detail_url": "https://subhd.tv/a/Pu7UlN",
+      "download_count": 153,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2024-09-07T21:36:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "双语",
+        "简体",
+        "英语"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 7,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "213k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2024-09-07",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "The.Shawshank.Redemption.1994.Complete.UHD.BluRay 适配4k原盘&4k原盘remux",
+      "sid": "GklQDU",
+      "detail_url": "https://subhd.tv/a/GklQDU",
+      "download_count": 145,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2024-05-28T14:44:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "双语",
+        "英语",
+        "简体"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 8,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "252k",
+        "comment_count": 1,
+        "like_count": 1,
+        "upload_time_display": "2024-05-28",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "iTunes官方译本.肖申克的救赎.The.Shawshank.Redemption.1994.2160p.BluRay.x265.10bit.SDR.DTS-HD.MA.5.1-SWTYBLZ",
+      "sid": "8gE2cR",
+      "detail_url": "https://subhd.tv/a/8gE2cR",
+      "download_count": 99,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2024-03-28T12:28:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体",
+        "繁体"
+      ],
+      "format": [
+        "SRT",
+        "ASS"
+      ],
+      "source_rank": 9,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "280k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2024-03-28",
+        "video_release_group_guess": "SWTYBLZ"
+      }
+    },
+    {
+      "title": "肖申克的救赎 The.Shawshank.Redemption.1994.1080p.BluRay.x264.10bit-WiKi",
+      "sid": "HZ9mgV",
+      "detail_url": "https://subhd.tv/a/HZ9mgV",
+      "download_count": 269,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2024-01-06T12:40:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "双语",
+        "简体",
+        "繁体",
+        "英语"
+      ],
+      "format": [
+        "SRT",
+        "ASS"
+      ],
+      "source_rank": 10,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "251k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2024-01-06",
+        "video_release_group_guess": "WiKi"
+      }
+    },
+    {
+      "title": "[粤英双语]月黑高飛.蓝光",
+      "sid": "DcgK5P",
+      "detail_url": "https://subhd.tv/a/DcgK5P",
+      "download_count": 1187,
+      "release_group": null,
+      "uploader": "大雄来啦",
+      "upload_time": "2023-12-21T00:05:54.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "双语",
+        "繁体",
+        "英语"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 11,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "205k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2023-12-21",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "肖申克的救赎 官方简繁粤字幕 The.Shawshank.Redemption.1994.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.5.1-FGT",
+      "sid": "N2V5Wz",
+      "detail_url": "https://subhd.tv/a/N2V5Wz",
+      "download_count": 4103,
+      "release_group": null,
+      "uploader": "Coritz",
+      "upload_time": "2023-12-19T13:20:40.000Z",
+      "rating": null,
+      "source_type": "官方字幕",
+      "language_tags": [
+        "简体",
+        "繁体"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 12,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#00a3ff",
+        "size_text": "137k",
+        "comment_count": 1,
+        "like_count": 1,
+        "upload_time_display": "2023-12-19",
+        "video_release_group_guess": "FGT"
+      }
+    },
+    {
+      "title": "肖申克的救赎.The.Shawshank.Redemption.1994.2160p.UHD.BluRay.4K适配HDR",
+      "sid": "58rXMQ",
+      "detail_url": "https://subhd.tv/a/58rXMQ",
+      "download_count": 6202,
+      "release_group": "YYeTs字幕组",
+      "uploader": "篝火",
+      "upload_time": "2023-12-01T15:35:05.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "双语",
+        "简体",
+        "英语"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 13,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": "14",
+        "source_type_color": "#6c757d",
+        "size_text": "65k",
+        "comment_count": 4,
+        "like_count": 4,
+        "upload_time_display": "2023-12-01",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "The.Shawshank.Redemption.1994.2160p.BluRay.x265.10bit.SDR.DTS-HD.MA.5.1-SWTYBLZ",
+      "sid": "9L1urF",
+      "detail_url": "https://subhd.tv/a/9L1urF",
+      "download_count": 1578,
+      "release_group": "YYeTs字幕组",
+      "uploader": "co11ector",
+      "upload_time": "2023-11-06T22:19:25.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "双语",
+        "简体",
+        "英语"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 14,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": "14",
+        "source_type_color": "#6c757d",
+        "size_text": "194k",
+        "comment_count": 1,
+        "like_count": 1,
+        "upload_time_display": "2023-11-06",
+        "video_release_group_guess": "SWTYBLZ"
+      }
+    },
+    {
+      "title": "The Shawshank Redemption (肖申克的救赎)",
+      "sid": "AeE4ls",
+      "detail_url": "https://subhd.tv/a/AeE4ls",
+      "download_count": 34,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2023-10-05T19:08:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "双语",
+        "简体",
+        "英语"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 15,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "188k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2023-10-05",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "肖申克的救赎.The.Shawshank.Redemption.1994.4K.BluRay.REMUX.HDR10.HEVC.DTS-HD.MA.TrueHD.5.1.2Audio-RARBG.典藏双语",
+      "sid": "AeEYKs",
+      "detail_url": "https://subhd.tv/a/AeEYKs",
+      "download_count": 91,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2023-08-02T01:36:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "双语",
+        "英语",
+        "简体"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 16,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "392k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2023-08-02",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "[肖申克的救赎] The.Shawshank.Redemption.1994.REMASTERED.1080p.BluRay.中英对照.双语字幕",
+      "sid": "lNKSgi",
+      "detail_url": "https://subhd.tv/a/lNKSgi",
+      "download_count": 7007,
+      "release_group": null,
+      "uploader": "玖月初一",
+      "upload_time": "2022-05-19T19:06:40.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "双语",
+        "简体",
+        "英语"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 17,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "6258k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2022-05-19",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "[肖申克的救赎] The.Shawshank.Redemption.1994.GER.BluRay.1080p.x264.DTS.MA.5.1-HDWinG [简英双语]",
+      "sid": "s6U7B8",
+      "detail_url": "https://subhd.tv/a/s6U7B8",
+      "download_count": 116,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2021-10-23T03:54:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "双语",
+        "简体",
+        "英语"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 18,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "317k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2021-10-23",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "[肖申克的救赎].The.Shawshank.Redemption.1994.2160p.UHD.BluRay.x265.10bit.HDR.DTS-HD.MA.5.1-REDANDY",
+      "sid": "cExOmu",
+      "detail_url": "https://subhd.tv/a/cExOmu",
+      "download_count": 31,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2021-09-19T09:32:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "SUP"
+      ],
+      "source_rank": 19,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "13479k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2021-09-19",
+        "video_release_group_guess": "REDANDY"
+      }
+    },
+    {
+      "title": "[肖申克的救赎].The.Shawshank.Redemption.1994.2160p.UHD.BluRay.x265.10bit.HDR.DTS-HD.MA.5.1-REDANDY",
+      "sid": "gb5jsH",
+      "detail_url": "https://subhd.tv/a/gb5jsH",
+      "download_count": 0,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2021-09-19T09:31:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "繁体"
+      ],
+      "format": [
+        "SUP"
+      ],
+      "source_rank": 20,
+      "raw_extra": {
+        "movie_title": "肖申克的救赎",
+        "douban_id": "1292052",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "size_text": "16877k",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2021-09-19",
+        "video_release_group_guess": "REDANDY"
+      }
+    }
+  ]
+}

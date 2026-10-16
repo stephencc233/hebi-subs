@@ -1,0 +1,51 @@
+{
+  "input_file": "阳光灿烂的日子-sub1.raw.html",
+  "input_kind": "raw(view-source)",
+  "saved_from_url": "https://subhd.tv/a/PuFOmN",
+  "canonical_url": "https://subhd.me/a/PuFOmN",
+  "page_type": "subtitle_detail",
+  "parsed_at": "2026-10-16T00:26:55",
+  "detail": {
+    "title": "阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.1080p.WEB-DL.H264.AAC-TJUPT",
+    "sid": "PuFOmN",
+    "detail_url": "https://subhd.tv/a/PuFOmN",
+    "download_count": 7452,
+    "release_group": null,
+    "uploader": "小饼无限",
+    "upload_time": "2020-02-06T12:28:50.000Z",
+    "rating": null,
+    "source_type": "官方字幕",
+    "language_tags": [
+      "简体"
+    ],
+    "format": [
+      "SRT"
+    ],
+    "source_rank": null,
+    "raw_extra": {
+      "douban_id": "1291875",
+      "release_group_id": null,
+      "source_type_color": "#00a3ff",
+      "size_text": "41k",
+      "upload_time_display": "2020-02-06",
+      "like_count": 1,
+      "uploader_total_uploads": 13,
+      "archive_members": [
+        {
+          "path_in_archive": "阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.1080p.WEB-DL.H264.AAC-TJUPT.srt",
+          "size_text": "113k"
+        }
+      ],
+      "preview_api_path": "/api/sub/preview/PuFOmN",
+      "download_button": {
+        "tag": "button",
+        "class": "btn btn-danger down subtitle-prepare-download",
+        "data_sid": "PuFOmN",
+        "data_loading_text": "处理中…",
+        "data_error_text": "准备下载失败，请稍后再试。",
+        "note": "点击由 subhd.js 处理：POST /api/sub/prepare-download {sid} → JSON {success,url:'/down/…'} → 浏览器跳转（本脚本不触发）"
+      },
+      "video_release_group_guess": "TJUPT"
+    }
+  }
+}

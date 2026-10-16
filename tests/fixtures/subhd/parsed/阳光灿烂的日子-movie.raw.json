@@ -1,0 +1,382 @@
+{
+  "input_file": "阳光灿烂的日子-movie.raw.html",
+  "input_kind": "raw(view-source)",
+  "saved_from_url": "https://subhd.tv/d/1291875",
+  "canonical_url": "https://subhd.me/d/1291875",
+  "page_type": "movie",
+  "parsed_at": "2026-10-16T00:26:54",
+  "navigation": {
+    "total_results": null,
+    "current_page": null,
+    "pagination_links": null,
+    "sort_options": [
+      {
+        "label": "默认排序",
+        "href": "/d/1291875",
+        "active": true
+      },
+      {
+        "label": "按时间",
+        "href": "/d/1291875?order=time",
+        "active": false
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "title": "阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.1080p.WEB-DL.H264.AAC-TJUPT",
+      "sid": "PuFOmN",
+      "detail_url": "https://subhd.tv/a/PuFOmN",
+      "download_count": 7452,
+      "release_group": null,
+      "uploader": "小饼无限",
+      "upload_time": "2020-02-06T12:28:50.000Z",
+      "rating": null,
+      "source_type": "官方字幕",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 1,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#00a3ff",
+        "comment_count": 7,
+        "like_count": 1,
+        "upload_time_display": "2020-02-06",
+        "video_release_group_guess": "TJUPT"
+      }
+    },
+    {
+      "title": "In.the.Heat.of.the.Sun.1994.CHINESE.1080p.BluRay.x264.DTS-NOGRP 官方简体字幕",
+      "sid": "QRJs0A",
+      "detail_url": "https://subhd.tv/a/QRJs0A",
+      "download_count": 2947,
+      "release_group": null,
+      "uploader": "Coritz",
+      "upload_time": "2022-08-23T12:25:47.000Z",
+      "rating": null,
+      "source_type": "官方字幕",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 2,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#00a3ff",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2022-08-23",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.CHINESE.1080p.BluRay.x265-VXT.简中",
+      "sid": "eVhMw6",
+      "detail_url": "https://subhd.tv/a/eVhMw6",
+      "download_count": 227,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2024-09-26T23:53:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 3,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2024-09-26",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "阳光灿烂的日子 In.the.Heat.of.the.Sun.1994.Restoration.1080p.BluRay.x264.DTS-CTRLHD",
+      "sid": "n0sjMq",
+      "detail_url": "https://subhd.tv/a/n0sjMq",
+      "download_count": 45,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2022-10-14T22:56:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体",
+        "繁体"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 4,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "comment_count": 1,
+        "like_count": 1,
+        "upload_time_display": "2022-10-14",
+        "video_release_group_guess": "CTRLHD"
+      }
+    },
+    {
+      "title": "In.the.Heat.of.the.Sun.1994.1080p.FRA.blu-ray",
+      "sid": "kAhsAK",
+      "detail_url": "https://subhd.tv/a/kAhsAK",
+      "download_count": 31,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2022-09-03T20:08:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 5,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2022-09-03",
+        "video_release_group_guess": "ray"
+      }
+    },
+    {
+      "title": "阳光灿烂的日子[8.1](国)In.the.Heat.of.the.Sun.1994.CHINESE.1080p.BluRay.H264.AAC-VXT_OT精校",
+      "sid": "OyMxUJ",
+      "detail_url": "https://subhd.tv/a/OyMxUJ",
+      "download_count": 31,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2022-08-23T23:53:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "双语",
+        "简体",
+        "英语"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 6,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2022-08-23",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "阳光灿烂的日子(简繁字幕)In.the.Heat.of.the.Sun.1994.720p.BluRay.x264.DTS-WiKi",
+      "sid": "L5E8op",
+      "detail_url": "https://subhd.tv/a/L5E8op",
+      "download_count": 14,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2022-05-05T21:26:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体",
+        "繁体"
+      ],
+      "format": [
+        "ASS"
+      ],
+      "source_rank": 7,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2022-05-05",
+        "video_release_group_guess": "WiKi"
+      }
+    },
+    {
+      "title": "In.the.Heat.of.the.Sun.1994.1080p.WEB-DL",
+      "sid": "pQBnxk",
+      "detail_url": "https://subhd.tv/a/pQBnxk",
+      "download_count": 14,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2022-01-18T20:39:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 8,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2022-01-18",
+        "video_release_group_guess": "DL"
+      }
+    },
+    {
+      "title": "In The Heat Of The Sun 1994 1080p FRA blu-ray English",
+      "sid": "Xn5qMb",
+      "detail_url": "https://subhd.tv/a/Xn5qMb",
+      "download_count": 9,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2022-09-03T20:10:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "英语"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 9,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2022-09-03",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "[阳光灿烂的日子]日二修改",
+      "sid": "qTeLj3",
+      "detail_url": "https://subhd.tv/a/qTeLj3",
+      "download_count": 3,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2022-03-17T22:36:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 10,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2022-03-17",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "In.the.Heat.of.the.Sun.1994.1080p.WEB-DL",
+      "sid": "Jrqe5a",
+      "detail_url": "https://subhd.tv/a/Jrqe5a",
+      "download_count": 6,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2022-03-17T22:29:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 11,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2022-03-17",
+        "video_release_group_guess": "DL"
+      }
+    },
+    {
+      "title": "In The Heat Of The Sun 1994 1080p WEB-DL English",
+      "sid": "AeFTDs",
+      "detail_url": "https://subhd.tv/a/AeFTDs",
+      "download_count": 0,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2022-01-18T20:44:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "英语"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 12,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2022-01-18",
+        "video_release_group_guess": null
+      }
+    },
+    {
+      "title": "阳光灿烂的日子.In.the.Heat.of.the.Sun.1994.BDRip.X265.Man_CHT-edit110",
+      "sid": "oPI8jl",
+      "detail_url": "https://subhd.tv/a/oPI8jl",
+      "download_count": 6,
+      "release_group": null,
+      "uploader": "SubKing",
+      "upload_time": "2020-11-25T00:12:00.000Z",
+      "rating": null,
+      "source_type": "其他来源",
+      "language_tags": [
+        "简体"
+      ],
+      "format": [
+        "SRT"
+      ],
+      "source_rank": 13,
+      "raw_extra": {
+        "douban_id": "1291875",
+        "release_group_id": null,
+        "source_type_color": "#6c757d",
+        "comment_count": null,
+        "like_count": null,
+        "upload_time_display": "2020-11-25",
+        "video_release_group_guess": "edit110"
+      }
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+[
+  {
+    "raw_file": "秋刀鱼之味-movie.raw.html",
+    "rendered_file": "秋刀鱼之味-movie.rendered.html",
+    "candidate_count_raw": 4,
+    "candidate_count_rendered": 4,
+    "sids_only_in_raw": [],
+    "sids_only_in_rendered": [],
+    "fields": {
+      "title": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "download_count": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "release_group": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      },
+      "uploader": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "upload_time": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "source_type": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "language_tags": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "format": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "source_rank": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.size_text": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.comment_count": {
+        "non_null_in_raw": 1,
+        "non_null_in_rendered": 1,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.like_count": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.release_group_id": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      }
+    },
+    "time_display_text_changed_by_js": 0
+  },
+  {
+    "raw_file": "秋刀鱼之味-search.raw.html",
+    "rendered_file": "秋刀鱼之味-search.rendered.html",
+    "candidate_count_raw": 4,
+    "candidate_count_rendered": 4,
+    "sids_only_in_raw": [],
+    "sids_only_in_rendered": [],
+    "fields": {
+      "title": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "download_count": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "release_group": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      },
+      "uploader": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "upload_time": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "source_type": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "language_tags": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "format": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "source_rank": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.size_text": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.comment_count": {
+        "non_null_in_raw": 1,
+        "non_null_in_rendered": 1,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.like_count": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.release_group_id": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      }
+    },
+    "time_display_text_changed_by_js": 0
+  },
+  {
+    "raw_file": "肖申克的救赎-movie.raw.html",
+    "rendered_file": "肖申克的救赎-movie.rendered.html",
+    "candidate_count_raw": 36,
+    "candidate_count_rendered": 36,
+    "sids_only_in_raw": [],
+    "sids_only_in_rendered": [],
+    "fields": {
+      "title": {
+        "non_null_in_raw": 36,
+        "non_null_in_rendered": 36,
+        "value_mismatch_sids": []
+      },
+      "download_count": {
+        "non_null_in_raw": 36,
+        "non_null_in_rendered": 36,
+        "value_mismatch_sids": []
+      },
+      "release_group": {
+        "non_null_in_raw": 8,
+        "non_null_in_rendered": 8,
+        "value_mismatch_sids": []
+      },
+      "uploader": {
+        "non_null_in_raw": 36,
+        "non_null_in_rendered": 36,
+        "value_mismatch_sids": []
+      },
+      "upload_time": {
+        "non_null_in_raw": 36,
+        "non_null_in_rendered": 36,
+        "value_mismatch_sids": []
+      },
+      "source_type": {
+        "non_null_in_raw": 36,
+        "non_null_in_rendered": 36,
+        "value_mismatch_sids": []
+      },
+      "language_tags": {
+        "non_null_in_raw": 36,
+        "non_null_in_rendered": 36,
+        "value_mismatch_sids": []
+      },
+      "format": {
+        "non_null_in_raw": 36,
+        "non_null_in_rendered": 36,
+        "value_mismatch_sids": []
+      },
+      "source_rank": {
+        "non_null_in_raw": 36,
+        "non_null_in_rendered": 36,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.size_text": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.comment_count": {
+        "non_null_in_raw": 10,
+        "non_null_in_rendered": 10,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.like_count": {
+        "non_null_in_raw": 11,
+        "non_null_in_rendered": 11,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.release_group_id": {
+        "non_null_in_raw": 8,
+        "non_null_in_rendered": 8,
+        "value_mismatch_sids": []
+      }
+    },
+    "time_display_text_changed_by_js": 10
+  },
+  {
+    "raw_file": "肖申克的救赎-search.raw.html",
+    "rendered_file": "肖申克的救赎-search.rendered.html",
+    "candidate_count_raw": 20,
+    "candidate_count_rendered": 20,
+    "sids_only_in_raw": [],
+    "sids_only_in_rendered": [],
+    "fields": {
+      "title": {
+        "non_null_in_raw": 20,
+        "non_null_in_rendered": 20,
+        "value_mismatch_sids": []
+      },
+      "download_count": {
+        "non_null_in_raw": 20,
+        "non_null_in_rendered": 20,
+        "value_mismatch_sids": []
+      },
+      "release_group": {
+        "non_null_in_raw": 3,
+        "non_null_in_rendered": 3,
+        "value_mismatch_sids": []
+      },
+      "uploader": {
+        "non_null_in_raw": 20,
+        "non_null_in_rendered": 20,
+        "value_mismatch_sids": []
+      },
+      "upload_time": {
+        "non_null_in_raw": 20,
+        "non_null_in_rendered": 20,
+        "value_mismatch_sids": []
+      },
+      "source_type": {
+        "non_null_in_raw": 20,
+        "non_null_in_rendered": 20,
+        "value_mismatch_sids": []
+      },
+      "language_tags": {
+        "non_null_in_raw": 20,
+        "non_null_in_rendered": 20,
+        "value_mismatch_sids": []
+      },
+      "format": {
+        "non_null_in_raw": 20,
+        "non_null_in_rendered": 20,
+        "value_mismatch_sids": []
+      },
+      "source_rank": {
+        "non_null_in_raw": 20,
+        "non_null_in_rendered": 20,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.size_text": {
+        "non_null_in_raw": 20,
+        "non_null_in_rendered": 20,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.comment_count": {
+        "non_null_in_raw": 5,
+        "non_null_in_rendered": 5,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.like_count": {
+        "non_null_in_raw": 4,
+        "non_null_in_rendered": 4,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.release_group_id": {
+        "non_null_in_raw": 3,
+        "non_null_in_rendered": 3,
+        "value_mismatch_sids": []
+      }
+    },
+    "time_display_text_changed_by_js": 7
+  },
+  {
+    "raw_file": "阳光灿烂的日子-movie.raw.html",
+    "rendered_file": "阳光灿烂的日子-movie.rendered.html",
+    "candidate_count_raw": 13,
+    "candidate_count_rendered": 13,
+    "sids_only_in_raw": [],
+    "sids_only_in_rendered": [],
+    "fields": {
+      "title": {
+        "non_null_in_raw": 13,
+        "non_null_in_rendered": 13,
+        "value_mismatch_sids": []
+      },
+      "download_count": {
+        "non_null_in_raw": 13,
+        "non_null_in_rendered": 13,
+        "value_mismatch_sids": []
+      },
+      "release_group": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      },
+      "uploader": {
+        "non_null_in_raw": 13,
+        "non_null_in_rendered": 13,
+        "value_mismatch_sids": []
+      },
+      "upload_time": {
+        "non_null_in_raw": 13,
+        "non_null_in_rendered": 13,
+        "value_mismatch_sids": []
+      },
+      "source_type": {
+        "non_null_in_raw": 13,
+        "non_null_in_rendered": 13,
+        "value_mismatch_sids": []
+      },
+      "language_tags": {
+        "non_null_in_raw": 13,
+        "non_null_in_rendered": 13,
+        "value_mismatch_sids": []
+      },
+      "format": {
+        "non_null_in_raw": 13,
+        "non_null_in_rendered": 13,
+        "value_mismatch_sids": []
+      },
+      "source_rank": {
+        "non_null_in_raw": 13,
+        "non_null_in_rendered": 13,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.size_text": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.comment_count": {
+        "non_null_in_raw": 2,
+        "non_null_in_rendered": 2,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.like_count": {
+        "non_null_in_raw": 2,
+        "non_null_in_rendered": 2,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.release_group_id": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      }
+    },
+    "time_display_text_changed_by_js": 1
+  },
+  {
+    "raw_file": "阳光灿烂的日子-search.raw.html",
+    "rendered_file": "阳光灿烂的日子-search.rendered.html",
+    "candidate_count_raw": 14,
+    "candidate_count_rendered": 14,
+    "sids_only_in_raw": [],
+    "sids_only_in_rendered": [],
+    "fields": {
+      "title": {
+        "non_null_in_raw": 14,
+        "non_null_in_rendered": 14,
+        "value_mismatch_sids": []
+      },
+      "download_count": {
+        "non_null_in_raw": 14,
+        "non_null_in_rendered": 14,
+        "value_mismatch_sids": []
+      },
+      "release_group": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      },
+      "uploader": {
+        "non_null_in_raw": 14,
+        "non_null_in_rendered": 14,
+        "value_mismatch_sids": []
+      },
+      "upload_time": {
+        "non_null_in_raw": 14,
+        "non_null_in_rendered": 14,
+        "value_mismatch_sids": []
+      },
+      "source_type": {
+        "non_null_in_raw": 14,
+        "non_null_in_rendered": 14,
+        "value_mismatch_sids": []
+      },
+      "language_tags": {
+        "non_null_in_raw": 14,
+        "non_null_in_rendered": 14,
+        "value_mismatch_sids": []
+      },
+      "format": {
+        "non_null_in_raw": 14,
+        "non_null_in_rendered": 14,
+        "value_mismatch_sids": []
+      },
+      "source_rank": {
+        "non_null_in_raw": 14,
+        "non_null_in_rendered": 14,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.size_text": {
+        "non_null_in_raw": 14,
+        "non_null_in_rendered": 14,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.comment_count": {
+        "non_null_in_raw": 2,
+        "non_null_in_rendered": 2,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.like_count": {
+        "non_null_in_raw": 2,
+        "non_null_in_rendered": 2,
+        "value_mismatch_sids": []
+      },
+      "raw_extra.release_group_id": {
+        "non_null_in_raw": 0,
+        "non_null_in_rendered": 0,
+        "value_mismatch_sids": []
+      }
+    },
+    "time_display_text_changed_by_js": 1
+  }
+]

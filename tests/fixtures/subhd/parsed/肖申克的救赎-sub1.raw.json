@@ -1,0 +1,74 @@
+{
+  "input_file": "肖申克的救赎-sub1.raw.html",
+  "input_kind": "raw(view-source)",
+  "saved_from_url": "https://subhd.tv/a/M39aTn",
+  "canonical_url": "https://subhd.me/a/M39aTn",
+  "page_type": "subtitle_detail",
+  "parsed_at": "2026-10-16T00:26:54",
+  "detail": {
+    "title": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT",
+    "sid": "M39aTn",
+    "detail_url": "https://subhd.tv/a/M39aTn",
+    "download_count": 20709,
+    "release_group": "CMCT字幕组",
+    "uploader": "101eagle",
+    "upload_time": "2017-07-28T16:32:17.000Z",
+    "rating": null,
+    "source_type": "原创翻译",
+    "language_tags": [
+      "双语",
+      "简体",
+      "英语"
+    ],
+    "format": [
+      "SRT",
+      "ASS"
+    ],
+    "source_rank": null,
+    "raw_extra": {
+      "douban_id": "1292052",
+      "release_group_id": "44",
+      "source_type_color": "#28a745",
+      "size_text": "408k",
+      "upload_time_display": "2017-07-28",
+      "like_count": 1,
+      "uploader_total_uploads": 2258,
+      "archive_members": [
+        {
+          "path_in_archive": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.导评字幕.srt",
+          "size_text": "191k"
+        },
+        {
+          "path_in_archive": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.ass",
+          "size_text": "300k"
+        },
+        {
+          "path_in_archive": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.srt",
+          "size_text": "242k"
+        },
+        {
+          "path_in_archive": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体.ass",
+          "size_text": "154k"
+        },
+        {
+          "path_in_archive": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文&简体.ass",
+          "size_text": "300k"
+        },
+        {
+          "path_in_archive": "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT/The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文.ass",
+          "size_text": "160k"
+        }
+      ],
+      "preview_api_path": "/api/sub/preview/M39aTn",
+      "download_button": {
+        "tag": "button",
+        "class": "btn btn-danger down subtitle-prepare-download",
+        "data_sid": "M39aTn",
+        "data_loading_text": "处理中…",
+        "data_error_text": "准备下载失败，请稍后再试。",
+        "note": "点击由 subhd.js 处理：POST /api/sub/prepare-download {sid} → JSON {success,url:'/down/…'} → 浏览器跳转（本脚本不触发）"
+      },
+      "video_release_group_guess": "CMCT"
+    }
+  }
+}

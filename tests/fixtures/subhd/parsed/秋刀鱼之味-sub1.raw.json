@@ -1,0 +1,56 @@
+{
+  "input_file": "秋刀鱼之味-sub1.raw.html",
+  "input_kind": "raw(view-source)",
+  "saved_from_url": "https://subhd.tv/a/86CifR",
+  "canonical_url": "https://subhd.me/a/86CifR",
+  "page_type": "subtitle_detail",
+  "parsed_at": "2026-10-16T00:26:53",
+  "detail": {
+    "title": "An.Autumn.Afternoon.1962.720p.BluRay.x264-WiKi",
+    "sid": "86CifR",
+    "detail_url": "https://subhd.tv/a/86CifR",
+    "download_count": 3978,
+    "release_group": null,
+    "uploader": "喷子",
+    "upload_time": "2015-06-22T11:23:50.000Z",
+    "rating": null,
+    "source_type": "原创翻译",
+    "language_tags": [
+      "简体",
+      "繁体"
+    ],
+    "format": [
+      "SRT"
+    ],
+    "source_rank": null,
+    "raw_extra": {
+      "douban_id": "1294433",
+      "release_group_id": null,
+      "source_type_color": "#28a745",
+      "size_text": "66k",
+      "upload_time_display": "2015-06-22",
+      "like_count": 0,
+      "uploader_total_uploads": 217,
+      "archive_members": [
+        {
+          "path_in_archive": "秋刀鱼之味 肥内提供中字.srt",
+          "size_text": "134k"
+        },
+        {
+          "path_in_archive": "秋刀鱼之味 肥内提供中字 简体化.srt",
+          "size_text": "79k"
+        }
+      ],
+      "preview_api_path": "/api/sub/preview/86CifR",
+      "download_button": {
+        "tag": "button",
+        "class": "btn btn-danger down subtitle-prepare-download",
+        "data_sid": "86CifR",
+        "data_loading_text": "处理中…",
+        "data_error_text": "准备下载失败，请稍后再试。",
+        "note": "点击由 subhd.js 处理：POST /api/sub/prepare-download {sid} → JSON {success,url:'/down/…'} → 浏览器跳转（本脚本不触发）"
+      },
+      "video_release_group_guess": "WiKi"
+    }
+  }
+}
