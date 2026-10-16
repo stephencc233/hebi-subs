@@ -7,6 +7,6 @@
 | `assrt.md` | （P2-B）ASSRT API：search / detail / quota 实测字段 → D014 映射、cnt / pos 分页、配额（本账号 5 次/分钟）、下载链接时效、与 SubHD 对比 |
 | `subhd.md` | SubHD：搜索页、详情页字段（下载量、制作组、来源类型）、下载流程、验证码触发条件 |
 | `jellyfin-subtitle-naming.md` | Jellyfin 外挂字幕命名识别实测（语言、标题、两份双语如何区分） |
-| `archive-tools.md` | Windows 原生解包工具链（7-Zip / tar.exe / py7zr）实测与字幕包样本统计 |
+| `archive-tools.md` | （P2-C）Windows 原生解包工具链（7-Zip / tar.exe / py7zr）能力矩阵、zip 文件名回转、字幕包样本统计、manifest 字段、D015 定稿建议 |
 
 每条记录写：日期、请求、关键返回字段、结论、对设计的影响。

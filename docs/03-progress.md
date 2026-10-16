@@ -42,7 +42,7 @@
 
 - [x] P2-A P2-subhd-probe：SubHD 页面结构（离线解析手动保存的 HTML）→ `api-notes/subhd.md` + `scripts/subhd_parse_probe.py`
 - [x] P2-B P2-assrt-probe：ASSRT API 字段、分页、限额 → `api-notes/assrt.md` + `scripts/assrt_probe.py`
-- [ ] P2-C P2-archive-tools：Windows 解包工具链 + 字幕包样本统计与真值标注 → `api-notes/archive-tools.md`
+- [x] P2-C P2-archive-tools：Windows 解包工具链 + 字幕包样本统计与真值标注 → `api-notes/archive-tools.md` + `scripts/archive_probe.py` + `tests/fixtures/archives/manifest.json`
 - [ ] P2-D P2-jellyfin-naming：Jellyfin 外挂字幕命名与子目录识别 → `api-notes/jellyfin-subtitle-naming.md`
 - [ ] C12 复盘：claude.ai 阶段对话定 F6.6 / F6.7、D015 定稿，确认进入 P3
 
@@ -62,6 +62,16 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-16 · P2-archive-tools
+- 阶段：P2（P2-C 完成）
+- 完成：`scripts/archive_probe.py`（标准库 + subprocess；工具候选清单逐个运行版本命令；魔数判格式含 RAR4/RAR5；zip 成员名「UTF-8 标志 → 0x7075 → cp437 还原字节按常用字比例选 utf-8/gb18030/big5」回转；7z / tar / py7zr / zipfile 四列能力矩阵；RAR4 Unicode 名标志解析；字幕正文统计；`--with-synthetic` 在 `tests/tmp` 合成 7z / GBK / Big5 / 嵌套样本；样本 sha256 前后比对）；`tests/fixtures/archives/_probe-report.json`；`manifest.json`（13 个包 34 条，人工逐条核对，用户抽查 5 条通过）；`api-notes/archive-tools.md` §0–§9。py7zr 1.1.4 经用户确认装进仓库 `.venv`（9 个包）；只读查看了 MP site-packages。联网仅 py7zr 的 wheel 查询与安装；临时目录已清理
+- 决定：无新增编号；**D015 定稿建议**见 archive-tools.md §6：zip 标准库 + 自己回转；rar / 7z 主力 7z.exe；rar 备用 tar.exe、7z 备用 py7zr；倾向引入 py7zr（导入失败降级为提示装 7-Zip）；不用 rarfile / unar
+- 主要发现：①7-Zip 26.03 在全部真实样本和合成样本上通过，唯一失败是无扩展字段的 Big5 名 zip（按系统代码页 936 解错）；本机 7z 只在用户 PATH（Scoop），Program Files 没有；②系统 tar.exe（libarchive 3.8.4）**解不了常规 7z**（`LZMA codec is unsupported`），Big5 名 zip 解包失败，zip / RAR4 可以；③7z / tar 在中文 zip 名上「对」只是因为代码页恰好是 936，真实样本 58% 的 zip 成员名是无标志 GBK → zip 必须自己回转；回转在 26 个真实名 + 8 个合成名上全对，GBK/Big5 常同分要靠「平分选 GBK」；Windows 上必须用 `orig_filename`（0x5C 陷阱）；④RAR4 4/4 成员带 Unicode 名；⑤文件名语言标记不可信（`02访谈_cht` 实为简体、`.zh.ass` 实为中英、`.ass` 实为 SSA）；⑥包里有导评、花絮、cd1/cd2 分段，挑选要识别 `content_scope`；⑦只看对话正文后纯中文 ASS 拉丁行 ≤1，海拉鲁缺陷 ① 可避免；简繁特征字区分清楚；⑧MP 环境已有 rarfile 4.5、chardet、charset_normalizer，无 py7zr
+- 未完成 / 下一步：P2-D P2-jellyfin-naming（Jellyfin 外挂字幕命名与子目录识别）
+- 卡点与风险：RAR5、7z、Big5、嵌套包、季包都没有真实样本（只有合成或缺口）；MP 进程能否通过用户 PATH 找到 Scoop 的 7z 是推测；`.venv` 现在有 py7zr，MP 环境没有
+- 需要更新的文档：C12 复盘时——D015 改为生效（按 archive-tools.md §6，含 py7zr 去留）；01 F5.1 补「zip 不交给外部工具、文件名自己回转；tar.exe 只作 rar 备用」，F5.2 补「content_scope（正片 / 花絮 / 导评 / 分段）识别」与「文件名语言标记只作弱参考」；03 §9 #2–#7 标为已答（#10 待剧集）；知识库镜像同步 03
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P2，读 03-progress 最新交接卡后开始：P2-D P2-jellyfin-naming，实测 Jellyfin 外挂字幕命名与子目录识别
 
 ### 交接 2026-10-16 · P2-assrt-probe
 - 阶段：P2（P2-B 完成）
