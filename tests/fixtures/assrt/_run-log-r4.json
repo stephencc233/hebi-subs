@@ -1,0 +1,787 @@
+{
+  "generated_at": "2026-10-16 12:00:24 PM",
+  "run_tag": "r4",
+  "request_count": 10,
+  "max_requests_per_run": 10,
+  "intervals": {
+    "normal_s": 16.0,
+    "burst_s": 2.0,
+    "idle_before_burst_s": 90
+  },
+  "stop_reason": null,
+  "requests": [
+    {
+      "seq": 1,
+      "time": "11:56:29 AM",
+      "label": "GET user/quota ",
+      "url": "https://api.assrt.net/v1/user/quota",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 68,
+      "elapsed_ms": 815,
+      "t_offset_s": 0.0,
+      "interval_setting_s": 2.0,
+      "api_status": 0,
+      "items": null,
+      "saved_as": "quota-r4-A1.json",
+      "quota": 4
+    },
+    {
+      "seq": 2,
+      "time": "11:56:32 AM",
+      "label": "GET user/quota ",
+      "url": "https://api.assrt.net/v1/user/quota",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 68,
+      "elapsed_ms": 819,
+      "t_offset_s": 0.8,
+      "interval_setting_s": 2.0,
+      "api_status": 0,
+      "items": null,
+      "saved_as": "quota-r4-A2.json",
+      "quota": 3
+    },
+    {
+      "seq": 3,
+      "time": "11:56:35 AM",
+      "label": "GET user/quota ",
+      "url": "https://api.assrt.net/v1/user/quota",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 68,
+      "elapsed_ms": 843,
+      "t_offset_s": 3.6,
+      "interval_setting_s": 2.0,
+      "api_status": 0,
+      "items": null,
+      "saved_as": "quota-r4-A3.json",
+      "quota": 2
+    },
+    {
+      "seq": 4,
+      "time": "11:58:06 AM",
+      "label": "GET sub/search q=秋刀鱼之味 cnt=15 filelist=1",
+      "url": "https://api.assrt.net/v1/sub/search?q=%E7%A7%8B%E5%88%80%E9%B1%BC%E4%B9%8B%E5%91%B3&cnt=15&filelist=1",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 3345,
+      "elapsed_ms": 917,
+      "t_offset_s": 96.5,
+      "interval_setting_s": 16.0,
+      "api_status": 0,
+      "items": 7,
+      "saved_as": "秋刀鱼之味-search-zh-filelist-r4.json"
+    },
+    {
+      "seq": 5,
+      "time": "11:58:23 AM",
+      "label": "GET sub/search q=肖申克的救赎 cnt=15 filelist=1",
+      "url": "https://api.assrt.net/v1/sub/search?q=%E8%82%96%E7%94%B3%E5%85%8B%E7%9A%84%E6%95%91%E8%B5%8E&cnt=15&filelist=1",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 7470,
+      "elapsed_ms": 987,
+      "t_offset_s": 97.4,
+      "interval_setting_s": 16.0,
+      "api_status": 0,
+      "items": 15,
+      "saved_as": "肖申克的救赎-search-zh-filelist-r4.json"
+    },
+    {
+      "seq": 6,
+      "time": "11:58:40 AM",
+      "label": "GET sub/detail id=604957",
+      "url": "https://api.assrt.net/v1/sub/detail?id=604957",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 2784,
+      "elapsed_ms": 784,
+      "t_offset_s": 114.4,
+      "interval_setting_s": 16.0,
+      "api_status": 0,
+      "items": 1,
+      "saved_as": "秋刀鱼之味-detail-604957-r4.json"
+    },
+    {
+      "seq": 7,
+      "time": "12:00:10 PM",
+      "label": "GET user/quota ",
+      "url": "https://api.assrt.net/v1/user/quota",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 68,
+      "elapsed_ms": 742,
+      "t_offset_s": 221.2,
+      "interval_setting_s": 2.0,
+      "api_status": 0,
+      "items": null,
+      "saved_as": "quota-r4-B1.json",
+      "quota": 5
+    },
+    {
+      "seq": 8,
+      "time": "12:00:13 PM",
+      "label": "GET onthefly id=604957 03预告chs.ass",
+      "url": "http://file1.assrt.net/onthefly/604957/-/5/03%E9%A2%84%E5%91%8Achs.ass?_=1792166321&-=805ad87143596088c5fad80e95f1a57a&api=1",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 4912,
+      "elapsed_ms": 1192,
+      "t_offset_s": 221.9,
+      "interval_setting_s": 2.0,
+      "content_type": "application/octet-stream",
+      "magic_format": "other",
+      "sha256": "fca2aa8ffc068fee2b129fcde1429a7476dc47c0c56b611eb573459d46448107",
+      "saved_as": "秋刀鱼之味-onthefly-604957-r4.ass"
+    },
+    {
+      "seq": 9,
+      "time": "12:00:16 PM",
+      "label": "GET download id=604957（整包）",
+      "url": "http://file1.assrt.net/download/604957/%5B%E7%A7%8B%E5%88%80%E9%B1%BC%E4%B9%8B%E5%91%B3%5D%5BCC%E6%A0%87%E5%87%86%E6%94%B6%E8%97%8F%E7%89%88%20DIY%E8%8A%B1%E7%B5%AE%E9%A2%84%E5%91%8A%E7%AE%80%E7%B9%81%E4%B8%AD%E5%AD%97%5DAn%20Autumn%20Afternoon%201962%20CC%20Blu-Ray%201080P%20AVC%20LPCM%201.0-DIY-Anitafayer.zip?_=1792166321&-=0c9eacb3f04050f32b39961f6a5fbc7b&api=1",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 92538,
+      "elapsed_ms": 4457,
+      "t_offset_s": 225.1,
+      "interval_setting_s": 2.0,
+      "content_type": "application/octet-stream",
+      "magic_format": "zip",
+      "sha256": "411086fc0bb7e41eb672c79144c62b4f996aed70711aa9587e89601d8acb05a1"
+    },
+    {
+      "seq": 10,
+      "time": "12:00:23 PM",
+      "label": "GET user/quota ",
+      "url": "https://api.assrt.net/v1/user/quota",
+      "final_url": null,
+      "http_status": 200,
+      "body_bytes": 68,
+      "elapsed_ms": 983,
+      "t_offset_s": 231.6,
+      "interval_setting_s": 2.0,
+      "api_status": 0,
+      "items": null,
+      "saved_as": "quota-r4-B2.json",
+      "quota": 5
+    }
+  ],
+  "findings": {
+    "quota_readings": {
+      "A1": {
+        "quota": 4,
+        "t_offset_s": 0.0,
+        "time": "11:56:29 AM"
+      },
+      "A2": {
+        "quota": 3,
+        "t_offset_s": 0.8,
+        "time": "11:56:32 AM"
+      },
+      "A3": {
+        "quota": 2,
+        "t_offset_s": 3.6,
+        "time": "11:56:35 AM"
+      },
+      "B1": {
+        "quota": 5,
+        "t_offset_s": 221.2,
+        "time": "12:00:10 PM"
+      },
+      "B2": {
+        "quota": 5,
+        "t_offset_s": 231.6,
+        "time": "12:00:23 PM"
+      }
+    },
+    "filelist_search": {
+      "秋刀鱼之味": {
+        "status": 0,
+        "count": 7,
+        "items": [
+          {
+            "id": 604957,
+            "filelist_type": "list",
+            "file_count": 9,
+            "entry_keys": [
+              "f",
+              "s"
+            ],
+            "has_url": false,
+            "names": [
+              "01修订正片 chs.ass",
+              "01修订正片 cht.ass",
+              "02访谈_chs.ass",
+              "02访谈_cht.ass",
+              "03预告chs.ass",
+              "03预告cht.ass",
+              "04预告2 chs.ass",
+              "04预告2 cht.ass",
+              "字幕说明.txt"
+            ],
+            "matches_earlier_detail": true,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "lang",
+              "native_name",
+              "release_site",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 304118,
+            "filelist_type": "dict",
+            "file_count": null,
+            "entry_keys": null,
+            "has_url": null,
+            "names": null,
+            "matches_earlier_detail": false,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 217802,
+            "filelist_type": "list",
+            "file_count": 1,
+            "entry_keys": [
+              "f",
+              "s"
+            ],
+            "has_url": false,
+            "names": [
+              "[秋刀鱼之味].An.Autumn.Afternoon.1962.DVDRip.XviD.IMBT.srt"
+            ],
+            "matches_earlier_detail": true,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "lang",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 202051,
+            "filelist_type": "list",
+            "file_count": 2,
+            "entry_keys": [
+              "f",
+              "s"
+            ],
+            "has_url": false,
+            "names": [
+              "秋刀鱼之味1962.idx",
+              "秋刀鱼之味1962.sub"
+            ],
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 182574,
+            "filelist_type": "list",
+            "file_count": 2,
+            "entry_keys": [
+              "f",
+              "s"
+            ],
+            "has_url": false,
+            "names": [
+              "An.Autumn.Afternoon.1962.BD.REMUX.H264.1080p.DD20(Jpn).Mysilu.en.srt",
+              "An.Autumn.Afternoon.1962.BD.REMUX.H264.1080p.DD20(Jpn).Mysilu.chn.srt"
+            ],
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "lang",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 22279,
+            "filelist_type": "list",
+            "file_count": 1,
+            "entry_keys": [
+              "f",
+              "s"
+            ],
+            "has_url": false,
+            "names": [
+              "An.Autumn.Afternoon.1CD.R.imbt.cn.srt"
+            ],
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "lang",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 22169,
+            "filelist_type": "list",
+            "file_count": 2,
+            "entry_keys": [
+              "f",
+              "s"
+            ],
+            "has_url": false,
+            "names": [
+              "imbt-xvid-aaa.srt",
+              "郑重声明.txt"
+            ],
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "lang",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          }
+        ]
+      },
+      "肖申克的救赎": {
+        "status": 0,
+        "count": 15,
+        "items": [
+          {
+            "id": 716687,
+            "filelist_type": "dict",
+            "file_count": null,
+            "entry_keys": null,
+            "has_url": null,
+            "names": null,
+            "matches_earlier_detail": false,
+            "item_keys": [
+              "filelist",
+              "id",
+              "lang",
+              "native_name",
+              "revision",
+              "size",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 692174,
+            "filelist_type": "list",
+            "file_count": 1,
+            "entry_keys": [
+              "f",
+              "s"
+            ],
+            "has_url": false,
+            "names": [
+              "肖申克的救赎.The.Shawshank.Redemption.1994.2160p.UHD.BluRay.x265-REDANDY.ass"
+            ],
+            "matches_earlier_detail": true,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "lang",
+              "native_name",
+              "release_site",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 645886,
+            "filelist_type": "list",
+            "file_count": 2,
+            "entry_keys": [
+              "f",
+              "s"
+            ],
+            "has_url": false,
+            "names": [
+              "Netflix.srt",
+              "R3.srt"
+            ],
+            "matches_earlier_detail": true,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "lang",
+              "native_name",
+              "release_site",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 623542,
+            "filelist_type": "list",
+            "file_count": 2,
+            "entry_keys": [
+              "f",
+              "s"
+            ],
+            "has_url": false,
+            "names": [
+              "肖申克的救赎.The.Shawshank.Redemption.1994.Bluray.1080p.TrueHD.x264-Grym.chs.ass",
+              "肖申克的救赎.The.Shawshank.Redemption.1994.Bluray.1080p.TrueHD.x264-Grym.chs.srt"
+            ],
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "lang",
+              "native_name",
+              "release_site",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 612531,
+            "filelist_type": "list",
+            "file_count": 6,
+            "entry_keys": [
+              "f",
+              "s"
+            ],
+            "has_url": false,
+            "names": [
+              "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.导评字幕.srt",
+              "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.ass",
+              "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体&英文.srt",
+              "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.简体.ass",
+              "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文&简体.ass",
+              "The.Shawshank.Redemption.1994.BluRay.1080p.x264.AC3-CMCT.英文.ass"
+            ],
+            "matches_earlier_detail": true,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "lang",
+              "native_name",
+              "release_site",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 611802,
+            "filelist_type": "list",
+            "file_count": 9,
+            "entry_keys": [
+              "f",
+              "s"
+            ],
+            "has_url": false,
+            "names": [
+              "肖申克的救赎.The.Shawshank.Redemption.1994.1080p.简体&英文.ass",
+              "肖申克的救赎.The.Shawshank.Redemption.1994.1080p.简体&英文.srt",
+              "肖申克的救赎.The.Shawshank.Redemption.1994.1080p.简体.ass",
+              "肖申克的救赎.The.Shawshank.Redemption.1994.1080p.简体.srt",
+              "肖申克的救赎.The.Shawshank.Redemption.1994.1080p.繁体&英文.ass",
+              "肖申克的救赎.The.Shawshank.Redemption.1994.1080p.繁体&英文.srt",
+              "肖申克的救赎.The.Shawshank.Redemption.1994.1080p.繁体.ass",
+              "肖申克的救赎.The.Shawshank.Redemption.1994.1080p.繁体.srt",
+              "肖申克的救赎.The.Shawshank.Redemption.1994.1080p.英文.srt"
+            ],
+            "matches_earlier_detail": true,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "lang",
+              "native_name",
+              "release_site",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 416312,
+            "filelist_type": "dict",
+            "file_count": null,
+            "entry_keys": null,
+            "has_url": null,
+            "names": null,
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 415767,
+            "filelist_type": "dict",
+            "file_count": null,
+            "entry_keys": null,
+            "has_url": null,
+            "names": null,
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 415768,
+            "filelist_type": "dict",
+            "file_count": null,
+            "entry_keys": null,
+            "has_url": null,
+            "names": null,
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 415769,
+            "filelist_type": "dict",
+            "file_count": null,
+            "entry_keys": null,
+            "has_url": null,
+            "names": null,
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 414894,
+            "filelist_type": "dict",
+            "file_count": null,
+            "entry_keys": null,
+            "has_url": null,
+            "names": null,
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 410764,
+            "filelist_type": "dict",
+            "file_count": null,
+            "entry_keys": null,
+            "has_url": null,
+            "names": null,
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 410765,
+            "filelist_type": "dict",
+            "file_count": null,
+            "entry_keys": null,
+            "has_url": null,
+            "names": null,
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 307242,
+            "filelist_type": "dict",
+            "file_count": null,
+            "entry_keys": null,
+            "has_url": null,
+            "names": null,
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          },
+          {
+            "id": 305568,
+            "filelist_type": "dict",
+            "file_count": null,
+            "entry_keys": null,
+            "has_url": null,
+            "names": null,
+            "matches_earlier_detail": null,
+            "item_keys": [
+              "filelist",
+              "filename",
+              "id",
+              "native_name",
+              "revision",
+              "size",
+              "subtype",
+              "upload_time",
+              "videoname",
+              "vote_score"
+            ]
+          }
+        ]
+      }
+    },
+    "downloads": {
+      "single_file": {
+        "bytes": 4912,
+        "sha256": "fca2aa8ffc068fee2b129fcde1429a7476dc47c0c56b611eb573459d46448107",
+        "matches_member_of_existing_package": true,
+        "matching_member_raw_names": [
+          "03╘ñ╕µchs.ass"
+        ]
+      },
+      "package": {
+        "downloaded_sha256": "411086fc0bb7e41eb672c79144c62b4f996aed70711aa9587e89601d8acb05a1",
+        "existing_fixture": "[秋刀鱼之味][CC标准收藏版 DIY花絮预告简繁中字]An Autumn Afternoon 1962 CC Blu-Ray 1080P AVC LPCM 1.0-DIY-Anitafayer.zip",
+        "existing_sha256": "411086fc0bb7e41eb672c79144c62b4f996aed70711aa9587e89601d8acb05a1",
+        "identical": true
+      }
+    }
+  }
+}

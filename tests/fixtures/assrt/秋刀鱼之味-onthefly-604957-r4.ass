@@ -1,0 +1,73 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,FZHei-B01S,17,&H00E4DFDC,&H0000FFFF,&H1E000000,&H00000000,0,0,0,0,100,104,0,0,1,2,0,2,20,20,22,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.04,0:00:05.87,Default,,0,0,0,,松竹映画
+Dialogue: 0,0:00:06.08,0:00:07.87,Default,,0,0,0,,松竹电影公司新作
+Dialogue: 0,0:00:08.08,0:00:10.51,Default,,0,0,0,,最新上映，期待已久的\N松竹出品的电影
+Dialogue: 0,0:00:11.00,0:00:14.47,Default,,0,0,0,,由小津安二郎导演
+Dialogue: 0,0:00:15.44,0:00:18.00,Default,,0,0,0,,《秋刀鱼之味》
+Dialogue: 0,0:00:20.04,0:00:23.19,Default,,0,0,0,,{\c&H329ADC&}{\fs20}【第一个预告片】{\r}\N\N影片讲述了一个单身父亲对女儿的照顾
+Dialogue: 0,0:00:23.36,0:00:25.31,Default,,0,0,0,,{\c&H329ADC&}{\fs20}【一个父亲对孩子的爱】
+Dialogue: 0,0:00:26.12,0:00:28.03,Default,,0,0,0,,{\c&H329ADC&}{\fs20}【兄弟间的手足之情】
+Dialogue: 0,0:00:28.68,0:00:30.31,Default,,0,0,0,,{\i1}姐姐怎么了？
+Dialogue: 0,0:00:30.44,0:00:32.07,Default,,0,0,0,,{\i1}-什么？\N-好像刚刚在哭唷....
+Dialogue: 0,0:00:32.20,0:00:35.03,Default,,0,0,0,,{\i1}我不会说不出嫁，\N不是那样打算的，
+Dialogue: 0,0:00:35.16,0:00:36.91,Default,,0,0,0,,
+Dialogue: 0,0:00:37.04,0:00:39.83,Default,,0,0,0,,{\i1}我朋友中啊，有很多人出嫁了
+Dialogue: 0,0:00:40.68,0:00:42.39,Default,,0,0,0,,{\i1\pos(192,240.933)}是吗？那么，你呢
+Dialogue: 0,0:00:42.88,0:00:45.47,Default,,0,0,0,,{\i1}{\pos(192,236.667)}路子很勤奋的，不成问题的
+Dialogue: 0,0:00:45.60,0:00:49.35,Default,,0,0,0,,{\i1}-可是我们什么都还没有唷\N-说谎!
+Dialogue: 0,0:00:49.48,0:00:51.55,Default,,0,0,0,,{\i1}牵手的程度倒是有啦
+Dialogue: 0,0:00:52.04,0:00:54.79,Default,,0,0,0,,{\i1\pos(192,240.933)}不是老婆喔！可是…已经在一起了
+Dialogue: 0,0:00:55.28,0:00:56.39,Default,,0,0,0,,是喔？
+Dialogue: 0,0:00:56.52,0:00:57.71,Default,,0,0,0,,{\c&H329ADC&}{\fs20}【打动人心的电影】{\r}\N{\i1}你也认识的人
+Dialogue: 0,0:00:58.32,0:00:59.71,Default,,0,0,0,,{\c&H329ADC&}{\fs20}【满满温情的电影】
+Dialogue: 0,0:01:00.40,0:01:02.03,Default,,0,0,0,,{\pos(192,237.2)}你的心会被爱温暖
+Dialogue: 0,0:01:02.16,0:01:03.59,Default,,0,0,0,,去感受那浓浓的父女之情
+Dialogue: 0,0:01:03.72,0:01:05.51,Default,,0,0,0,,{\c&H329ADC&}{\fs20}【爱的刻画】
+Dialogue: 0,0:01:06.40,0:01:08.27,Default,,0,0,0,,当她婚期接近
+Dialogue: 0,0:01:08.40,0:01:10.07,Default,,0,0,0,,{\c&H329ADC&}{\fs20}【友情的刻画】
+Dialogue: 0,0:01:10.76,0:01:12.23,Default,,0,0,0,,{\i1}不是我吹牛，
+Dialogue: 0,0:01:12.36,0:01:14.19,Default,,0,0,0,,{\pos(192,240.933)\i1}真的很好唷
+Dialogue: 0,0:01:14.32,0:01:16.11,Default,,0,0,0,,{\i1\pos(192,234)}神气什么啊！
+Dialogue: 0,0:01:16.24,0:01:19.71,Default,,0,0,0,,{\i1}年轻老婆呀！还是可以配合得很好呀
+Dialogue: 0,0:01:19.96,0:01:21.79,Default,,0,0,0,,
+Dialogue: 0,0:01:25.00,0:01:26.79,Default,,0,0,0,,{\pos(192,240.4)}众多魅力明星
+Dialogue: 0,0:01:26.92,0:01:29.48,Default,,0,0,0,,荟萃于影片
+Dialogue: 0,0:01:29.76,0:01:31.51,Default,,0,0,0,,{\pos(192,230.267)}同台奉献演技
+Dialogue: 0,0:01:31.64,0:01:33.47,Default,,0,0,0,,{\pos(192,231.333)}他们精湛的表演
+Dialogue: 0,0:01:33.60,0:01:35.39,Default,,0,0,0,,{\pos(192,231.333)}在这部抱负不凡的影片中精彩呈现
+Dialogue: 0,0:01:35.52,0:01:37.79,Default,,0,0,0,,
+Dialogue: 0,0:01:37.92,0:01:40.99,Default,,0,0,0,,小津安二郎导演
+Dialogue: 0,0:01:41.16,0:01:44.51,Default,,0,0,0,,游刃有余的拍摄
+Dialogue: 0,0:01:44.64,0:01:46.39,Default,,0,0,0,,
+Dialogue: 0,0:01:50.12,0:01:52.15,Default,,0,0,0,,松竹映画精彩呈现\N1962年 日本艺术祭参赛作品
+Dialogue: 0,0:01:52.28,0:01:55.27,Default,,0,0,0,,{\c&H329ADC&}{\fs20}【期待已久的大作】{\r}\N一部全国热议的影片
+Dialogue: 0,0:01:56.36,0:01:57.95,Default,,0,0,0,,{\c&H329ADC&}{\fs20}【豪华杰作】
+Dialogue: 0,0:01:58.72,0:02:01.23,Default,,0,0,0,,{\c&H329ADC&}{\fs20}《秋刀鱼之味》
+Dialogue: 0,0:02:01.52,0:02:03.19,Default,,0,0,0,,{\c&H329ADC&}{\fs20}【即将上映】
+Dialogue: 0,0:02:03.19,0:02:05.19,Default,,0,0,0,,
+
