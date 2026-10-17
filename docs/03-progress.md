@@ -52,8 +52,27 @@
 
 - [x] P3-A P3-prechecks（Claude Code）：①ASSRT 补测：`sub/search?filelist=1` 是否返回包内文件清单；下载请求、`user/quota` 是否计入配额（每次请求前后读 quota；总请求 ≤10 次）→ 追加 `api-notes/assrt.md` §9；②MP 源码静态核实：TransferComplete 事件 `mediainfo` 里有没有豆瓣 ID、IMDb ID、原始语言 / 地区字段（F2.1、F6.8）→ 追加 `api-notes/mp-v3-plugin.md`；③只读列 MP 共享环境已装的 HTTP / 解析相关包和版本（为 pyproject 准备）→ 追加 `api-notes/mp-local-env.md`
 - [ ] C13 需求定稿（claude.ai）：01 → v1.0。定开放问题 2（外语优先级）、7（内嵌轨）、8（「合格」判定与重试次数）；F4.3 打分权重具体化；F6.8 华语片判定；F8.1 状态机；P4 MVP 范围
-- [ ] P3-B P3-architecture（Claude Code）：按下方大纲写 `docs/architecture.md`（含 Mermaid 图、数据模型字段表、接口签名，不写实现）
+- [ ] P3-B P3-architecture（Claude Code）：按下方大纲写 `docs/architecture.md`（含 Mermaid 图、数据模型字段表、接口签名，不写实现）（2026-10-16 开过一次，因 C13 未完成暂停，未改文件）
 - [ ] C14 架构评审（claude.ai）：评审 architecture.md，新增决策从 D025 起，确认进入 P4，产出 P4 任务清单
+
+### C13 待定清单（2026-10-16 汇总：P3-B 暂停时整理 + P3-A 补充）
+
+> C13 逐项拍板，新增决策从 D025 起；每项定完在「影响」列对应的 architecture 节展开。「已有依据」只列事实和可选方案，不代表已决定。
+
+| # | 待定项 | 已有依据 / 可选方案 | 影响 architecture § |
+|---|---|---|---|
+| 1 | 开放问题 2：外语优先级（原片语言优先 / 英语优先） | 01 §4 #2；F6.6 语言说明「中英 / 中法」随之变化 | §3、§7、§9 |
+| 2 | 开放问题 7：已有内嵌简中 / 双语字幕轨时是否跳过 | 依赖 ffprobe（可配 Jellyfin 自带），P4 验证可用性；F1.4 现在只看外挂 | §4、§16 |
+| 3 | 开放问题 8：「合格」两段判定（下载前看列表标签、下载后看正文）；复核失败继续试 SubHD 下一条还是转 ASSRT；单片最多下载几次 | D022、D023（SubHD 单片典型 5–6 次请求）；ASSRT 下载不占 API 配额（assrt §9.3） | §4、§6、§7 |
+| 4 | F4.3 打分权重具体化（层级字典序还是加权分；下载量源内归一化方法） | D014、D022；SubHD 来源类型「其他来源」占 67% 是弱信号；ASSRT 下载量只有调过 detail 的条目才有 | §7 |
+| 5 | F6.8 华语片判定与落盘份数 | 事件 mediainfo 有 `original_language`（`zh` / `cn`）+ `production_countries` / `origin_country`（mp-v3-plugin §9.2）；粤语是否标 `cn` 不确定；历史扫描要再识别才拿得到（NFO 没有语言） | §3、§4、§9 |
+| 6 | F8.1 状态机：状态集合、「部分完成」（D022）、「SubHD 未查」待重查（F8.2）、待人工、重试次数与间隔 | 04-auto-chain §4（海拉鲁队列不持久化、热重载丢任务） | §3、§10 |
+| 7 | SubHD 影片页要的豆瓣 ID 从哪来 | 本机识别源 TMDb，`douban_id` 通常为空（mp-v3-plugin §9.5 #2）。方案 A：`ChainBase.match_doubaninfo(IMDb + 标题 + 年份)`，多一次豆瓣请求，结果可缓存；方案 B：SubHD 搜索页找 `/d/{ID}`，模糊、会混进别片、多一次 SubHD 请求（subhd §3） | §5、§6 |
+| 8 | P4 MVP 范围 | 00 路线图 P4 =「手动单部电影：识别→搜索→候选展示→下载→解包挑选→落盘 2 份 + 存档」；待定：是否含 ASSRT、F1.3 手动挑选界面（Vuetify JSON 还是 Vue 联邦，mp-v3-plugin §4.2 倾向前者）、F7.2 时长覆盖检查 | §11、§17 |
+| 9 | 01 文字同步 P3-A 结论 | F2.1：历史扫描从「读 NFO」改为「整理历史按 `dest` 查 TMDb ID → `recognize_media` 再识别，NFO 兜底」（mp-v3-plugin §9.4）；F8.2 / D023：`user/quota` 计入 ASSRT 配额、文件服务器下载不计入；D021：ASSRT search 一律带 `filelist=1`（assrt §9.4） | §5、§6 |
+| 10 | 与已装字幕插件并存（海拉鲁 `subtitlemanualupload` 等也订阅整理完成事件、会写字幕） | mp-local-env §8 #4 标「P3 再处理」。方案：要求停用对方的自动下载 / 本插件按 F1.4 判定已有字幕后补足 / 两者都做 | §4、§11 |
+| 11 | 依赖去留：pysubs2（ASS / SRT 解析修复）；F5.3 繁转简（可选） | pysubs2 1.9.0 是海拉鲁装的，要用就在 pyproject 显式声明；繁简转换库（zhconv / opencc）都没装，MVP 不做繁转简就不用加（mp-local-env §10） | §8、§16 |
+| 12 | `system_version` 是否上调到 `>=3.1.0`（用 `add_plugin_once_job`）；测试目录 `tests/` 还是 `tests/v3/hebisubs/` | 本机已是 v3.1.5（mp-local-env §2）；官方指南测试放 `tests/v3/<id>/`（mp-v3-plugin §5.5）。可留 C14 | §11、§15、§16 |
 
 ### architecture.md 大纲（C12 拟定，P3-B 照此展开）
 
@@ -112,6 +131,15 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-16 · P3-B 暂停（等 C13）
+- 阶段：P3（P3-A 完成；C13 未做；P3-B 暂停）
+- 完成：P3-B 会话读完 03 大纲、01 v0.3、02（D001–D024）、api-notes 6 份、05-p1-review、04 §4、00-charter 后发现前提不满足（01 仍是 v0.3、02 只到 D024、C13 未勾），按用户选择暂停，未写 architecture.md、未改仓库。随后在本文件「P3 任务清单」下新增「C13 待定清单」12 项：P3-B 会话汇总的 10 项 + P3-A 补充 2 项（#10 与已装字幕插件并存、#11 pysubs2 / 繁转简依赖），#9 补全 F2.1 的改写方向
+- 决定：无（全部交 C13）
+- 未完成 / 下一步：C13 需求定稿（claude.ai）→ 然后重开 P3-B
+- 卡点与风险：C13 待定项较多（12 项），一个对话可能装不下；可以先定直接影响 architecture 骨架的 #3、#5、#6、#7、#8，其余标「C14 前定」
+- 需要更新的文档：知识库镜像同步 03（含「C13 待定清单」）。重开 P3-B 时先确认 01 = v1.0、02 有 C13 新增决策、本文件 C13 已勾，再按大纲先给目录和每节要点 → 用户确认 → 写全文 → 勾 P3-B、写交接卡（开场白指向 C14）
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P3，读 03-progress 最新交接卡和「C13 待定清单」后开始：C13 需求定稿，逐项拍板清单 12 项，01 → v1.0，新增决策从 D025 起
 
 ### 交接 2026-10-16 · P3-A P3-prechecks
 - 阶段：P3（P3-A 完成）
