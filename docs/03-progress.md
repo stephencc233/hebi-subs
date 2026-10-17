@@ -7,7 +7,7 @@
 | P0 准备 | ✅ 完成 | 2026-10-15 | 2026-10-15 | 仓库、CLAUDE.md、文档 v0.1、api-notes（MP V3 开发要点 / 本机环境）、最小空插件 v0.0.1（实机冒烟通过） |
 | P1 研读海拉鲁 | ✅ 完成 | 2026-10-15 | 2026-10-16 | study-hailulu 01–05（模块地图、痛点①②、痛点③、自动链路、复盘）；01-requirements v0.2；D014–D017 |
 | P2 接口实测 | ✅ 完成 | 2026-10-16 | 2026-10-16 | api-notes（subhd / assrt / archive-tools / jellyfin-subtitle-naming）；探针脚本 4 个；fixtures（SubHD 网页、ASSRT 响应、13 个字幕包 + manifest、Jellyfin 报告与截图）；01-requirements v0.3；D018–D024 |
-| P3 需求定稿 + 架构 | ⬜ 未开始 | | | |
+| P3 需求定稿 + 架构 | 🟡 进行中 | 2026-10-16 | | P3-A：assrt §9（filelist / 配额计数）、mp-v3-plugin §9（mediainfo 字段）、mp-local-env §10（共享环境依赖）；`scripts/assrt_quota_probe.py` |
 | P4 MVP | ⬜ 未开始 | | | |
 | P5 自动化 | ⬜ 未开始 | | | |
 | P6 合成 | ⬜ 未开始 | | | |
@@ -50,7 +50,7 @@
 
 > 顺序：P3-A → C13 → P3-B → C14。P3 只产出文档和接口签名，不写实现代码。输入：01 v0.3、02（D014、D018–D024）、四份 api-notes、study-hailulu/05。
 
-- [ ] P3-A P3-prechecks（Claude Code）：①ASSRT 补测：`sub/search?filelist=1` 是否返回包内文件清单；下载请求、`user/quota` 是否计入配额（每次请求前后读 quota；总请求 ≤10 次）→ 追加 `api-notes/assrt.md` §9；②MP 源码静态核实：TransferComplete 事件 `mediainfo` 里有没有豆瓣 ID、IMDb ID、原始语言 / 地区字段（F2.1、F6.8）→ 追加 `api-notes/mp-v3-plugin.md`；③只读列 MP 共享环境已装的 HTTP / 解析相关包和版本（为 pyproject 准备）→ 追加 `api-notes/mp-local-env.md`
+- [x] P3-A P3-prechecks（Claude Code）：①ASSRT 补测：`sub/search?filelist=1` 是否返回包内文件清单；下载请求、`user/quota` 是否计入配额（每次请求前后读 quota；总请求 ≤10 次）→ 追加 `api-notes/assrt.md` §9；②MP 源码静态核实：TransferComplete 事件 `mediainfo` 里有没有豆瓣 ID、IMDb ID、原始语言 / 地区字段（F2.1、F6.8）→ 追加 `api-notes/mp-v3-plugin.md`；③只读列 MP 共享环境已装的 HTTP / 解析相关包和版本（为 pyproject 准备）→ 追加 `api-notes/mp-local-env.md`
 - [ ] C13 需求定稿（claude.ai）：01 → v1.0。定开放问题 2（外语优先级）、7（内嵌轨）、8（「合格」判定与重试次数）；F4.3 打分权重具体化；F6.8 华语片判定；F8.1 状态机；P4 MVP 范围
 - [ ] P3-B P3-architecture（Claude Code）：按下方大纲写 `docs/architecture.md`（含 Mermaid 图、数据模型字段表、接口签名，不写实现）
 - [ ] C14 架构评审（claude.ai）：评审 architecture.md，新增决策从 D025 起，确认进入 P4，产出 P4 任务清单
@@ -82,8 +82,10 @@
 
 | 项 | 阶段 | 怎么验证 |
 |---|---|---|
-| ASSRT `filelist=1`；下载与 `user/quota` 是否计入配额 | P3-A | 补测 ≤10 次请求 |
-| MP mediainfo 有无豆瓣 ID / 原始语言 | P3-A | 静态读 MP 源码 |
+| ~~ASSRT `filelist=1`；下载与 `user/quota` 是否计入配额~~ | P3-A ✅ | 已答：filelist 有（无 url）；quota 计入、下载不计入（assrt §9） |
+| ~~MP mediainfo 有无豆瓣 ID / 原始语言~~ | P3-A ✅ | 已答：字段都有；TMDb 识别下 `douban_id` 为空（mp-v3-plugin §9） |
+| ASSRT 配额读数是扣减前还是扣减后；开头读数偶尔少 1 | P4 | 限速器日志长期观察 |
+| 电影 `mediainfo.origin_country` 有无值；识别缓存命中时 mediainfo 是否完整；TMDb 粤语片 `original_language` 是否为 `cn` | P4–P5 | 实机打印一次 TransferComplete 的 mediainfo |
 | SubHD 验证码在哪一步出现、`/down/` 真实响应、直接 GET `/down/{sid}`、`/search/tt…`、影片页分页 | P4 | 真实下载时每步留证（响应头、魔数、前 512 字节） |
 | MP 进程能否找到 Scoop 用户 PATH 里的 7z | P4 开头 | 插件 init 记录 `shutil.which("7z")` 和探测结果 |
 | ffprobe 在 MP 环境是否可用 | P4 | 先试配置 Jellyfin 自带 ffprobe 的路径 |
@@ -110,6 +112,16 @@
 ```
 
 ## 交接记录
+
+### 交接 2026-10-16 · P3-A P3-prechecks
+- 阶段：P3（P3-A 完成）
+- 完成：①`scripts/assrt_quota_probe.py`（复用 `assrt_probe.py` 的限速客户端、token 脱敏、call_api；平时 16 秒、测量段 2 秒且段前空闲 90 秒（用户同意）；上限 10 次；段首配额 <4 即停止）；r4 共 10 次请求（API 8 + 下载 2），无 509，token 命中 0；原始响应 `tests/fixtures/assrt/*-r4.*`、`quota-r4-*.json`、`_run-log-r4.json`；结论 → `assrt.md` §9，§4 更正一处、§8 遗留标注。②只读 MP 源码（本机已是 v3.1.5）→ `mp-v3-plugin.md` §9（字段表附文件:行号），§2.3、§8 #4 补版本说明。③只读 MP venv 包元数据与 `pyproject.toml` / `uv.lock` → `mp-local-env.md` §10，速查表与 §2 更新版本。api-notes/README 索引更新。未改 `_reference`，未写插件代码，SubHD 未联网，MP 文件未改动
+- 决定：无新增编号（建议都留给 C13 / P3-B）
+- 主要发现：①ASSRT search 加 `filelist=1` 后，每条多出 `filelist`（`[{f, s}]`，**无 url**；裸字幕 / 空包为 `{}`）、`filename`、`size`，仍是 1 次配额，响应约变成 1.8 倍 → 语言、content_scope、空包可以在调 detail 之前判断；P2-B 写的「空包时为空数组」是错的，实为 `{}`。②`user/quota` **计入配额**（3 秒间隔连读 4→3→2）；文件服务器下载**不计入**（B 段 5→5）；读数是扣减前还是扣减后不确定。③onthefly 单文件与包内成员字节相同；604957 整包与 P2-B 下载的相同。④MP `MediaInfo` 有 `imdb_id`、`douban_id`、`original_language`、`production_countries`、`origin_country`、`spoken_languages`；事件 payload 用原对象，快照保留这些字段；**本机识别源 TMDb → `douban_id` 为空**，IMDb ID、原始语言、出品国家有值。⑤历史扫描：`app.sdk.queries.list_transfer_history` 只有 `media_source` / `media_id`（TMDb）、标题、年份；补全要 `ChainBase.recognize_media` 再识别，豆瓣 ID 要 `match_doubaninfo`；NFO 只有 IMDb 和国家名。⑥**MP 已从 v3.0.7 升级到 v3.1.5**，`add_plugin_once_job` 已有。⑦HTTP、bs4、lxml、chardet、psutil 都是 MP 核心依赖；`pysubs2`、`rarfile` 是海拉鲁插件装的，不能当作宿主一定有
+- 未完成 / 下一步：C13 需求定稿（claude.ai）
+- 卡点与风险：SubHD 影片页要豆瓣 ID，但本机 mediainfo 通常没有 → 需要 C13 定「IMDb + 标题 + 年份匹配豆瓣（多一次豆瓣请求、可缓存）」还是「走 SubHD 搜索页」；ASSRT 配额读数语义仍有一处说不通（开头读数偶尔少 1）；电影 `origin_country`、识别缓存命中时 mediainfo 是否完整，要等 P4–P5 实机看事件
+- 需要更新的文档：C13 时——01 F2.1（身份来源：事件 TMDb ID + IMDb；历史扫描走整理历史 + 再识别）、F6.8（华语片判定用 `original_language` + 出品国家）、F8.2 / D023（quota 计数、下载不占 API 配额）、D021（ASSRT search 一律 `filelist=1`）；知识库镜像同步 03 与三份 api-notes
+- 下个对话开场白：继续合璧字幕项目，当前阶段 P3，读 03-progress 最新交接卡后开始：C13 需求定稿，01 → v1.0（开放问题 2、7、8，F4.3 权重，F6.8 华语片判定，F8.1 状态机，SubHD 豆瓣 ID 来源，P4 MVP 范围）
 
 ### 交接 2026-10-16 · C12 P2 复盘
 - 阶段：P2 → 完成
