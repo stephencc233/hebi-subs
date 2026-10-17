@@ -9,11 +9,11 @@
 
 | 项目 | 值 |
 |---|---|
-| MP 版本 | **v3.0.7**（前端 v3.0.7），源码提交 `e2e6ff0`（2026-09-21），分支 `v3` |
+| MP 版本 | **v3.1.5**（前端 v3.1.5），源码提交 `99ee18d`（2026-10-13），分支 `v3`（2026-10-16 P3-A 核实；P0 时为 v3.0.7 `e2e6ff0`，见 §2） |
 | Python | **3.14.7**（CPython），解释器 `<MP>\runtime\venv\Scripts\python.exe` |
 | MP 主配置 | `<SRV>\config\app.env` |
 | 启动器配置 | `<MP>\config\app.ini` |
-| 本地插件开发开关 | `PLUGIN_LOCAL_REPO_PATHS`、`PLUGIN_AUTO_RELOAD`、`DEV`、`DEBUG` **均未设置**（取默认值） |
+| 本地插件开发开关 | P0 任务 B 查看时均未设置；任务 C 起已设 `PLUGIN_LOCAL_REPO_PATHS=D:\code\hebi-subs`、`PLUGIN_AUTO_RELOAD=true`、`DEBUG=true`（§9） |
 | MP 日志 | `<SRV>\config\logs\moviepilot.log`；插件日志 `<SRV>\config\logs\plugins\<插件id小写>.log` |
 | 插件运行目录 | `<SRV>\app\plugins\<插件id小写>\` |
 | Web 访问 | `http://localhost:3000`（nginx）；后端 API 端口 3001 |
@@ -40,6 +40,7 @@
 - `<SRV>\version.py`：`APP_VERSION = 'v3.0.7'`、`FRONTEND_VERSION = 'v3.0.7'`
 - `git -C <SRV> log -1`：`e2e6ff0dc467fe13ceb9dba8e32573edbf352d86`，2026-09-21，分支 `v3`
 - 启动器 `app.ini`：`auto_update_on_start=False`，即不会随启动自动更新，版本会一直停在 v3.0.7，除非手动更新
+- **2026-10-16（P3-A）复查：本机已升级到 v3.1.5**（`version.py`：`APP_VERSION = 'v3.1.5'`；`git log -1`：`99ee18d`，2026-10-13，tag `v3.1.5`）。是手动更新还是启动器设置变了，没有查（未读 `app.ini`）。Python 仍是 3.14.7。上表能力中，`app.sdk.scheduler.add_plugin_once_job()` 现在**已有**（`app/sdk/scheduler.py` L4、L20）。v3.1.5 下的源码核实见 [mp-v3-plugin.md §9](mp-v3-plugin.md)
 
 **与任务 A 笔记的差异**：[mp-v3-plugin.md](mp-v3-plugin.md) 依据的是 MP v3 分支 2026-10-15 的源码（`63c8c0d`），本机源码比它早约 3 周。我在本机源码里逐项核对了任务 A 用到的能力：
 
@@ -142,3 +143,50 @@
 | 3 | ~~插件数据目录是否就是 `<SRV>\config\plugins\<PluginID>\`~~ | **已核实**（任务 C）：`get_data_path()` = `D:\MoviePilot\server\MoviePilot-V3\config\plugins\HebiSubs`，保留类名大小写，首次调用时宿主自动创建 |
 | 4 | 本项目插件日志文件名是否为 `hebisubs.log` | 任务 C：日志记录器名为 `hebisubs`（日志行前缀 `hebisubs - `），文件名推测为 `hebisubs.log`，未直接查看 |
 | 5 | 后端两种 python 进程的父子关系 | 不影响开发，暂不深究 |
+
+## 10. 共享环境已装的 HTTP / 解析 / 编码相关包（P3-A，2026-10-16）
+
+> 用途：为插件 `pyproject.toml` 做准备。V3 规则：依赖装进宿主共享环境，**只声明宿主没有的包**，不得降级核心依赖（[mp-v3-plugin.md §4.3](mp-v3-plugin.md)）。
+> 方法（只读，不导入这些包、不安装）：
+> - 版本：`D:\MoviePilot\runtime\venv\Scripts\python.exe -I -c "import importlib.metadata as m; print(m.version('requests'))"`（逐个包名）；venv 共 247 个发行包
+> - 是否 MP 核心依赖：`<SRV>\pyproject.toml` 的 `[project].dependencies`（L9–104）与 `[dependency-groups].runtime-standard`（L118–124）；是否在 MP 依赖树里：`<SRV>\uv.lock` 有没有 `name = "<包>"`
+> - 谁装的：在 `<SRV>\app\plugins\*\requirements.txt` / `pyproject.toml` 里搜包名
+
+### 10.1 清单
+
+「核心」= MP `pyproject.toml` 直接声明；「依赖树」= 不是直接声明，但在 `uv.lock` 里（被核心包间接依赖）；「插件装的」= 不在 `uv.lock`，由其他插件安装，**卸载那个插件或重建环境后可能消失**。
+
+| 包 | 本机版本 | 来源（MP 约束） | 对本项目的可能用途 |
+|---|---|---|---|
+| requests | 2.34.2 | 核心（`requests[socks]~=2.34.2`，L84） | 同步 HTTP（SubHD 页面、ASSRT API、下载） |
+| httpx | 0.28.1 | 核心（`httpx[http2,socks]~=0.28.1`，L35） | 同上，异步可选 |
+| httpx2 | 2.12.0 | 核心（`httpx2[http2,socks]~=2.12.0`，L36） | `app.sdk.network.AsyncRequestUtils` 的底层（mp-v3-plugin §2.3） |
+| httpcore | 1.0.9 | 依赖树 | — |
+| urllib3 | 2.8.0 | 核心（`~=2.8.0`，L98） | — |
+| certifi | 2026.7.22 | 依赖树 | — |
+| idna / h2 | 3.19 / 4.4.1 | 依赖树 | — |
+| brotli | 1.2.0 | 核心 runtime-standard 组（`Brotli==1.2.0`，L119） | 响应解压 |
+| aiohttp | 3.14.3 | 依赖树 | 不打算用 |
+| lxml | 6.1.2 | 核心 runtime-standard 组（`lxml~=6.1.2`，L121；free-threaded 组为 `7.0.0b1`） | HTML 解析（可选；P2-A 探针用的是标准库 HTMLParser） |
+| beautifulsoup4 | 4.15.0 | 核心（`~=4.15.0`，L19） | HTML 解析（SubHD 列表页 / 影片页 / 详情页） |
+| soupsieve | 2.9.2 | 依赖树（bs4 的 CSS 选择器） | 同上 |
+| pyquery / cssselect | 2.0.2 / 1.4.0 | pyquery 核心（`~=2.0.1`，L69）；cssselect 依赖树 | 备选解析器 |
+| charset_normalizer | 3.5.1 | 依赖树（requests 的依赖） | 字幕编码检测（主选，见 10.2） |
+| chardet | 7.6.0 | 核心（`~=7.6.0`，L22） | 字幕编码检测（备选） |
+| psutil | 7.2.2 | 核心（`~=7.2.2`，L61） | 一般用不到；D020 担心 py7zr 带进 psutil，实际宿主已有 |
+| pydantic | 2.13.4 | 核心（`>=2.13.4,<3.0.0`，L64） | API 响应模型 / 配置模型 |
+| watchfiles | 1.2.0 | 核心（`~=1.2.0`，L101） | 热重载（宿主用） |
+| **rarfile** | 4.5 | **插件装的**（海拉鲁 `subtitlemanualupload/requirements.txt`：`rarfile>=4.2`） | D015 / D020 定了不用 |
+| **pysubs2** | 1.9.0 | **插件装的**（同上：`pysubs2>=1.8.0`） | ASS / SRT 解析与修复（F5.x、ASS `[Script Info]` 校验）可能用得上 |
+| py7zr | — | 未装 | D020：不写进 pyproject，延迟导入 |
+| html5lib、parsel、cchardet、curl_cffi、cloudscraper | — | 未装 | 不需要 |
+| zhconv、opencc、opencc-python-reimplemented、hanziconv | — | 未装 | 繁简转换：本项目只判断简繁（P2-C 用特征字），暂不需要转换 |
+| pysrt、langdetect | — | 未装 | 不需要 |
+
+### 10.2 对 pyproject 的建议（给 P3-B §16）
+
+1. HTTP（requests / httpx / httpx2）、HTML 解析（beautifulsoup4、lxml、pyquery）、编码检测（chardet；charset_normalizer 随 requests 一起有）都是宿主核心依赖或依赖树里的包，**不需要声明**。如果要写，只写宽松下限、不写上限，避免和宿主约束冲突。（高）
+2. `charset_normalizer` 不是 MP 直接声明的，而是 requests 带进来的；requests 是核心依赖，实际上一直都在。用之前仍按「可选导入」写，导入失败就退回 chardet。（中）
+3. **不要依赖 `pysubs2` / `rarfile` 已经存在**：它们是海拉鲁插件装的。真要用 pysubs2，就在 pyproject 里显式声明（例如 `pysubs2>=1.8`，与已装的 1.9.0 兼容，不会触发降级）。要不要用 pysubs2、还是自己写最小的 ASS / SRT 处理，留给 P3-B。（高）
+4. 目前看来，插件的 `dependencies` 可能为空，或者只有 pysubs2 一项。py7zr 按 D020 不声明。（中）
+5. MP 已升级到 v3.1.5：`package.v3.json` 的 `system_version` 可以继续写 `>=3.0.0`；如果要用 v3.1 才有的 SDK（例如 `add_plugin_once_job`），要么上调到 `>=3.1.0`，要么调用前用 `getattr` 判断。留给 P3-B。（中）

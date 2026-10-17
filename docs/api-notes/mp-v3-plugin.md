@@ -105,7 +105,7 @@
 
 - 模块导入期、类定义期不得启动任务、访问网络、连数据库；资源在 `init_plugin()` 中按配置建立（[PD §5.2][PD-52]）。
 - **运行数据不能写回插件源码目录**：插件更新/本地同步时源码目录会被整体替换（[PD §7.2][PD-72]；源码 `sync_local` 先删后拷，见 §5.3）。
-- “立即运行一次”、事件后延迟执行等一次性任务用 `app.sdk.scheduler.add_plugin_once_job()`，不要自建 `BackgroundScheduler`；停用时用 `remove_plugin_once_job()` 取消（[PD §9.3][PD-93]）。⚠ **本机 v3.0.7 没有这个接口**（[mp-local-env.md §2](mp-local-env.md)），需要时先用 `getattr` 判断。
+- “立即运行一次”、事件后延迟执行等一次性任务用 `app.sdk.scheduler.add_plugin_once_job()`，不要自建 `BackgroundScheduler`；停用时用 `remove_plugin_once_job()` 取消（[PD §9.3][PD-93]）。⚠ 本机 v3.0.7 没有这个接口；**2026-10-16 本机已升级到 v3.1.5，`app/sdk/scheduler.py` 已导出 `add_plugin_once_job`**（§9.0）。`system_version` 仍写 `>=3.0.0` 时，调用前仍要用 `getattr` 判断。
 - 插件 ID 用 `self.__class__.__name__` 取得，不硬编码（虚拟分身会改类名）（[PD §7.1][PD-71]）。
 - 宿主接口优先从 `app.sdk.*` 导入（`config`/`events`/`logging`/`network`/`services`…）；新插件**禁止**用 `app.core.*`、`app.helper.*`、`app.utils.*`、`app.sdk._legacy`（[PD §6][PD-6]）。
 - HTTP：`app.sdk.network.AsyncRequestUtils` 基于 HTTPX2，网络错误默认返回 `None`，需要区分失败时传 `raise_exception=True`；4xx/5xx 不自动抛（[PD §7.6][PD-76]）。
@@ -286,7 +286,7 @@ Vue 模式额外约束（[PD §8.3][PD-83]、[FED][FED]）：不得打包 Vuetif
 | 1 | `TransferComplete` 的 `event_data` 及 `transferinfo` 是对象还是已序列化的 dict | 源码发送 dict+对象；海拉鲁两种都兼容，**不确定** | 冒烟后加日志打印类型 |
 | 2 | 剧集整理是否每集发一次 `TransferComplete` | 推测每个主媒体文件一次 | 实机整理一部剧看日志 |
 | 3 | Windows 原生版 `PLUGIN_LOCAL_REPO_PATHS` 等配置写在哪里、改后是否需重启 | **已核实位置**：`D:\MoviePilot\server\MoviePilot-V3\config\app.env`，目前未设置；是否需要重启待任务 C 验证。**任务 C 实机**：写入 `app.env`（`D:\code\hebi-subs` 反斜杠写法、不加引号）+ 重启后生效；不重启能否生效未测 | [mp-local-env.md §4](mp-local-env.md) |
-| 4 | 本机 MP 版本是否 ≥ 本笔记所读源码（v3 @ `63c8c0d`） | **已核实**：本机 v3.0.7（`e2e6ff0`，2026-09-21），更旧；本笔记用到的能力中只缺 `add_plugin_once_job` | [mp-local-env.md §2](mp-local-env.md) |
+| 4 | 本机 MP 版本是否 ≥ 本笔记所读源码（v3 @ `63c8c0d`） | **已核实**：本机 v3.0.7（`e2e6ff0`，2026-09-21），更旧；本笔记用到的能力中只缺 `add_plugin_once_job`。**2026-10-16 P3-A 发现本机已升级到 v3.1.5（`99ee18d`，2026-10-13），已有该接口**（§9.0） | [mp-local-env.md §2](mp-local-env.md) |
 | 5 | 本机 Python 版本（指南示例 `>=3.14`） | **已核实**：3.14.7 | [mp-local-env.md §3](mp-local-env.md) |
 | 6 | `watchfiles` 递归监听整个仓库，含 `_reference/`（大量文件）是否影响 MP 性能 | **不确定** | 冒烟时观察 CPU/日志；如有影响再评估把参考仓移出或 MP 侧过滤 |
 | 7 | 只改 `package.v3.json`（如版本号）是否触发同步 | 源码只对 `.py`、联邦产物、依赖清单处理，推测**不触发**，需在界面手动更新/重装 | 实机 |
@@ -294,6 +294,67 @@ Vue 模式额外约束（[PD §8.3][PD-83]、[FED][FED]）：不得打包 Vuetif
 | 9 | 主指南写 `from app.sdk.plugin import _PluginBase`，海拉鲁用 `from app.plugins import _PluginBase` | 两者都能用（后者走兼容层），按主指南 | 冒烟开 `DEBUG=true` 看是否有兼容警告 |
 | 10 | 声明式建表 `get_database_models()` 与主指南 `ensure_table()` 哪个是推荐做法 | 源码两者并存，**不确定** | 需要自有表时（P4+）再查 |
 | 11 | 热重载为何一次改动触发两轮「stop_service → init_plugin」 | **任务 C 实机观察**：改一行 `.py` 后约 1 秒内连续两轮，间隔约 60ms。推测是仓库与运行目录各触发一次、防抖未覆盖，**不确定**。影响：`init_plugin`/`stop_service` 必须幂等，后台任务不能重复注册 | 需要时看 MP 主日志里的同步提示行 |
+
+---
+
+## 9. mediainfo 字段核实（P3-A，2026-10-16）
+
+> 方法：只读本机 MP 源码静态核实，未运行 MP 代码，未改 MP 文件。下文路径相对 `<SRV>\app\`（`<SRV>` = `D:\MoviePilot\server\MoviePilot-V3`），**行号以本机 v3.1.5（`99ee18d`）为准**，与 §0–§8 引用的 GitHub `63c8c0d` 不同。
+> 回答：F2.1（识别身份要哪些 ID）、F6.8（华语片判定依据）、03 P2 遗留表「MP mediainfo 有无豆瓣 ID / 原始语言」。
+
+### 9.0 本机版本变化
+
+本机 MP 已从 P0 时的 v3.0.7（`e2e6ff0`）升级到 **v3.1.5**（`version.py`；git `99ee18d`，2026-10-13）。Python 仍是 3.14.7。`app/sdk/scheduler.py` 现在导出 `add_plugin_once_job`（L4、L20）。详见 [mp-local-env.md §2](mp-local-env.md)。
+
+### 9.1 结论速览
+
+1. 4 个字段**都在** `MediaInfo` 上，字段名：`douban_id`、`imdb_id`、`original_language`、`origin_country` / `production_countries`（另有 `spoken_languages`、`languages`）。（高）
+2. **事件里拿得到**：TransferComplete 的 payload 放的是整理任务里原来的 `MediaInfo` 对象（没有调 `clear()`）；契约快照 `MediaSnapshot` 就是 `app.schemas.context.MediaInfo`，这几个字段都保留。（高）
+3. **按本机默认识别源 TMDb：`imdb_id`、`original_language`、`production_countries`、`spoken_languages` 有值，`douban_id` 为空**。`douban_id` 只在识别源是豆瓣时才填，或者是插件自己去匹配豆瓣。（高；`origin_country` 对电影是否有值：不确定，见 9.2）
+4. **历史扫描**：整理历史只存主身份（`media_source` + `media_id`，即 TMDb ID）和标题、年份，**没有 IMDb、豆瓣、语言、地区**。要拿到完整字段，需要用 `media_id` 让 MP 再识别一次（`ChainBase.recognize_media`），或者读 MP 刮削出的 NFO（只有 IMDb ID 和出品国家，没有语言）。（高）
+
+### 9.2 字段表
+
+| 需要的信息 | `MediaInfo` 字段（领域对象 `domain/context.py`） | 事件快照类型（`schemas/context.py`） | TMDb 识别时 | 豆瓣识别时 | 依据 |
+|---|---|---|---|---|---|
+| TMDb ID | `tmdb_id: int`（L1617）；主身份 `media_source` / `media_id`（L1595、L1597） | `tmdb_id: int`（L297） | 有，`media_source=themoviedb`、`media_id` = TMDb ID | 只有 MP 补查 TMDb 时才有 | `projection/tmdb.py` L121–126 |
+| IMDb ID | `imdb_id: str`（L1618） | `imdb_id: str`（L298） | **有**：来自 TMDb 详情的 `external_ids.imdb_id`，详情请求固定带 `append_to_response=…external_ids` | 豆瓣投影不填 | `domain/projection/tmdb.py` L130–133；`modules/themoviedb/tmdbapi.py` L1046–1054（电影）、L1167–1174（剧集） |
+| 豆瓣 ID | `douban_id: str`（L1621） | `douban_id: str`（L301） | **空**：TMDb 投影不设置，详情里也没有同名键 | 有，等于豆瓣主 ID | `domain/projection/douban.py` L155–157 |
+| 原始语言 | `original_language: str`（L1628），ISO 639-1，如 `zh`、`cn`、`ja` | `original_language: str`（L310） | **有**：TMDb 的 `original_language` | 只在为空时补：豆瓣 `languages` 第一项映射成代码 | `projection/tmdb.py` L140–141；`projection/douban.py` L123–143、L165 |
+| 出品国家 / 地区 | `production_countries: list`（L1703），元素 `{iso_3166_1, name}` | `list[MediaCountry]`（L379；`MediaCountry` L192–197） | **有**：TMDb 详情的同名键，由 `fill_missing` 按名字拷过来 | 只在为空时补：豆瓣 `countries` → `{id: 名称, name: 名称}`，**没有 ISO 代码** | `projection/tmdb.py` L173；`projection/mapping.py` L46–60（`fill_missing`：详情里与 `MediaInfo` 同名的空字段都补上）；`projection/douban.py` L229–232 |
+| 原产国 | `origin_country: list[str]`（L1697），ISO 3166-1 代码 | `list[str]`（L373） | 剧集有；电影是否有取决于 TMDb 电影详情是否返回 `origin_country`（**不确定**，P4 实机看一次事件） | 无 | 同上（`fill_missing`） |
+| 对白语言 | `spoken_languages: list`（L1705），元素 `{iso_639_1, english_name, name}`；`languages: list`（L1687，剧集用） | `list[MediaLanguage]`（L381；L200–205）、`list[str]`（L363） | 有（`fill_missing`） | 无 | 同上 |
+
+注意：
+- 领域对象上 `tmdb_id` 等字段的注释写着「数据源返回的辅助 ID，仅作为元数据输出，不参与通用身份传递或持久化」（`domain/context.py` L1616）。MP 自己认的身份是 `media_source` + `media_id`。
+- `MediaInfo.clear()`（L1964）会清空 `production_countries`、`spoken_languages`、`names` 等列表。整理流程只对**给队列界面用的深拷贝**调用它（`application/transfer/jobs.py` L285–287），事件 payload 用的是 `task.mediainfo` 原对象（`chain/transfer/settlement.py` L174–188 `_transfer_result_payload`）。识别命中 MP 本地缓存时，对象是否完整：**不确定**，P4 / P5 实机打印一次事件确认。
+- 本机识别源：`runtime/config.py` L374 `RECOGNIZE_SOURCE` 默认 `"themoviedb"`，`app.env` 里没有覆盖。
+
+### 9.3 事件里的形态
+
+| 层 | 内容 | 位置 |
+|---|---|---|
+| 发送 | payload 是 dict，`mediainfo` 值为领域对象 `app.domain.context.MediaInfo` | `chain/transfer/settlement.py` L174–188 |
+| 插件兼容模型 | `TransferResultEventData.mediainfo: Any` | `schemas/event.py` L1126–1136 |
+| 契约快照 | `TransferResultContractData.mediainfo: MediaSnapshot`；`MediaSnapshot` = `schemas.context.MediaInfo`（或 `MusicInfo`）。转换时先调对象的 `to_dict()`（领域 `to_dict` 只把 `tmdb_info` / `douban_info` 原始详情置空，其余字段保留，L1939–1962） | `schemas/event.py` L14、L27–52、L409–419 |
+
+→ 插件读 `mediainfo.imdb_id`、`.original_language`、`.production_countries` 都可以，用原对象或用 `snapshot_event_data()` 快照都行；`douban_id` 在本机配置下应当视为「通常为空」。
+
+### 9.4 历史扫描怎么拿同样的信息（插件只能用 `app.sdk.*`）
+
+| 途径 | 能拿到什么 | 代价 / 限制 | 位置 |
+|---|---|---|---|
+| ① 整理历史 `app.sdk.queries.list_transfer_history(filters)` | `TransferHistorySnapshot`：`media_source`、`media_id`、`title`、`year`、`type`、`seasons`、`episodes`、`src`、`dest`、`date`… **没有 IMDb、豆瓣、语言、地区**。筛选可以按 `dest`（精确）或 `text`（标题 / 路径包含）查 | 只读、本地数据库，无网络；只覆盖经过 MP 整理的文件 | `sdk/queries.py` L212–237；`schemas/query.py` L264–300（快照）、L364–385（筛选） |
+| ② 再识别 `ChainBase.recognize_media(media_source=…, media_id=…)` | 完整 `MediaInfo`（同 9.2 TMDb 那一列） | 插件自建一个继承 `app.sdk.chain.ChainBase` 的类调用；会访问 TMDb（MP 有识别缓存，`cache=True`） | `sdk/chain.py` L3–5；`chain/_recognition.py` L656–666 |
+| ③ 豆瓣 ID：`ChainBase.match_doubaninfo(name, imdbid=…, year=…)` | 豆瓣详情 dict（含 `id`） | 访问豆瓣；按需调用，不适合批量（频率风险） | `chain/base.py` L278–292。（MP 内部的 TMDb→豆瓣身份转换 `MediaChain.convert_media_identity`，`chain/media/projection.py` L392，没有通过 `app.sdk` 导出） |
+| ④ 读 NFO：`app.sdk.media.NfoReader` | MP 用 TMDb 刮削的 NFO 里有 `<tmdbid>`、`<uniqueid type="tmdb/imdb">`、`<imdbid>`、`<country>`（出品国家**名称**，没有代码），**没有原始语言和豆瓣 ID** | 只读本地文件；NFO 可能由 Jellyfin 等别的工具写，字段不一定一样 | `sdk/media.py` L29、L56；`domain/scraper.py` L12–26；`modules/themoviedb/scraper.py` L252–271、L317–320 |
+
+### 9.5 对需求和架构的影响
+
+1. **F2.1 身份**：自动触发直接用事件里的 `media_source` / `media_id`（TMDb）、`imdb_id`、`title` / `en_title` / `original_title` / `names`、`year`。历史扫描先查整理历史 ①，按 `dest` 拿到 TMDb ID，再按需走 ② 补全；没有整理记录的文件读 NFO ④，再不行才按文件名识别。（高）
+2. **SubHD 影片页 `/d/{豆瓣ID}`（subhd §3）拿不到现成豆瓣 ID**：本机识别源是 TMDb，`douban_id` 通常为空。要么用 ③ 由 IMDb ID + 标题 + 年份匹配豆瓣（多一次豆瓣请求，结果可以缓存到插件数据），要么走 SubHD 搜索页（模糊，会混进别片）。这个取舍留给 C13 / P3-B。（高）
+3. **F6.8 华语片判定**：可用 `original_language ∈ {zh, cn}`（TMDb 把粤语标成 `cn`，**不确定**，待查样本），加上 `production_countries` / `origin_country` 含 CN / HK / TW 做辅助。两个字段在 TMDb 识别下都有值；历史扫描要走 ②。NFO 只有国家名、没有语言，不够判定。（中）
+4. P5 实机时打印一次 TransferComplete 的 `mediainfo` 关键字段，确认 9.2 里两个「不确定」：电影的 `origin_country`、识别缓存命中时对象是否完整。
 
 <!-- 链接定义 -->
 [PD]: https://github.com/jxxghp/MoviePilot-Plugins/blob/59c77e86dc4fe486a751ffb14829ddb70e2f2fca/docs/Plugin_Development.md
